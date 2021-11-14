@@ -25,7 +25,7 @@ Follow these steps to setup your workspace:
 
 1. Download [MultiMC](https://multimc.org/#Download) and [Git](https://git-scm.com/downloads) if you haven't already.
 2. Open MultiMC.
-3. Click Add Instance, choose Minecraft 1.16.5, click Ok.
+3. Click Add Instance, choose Minecraft 1.18, click Ok.
 4. Click Edit Instance.
 5. Click Install Forge, pick the latest version.
 

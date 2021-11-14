@@ -4,15 +4,15 @@ _specver: 2
 # modpack related settings, changes the supposed to change the visual appearance of the launcher
 modpack:
     # Name of the mod pack, that is displayed in various places where it fits
-    name: MODPACK_NAME_WITH_SPACE
+    name: Enigmatica 8
 
     # Description
-    description: Play with new mods and old favorites in MODPACK_NAME_WITH_SPACE for Minecraft 1.17!
+    description: Play with new mods and old favorites in Enigmatica 8 for Minecraft 1.17!
 
 # settings regarding the installation of the modpack
 install:
     # version of minecraft, needs the exact version
-    mcVersion: 1.17.0
+    mcVersion: 1.18.0
 
     # exact version of forge or fabric that is supposed to be used
     # if this value is a null value so ( ~, null, or "" ) then the version from the mod pack is going to be used

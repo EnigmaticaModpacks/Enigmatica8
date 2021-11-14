@@ -1,6 +1,6 @@
-# MODPACK_NAME_WITH_SPACE
+# Enigmatica 8
 
-This is the official repository and issue-tracker for the modpack MODPACK_NAME_WITH_SPACE, for Minecraft 1.16.5
+This is the official repository and issue-tracker for the modpack Enigmatica 8, for Minecraft 1.16.5
 
 ### Table of Contents
 
@@ -96,6 +96,6 @@ Re-run the script `update-server` whenever you want to update to a new modpack v
 
 ## Links
 
--   [CurseForge](https://www.curseforge.com/minecraft/modpacks/MODPACK_NAME_WITHOUT_SPACE)
+-   [CurseForge](https://www.curseforge.com/minecraft/modpacks/Enigmatica8)
 
 -   [Discord](https://discord.gg/HnWNd7X)

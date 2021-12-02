@@ -6,7 +6,8 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"moreoverlays",
 	"Neat", 
 	"Toast-Control", 
-	"PackMenu"
+	"PackMenu",
+	"CustomWindowTitle"
 )
 
 $InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)

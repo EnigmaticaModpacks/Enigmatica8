@@ -95,6 +95,26 @@ automation/ChangelogGenerator-2.0.0-pre10.jar
 automation/ModListCreator-1.1.5.jar
 1.16.5.json
 
+# GDLauncher
+config.json
+/natives/
+
+# MacOSX
+.DS_Store
+.DS_Store?
+
+config/rftoolsdim-client.toml
+config/clienttweaks-client.toml
+automation/ModListCreator-1.2.0.jar
+biomeidfixer.temp
+config/findme-client.toml
+config/PregenConfig.toml
+NewWorldBiomeIdFixer.json
+
+automation/ModListCreator-1.2.1.jar
+.github_changelog_generator
+
+
 # Client Configs
 config/InvTweaks.cfg
 config/MouseTweaks.cfg
@@ -147,25 +167,6 @@ config/itemzoom-client.toml
 config/inventoryhud-client.toml
 config/ftbchunks-client.toml
 config/immersiveengineering-client.toml
-
-# GDLauncher
-config.json
-/natives/
-
-# MacOSX
-.DS_Store
-.DS_Store?
-
-config/rftoolsdim-client.toml
-config/clienttweaks-client.toml
-automation/ModListCreator-1.2.0.jar
-biomeidfixer.temp
-config/findme-client.toml
-config/PregenConfig.toml
-NewWorldBiomeIdFixer.json
-
-automation/ModListCreator-1.2.1.jar
-.github_changelog_generator
 config/sounddeviceoptions-client.toml
 config/personality-client.toml
 config/miniutilities-client.toml

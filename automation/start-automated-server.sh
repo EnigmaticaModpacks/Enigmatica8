@@ -106,7 +106,7 @@ start_server() {
 	echo ""
 	echo "Starting server"
 	echo "INFO: Starting Server at " $(date -u +%Y-%m-%d_%H:%M:%S) >>serverstart.log 2>&1
-	java -Xmx${MAX_RAM} ${JAVA_ARGS} -jar forge-${MCVER}-${FORGEVER}.jar nogui
+	java -Xmx${MAX_RAM} ${JAVA_ARGS} @user_jvm_args.txt @libraries/net/minecraftforge/forge/${MCVER}-${FORGEVER}/win_args.txt nogui %*
 }
 
 # routine for basic directory checks
@@ -244,7 +244,7 @@ while true ; do
 		last_crash=$((SECONDS))
 	fi
 	if [ "$a" -eq ${CRASH_COUNT} ]; then
-		echo "The server has crashed to many times"
+		echo "The server has crashed too many times"
 		echo "ERROR: Server has failed too start too many times in a row." >>serverstart.log 2>&1
 		exit 0
 	fi

@@ -1,16 +1,4 @@
 @ECHO OFF
-::::
-:::: Minecraft-Forge Server install/launcher script
-:::: Created by the "All The Mods" pack team
-::::
-:::: This script will setup and start the minecraft server
-:::: *** THIS FILE NOT INTENDED TO BE EDITED, USE "settings.cfg" INSTEAD ***
-::::
-:::: FOR HELP (or more details);
-::::    Github:   https://github.com/AllTheMods/Server-Scripts
-::::    Discord:  https://discord.gg/FdFDVWb
-::::
-
 :::: *** THIS FILE NOT INTENDED TO BE EDITED, USE "settings.cfg" INSTEAD ***
 
 ::================================================================================::
@@ -24,53 +12,45 @@
 :: based on a combination of the MIT license and a couple parts from Vaskii's 
 :: Botania/Psi license:
 
-	:: Copyright (c) 2017 All The Mods Team
+:: Copyright (c) 2017 All The Mods Team
 
-	:: Permission is hereby granted, free of charge, to any person obtaining a copy
-	:: of this software and associated documentation files (the "Software"), to deal
-	:: in the Software without restriction, including without limitation the rights
-	:: to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	:: copies of the Software, and to permit persons to whom the Software is
-	:: furnished to do so, subject to the following conditions:
+:: Permission is hereby granted, free of charge, to any person obtaining a copy
+:: of this software and associated documentation files (the "Software"), to deal
+:: in the Software without restriction, including without limitation the rights
+:: to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+:: copies of the Software, and to permit persons to whom the Software is
+:: furnished to do so, subject to the following conditions:
 
-	:: You must give appropriate credit to the "All The Mods Team" as original 
-	:: creators for any parts of this Software being used. A link back to original 
-	:: content is optional but would be greatly appreciated. 
+:: You must give appropriate credit to the "All The Mods Team" as original 
+:: creators for any parts of this Software being used. A link back to original 
+:: content is optional but would be greatly appreciated. 
 
-	:: It is forbidden to charge for access to the distribution of this Software or 
-	:: gain money through it. This includes any type of inline advertisement, such 
-	:: as url shorteners (adf.ly or otherwise) or ads. This also includes 
-	:: restricting any amount of access behind a paywall. Special permission is 
-	:: given to allow this Software to be bundled or distributed with projects on 
-	:: Curse.com, CurseForge.com or their related sub-domains and subsidiaries.
+:: It is forbidden to charge for access to the distribution of this Software or 
+:: gain money through it. This includes any type of inline advertisement, such 
+:: as url shorteners (adf.ly or otherwise) or ads. This also includes 
+:: restricting any amount of access behind a paywall. Special permission is 
+:: given to allow this Software to be bundled or distributed with projects on 
+:: Curse.com, CurseForge.com or their related sub-domains and subsidiaries.
 
-	:: Derivative works must be open source (have its source visible and allow for 
-	:: redistribution and modification).
+:: Derivative works must be open source (have its source visible and allow for 
+:: redistribution and modification).
 
-	:: The above copyright notice and conditions must be included in all copies or 
-	:: substantial portions of the Software, including derivative works and 
-	:: re-licensing thereof. 
-
+:: The above copyright notice and conditions must be included in all copies or 
+:: substantial portions of the Software, including derivative works and 
+:: re-licensing thereof. 
 ::================================================================================::
-::*** DISCLAIMERS ***::
 
-	:: "All The Mods Team" is not affiliated with "Mojang," "Oracle," 
-	:: "Curse," "Twitch," "Sponge," "Forge" or any other entity (or entity owning a 
-	:: referenced product) potentially mentioned in this document or relevant source 
-	:: code for this Software. The use of their names and/or trademarks is strictly 
-	:: circumstantial and assumed fair-use. All credit for their respective works, 
-	:: software, branding, copyrights and/or trademarks belongs entirely to them as 
-	:: original owners/licensers.
-
-	:: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	:: IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	:: FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	:: AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	:: LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	:: OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	:: SOFTWARE.
-
-:::: *** THIS FILE NOT INTENDED TO BE EDITED, USE "settings.cfg" INSTEAD ***
+:: IF THERE ARE ANY ISSUES
+:: Please make a report on the most recent Enigmatica version's github:
+:: https://github.com/NillerMedDild
+:: with the contents of [serverstart.log] and [installer.log]
+::
+:: Created by: AllTheMods
+:: Mascot: Ordinator
+:: Maintained by: NillerMedDild 
+::
+:: NO OFFICIAL AFFILIATION WITH MOJANG OR FORGE
+::
 
 Powershell.exe -ExecutionPolicy RemoteSigned -File %~dp0remove-client-mods.ps1
 
@@ -118,16 +98,6 @@ ECHO DEBUG: settings.cfg Found. Logging full contents below: 1>>  "%~dp0logs\ser
 >nul COPY "%~dp0logs\serverstart.log"+"%~dp0settings.cfg" "%~dp0logs\serverstart.log"
 ECHO. 1>>  "%~dp0logs\serverstart.log" 2>&1
 
->nul %MC_SYS32%\FIND.EXE /I "MAX_RAM=" "%~dp0settings.cfg" || (
-	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:MAX_RAM
-	GOTO ERROR
-	)
-
->nul %MC_SYS32%\FIND.EXE /I "JAVA_ARGS=" "%~dp0settings.cfg" || (
-	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:JAVA_ARGS
-	GOTO ERROR
-	)
-
 >nul %MC_SYS32%\FIND.EXE /I "CRASH_COUNT=" "%~dp0settings.cfg" || (
 	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:CRASH_COUNT
 	GOTO ERROR
@@ -143,16 +113,6 @@ ECHO. 1>>  "%~dp0logs\serverstart.log" 2>&1
 	GOTO ERROR
 	)
 
->nul %MC_SYS32%\FIND.EXE /I "IGNORE_OFFLINE=" "%~dp0settings.cfg" || (
-	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:IGNORE_OFFLINE
-	GOTO ERROR
-	)	
-
->nul %MC_SYS32%\FIND.EXE /I "IGNORE_JAVA_CHECK=" "%~dp0settings.cfg" || (
-	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:IGNORE_JAVA_CHECK
-	GOTO ERROR
-	)	
-
 >nul %MC_SYS32%\FIND.EXE /I "MCVER=" "%~dp0settings.cfg" || (
 	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:MCVER
 	GOTO ERROR
@@ -162,11 +122,6 @@ ECHO. 1>>  "%~dp0logs\serverstart.log" 2>&1
 	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:FORGEVER
 	GOTO ERROR
 	)	
-
->nul %MC_SYS32%\FIND.EXE /I "FORGEURL=" "%~dp0settings.cfg" || (
-	SET MC_SERVER_ERROR_REASON=Settings.cfg_Error:FORGEURL
-	GOTO ERROR
-	)		
 
 REM  LOAD Settings from config
 ECHO INFO: Loading variables from settings.cfg 1>>  "%~dp0logs\serverstart.log" 2>&1 
@@ -193,13 +148,8 @@ SET MC_SERVER_JVM_ARGS=-Xmx%MC_SERVER_MAX_RAM% -Xms%MC_SERVER_TMP_FLAG%%MC_SERVE
 SET MC_SERVER_MAX_CRASH=%CRASH_COUNT%
 SET MC_SERVER_CRASH_TIMER=%CRASH_TIMER%
 SET MC_SERVER_RUN_FROM_BAD_FOLDER=%RUN_FROM_BAD_FOLDER%
-SET MC_SERVER_IGNORE_OFFLINE=%IGNORE_OFFLINE%
-SET MC_SERVER_IGNORE_JAVA=%IGNORE_JAVA_CHECK%
 SET MC_SERVER_MCVER=%MCVER%
 SET MC_SERVER_FORGEVER=%FORGEVER%
-SET MC_SERVER_FORGEURL=%FORGEURL%
-SET MC_SERVER_SPONGE=%USE_SPONGE%
-SET MC_SERVER_HIGH_PRIORITY=%HIGH_CPU_PRIORITY%
 SET MC_SERVER_PACKNAME=%MODPACK_NAME%
 
 REM Cleanup imported vars after being remapped
@@ -209,12 +159,9 @@ SET JAVA_ARGS=
 SET CRASH_COUNT=
 SET CRASH_TIMER=
 SET RUN_FROM_BAD_FOLDER=
-SET IGNORE_OFFLINE=
 SET MCVER=
 SET FORGEVER=
 SET FORGEURL=
-SET USE_SPONGE=
-SET HIGH_CPU_PRIORITY=
 SET MODPACK_NAME=
 SET MC_SERVER_TMP_FLAG=
 
@@ -243,21 +190,15 @@ ECHO.
 ECHO DEBUG: Starting variable definitions: 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MAX_RAM=%MC_SERVER_MAX_RAM% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGE_JAR=%MC_SERVER_FORGE_JAR% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGE_BOOT=%MC_SERVER_SPONGE_BOOT% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_JVM_ARGS=%MC_SERVER_JVM_ARGS% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MAX_CRASH=%MC_SERVER_MAX_CRASH% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_CRASH_TIMER=%MC_SERVER_CRASH_TIMER% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_IGNORE_OFFLINE=%MC_SERVER_IGNORE_OFFLINE% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_RUN_FROM_BAD_FOLDER=%MC_SERVER_RUN_FROM_BAD_FOLDER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MCVER=%MC_SERVER_MCVER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGEVER=%MC_SERVER_FORGEVER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGESHORT=%MC_SERVER_FORGESHORT% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGEURL=%MC_SERVER_FORGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGE=%MC_SERVER_SPONGE% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_HIGH_PRIORITY=%MC_SERVER_HIGH_PRIORITY% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_PACKNAME=%MC_SERVER_PACKNAME% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGEURL=%MC_SERVER_SPONGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGEBOOTSTRAPURL=%MC_SERVER_SPONGEBOOTSTRAPURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_ERROR_REASON=%MC_SERVER_ERROR_REASON% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_TMP_FLAG=%MC_SERVER_TMP_FLAG% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_CRASH_COUNTER=%MC_SERVER_CRASH_COUNTER% 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -277,13 +218,6 @@ IF NOT EXIST "%~dp0*forge*%MC_SERVER_FORGEVER%*.jar" (
 	GOTO INSTALLSTART
 )
 
-REM Check if Minecraft JAR is already downloaded
-IF NOT EXIST "%~dp0*minecraft_server.%MC_SERVER_MCVER%.jar" (
-	ECHO Minecraft binary not found, re-installing Forge...
-	ECHO INFO: Minecraft binary not found, re-installing Forge...  1>>  "%~dp0logs\serverstart.log" 2>&1
-	GOTO INSTALLSTART
-)
-
 REM Check if Libraries are already downloaded
 IF NOT EXIST "%~dp0libraries" (
 	ECHO Libraries folder not found, re-installing Forge...
@@ -291,51 +225,8 @@ IF NOT EXIST "%~dp0libraries" (
 	GOTO INSTALLSTART
 )
 
-REM Sponge?
-IF %MC_SERVER_SPONGE% EQU 1 (
-	ECHO.
-	ECHO. **** WARNING ****
-	ECHO SPONGE has been enabled in settings.cfg
-	ECHO Using Sponge with this modpack is experimental and can cause unexpected problems
-	ECHO **** USE SPONGE AT YOUR OWN RISK ****
-	ECHO SPONGE has been enabled in settings.cfg -- this is experimental and can cause unexpected problems USE AT YOUR OWN RISK  1>>  "%~dp0logs\serverstart.log" 2>&1
-	ECHO.
-	REM create "/mods/" folder if it doesn't exist
-	IF NOT EXIST "%~dp0mods" (
-		ECHO Mods folder not found, creating it
-		ECHO INFO: Mods folder not found, creating it 1>>  "%~dp0logs\serverstart.log" 2>&1
-		MKDIR "%~dp0mods" 1>>  "%~dp0logs\serverstart.log" 2>&1
-	)
-	REM Check for spongeforge jar in /mods/
-	IF NOT EXIST "%~dp0mods/*spongeforge*%MC_SERVER_MCVER%*.jar" (
-		ECHO SpongeForge JAR for not found in "mods" folder...
-		ECHO INFO: SpongeForge JAR not found in "mods" folder  1>>  "%~dp0logs\serverstart.log" 2>&1
-		GOTO DOWNLOADSPONGE
-	)
-	REM Check for spongeforge bootstrapper
-	IF NOT EXIST "%~dp0*sponge*bootstrap*.jar" (
-		ECHO SpongeBootstrap loader not found...
-		ECHO INFO: SpongeForge Bootstrap loader not found 1>>  "%~dp0logs\serverstart.log" 2>&1
-		GOTO DOWNLOADSPONGE
-	)	
-)
-
 REM set absolute paths for binary JARs
-(FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*forge*%MC_SERVER_FORGEVER%*.jar^" /B /O:-D`) DO SET "MC_SERVER_FORGE_JAR=%%x" & GOTO CHECKFILES1) 1>> "%~dp0logs\serverstart.log" 2>&1
-
-:CHECKFILES1
-(FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*sponge*bootstrap*.jar^" /B /O:-D`) DO SET "MC_SERVER_SPONGE_BOOT=%%x" & GOTO CHECKFILES2) 1>> "%~dp0logs\serverstart.log" 2>&1
-
-:CHECKFILES2
-REM Delete duplicate binary JARs
-ECHO DEBUG: MC_SERVER_SPONGE_BOOT=%MC_SERVER_SPONGE_BOOT% 1>> "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_FORGE_JAR=%MC_SERVER_FORGE_JAR% 1>> "%~dp0logs\serverstart.log" 2>&1
-ATTRIB +R "%MC_SERVER_SPONGE_BOOT%"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No Sponge Jar present to read-only 1>> "%~dp0logs\serverstart.log" 2>&1
-ATTRIB +R "%MC_SERVER_FORGE_JAR%"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No Forge Jar present to read-only 1>> "%~dp0logs\serverstart.log" 2>&1
-DEL "%~dp0*forge*.jar" /A:-R  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No Sponge Jars present to delete 1>> "%~dp0logs\serverstart.log" 2>&1
-DEL "%~dp0*sponge*bootstrap*.jar" /A:-R  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No Forge Jars present to delete 1>> "%~dp0logs\serverstart.log" 2>&1
-ATTRIB -R "%MC_SERVER_SPONGE_BOOT%"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No Sponge Jar present to UN-read-only 1>> "%~dp0logs\serverstart.log" 2>&1
-ATTRIB -R "%MC_SERVER_FORGE_JAR%"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No Forge Jar present to UN-read-only 1>> "%~dp0logs\serverstart.log" 2>&1
+(FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*forge*%MC_SERVER_FORGEVER%*.jar^" /B /O:-D`) DO SET "MC_SERVER_FORGE_JAR=%%x") 1>> "%~dp0logs\serverstart.log" 2>&1
 
 :STARTSERVER
 CLS 
@@ -348,27 +239,12 @@ ECHO INFO: Starting Server... 1>>  "%~dp0logs\serverstart.log" 2>&1
 COLOR 07
 
 REM Batch will wait here indefinitely while MC server is running
-IF %MC_SERVER_SPONGE% EQU 1 (
-	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui ]
-	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui ] 1>> "%~dp0logs\serverstart.log" 2>&1
-	COLOR 
-	IF %MC_SERVER_HIGH_PRIORITY% EQU 1 (
-		START /B /I /WAIT /HIGH java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui
-	) ELSE (
-		java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_SPONGE_BOOT%" nogui
-	)
-) ELSE (
-	ECHO DEBUG: Disabling any spongeforge jar in \mods\ because USE_SPONGE is disabled in settings.cfg 1>> "%~dp0logs\serverstart.log" 2>&1
-	(FOR /f "tokens=* delims=*" %%x in ('dir "%~dp0mods\*spongeforge*.jar" /B /O:-D') DO MOVE /Y "%~dp0mods\%%x" "%%x.disabled") 1>> "%~dp0logs\serverstart.log" 2>&1
-	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui ]
-	ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui ] 1>> "%~dp0logs\serverstart.log" 2>&1
-	COLOR 
-	IF %MC_SERVER_HIGH_PRIORITY% EQU 1 (
-		START /B /I /WAIT /HIGH java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui
-	) ELSE (
-		java %MC_SERVER_JVM_ARGS% -jar "%~dp0%MC_SERVER_FORGE_JAR%" nogui
-	)
-)
+ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% @user_jvm_args.txt @libraries/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/win_args.txt nogui %* ]
+ECHO DEBUG: Attempting to execute [ java %MC_SERVER_JVM_ARGS% @user_jvm_args.txt @libraries/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/win_args.txt nogui %* ] 1>> "%~dp0logs\serverstart.log" 2>&1
+COLOR 
+
+REM This is what actually starts the server.
+java %MC_SERVER_JVM_ARGS% @user_jvm_args.txt @libraries/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/win_args.txt nogui %*
 
 REM If server is exited or crashes, restart...
 REM CLS
@@ -404,23 +280,6 @@ IF EXIST "%~dp0forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar" (
 	GOTO RUNINSTALLER
 )
 
-IF NOT %MC_SERVER_IGNORE_OFFLINE% EQU 0 (
-	ECHO Skipping forge server online check...
-	ECHO WARN: Skipping forge server online check... 1>>  "%~dp0logs\serverstart.log" 2>&1
-	GOTO FORGEFILEPREP
-)
-
-REM Ping minecraftforge before attempting download
-%MC_SYS32%\PING.EXE -n 2 -w 1000 minecraftforge.net | %MC_SYS32%\FIND.EXE "TTL="  1>> "%~dp0logs\serverstart.log" 2>&1
-IF %ERRORLEVEL% EQU 0 (
-	ECHO INFO: Ping of "minecraftforge.net" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
-) ELSE (
-	ECHO ERROR: Could not reach minecraftforge.net! Possible firewall or internet issue?
-	ECHO ERROR: Could not reach minecraftforge.net 1>>  "%~dp0logs\serverstart.log" 2>&1
-	SET MC_SERVER_ERROR_REASON=NoInternetConnectivityMinecraftForgeNet
-	GOTO ERROR
-)
-
 :FORGEFILEPREP
 DEL /F /Q "%~dp0*forge*.html"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No forge-index to delete 1>>  "%~dp0logs\serverstart.log" 2>&1
 DEL /F /Q "%~dp0*forge*"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No forge-universal to delete 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -432,16 +291,8 @@ ECHO.
 ECHO.
 ECHO Downloading FORGE (step 1 of 2). This can take several minutes, please be patient...
 
-REM Check if direct forge URL is specified in config
-IF NOT %MC_SERVER_FORGEURL%==DISABLE (
-	ECHO Attempting to download "%MC_SERVER_FORGEURL%... this can take a moment, please wait." 
-	GOTO DOWNLOADINSTALLER
-)
-
-IF %MC_SERVER_FORGEURL%==DISABLE (
-	SET MC_SERVER_FORGEURL="https://maven.minecraftforge.net/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar"
-	GOTO DOWNLOADINSTALLER
-)
+SET MC_SERVER_FORGEURL="https://maven.minecraftforge.net/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar"
+GOTO DOWNLOADINSTALLER
 
 SET MC_SERVER_TMP_FLAG=0
 
@@ -483,10 +334,7 @@ REM Create default server.properties and eula.txt files
 IF NOT EXIST "%~dp0server.properties" (
 	ECHO Could not find server.properties, creating initial copy... 1>>  "%~dp0logs\serverstart.log" 2>&1
 	ECHO INFO: server.properties not found... populating default 1>>  "%~dp0logs\serverstart.log" 2>&1
-	ECHO view-distance=8 >> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	ECHO allow-flight=true>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO level-type=terraforged>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO snooper-enabled=false>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	ECHO max-tick-time=300000>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	ECHO motd=%MC_SERVER_PACKNAME% >> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	)
@@ -639,7 +487,6 @@ IF %ERRORLEVEL% GEQ 2 (
 ECHO WARN: Server startup script is exiting. Dumping current vars: 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MAX_RAM=%MC_SERVER_MAX_RAM% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGE_JAR=%MC_SERVER_FORGE_JAR% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGE_BOOT=%MC_SERVER_SPONGE_BOOT% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_JVM_ARGS=%MC_SERVER_JVM_ARGS% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_MAX_CRASH=%MC_SERVER_MAX_CRASH% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_CRASH_TIMER=%MC_SERVER_CRASH_TIMER% 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -649,11 +496,7 @@ ECHO DEBUG: MC_SERVER_MCVER=%MC_SERVER_MCVER% 1>>  "%~dp0logs\serverstart.log" 2
 ECHO DEBUG: MC_SERVER_FORGEVER=%MC_SERVER_FORGEVER% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGESHORT=%MC_SERVER_FORGESHORT% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_FORGEURL=%MC_SERVER_FORGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_HIGH_PRIORITY=%MC_SERVER_HIGH_PRIORITY% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGE=%MC_SERVER_SPONGE% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_PACKNAME=%MC_SERVER_PACKNAME% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGEURL=%MC_SERVER_SPONGEURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: MC_SERVER_SPONGEBOOTSTRAPURL=%MC_SERVER_SPONGEBOOTSTRAPURL% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_ERROR_REASON=%MC_SERVER_ERROR_REASON% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_TMP_FLAG=%MC_SERVER_TMP_FLAG% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: MC_SERVER_CRASH_COUNTER=%MC_SERVER_CRASH_COUNTER% 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -661,30 +504,6 @@ ECHO DEBUG: MC_SERVER_CRASH_YYYYMMDD=%MC_SERVER_CRASH_YYYYMMDD% 1>>  "%~dp0logs\
 ECHO DEBUG: MC_SERVER_CRASH_HHMMSS=%MC_SERVER_CRASH_HHMMSS% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: Current directory file listing: 1>>  "%~dp0logs\serverstart.log" 2>&1
 DIR 1>>  "%~dp0logs\serverstart.log" 2>&1
-
-REM Clear variables -- probably not necessary since we SETLOCAL but doesn't hurt either
-SET MC_SERVER_MAX_RAM=
-SET MC_SERVER_FORGE_JAR=
-SET MC_SERVER_SPONGE_BOOT=
-SET MC_SERVER_JVM_ARGS=
-SET MC_SERVER_MAX_CRASH=
-SET MC_SERVER_CRASH_TIMER=
-SET MC_SERVER_IGNORE_OFFLINE=
-SET MC_SERVER_RUN_FROM_BAD_FOLDER=
-SET MC_SERVER_MCVER=
-SET MC_SERVER_FORGEVER=
-SET MC_SERVER_FORGESHORT=
-SET MC_SERVER_FORGEURL=
-SET MC_SERVER_SPONGE=
-SET MC_SERVER_HIGH_PRIORITY=
-SET MC_SERVER_PACKNAME=
-SET MC_SERVER_SPONGEURL=
-SET MC_SERVER_SPONGEBOOTSTRAPURL=
-SET MC_SERVER_ERROR_REASON=
-SET MC_SERVER_TMP_FLAG=
-SET MC_SERVER_CRASH_COUNTER=
-SET MC_SERVER_CRASH_YYYYMMDD=
-SET MC_SERVER_CRASH_HHMMSS=
 
 REM Reset bitsadmin in case things got hung or errored
 %MC_SYS32%\bitsadmin.exe /reset 1>>  "%~dp0logs\serverstart.log" 2>&1

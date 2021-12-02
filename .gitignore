@@ -176,3 +176,7 @@ config/cfm-client.toml
 config/entity_culling-client.toml
 config/terraforged/performance_internal.conf
 config/gravestone-client.toml
+config/cosmeticarmorreworked-client.toml
+config/configured-client.toml
+config/curios-client.toml
+config/forge-client.toml

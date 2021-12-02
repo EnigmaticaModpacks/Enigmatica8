@@ -1,0 +1,5 @@
+#The chance a non-boss vanilla entity drops a trophy when killed by a player
+#No trophies will drop from entities when this value is set to 0
+#Range: 0.0 ~ 1.0
+trophy_chance = 0.001
+

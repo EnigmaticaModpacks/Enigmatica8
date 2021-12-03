@@ -29,7 +29,7 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.1.0"
+$MODPACK_VERSION = "1.0.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
@@ -56,10 +56,10 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 # @(7722) - is Minecraft 1.15.2
 # @(8134) - is Minecraft 1.16.4
 # More can be found by running GetGameVersions
-$GAME_VERSIONS = @(8203)
+$GAME_VERSIONS = @(8830)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "alpha"
 
 #=====================================================================//
 #  DEPENDENCIES URL
@@ -140,7 +140,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"entity_culling-client.toml",
 	"gravestone-client.toml",
 	"cosmeticarmorreworked-client.toml",
-	"configured-client.toml"
+	"configured-client.toml",
+	"pipez-client.toml"
 )
 
 # Accepts directories

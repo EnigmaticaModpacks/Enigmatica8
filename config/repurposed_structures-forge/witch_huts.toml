@@ -1,0 +1,16 @@
+
+#
+# Average distance between spawn attempts for Repurposed Structures Witch Huts.
+# 1 for spawning in most chunks and 1001 for no spawn.
+[Wells]
+	#Range: 1 ~ 1001
+	witchHutsOakAverageChunkDistance = 48
+	#Range: 1 ~ 1001
+	witchHutsTaigaAverageChunkDistance = 48
+	#Range: 1 ~ 1001
+	witchHutsGiantTreeTaigaAverageChunkDistance = 48
+	#Range: 1 ~ 1001
+	witchHutsBirchAverageChunkDistance = 48
+	#Range: 1 ~ 1001
+	witchHutsDarkForestAverageChunkDistance = 48
+

@@ -1,0 +1,21 @@
+#
+# Average distance between spawn attempts for Jungle Fortresses.
+# 1 for spawning in most chunks and 1001 for no spawn.
+#Range: 1 ~ 1001
+jungleFortressAverageChunkDistance = 50
+#
+# Size of the fortress. This is how many pieces long a branch can be from the start piece.
+#Range: 1 ~ 30
+jungleFortressSize = 10
+#
+# Min Y height that the starting point can spawn at.
+jungleFortressMinHeight = 56
+#
+# Max Y height that the starting point can spawn at.
+#
+#If below min height, this will be read as min.
+jungleFortressMaxHeight = 65
+#
+# How far above or below the fortress's pieces can generate away from the center piece.
+jungleFortressVerticalRange = 33
+

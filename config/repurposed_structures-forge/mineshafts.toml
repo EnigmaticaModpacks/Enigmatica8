@@ -1,0 +1,113 @@
+
+#-----------------------------------------------------------------------------------------
+# Controls the probability of spawning a Repurposed Structures Mineshafts per chunk.
+# Will replace Vanilla Mineshafts with RS's themed Mineshafts if both would've been in same biome.
+# 0 is no Mineshafts while 1000 is max spawnrate.
+# Note: Vanilla Mineshafts will spawn again if a RS Mineshafts's entry is set to 0 for the biome.
+[Spawnrate]
+	#Range: 0.0 ~ 1000.0
+	birchMineshaftSpawnrate = 10.0
+	#Range: 0.0 ~ 1000.0
+	jungleMineshaftSpawnrate = 10.0
+	#Range: 0.0 ~ 1000.0
+	desertMineshaftSpawnrate = 10.0
+	#Range: 0.0 ~ 1000.0
+	stoneMineshaftSpawnrate = 20.0
+	#Range: 0.0 ~ 1000.0
+	savannaMineshaftSpawnrate = 20.0
+	#Range: 0.0 ~ 1000.0
+	icyMineshaftSpawnrate = 20.0
+	#Range: 0.0 ~ 1000.0
+	taigaMineshaftSpawnrate = 10.0
+	#Range: 0.0 ~ 1000.0
+	darkForestMineshaftSpawnrate = 10.0
+	#Range: 0.0 ~ 1000.0
+	swampMineshaftSpawnrate = 10.0
+	#Range: 0.0 ~ 1000.0
+	oceanMineshaftSpawnrate = 15.0
+	#Range: 0.0 ~ 1000.0
+	netherMineshaftSpawnrate = 40.0
+	#Range: 0.0 ~ 1000.0
+	crimsonMineshaftSpawnrate = 40.0
+	#Range: 0.0 ~ 1000.0
+	warpedMineshaftSpawnrate = 40.0
+	#Range: 0.0 ~ 1000.0
+	endMineshaftSpawnrate = 60.0
+
+#-----------------------------------------------------------------------------------------
+# Minimum Y height that this mineshaft can spawn at.
+# Note: The mineshaft will spawn between min and max y height set in config.
+["Min height"]
+	birchMineshaftMinHeight = 40
+	jungleMineshaftMinHeight = 40
+	desertMineshaftMinHeight = 40
+	stoneMineshaftMinHeight = 40
+	savannaMineshaftMinHeight = 40
+	icyMineshaftMinHeight = 40
+	taigaMineshaftMinHeight = 40
+	darkForestMineshaftMinHeight = 40
+	swampMineshaftMinHeight = 40
+	oceanMineshaftMinHeight = 15
+	netherMineshaftMinHeight = 6
+	crimsonMineshaftMinHeight = 6
+	warpedMineshaftMinHeight = 6
+
+#-----------------------------------------------------------------------------------------
+# Maximum Y height that this mineshaft can spawn at.
+# Note: The mineshaft will spawn between min and max y height set in config.
+# Setting this to below min height config will make mineshaft spawn only at min height.
+["Max height"]
+	birchMineshaftMaxHeight = 55
+	jungleMineshaftMaxHeight = 55
+	desertMineshaftMaxHeight = 55
+	stoneMineshaftMaxHeight = 150
+	savannaMineshaftMaxHeight = 120
+	icyMineshaftMaxHeight = 150
+	taigaMineshaftMaxHeight = 55
+	darkForestMineshaftMaxHeight = 55
+	swampMineshaftMaxHeight = 55
+	oceanMineshaftMaxHeight = 30
+	netherMineshaftMaxHeight = 17
+	crimsonMineshaftMaxHeight = 14
+	warpedMineshaftMaxHeight = 14
+
+#-----------------------------------------------------------------------------------------
+# Size of the mineshaft. This is how many pieces long a branch can be from the start piece.
+[Size]
+	#Range: 1 ~ 30
+	birchMineshaftSize = 9
+	#Range: 1 ~ 30
+	jungleMineshaftSize = 9
+	#Range: 1 ~ 30
+	desertMineshaftSize = 9
+	#Range: 1 ~ 30
+	stoneMineshaftSize = 9
+	#Range: 1 ~ 30
+	savannaMineshaftSize = 9
+	#Range: 1 ~ 30
+	icyMineshaftSize = 9
+	#Range: 1 ~ 30
+	oceanMineshaftSize = 9
+	#Range: 1 ~ 30
+	taigaMineshaftSize = 9
+	#Range: 1 ~ 30
+	darkForestMineshaftSize = 9
+	#Range: 1 ~ 30
+	swampMineshaftSize = 9
+	#Range: 1 ~ 30
+	endMineshaftSize = 11
+	#Range: 1 ~ 30
+	netherMineshaftSize = 10
+	#Range: 1 ~ 30
+	crimsonMineshaftSize = 10
+	#Range: 1 ~ 30
+	warpedMineshaftSize = 10
+
+[Misc]
+	#
+	# The minimum thickness of End islands that the End Mineshaft can spawn in.
+	#So 30 means the End Mineshaft will spawn in land that is at least 30 blocks vertically in the area.
+	#Do 0 to turn off this check and allow the End Mineshaft to spawn anywhere including floating in midair.
+	#Range: 0 ~ 256
+	endMineshaftMinIslandThickness = 30
+

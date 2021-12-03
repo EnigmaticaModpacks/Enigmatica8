@@ -1,0 +1,26 @@
+
+#
+# Average distance between spawn attempts for Repurposed Structures Pyramids.
+# 1 for spawning in most chunks and 1001 for none.
+[Pyramids]
+	#Range: 1 ~ 1001
+	badlandsPyramidAverageChunkDistance = 40
+	#Range: 1 ~ 1001
+	pyramidSnowyAverageChunkDistance = 40
+	#Range: 1 ~ 1001
+	pyramidIcyAverageChunkDistance = 34
+	#Range: 1 ~ 1001
+	pyramidJungleAverageChunkDistance = 44
+	#Range: 1 ~ 1001
+	pyramidMushroomAverageChunkDistance = 24
+	#Range: 1 ~ 1001
+	pyramidOceanAverageChunkDistance = 40
+	#Range: 1 ~ 1001
+	pyramidGiantTreeTaigaAverageChunkDistance = 40
+	#Range: 1 ~ 1001
+	pyramidFlowerForestAverageChunkDistance = 34
+	#Range: 1 ~ 1001
+	netherPyramidAverageChunkDistance = 37
+	#Range: 1 ~ 1001
+	pyramidEndAverageChunkDistance = 68
+

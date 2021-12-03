@@ -46,7 +46,7 @@ install:
 
     # Link to where the file where the modpack can be distributed
     # This supports loading from local files as well for most pack types if there is file://{PathToFile} in the beginning
-    modpackUrl: https://media.forgecdn.net/files/3539/71/Enigmatica6-0.5.21.zip
+    modpackUrl: https://media.forgecdn.net/files/3546/858/Enigmatica8-1.0.0.zip
 
     # This is used to specify in which format the modpack is distributed, the server launcher has to handle each individually if their format differs
     # current supported formats:
@@ -171,8 +171,7 @@ launch:
     # - "@libraries/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/{{@os@}}_args.txt"
     # - "nogui"
     startCommand:
-        - '-jar'
-        - '{{@startFile@}}'
+        - '@libraries/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/{{@os@}}_args.txt'
         - 'nogui'
 
     # In case you have multiple javas installed you can add a absolute path to it here

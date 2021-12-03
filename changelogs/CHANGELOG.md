@@ -2,6 +2,12 @@
 
 _Using Forge-1.18.0-38.0.12_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.0.md)_
 
+
+
+**Note for servers:** Java 17 is required to run Minecraft 1.18 servers.
+
+
+
 **New Mods**
 
 - [AI-Improvements-1.18-0.4.0.jar](https://www.curseforge.com/minecraft/mc-mods/ai-improvements/files/3543562) (by [QueenOfMissiles](https://www.curseforge.com/members/queenofmissiles/projects))

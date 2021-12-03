@@ -141,7 +141,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"gravestone-client.toml",
 	"cosmeticarmorreworked-client.toml",
 	"configured-client.toml",
-	"pipez-client.toml"
+	"pipez-client.toml",
+	"dummmmmmy-client.toml"
 )
 
 # Accepts directories

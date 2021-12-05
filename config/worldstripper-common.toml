@@ -16,6 +16,12 @@
 		strip_bedrock = false
 		#Replaces every block touched by the stripper with this block
 		replacement_block = "minecraft:air"
+		#World Y-Level to start stripping from
+		#Range: -1073741823 ~ 1073741823
+		strip_start_y = 255
+		#World Y-Level to stop stripping at
+		#Range: -1073741823 ~ 1073741823
+		strip_stop_y = -64
 
 	#Stripper Profile Settings
 	[WorldStripper.Profiles]

@@ -2,6 +2,6 @@
     "packAuthor": "NillerMedDild",
     "minecraftVersion": "1.18",
     "modLoader": "forge",
-    "modLoaderVersion": "38.0.12",
+    "modLoaderVersion": "38.0.14",
     "includes": ["config", "defaultconfigs", "kubejs", "packmenu"]
 }

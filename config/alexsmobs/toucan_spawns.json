@@ -1,0 +1,21 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "overworld"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "jungle"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "minecraft:bamboo_jungle"
+      }
+    ]
+  ]
+}

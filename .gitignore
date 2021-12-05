@@ -30,7 +30,7 @@ screenshots/
 !InstanceSync*.jar
 **/*.jar.disabled
 **/*.jar.meta
-config/jei/world/local/**
+config/jei/world/**
 
 # Utilities
 .ReAuth.cfg

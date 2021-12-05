@@ -2,7 +2,11 @@
 
 _Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.1.md)_
 
+
+
 **Note for servers:** Java 17 is required to run Minecraft 1.18 servers.
+
+
 
 **New Mods**
 
@@ -37,7 +41,11 @@ _Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   [The One Probe](https://www.curseforge.com/minecraft/mc-mods/the-one-probe)
 -   [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
 
+
+
 ---
+
+
 
 ### Enigmatica 8 v1.0.0
 

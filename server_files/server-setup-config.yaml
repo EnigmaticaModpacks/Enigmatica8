@@ -67,6 +67,7 @@ install:
             - 513857 # OAuth
             - 521714 # PonderJS
             - 360673 # Custom Window Title
+            - 401648 # BetterF3
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~

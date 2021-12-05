@@ -6,6 +6,37 @@ _Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **New Mods**
 
+-   ['Dustrial Decor](https://www.curseforge.com/minecraft/mc-mods/dustrial-decor)
+-   [Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs)
+-   [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)
+-   [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)
+-   [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
+-   [Citadel](https://www.curseforge.com/minecraft/mc-mods/citadel)
+-   [Clickable advancements](https://www.curseforge.com/minecraft/mc-mods/clickable-advancements)
+-   [Client Tweaks](https://www.curseforge.com/minecraft/mc-mods/client-tweaks)
+-   [Cloth Config API (Forge)](https://www.curseforge.com/minecraft/mc-mods/cloth-config-forge)
+-   [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
+-   [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)
+-   [Ding](https://www.curseforge.com/minecraft/mc-mods/ding)
+-   [Dynamic View](https://www.curseforge.com/minecraft/mc-mods/dynamic-view)
+-   [FPS Reducer](https://www.curseforge.com/minecraft/mc-mods/fps-reducer)
+-   [FramedBlocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks)
+-   [Glassential](https://www.curseforge.com/minecraft/mc-mods/glassential)
+-   [Guns Without Roses](https://www.curseforge.com/minecraft/mc-mods/guns-without-roses)
+-   [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)
+-   [Just Enough Items (JEI)](https://www.curseforge.com/minecraft/mc-mods/jei)
+-   [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep)
+-   [KleeSlabs](https://www.curseforge.com/minecraft/mc-mods/kleeslabs)
+-   [Lava Clear View (Forge)](https://www.curseforge.com/minecraft/mc-mods/lava-clear-view)
+-   [Login Protection](https://www.curseforge.com/minecraft/mc-mods/login-protection)
+-   [Meet Your Fight](https://www.curseforge.com/minecraft/mc-mods/meet-your-fight)
+-   [NetherPortalFix](https://www.curseforge.com/minecraft/mc-mods/netherportalfix)
+-   [OpenBlocks Elevator](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator)
+-   [Pretty Pipes](https://www.curseforge.com/minecraft/mc-mods/pretty-pipes)
+-   [Rapid Leaf Decay](https://www.curseforge.com/minecraft/mc-mods/rapid-leaf-decay)
+-   [The One Probe](https://www.curseforge.com/minecraft/mc-mods/the-one-probe)
+-   [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
+
 ---
 
 ### Enigmatica 8 v1.0.0

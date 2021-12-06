@@ -1,0 +1,5 @@
+#Draw a black box behind effect icons
+effect_box = true
+#A list of effects that should not be registered nor shown on JEI
+hidden_effects = [""]
+

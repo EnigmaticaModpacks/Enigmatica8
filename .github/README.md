@@ -19,7 +19,7 @@ This is the official repository and issue-tracker for the modpack Enigmatica 8, 
 
 Follow these steps to setup your workspace:
 
-## [Not Yet Implemented in MultiMC] MultiMC (Linux / Windows / Mac)
+## MultiMC (Linux / Windows / Mac)
 
 #### Setup MultiMC Instance
 

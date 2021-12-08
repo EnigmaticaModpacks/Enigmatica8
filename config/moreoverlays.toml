@@ -20,6 +20,8 @@
 	#Minimum save light level where no mobs can spawn
 	#Range: > 0
 	saveLevel = 1
+	#Finished 1.18 migration (don't change)
+	finishedMigration = true
 
 #Settings for the chunk bounds overlay
 [chunkbounds]

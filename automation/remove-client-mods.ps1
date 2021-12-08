@@ -7,7 +7,8 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"Neat", 
 	"Toast-Control", 
 	"PackMenu",
-	"CustomWindowTitle"
+	"CustomWindowTitle",
+	"BetterF3"
 )
 
 $InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)

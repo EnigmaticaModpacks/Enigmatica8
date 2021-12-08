@@ -55,11 +55,7 @@ install_server(){
 			echo "Skipping download. Using existing installer.jar"
 		fi
 	else
-		if [ "${FORGEURL}" = "DISABLE" ]; then
-			export URL="https://maven.minecraftforge.net/net/minecraftforge/forge/${MCVER}-${FORGEVER}/forge-${MCVER}-${FORGEVER}-installer.jar"
-		else
-			export URL="${FORGEURL}"
-		fi
+		export URL="https://maven.minecraftforge.net/net/minecraftforge/forge/${MCVER}-${FORGEVER}/forge-${MCVER}-${FORGEVER}-installer.jar"
 		echo $URL
 		which wget >> /dev/null
 		if [ $? -eq 0 ]; then
@@ -199,7 +195,6 @@ echo "DEBUG: RUN_FROM_BAD_FOLDER=$RUN_FROM_BAD_FOLDER" >>serverstart.log 2>&1
 echo "DEBUG: IGNORE_OFFLINE=$IGNORE_OFFLINE" >>serverstart.log 2>&1
 echo "DEBUG: MCVER=$MCVER" >>serverstart.log 2>&1
 echo "DEBUG: FORGEVER=$FORGEVER" >>serverstart.log 2>&1
-echo "DEBUG: FORGEURL=$FORGEURL" >>serverstart.log 2>&1
 echo "DEBUG: Basic System Info: " $(uname -a) >>serverstart.log 2>&1
 if [ "$machine" = "Mac" ] 
 then

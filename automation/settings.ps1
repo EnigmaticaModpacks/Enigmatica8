@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.0.1"
+$MODPACK_VERSION = "1.0.2"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.0.0"
+$LAST_MODPACK_VERSION = "1.0.1"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -142,7 +142,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"cosmeticarmorreworked-client.toml",
 	"configured-client.toml",
 	"pipez-client.toml",
-	"dummmmmmy-client.toml"
+	"dummmmmmy-client.toml",
+	"ae2-client.toml"
 )
 
 # Accepts directories

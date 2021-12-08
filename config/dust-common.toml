@@ -1,0 +1,37 @@
+
+#Dust World Generation Settings
+[Generation]
+	#Generate Geode (White) [Default: true]
+	generate333 = true
+	#Generate Geode (Black) [Default: true]
+	generate000 = true
+	#Generate Geode (Red) [Default: true]
+	generate300 = true
+	#Generate Geode (Green) [Default: true]
+	generate030 = true
+	#Generate Geode (Blue) [Default: true]
+	generate003 = true
+	#Generate Geode (Random Color) [Default: true]
+	generateGeodeRandom = true
+
+#Rarity settings
+[Rarity]
+	#Geode (White) Rarity [Default: 300] (The higher the value the rarer)
+	#Range: > 0
+	geodeRarity333 = 300
+	#Geode (Black) Rarity [Default: 300] (The higher the value the rarer)
+	#Range: > 0
+	geodeRarity000 = 300
+	#Geode (Red) Rarity [Default: 180] (The higher the value the rarer)
+	#Range: > 0
+	geodeRarity300 = 180
+	#Geode (Green) Rarity [Default: 180] (The higher the value the rarer)
+	#Range: > 0
+	geodeRarity030 = 180
+	#Geode (Blue) Rarity [Default: 180] (The higher the value the rarer)
+	#Range: > 0
+	geodeRarity003 = 180
+	#Geode (Random Color) Rarity [Default: 600] (The higher the value the rarer)
+	#Range: > 0
+	geodeRarityGeodeRandom = 600
+

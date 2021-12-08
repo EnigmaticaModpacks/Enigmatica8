@@ -19,8 +19,7 @@ const tagIsEmpty = (tag) => {
 
 const getPreferredItemInTag = (tag) => {
     let pref =
-        utils
-            .listOf(tag.stacks)
+        Utils.listOf(tag.stacks)
             .toArray()
             .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
     return pref;

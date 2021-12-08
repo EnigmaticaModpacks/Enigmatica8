@@ -1,0 +1,26 @@
+
+[client]
+	#TODO
+	disableColoredCableRecipesInJEI = true
+	showFacadesInJEI = true
+	#TODO
+	enableEffects = true
+	#TODO
+	useTerminalUseLargeFont = false
+	#TODO
+	useColoredCraftingStatus = true
+	#Power unit shown in AE UIs
+	#Allowed Values: AE, RF
+	PowerUnit = "AE"
+	#Show debugging GUI overlays
+	showDebugGuiOverlays = false
+
+	[client.terminals]
+		#Should tooltips be searched. Performance impact
+		#Allowed Values: YES, NO, UNDECIDED
+		searchTooltips = "YES"
+		#Allowed Values: TALL, FULL, SMALL
+		terminalStyle = "TALL"
+		#Allowed Values: AUTOSEARCH, AUTOSEARCH_KEEP, MANUAL_SEARCH, MANUAL_SEARCH_KEEP, JEI_AUTOSEARCH, JEI_AUTOSEARCH_KEEP, JEI_MANUAL_SEARCH, JEI_MANUAL_SEARCH_KEEP
+		terminalSearchMode = "AUTOSEARCH"
+

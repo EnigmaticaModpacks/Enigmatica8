@@ -1,3 +1,46 @@
+### Enigmatica 8 v1.0.2
+
+_Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.2.md)_
+
+
+
+**Note for servers:** Java 17 is required to run Minecraft 1.18 servers.
+
+
+
+**New Mods**
+
+* [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)
+* [Building Gadgets](https://www.curseforge.com/minecraft/mc-mods/building-gadgets)
+* [Comforts (Forge)](https://www.curseforge.com/minecraft/mc-mods/comforts)
+* [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful)
+* [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed)
+* [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer)
+* [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
+* [Puzzles Lib [Forge]](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)
+* [Salem](https://www.curseforge.com/minecraft/mc-mods/salem)
+* [Scannable](https://www.curseforge.com/minecraft/mc-mods/scannable)
+* [Selene Lib](https://www.curseforge.com/minecraft/mc-mods/selene)
+* [Simple Discord Rich Presence](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence)
+* [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
+* [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
+* [Trading Post [Forge]](https://www.curseforge.com/minecraft/mc-mods/trading-post)
+
+**Implemented enhancements:**
+
+- New Crowdin updates [\#7](https://github.com/NillerMedDild/Enigmatica8/pull/7) ([NillerMedDild](https://github.com/NillerMedDild))
+- New Crowdin updates [\#6](https://github.com/NillerMedDild/Enigmatica8/pull/6) ([NillerMedDild](https://github.com/NillerMedDild))
+
+**Fixed bugs:**
+
+- Server doesn't start due to betterf3 accessing client side classes [\#8](https://github.com/NillerMedDild/Enigmatica8/issues/8)
+
+
+
+---
+
+
+
 ### Enigmatica 8 v1.0.1
 
 _Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.1.md)_

@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-12-08T19:04:23.8504205Z",
-  "playedCount": 25,
+  "lastPlayed": "2021-12-08T19:49:05.9779602Z",
+  "playedCount": 28,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -3928,41 +3928,41 @@
       "addonID": 238086,
       "gameInstanceID": "3aea91db-1156-4ff8-901e-593d36057cbd",
       "installedFile": {
-        "id": 3553838,
-        "displayName": "kubejs-forge-1800.4.0-build.235.jar",
-        "fileName": "kubejs-forge-1800.4.0-build.235.jar",
-        "fileDate": "2021-12-07T15:28:58.107Z",
-        "fileLength": 909328,
+        "id": 3552915,
+        "displayName": "kubejs-forge-1800.4.0-build.230.jar",
+        "fileName": "kubejs-forge-1800.4.0-build.230.jar",
+        "fileDate": "2021-12-06T20:01:20.87Z",
+        "fileLength": 907792,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3553/838/kubejs-forge-1800.4.0-build.235.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3552/915/kubejs-forge-1800.4.0-build.230.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 80267368,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 3553838
-          },
-          {
-            "id": 80267367,
-            "addonId": 419699,
-            "type": 3,
-            "fileId": 3553838
-          },
-          {
-            "id": 80267366,
+            "id": 80207267,
             "addonId": 416294,
             "type": 3,
-            "fileId": 3553838
+            "fileId": 3552915
+          },
+          {
+            "id": 80207269,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 3552915
+          },
+          {
+            "id": 80207268,
+            "addonId": 419699,
+            "type": 3,
+            "fileId": 3552915
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1095301894,
+            "fingerprint": 2315077677,
             "type": 3,
             "invalidFingerprint": false
           },
@@ -4022,18 +4022,18 @@
           },
           {
             "foldername": "dev",
-            "fingerprint": 974779530,
+            "fingerprint": 1966233238,
             "type": 3,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_KubeJS118_common_f51212aec22346bebfb2f799abce2e7b_10777a94c2a49167454ab8fd213b9e3c91a498f07f21cc584070ce2a935c8737kubejs180040build235devjar",
-            "fingerprint": 3233680367,
+            "foldername": "architectury_inject_KubeJS118_common_298834ae1d4a4bfca513d8417a11ba25_3911964adb2df1fa89bc83130f1ccdca342399d08959c8dd9388706383ba82b2kubejs180040build230devjar",
+            "fingerprint": 560391057,
             "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1000044565,
+        "packageFingerprint": 11767185,
         "gameVersion": [
           "Forge",
           "1.18"
@@ -4059,20 +4059,20 @@
         "categorySectionPackageType": 6,
         "restrictProjectFileAccess": 1,
         "projectStatus": 4,
-        "renderCacheId": 2618307,
+        "renderCacheId": 2617187,
         "projectId": 238086,
-        "packageFingerprintId": 802027587,
+        "packageFingerprintId": 801484771,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 3537909,
+        "gameVersionMappingId": 3535659,
         "gameVersionId": 7498,
         "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "kubejs-forge-1800.4.0-build.235.jar"
+        "FileNameOnDisk": "kubejs-forge-1800.4.0-build.230.jar"
       },
-      "dateInstalled": "2021-12-02T21:41:42.8591157Z",
-      "dateUpdated": "2021-12-08T18:57:38.7650519Z",
-      "dateLastUpdateAttempted": "2021-12-08T18:57:38.7650519Z",
-      "status": 4,
+      "dateInstalled": "2021-12-08T19:35:07.362441Z",
+      "dateUpdated": "2021-12-08T19:35:07.3744058Z",
+      "dateLastUpdateAttempted": "2021-12-08T19:35:07.3744058Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4081,7 +4081,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 358304,

@@ -143,7 +143,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"configured-client.toml",
 	"pipez-client.toml",
 	"dummmmmmy-client.toml",
-	"ae2-client.toml"
+	"ae2-client.toml",
+	"modularrouters-client.toml",
+	"constructionwand-client.toml"
 )
 
 # Accepts directories

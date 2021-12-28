@@ -56,7 +56,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 # @(7722) - is Minecraft 1.15.2
 # @(8134) - is Minecraft 1.16.4
 # More can be found by running GetGameVersions
-$GAME_VERSIONS = @(8830)
+$GAME_VERSIONS = @(8857)
 
 # Can be "alpha", "beta" or "release"
 $CLIENT_RELEASE_TYPE = "beta"
@@ -145,7 +145,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"dummmmmmy-client.toml",
 	"ae2-client.toml",
 	"modularrouters-client.toml",
-	"constructionwand-client.toml"
+	"constructionwand-client.toml",
+	"valhelsia_core-client.toml"
 )
 
 # Accepts directories

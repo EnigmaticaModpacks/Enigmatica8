@@ -5,6 +5,8 @@
 	[blocks.rope]
 		#Allows ropes to be supported & attached to solid block sides
 		block_side_attachment = false
+		#Makes sliding down ropes as fast as free falling, still negating fall damage
+		slide_on_fall = true
 
 	[blocks.pedestal]
 		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
@@ -163,6 +165,19 @@
 		#Range: 0 ~ 256
 		pole_length = 16
 
+	[blocks.bubble_block]
+		#Max lifetime of bubble blocks. Set to 10000 to have it infinite
+		#Range: 1 ~ 10000
+		lifetime = 1200
+		#Can bubble break when stepped on?
+		break_when_touched = true
+
+	[blocks.ash]
+		#Burnable blocks will have a chance to create ash layers when burned
+		ash_from_fire = true
+		#Allows rain to wash away ash layers overtime
+		rain_wash_ash = true
+
 #Configure spawning conditions
 [spawns]
 
@@ -200,9 +215,21 @@
 
 		[spawns.structures.wild_flax]
 			enabled = true
+			#Spawn wild flax on average every 'x' chunks. Increases spawn frequency
+			#Range: 1 ~ 100
+			rarity = 6
+			#Attempts at every patch to spawn 1 block. Increases average patch size
+			#Range: 1 ~ 100
+			attempts_per_patch = 35
 
 		[spawns.structures.cave_urns]
 			enabled = true
+			#Attempts at every patch to spawn 1 block. Increases average patch size
+			#Range: 1 ~ 100
+			attempts_per_patch = 5
+			#Spawn attempts per chunk. Increases spawn frequency
+			#Range: 0 ~ 100
+			spawn_attempts = 9
 
 #entities parameters
 [entities]
@@ -390,6 +417,11 @@
 		stasis_deceleration = 0.9625
 		#Allow enderman to intercept any slingshot projectile
 		unrestricted_enderman_intercept = true
+
+	[items.bubble_blower]
+		#Amount of soap consumed per bubble block placed
+		#Range: 1 ~ 25
+		stasis_cost = 5
 
 #General settings
 [general]

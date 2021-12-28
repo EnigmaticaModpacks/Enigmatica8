@@ -5,6 +5,8 @@
 	enabledItems = ["void_upgrade:true", "advanced_pump_upgrade:true", "upgrade_base:true", "magnet_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "compacting_upgrade:true", "advanced_magnet_upgrade:true", "refill_upgrade:true", "advanced_tool_swapper_upgrade:true", "advanced_filter_upgrade:true", "advanced_feeding_upgrade:true", "diamond_backpack:true", "gold_backpack:true", "inception_upgrade:true", "crafting_upgrade:true", "xp_pump_upgrade:true", "tank_upgrade:true", "advanced_void_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "restock_upgrade:true", "stonecutter_upgrade:true", "advanced_compacting_upgrade:true", "backpack:true", "pump_upgrade:true", "tool_swapper_upgrade:true", "feeding_upgrade:true", "filter_upgrade:true", "advanced_restock_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "advanced_deposit_upgrade:true", "auto_smelting_upgrade:true", "stack_upgrade_tier_2:true", "smelting_upgrade:true", "battery_upgrade:true", "netherite_backpack:true"]
 	#Turns on/off loot added to various vanilla chest loot tables
 	chestLootEnabled = true
+	#List of items that are not allowed to be put in backpacks - e.g. "minecraft:shulker_box"
+	disallowedItems = []
 
 	#Leather Backpack Settings
 	[common.leatherBackpack]
@@ -310,4 +312,12 @@
 		discBlockList = ["botania:record_gaia_1", "botania:record_gaia_2"]
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
 		playJukebox = true
+
+	#Xp Pump Upgrade Settings
+	[common.xpPumpUpgrade]
+		#Whether xp pump can mend items with mending. Set false here to turn off the feature altogether.
+		mendingOn = true
+		#How many experience points at a maximum would be used to mend an item per operation (every 5 ticks and 1 xp point usually translates to 2 damage repaired).
+		#Range: 1 ~ 20
+		maxXpPointsPerMending = 5
 

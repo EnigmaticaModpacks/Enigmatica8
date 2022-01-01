@@ -1,0 +1,14 @@
+
+[help]
+	#Should the help information be visible in tooltips?
+	enabled-in-tooltips = true
+
+[performance]
+
+	[performance.caches]
+
+		[performance.caches.sizes]
+			#performance.caches.sizes.collision-boxes.comment
+			#Range: 0 ~ 9223372036854775807
+			collision-boxes = 10000
+

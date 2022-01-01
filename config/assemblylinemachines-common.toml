@@ -183,4 +183,10 @@
 	coolDudeMode = false
 	#If JEI is installed, should support be enabled?
 	jeiSupport = true
+	#Do you want to render custom tooltip frame colors for some specific items?
+	#If false, the tooltip will be standard.
+	customTooltipColors = true
+	#Do you want to render custom tooltip frame textures for some specific items?
+	#If false, the tooltip will be standard. This has no effect if customTooltipColors is false.
+	customTooltipFrames = true
 

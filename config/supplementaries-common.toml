@@ -178,6 +178,10 @@
 		#Allows rain to wash away ash layers overtime
 		rain_wash_ash = true
 
+	[blocks.bamboo_spikes]
+		#Alternative mode for bamboo spikes. Allows only harmful effects to be applied on them and they obtain infinite durability
+		alternative_mode = true
+
 #Configure spawning conditions
 [spawns]
 
@@ -230,6 +234,8 @@
 			#Spawn attempts per chunk. Increases spawn frequency
 			#Range: 0 ~ 100
 			spawn_attempts = 9
+			#Biomes in which urns won't spawn
+			biome_blacklist = ["minecraft:lush_caves", "minecraft:dripstone_caves"]
 
 #entities parameters
 [entities]

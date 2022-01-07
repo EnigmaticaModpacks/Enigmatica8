@@ -1,0 +1,23 @@
+
+#General settings
+[general]
+	#Whether to replace the default Nether with our own.
+	replace_default_nether = true
+	#Whether to replace the default built-in world types with our own.
+	replace_default_worldtypes = true
+
+#Generation settings
+[generation_settings]
+	#The weighting of data pack biome regions.
+	#Range: 0-2147483647
+	datapack_region_weight = 15
+	#The size of regions of biomes from each mod that uses TerraBlender when using the large biomes world type.
+	#Range: 2-6
+	large_biomes_region_size = 5
+	#The size of regions of biomes from each mod that uses TerraBlender.
+	#Range: 2-6
+	region_size = 3
+	#The weighting of vanilla biome regions.
+	#Range: 0-2147483647
+	vanilla_region_weight = 10
+

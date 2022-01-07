@@ -1,0 +1,10 @@
+
+#World generation related options.
+[overworld]
+	#The weighting of bop biome regions.
+	#Range: > 0
+	bop_region_weight = 13
+	#The weighting of rare bop biome regions.
+	#Range: > 0
+	bop_rare_region_weight = 2
+

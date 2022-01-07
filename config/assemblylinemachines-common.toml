@@ -134,7 +134,7 @@
 	#Should Gasoline and Diesel explode when placed next to a flammable block?
 	gasolineExplosions = true
 	#When Patchouli is installed, should players be automatically given the Guidebook when they first connect?
-	guideBook = true
+	guideBook = false
 
 	[World."Titanium Generation"]
 		#What should the maximum size per vein of Titanium Ore be?

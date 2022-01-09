@@ -1,3 +1,30 @@
+### Enigmatica 8 v1.0.4
+
+_Using Forge-1.18.0-39.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.4.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.4.md)_
+
+Re-added a bunch of mods that were unintionally not included in the 1.18 -> 1.18.1 update between E8 1.0.3 and 1.0.4.
+
+**Re-added mods:**
+
+- [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful)
+- [FlickerFix](https://www.curseforge.com/minecraft/mc-mods/flickerfix)
+- [Guns Without Roses](https://www.curseforge.com/minecraft/mc-mods/guns-without-roses)
+- [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests) 
+- [Lava Clear View (Forge)](https://www.curseforge.com/minecraft/mc-mods/lava-clear-view)
+- [Meet Your Fight](https://www.curseforge.com/minecraft/mc-mods/meet-your-fight)
+- [More Dragon Eggs](https://www.curseforge.com/minecraft/mc-mods/more-dragon-eggs)
+- [Passthrough Signs](https://www.curseforge.com/minecraft/mc-mods/passthrough-signs)
+- [Salem](https://www.curseforge.com/minecraft/mc-mods/salem)
+- [Save Your Pets](https://www.curseforge.com/minecraft/mc-mods/save-your-pets)
+- [The One Probe](https://www.curseforge.com/minecraft/mc-mods/the-one-probe)
+- [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers)
+
+**Bug Fixes**
+
+- Temporarily removed FindMe because of a bug
+
+---
+
 ### Enigmatica 8 v1.0.3
 
 _Using Forge-1.18.0-39.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.3.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.3.md)_

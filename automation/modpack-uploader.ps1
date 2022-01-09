@@ -144,7 +144,7 @@ function New-ManifestJson {
     $jsonString = $jsonOutput | ConvertTo-Json -Depth 3
     pause 
     $manifest
-    $outfile = "$InstanceRoot/$manifest"
+    $outfile = "$INSTANCE_ROOT/$manifest"
     pause
     [System.IO.File]::WriteAllLines($outfile, $jsonString)
     Write-Host "$manifest created!" -ForegroundColor Green
@@ -174,12 +174,12 @@ function New-Changelog {
     if ($ENABLE_CHANGELOG_GENERATOR_MODULE `
             -and $null -ne $MODPACK_VERSION `
             -and $null -ne $LAST_MODPACK_VERSION `
-            -and (Test-Path "$InstanceRoot/$LAST_MODPACK_ZIP_NAME.zip") `
-            -and (Test-Path "$InstanceRoot/$CLIENT_ZIP_NAME.zip")
+            -and (Test-Path "$INSTANCE_ROOT/$LAST_MODPACK_ZIP_NAME.zip") `
+            -and (Test-Path "$INSTANCE_ROOT/$CLIENT_ZIP_NAME.zip")
     ) {
-        if (-not (Test-Path $ChangelogGeneratorDL) -or $ENABLE_ALWAYS_UPDATE_JARS) {
-            Remove-Item $ChangelogGeneratorDL -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $ChangelogGeneratorDL
+        if (-not (Test-Path $CHANGELOG_GENERATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
+            Remove-Item $CHANGELOG_GENERATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
+            Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $CHANGELOG_GENERATOR_JAR
         }
         $changelogFile = "changelog.md"
         Remove-Item $changelogFile -ErrorAction SilentlyContinue
@@ -188,7 +188,7 @@ function New-Changelog {
         Write-Host "Generating mod changelog..." -ForegroundColor Cyan
         Write-Host 
 
-        java -jar $ChangelogGeneratorDL `
+        java -jar $CHANGELOG_GENERATOR_JAR `
             --markdown `
             --lines=50 `
             --entries=1 `
@@ -387,7 +387,7 @@ function Remove-LeadingZero {
 }
 
 $StartLocation = Get-Location
-Set-Location $InstanceRoot
+Set-Location $INSTANCE_ROOT
 
 Test-ForDependencies
 Validate-SecretsFile

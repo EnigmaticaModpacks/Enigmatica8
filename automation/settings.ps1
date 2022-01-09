@@ -3,7 +3,7 @@
 
 # The main modpack folder
 # Do not change or move
-$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+$INSTANCE_ROOT = ("$PSScriptRoot/.." | Resolve-Path)
 
 # =====================================================================//
 #  CURSEFORGE ACCOUNT SETTINGS
@@ -66,10 +66,10 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$ChangelogGeneratorDL = "ChangelogGenerator-2.0.0-pre10.jar"
+$CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$ModlistCreatorJar = "ModListCreator-1.2.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-1.2.1.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
@@ -245,5 +245,5 @@ $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 $SERVER_FILE_DISPLAY_NAME = "Enigmatica 8 Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
-$ModlistPath = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
-$ChangelogPath = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"
+$MODLIST_PATH = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
+$CHANGELOG_PATH = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"

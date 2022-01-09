@@ -3,7 +3,7 @@
 
 # The main modpack folder
 # Do not change or move
-$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+$INSTANCE_ROOT = ("$PSScriptRoot/.." | Resolve-Path)
 
 # =====================================================================//
 #  CURSEFORGE ACCOUNT SETTINGS
@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.0.2"
+$MODPACK_VERSION = "1.0.3"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.0.1"
+$LAST_MODPACK_VERSION = "1.0.2"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -56,33 +56,36 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 # @(7722) - is Minecraft 1.15.2
 # @(8134) - is Minecraft 1.16.4
 # More can be found by running GetGameVersions
-$GAME_VERSIONS = @(8830)
+$GAME_VERSIONS = @(8857)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "alpha"
 
 #=====================================================================//
 #  DEPENDENCIES URL
 #=====================================================================//
 
-# File name of the latest https://github.com/Gaz492/twitch-export-builder/releases
-$TwitchExportBuilderDLWindows = "twitch-export-builder_windows_amd64.exe"
-$TwitchExportBuilderDLLinux = "twitch-export-builder_linux_amd64"
-$TwitchExportBuilderDLMac = "twitch-export-builder_darwin_amd64"
-
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$ChangelogGeneratorDL = "ChangelogGenerator-2.0.0-pre10.jar"
+$CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$ModlistCreatorJar = "ModListCreator-1.2.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-1.2.1.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
 #=====================================================================//
 
-# Most of these are defined in .build.json.
+$CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
-# Configs to remove from the client files
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
+	"config",
+	"defaultconfigs",
+	"kubejs",
+	"local",
+	"packmenu",
+	"patchouli_books",
+	"schematics")
+
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"betterendforge/client-config.toml",
 	"jei/bookmarks.ini",
@@ -97,7 +100,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"chiselsandbits-client.toml",
 	"computercraft-client.toml",
 	"craftingtweaks-client.toml",
-	"create-client.toml",
 	"cucumber-client.toml",
 	"eidolon-client.toml",
 	"emojiful-client.toml",
@@ -143,11 +145,14 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"configured-client.toml",
 	"pipez-client.toml",
 	"dummmmmmy-client.toml",
-	"ae2-client.toml"
+	"ae2-client.toml",
+	"modularrouters-client.toml",
+	"constructionwand-client.toml",
+	"valhelsia_core-client.toml"
 )
 
-# Accepts directories
-$REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
+
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
@@ -155,24 +160,14 @@ $REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "loc
 
 # $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
 
-$ServerFilesFolder = "$InstanceRoot/server_files"
+$SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files"
 
-$ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
+$SERVER_SETUP_CONFIG_PATH = "$INSTANCE_ROOT/server_files/server-setup-config.yaml"
 
 # A continuous line of the folders and files (with extensions) to zip into Server Files.
 # Default: @("mods", "config")
 # Deprecated, everything in the server_files folder is zipped
 $CONTENTS_TO_ZIP = @()
-
-# =====================================================================//
-#  Operating System
-# =====================================================================//
-
-$IsLinux = $false
-
-$IsMacOS = $false
-
-$IsWindows = $true
 
 # =====================================================================//
 #  MODULES
@@ -216,7 +211,6 @@ $ENABLE_ALWAYS_UPDATE_JARS = $false
 $ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE = $true	
 
 
-
 # =====================================================================//
 #  ADVANCED
 #  Do not change anything unless you
@@ -251,5 +245,5 @@ $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 $SERVER_FILE_DISPLAY_NAME = "Enigmatica 8 Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
-$ModlistPath = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
-$ChangelogPath = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"
+$MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"
+$CHANGELOG_PATH = "$INSTANCE_ROOT/changelogs/changelog_mods_$MODPACK_VERSION.md"

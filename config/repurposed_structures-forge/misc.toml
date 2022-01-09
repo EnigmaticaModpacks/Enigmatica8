@@ -1,0 +1,6 @@
+#
+# How long before giving up should locate command, explorer maps, and other locating stuff
+# do when locating a Repurposed Structures's structure. This is in seconds.
+#Range: 1.0 ~ 1000000.0
+locateMaxTime = 30.0
+

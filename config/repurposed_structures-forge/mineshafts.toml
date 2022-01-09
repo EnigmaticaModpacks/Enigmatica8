@@ -1,9 +1,8 @@
 
 #-----------------------------------------------------------------------------------------
 # Controls the probability of spawning a Repurposed Structures Mineshafts per chunk.
-# Will replace Vanilla Mineshafts with RS's themed Mineshafts if both would've been in same biome.
+# Does NOT replace vanilla Mineshafts at all.
 # 0 is no Mineshafts while 1000 is max spawnrate.
-# Note: Vanilla Mineshafts will spawn again if a RS Mineshafts's entry is set to 0 for the biome.
 [Spawnrate]
 	#Range: 0.0 ~ 1000.0
 	birchMineshaftSpawnrate = 10.0

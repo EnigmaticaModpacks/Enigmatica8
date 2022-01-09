@@ -1,0 +1,8 @@
+
+#ToolKit common config
+[playerEvent]
+	#Send messages to users on join?
+	message_on_join = false
+	#if messageOnJoin is true this message will be send to the player on joining world
+	message = "Hello from ToolKit, this message can be change or disabled in config."
+

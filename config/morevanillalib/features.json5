@@ -1,0 +1,119 @@
+{
+    // Should fiery tools automatically smelt blocks while mining?
+    autoSmelt: false,
+
+    // Should enchantments be obtainable?
+    enchantments: true,
+
+    // Should glowstone tools always drop 4 glowstone dust when breaking glowstone blocks? (excluded by silk touch)
+    glowstoneDrops: true,
+
+    // Should Vanilla Excavators/Hammers and Vanilla AIOT only add tools with existing vanilla material tools?
+    vanillaOnly: false,
+
+    DoubleDrop: {
+        // Should ores drop more materials when mined with corresponding tool?
+        // This is to disable all values. If enabled, you can toggle each resource at you wish.
+        // Example: Coal Ore mined with Coal Pickaxe drops more than 1 coal.
+        enabledAll: false,
+
+        Coal: {
+            // Chance (1 = 100%, 0 = 0%)
+            // Minimum: 0.0
+            chance: 0.2,
+
+            enabled: true
+        },
+
+        Diamond: {
+            // Chance (1 = 100%, 0 = 0%)
+            // Minimum: 0.0
+            chance: 0.001,
+
+            enabled: true
+        },
+
+        Emerald: {
+            // Chance (1 = 100%, 0 = 0%)
+            // Minimum: 0.0
+            chance: 0.001,
+
+            enabled: true
+        },
+
+        Lapis: {
+            // Chance (1 = 100%, 0 = 0%)
+            // Minimum: 0.0
+            chance: 0.2,
+
+            enabled: true
+        },
+
+        Quartz: {
+            // Chance (1 = 100%, 0 = 0%)
+            // Minimum: 0.0
+            chance: 0.2,
+
+            enabled: true
+        },
+
+        Redstone: {
+            // Chance (1 = 100%, 0 = 0%)
+            // Minimum: 0.0
+            chance: 0.2,
+
+            enabled: true
+        }
+    },
+
+    ExtraDamage: {
+        // Chance (1 = 100%, 0 = 0%)
+        // Minimum: 0.0
+        chance: 0.2,
+
+        // Should some tools deal extra damage against some mobs?
+        // Bone tools -> (Wither) Skeletons
+        // Ender tools -> Enderman and Endermite
+        // Fiery tools -> Magma Cubes
+        // Prismarine tools -> Guardians
+        // Slime tools -> Slime Cubes
+        enabled: true,
+
+        // Value to multiply with dealt damage.
+        // Maximum: 10.0
+        maxMultiplier: 2.5
+    },
+
+    ExtraDrop: {
+        // Chance (1 = 100%, 0 = 0%)
+        // Minimum: 0.0
+        chance: 0.0005,
+
+        // Should tools drop corresponding materials when being used?
+        enabled: false
+    },
+
+    HeadDrop: {
+        // Chance (1 = 100%, 0 = 0%)
+        // Minimum: 0.0
+        chance: 0.05,
+
+        // Should (wither) skeletons drop their head if killed with bone axe or sword?
+        enabled: true
+    },
+
+    PaperDamage: {
+        // Chance (1 = 100%, 0 = 0%)
+        // Minimum: 0.0
+        chance: 0.1,
+
+        // Should paper tools hurt you when using?
+        enabled: true,
+
+        // Maximum damage amount. 5 = 2.5 hearts
+        maxDamage: 2.5,
+
+        // Minimum damage amount. 1 = 0.5 hearts
+        minDamage: 0.5
+    }
+}

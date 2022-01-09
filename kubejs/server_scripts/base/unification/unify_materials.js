@@ -872,9 +872,8 @@ onEvent('recipes', (event) => {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
-        var output,
+        var output = dust,
             input = `forge:ores/${material}`,
-            output = dust,
             count = 2;
 
         event
@@ -960,9 +959,8 @@ onEvent('recipes', (event) => {
         if (ore == air || ingot == air || dust == air) {
             return;
         }
-        var output,
+        var output = dust,
             input = `forge:ores/${material}`,
-            output = dust,
             count = 2;
 
         event

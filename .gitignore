@@ -131,7 +131,6 @@ config/mythicbotany-client.toml
 config/farmersdelight-client.toml
 config/rftoolspower-client.toml
 config/astralsorcery-client.toml
-config/create-client.toml
 config/cagedmobs-client.toml
 config/eidolon-client.toml
 config/sophisticatedbackpacks-client.toml
@@ -184,3 +183,6 @@ config/forge-client.toml
 config/pipez-client.toml
 config/dummmmmmy-client.toml
 config/ae2-client.toml
+config/constructionwand-client.toml
+config/modularrouters-client.toml
+config/valhelsia_core-client.toml

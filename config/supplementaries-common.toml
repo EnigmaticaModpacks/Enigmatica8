@@ -5,6 +5,8 @@
 	[blocks.rope]
 		#Allows ropes to be supported & attached to solid block sides
 		block_side_attachment = false
+		#Makes sliding down ropes as fast as free falling, still negating fall damage
+		slide_on_fall = true
 
 	[blocks.pedestal]
 		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
@@ -66,6 +68,12 @@
 		drink_from_jar_item = false
 		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
 		jar_auto_detect = false
+		#Allow Jars to capture small mobs
+		jar_capture = true
+		#Allow Jars to hold cookies
+		jar_cookies = true
+		#Allow Jars to hold liquids from bottles, buckets and bowls
+		jar_liquids = true
 
 	[blocks.cage]
 		#Allows all entities to be captured by cages and jars. Not meant for survival
@@ -163,6 +171,23 @@
 		#Range: 0 ~ 256
 		pole_length = 16
 
+	[blocks.bubble_block]
+		#Max lifetime of bubble blocks. Set to 10000 to have it infinite
+		#Range: 1 ~ 10000
+		lifetime = 1200
+		#Can bubble break when stepped on?
+		break_when_touched = true
+
+	[blocks.ash]
+		#Burnable blocks will have a chance to create ash layers when burned
+		ash_from_fire = true
+		#Allows rain to wash away ash layers overtime
+		rain_wash_ash = true
+
+	[blocks.bamboo_spikes]
+		#Alternative mode for bamboo spikes. Allows only harmful effects to be applied on them and they obtain infinite durability
+		alternative_mode = true
+
 #Configure spawning conditions
 [spawns]
 
@@ -200,9 +225,23 @@
 
 		[spawns.structures.wild_flax]
 			enabled = true
+			#Spawn wild flax on average every 'x' chunks. Increases spawn frequency
+			#Range: 1 ~ 100
+			rarity = 6
+			#Attempts at every patch to spawn 1 block. Increases average patch size
+			#Range: 1 ~ 100
+			attempts_per_patch = 35
 
 		[spawns.structures.cave_urns]
 			enabled = true
+			#Attempts at every patch to spawn 1 block. Increases average patch size
+			#Range: 1 ~ 100
+			attempts_per_patch = 5
+			#Spawn attempts per chunk. Increases spawn frequency
+			#Range: 0 ~ 100
+			spawn_attempts = 9
+			#Biomes in which urns won't spawn
+			biome_blacklist = ["minecraft:lush_caves", "minecraft:dripstone_caves"]
 
 #entities parameters
 [entities]
@@ -353,12 +392,14 @@
 		#Max number of robe items allowed to be stored inside a rope arrow
 		#Range: 1 ~ 256
 		capacity = 32
+		#Makes rope arrows exclusive to crossbows
+		exclusive_to_crossbows = false
 
 	[items.flute]
-		#radius in which an unbound flute will search pets
+		#Radius in which an unbound flute will search pets
 		#Range: 0 ~ 500
 		unbound_radius = 64
-		#max distance at which a bound flute will allow a pet to teleport
+		#Max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
 
@@ -390,6 +431,11 @@
 		stasis_deceleration = 0.9625
 		#Allow enderman to intercept any slingshot projectile
 		unrestricted_enderman_intercept = true
+
+	[items.bubble_blower]
+		#Amount of soap consumed per bubble block placed
+		#Range: 1 ~ 25
+		stasis_cost = 5
 
 #General settings
 [general]

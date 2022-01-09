@@ -1,0 +1,5 @@
+
+["Herb Jar Settings"]
+	#Disabling allows jars to hold any item
+	jars_only_hold_herbs = true
+

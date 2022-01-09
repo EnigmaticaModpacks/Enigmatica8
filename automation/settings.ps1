@@ -160,9 +160,9 @@ $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/
 
 # $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
 
-$ServerFilesFolder = "$InstanceRoot/server_files"
+$ServerFilesFolder = "$INSTANCE_ROOT/server_files"
 
-$ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
+$ServerSetupConfigPath = "$INSTANCE_ROOT/server_files/server-setup-config.yaml"
 
 # A continuous line of the folders and files (with extensions) to zip into Server Files.
 # Default: @("mods", "config")
@@ -245,5 +245,5 @@ $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 $SERVER_FILE_DISPLAY_NAME = "Enigmatica 8 Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
-$MODLIST_PATH = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
-$CHANGELOG_PATH = "$InstanceRoot/changelogs/changelog_mods_$MODPACK_VERSION.md"
+$MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"
+$CHANGELOG_PATH = "$INSTANCE_ROOT/changelogs/changelog_mods_$MODPACK_VERSION.md"

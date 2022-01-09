@@ -12,7 +12,7 @@ modpack:
 # settings regarding the installation of the modpack
 install:
     # version of minecraft, needs the exact version
-    mcVersion: 1.18
+    mcVersion: 1.18.1
 
     # exact version of forge or fabric that is supposed to be used
     # if this value is a null value so ( ~, null, or "" ) then the version from the mod pack is going to be used
@@ -46,7 +46,7 @@ install:
 
     # Link to where the file where the modpack can be distributed
     # This supports loading from local files as well for most pack types if there is file://{PathToFile} in the beginning
-    modpackUrl: https://media.forgecdn.net/files/3599/406/Enigmatica8-1.0.3.zip
+    modpackUrl: https://media.forgecdn.net/files/3600/142/Enigmatica8-1.0.4.zip
 
     # This is used to specify in which format the modpack is distributed, the server launcher has to handle each individually if their format differs
     # current supported formats:

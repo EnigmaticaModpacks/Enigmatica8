@@ -192,8 +192,8 @@ function New-Changelog {
             --new="$CLIENT_ZIP_NAME.zip" `
             --old="$LAST_MODPACK_ZIP_NAME.zip"
 
-        Remove-Item $ChangelogPath -ErrorAction SilentlyContinue
-        Move-Item -Path $changelogFile -Destination $ChangelogPath
+        Remove-Item $CHANGELOG_PATH -ErrorAction SilentlyContinue
+        Move-Item -Path $changelogFile -Destination $CHANGELOG_PATH
 
         Write-Host "Mod changelog generated!" -ForegroundColor Green
     }
@@ -263,8 +263,8 @@ function Update-FileLinkInServerFiles {
         $idPart2 = $clientFileIdString.Substring(4, $clientFileIdString.length - 4)
         $idPart2 = Remove-LeadingZero -text $idPart2
         $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$CLIENT_ZIP_NAME.zip"
-        $content = (Get-Content -Path $ServerSetupConfigPath) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
-        [System.IO.File]::WriteAllLines(($ServerSetupConfigPath | Resolve-Path), $content)
+        $content = (Get-Content -Path $SERVER_SETUP_CONFIG_PATH) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
+        [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
         if ($ENABLE_SERVER_FILE_MODULE) {
             New-ServerFiles -ClientFileId $ClientFileId
@@ -282,7 +282,7 @@ function New-ServerFiles {
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
-        7z a -tzip $serverZip "$ServerFilesFolder\*"
+        7z a -tzip $serverZip "$SERVER_FILES_FOLDER\*"
         Move-Item -Path "automation\$serverZip" -Destination "$serverZip" -ErrorAction SilentlyContinue
         Write-Host "Server files created!" -ForegroundColor Green
 
@@ -362,16 +362,16 @@ function New-GitHubRelease {
 
 function Update-Modlist {
     if ($ENABLE_MODLIST_CREATOR_MODULE) {
-        if (-not (Test-Path $ModlistCreatorJar) -or $ENABLE_ALWAYS_UPDATE_JARS) {
-            Remove-Item $ModlistCreatorJar -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "MelanX/ModListCreator" -file $ModlistCreatorJar
+        if (-not (Test-Path $MODLIST_CREATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
+            Remove-Item $MODLIST_CREATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
+            Get-GitHubRelease -repo "MelanX/ModListCreator" -file $MODLIST_CREATOR_JAR
         }
 
-        Remove-Item $ModlistPath -ErrorAction SilentlyContinue
-        java -jar $ModlistCreatorJar --markdown --output ".\" --detailed --manifest "$CLIENT_ZIP_NAME.zip"
-        Copy-Item -Path "MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
+        java -jar $MODLIST_CREATOR_JAR --markdown --output ".\" --detailed --manifest "$CLIENT_ZIP_NAME.zip"
+        Copy-Item -Path "MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
         Move-Item -Path "MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
-        Copy-Item -Path "automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Copy-Item -Path "automation\MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
         Move-Item -Path "automation\MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
     }
 }
@@ -386,15 +386,15 @@ function Remove-LeadingZero {
 $StartLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
-Test-ForDependencies
-Validate-SecretsFile
-New-ClientFiles
-Push-ClientFiles
-if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-    New-ServerFiles
-}
-New-GitHubRelease
-New-Changelog
+# Test-ForDependencies
+# Validate-SecretsFile
+# New-ClientFiles
+# Push-ClientFiles
+# if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+#     New-ServerFiles
+# }
+# New-GitHubRelease
+#New-Changelog
 Update-Modlist
 
 Write-Host "Modpack Upload Complete!" -ForegroundColor Green

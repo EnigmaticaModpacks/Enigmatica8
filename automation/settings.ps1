@@ -160,9 +160,9 @@ $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/
 
 # $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
 
-$ServerFilesFolder = "$INSTANCE_ROOT/server_files"
+$SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files"
 
-$ServerSetupConfigPath = "$INSTANCE_ROOT/server_files/server-setup-config.yaml"
+$SERVER_SETUP_CONFIG_PATH = "$INSTANCE_ROOT/server_files/server-setup-config.yaml"
 
 # A continuous line of the folders and files (with extensions) to zip into Server Files.
 # Default: @("mods", "config")

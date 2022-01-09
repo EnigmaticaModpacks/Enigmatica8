@@ -65,11 +65,6 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #  DEPENDENCIES URL
 #=====================================================================//
 
-# File name of the latest https://github.com/Gaz492/twitch-export-builder/releases
-$TwitchExportBuilderDLWindows = "twitch-export-builder_windows_amd64.exe"
-$TwitchExportBuilderDLLinux = "twitch-export-builder_linux_amd64"
-$TwitchExportBuilderDLMac = "twitch-export-builder_darwin_amd64"
-
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
 $ChangelogGeneratorDL = "ChangelogGenerator-2.0.0-pre10.jar"
 
@@ -80,9 +75,17 @@ $ModlistCreatorJar = "ModListCreator-1.2.1.jar"
 #  CLIENT FILE SETTINGS
 #=====================================================================//
 
-# Most of these are defined in .build.json.
+$CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
-# Configs to remove from the client files
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
+	"config",
+	"defaultconfigs",
+	"kubejs",
+	"local",
+	"packmenu",
+	"patchouli_books",
+	"schematics")
+
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"betterendforge/client-config.toml",
 	"jei/bookmarks.ini",
@@ -148,8 +151,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"valhelsia_core-client.toml"
 )
 
-# Accepts directories
-$REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
+
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
@@ -165,16 +168,6 @@ $ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
 # Default: @("mods", "config")
 # Deprecated, everything in the server_files folder is zipped
 $CONTENTS_TO_ZIP = @()
-
-# =====================================================================//
-#  Operating System
-# =====================================================================//
-
-$IsLinux = $false
-
-$IsMacOS = $false
-
-$IsWindows = $true
 
 # =====================================================================//
 #  MODULES
@@ -216,7 +209,6 @@ $ENABLE_ALWAYS_UPDATE_JARS = $false
 # https://github.com/github-changelog-generator/github-changelog-generator
 # Default: $false
 $ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE = $true	
-
 
 
 # =====================================================================//

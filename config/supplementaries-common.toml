@@ -68,6 +68,12 @@
 		drink_from_jar_item = false
 		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
 		jar_auto_detect = false
+		#Allow Jars to capture small mobs
+		jar_capture = true
+		#Allow Jars to hold cookies
+		jar_cookies = true
+		#Allow Jars to hold liquids from bottles, buckets and bowls
+		jar_liquids = true
 
 	[blocks.cage]
 		#Allows all entities to be captured by cages and jars. Not meant for survival
@@ -386,12 +392,14 @@
 		#Max number of robe items allowed to be stored inside a rope arrow
 		#Range: 1 ~ 256
 		capacity = 32
+		#Makes rope arrows exclusive to crossbows
+		exclusive_to_crossbows = false
 
 	[items.flute]
-		#radius in which an unbound flute will search pets
+		#Radius in which an unbound flute will search pets
 		#Range: 0 ~ 500
 		unbound_radius = 64
-		#max distance at which a bound flute will allow a pet to teleport
+		#Max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
 

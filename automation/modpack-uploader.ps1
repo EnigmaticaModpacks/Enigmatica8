@@ -399,5 +399,3 @@ Update-Modlist
 
 Write-Host "Modpack Upload Complete!" -ForegroundColor Green
 Set-Location $StartLocation
-
-pause

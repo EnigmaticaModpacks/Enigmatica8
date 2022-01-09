@@ -254,10 +254,10 @@ function Push-ClientFiles {
 
 function Update-FileLinkInServerFiles {
     param(
-        [int]$ClientFileId
+        [int]$clientFileReturnId
     )
-    if ($ClientFileId) {
-        $clientFileIdString = $ClientFileId.toString()
+    if ($clientFileReturnId) {
+        $clientFileIdString = $clientFileReturnId.toString()
         $idPart1 = $clientFileIdString.Substring(0, 4)
         $idPart1 = Remove-LeadingZero -text $idPart1
         $idPart2 = $clientFileIdString.Substring(4, $clientFileIdString.length - 4)
@@ -267,34 +267,34 @@ function Update-FileLinkInServerFiles {
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
         if ($ENABLE_SERVER_FILE_MODULE) {
-            New-ServerFiles -ClientFileId $ClientFileId
+            New-ServerFiles -clientFileReturnId $clientFileReturnId
         }
     }
 }
 
 function New-ServerFiles {
     param(
-        [int]$ClientFileId
+        [int]$clientFileReturnId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
         $serverZip = "$SERVER_ZIP_NAME.zip"
-        Remove-Item $serverZip, "$serverZip" -Force -ErrorAction SilentlyContinue
+        Remove-Item $serverZip -Force -ErrorAction SilentlyContinue
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
         7z a -tzip $serverZip "$SERVER_FILES_FOLDER\*"
-        Move-Item -Path "automation\$serverZip" -Destination "$serverZip" -ErrorAction SilentlyContinue
+        Move-Item -Path "automation\$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
         Write-Host "Server files created!" -ForegroundColor Green
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
-            Push-ServerFiles -ClientFileId $ClientFileId
+            Push-ServerFiles -clientFileReturnId $clientFileReturnId
         }
     }
 }
 
 function Push-ServerFiles {
     param(
-        [int]$ClientFileId
+        [int]$clientFileReturnId
     )
     if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
         $serverFilePath = "$SERVER_ZIP_NAME.zip"
@@ -334,7 +334,7 @@ function Push-ServerFiles {
 function New-GitHubRelease {
     if ($ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE) {
 
-        $BASE64TOKEN = [System.Convert]::ToBase64String([char[]]$GITHUB_TOKEN);
+        $Base64Token = [System.Convert]::ToBase64String([char[]]$GITHUB_TOKEN);
         $Uri = "https://api.github.com/repos/$GITHUB_NAME/$GITHUB_REPOSITORY/releases?access_token=$GITHUB_TOKEN"
     
         $Headers = @{
@@ -383,7 +383,7 @@ function Remove-LeadingZero {
     return [int]$text
 }
 
-$StartLocation = Get-Location
+$startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
 # Test-ForDependencies
@@ -398,4 +398,4 @@ Set-Location $INSTANCE_ROOT
 Update-Modlist
 
 Write-Host "Modpack Upload Complete!" -ForegroundColor Green
-Set-Location $StartLocation
+Set-Location $startLocation

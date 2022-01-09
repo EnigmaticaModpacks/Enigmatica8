@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.0.3"
+$MODPACK_VERSION = "1.0.4"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.0.2"
+$LAST_MODPACK_VERSION = "1.0.3"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8857)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "alpha"
+$CLIENT_RELEASE_TYPE = "beta"
 
 #=====================================================================//
 #  DEPENDENCIES URL

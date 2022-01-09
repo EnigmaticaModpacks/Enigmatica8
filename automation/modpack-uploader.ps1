@@ -142,10 +142,7 @@ function New-ManifestJson {
 
     Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
     $jsonString = $jsonOutput | ConvertTo-Json -Depth 3
-    pause 
-    $manifest
     $outfile = "$INSTANCE_ROOT/$manifest"
-    pause
     [System.IO.File]::WriteAllLines($outfile, $jsonString)
     Write-Host "$manifest created!" -ForegroundColor Green
 }

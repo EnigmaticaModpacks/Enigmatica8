@@ -120,7 +120,8 @@
     "repurposed_structures:village_mountains": "terralith:volcanic_crater, terralith:volcanic_peaks",
     "repurposed_structures:village_badlands": "terralith:snowy_badlands",
     "repurposed_structures:outpost_badlands": "terralith:snowy_badlands",
-    "repurposed_structures:pyramid_badlands": "terralith:snowy_badlands"
+    "repurposed_structures:pyramid_badlands": "terralith:snowy_badlands",
+    "repurposed_structures:city_overworld": "terralith:.+, biomesoplenty:.+, byg:.+"
   },
   //
 
@@ -187,7 +188,9 @@
     "repurposed_structures:witch_hut_birch": "terralith:temperate_highlands, terralith:white_cliffs",
     "repurposed_structures:witch_hut_dark_forest": "terralith:mirage_isles",
     "repurposed_structures:witch_hut_oak": "terralith:brushland",
-    "repurposed_structures:witch_hut_taiga": "terralith:bryce_canyon, terralith:cloud_forest, terralith:lavender_forest, terralith:lavender_valley, terralith:moonlight_grove, terralith:moonlight_valley, terralith:rocky_shrubland, terralith:shrubland"
+    "repurposed_structures:witch_hut_taiga": "terralith:bryce_canyon, terralith:cloud_forest, terralith:lavender_forest, terralith:lavender_valley, terralith:moonlight_grove, terralith:moonlight_valley, terralith:rocky_shrubland, terralith:shrubland",
+    "repurposed_structures:city_overworld": "biomesoplenty:redwood_forest, biomesoplenty:coniferous_forest, terralith:amethyst_rainforest, terralith:jungle_mountains, terralith:rocky_jungle, byg:orchard, byg:coniferous_forest, byg:coniferous_forest_hills, byg:cherry_blossom_forest, byg:tropical_rainforest, byg:tropical_rainforest_hills, byg:ebony_woods, byg:ebony_hills",
+    "repurposed_structures:pyramid_dark_forest": "byg:ancient_forest"
   },
   //
 
@@ -197,5 +200,5 @@
 
 
 // for internal use only. Do not change this.
-  "configVersion": 9
+  "configVersion": 10
 }

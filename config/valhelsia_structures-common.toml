@@ -190,3 +190,9 @@
 		#Biomes the structure can NOT generate in
 		blacklisted_biomes = []
 
+[blocks]
+
+	[blocks.doused_torch]
+		#Enable/Disable the Doused Torch Feature. If disabled Water will no longer transform normal Torches into Doused Torches. \n Doused Torches will however still generate in structures. [default: false]
+		disable = false
+

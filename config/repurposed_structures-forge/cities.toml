@@ -3,4 +3,9 @@
 # 1 for spawning in most chunks and 1001 for none.
 #Range: 1 ~ 1001
 citiesNetherAverageChunkDistance = 110
+#
+# Average distance between spawn attempts for Overworld Cities.
+# 1 for spawning in most chunks and 10001 for none.
+#Range: 1 ~ 10001
+citiesOverworldAverageChunkDistance = 180
 

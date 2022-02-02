@@ -9,4 +9,8 @@
 	ruinsLandWarmAverageChunkDistance = 45
 	#Range: 1 ~ 1001
 	ruinsLandHotAverageChunkDistance = 45
+	#Range: 1 ~ 1001
+	ruinsLandColdAverageChunkDistance = 52
+	#Range: 1 ~ 1001
+	ruinsLandIcyAverageChunkDistance = 52
 

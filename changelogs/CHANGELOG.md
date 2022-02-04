@@ -1,3 +1,27 @@
+### Enigmatica 8 v1.0.5
+
+_Using Forge-1.18.0-39.0.63_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.5.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.5.md)_
+
+**New Mods**
+
+- Tinkers Construct [\#57](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/57)
+- Trash Cans [\#56](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/56)
+- Dark Mode Everywhere [\#53](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/53)
+- Apotheosis: Spawner Module [\#50](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/50)
+- Sushi Go Crafting [\#42](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/42)
+- Energy Meter mod [\#41](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/41)
+- FTB mods  [\#40](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/40)
+- Convenient curios container [\#37](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/37)
+
+- And a ton more :smile: the tool we use to generate this part of the modlist is sadly broken, so we recommend checking in-game for new mods.
+
+**Bug Fixes**
+
+- \[Applied Energistics 2\] Certus Dust and Fluix Dust recipe missing [\#55](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/55)
+- Netty Handler Exception - Reaching out [\#51](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/51)
+
+---
+
 ### Enigmatica 8 v1.0.4
 
 _Using Forge-1.18.0-39.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.4.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.4.md)_

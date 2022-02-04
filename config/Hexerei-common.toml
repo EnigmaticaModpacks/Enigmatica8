@@ -1,13 +1,45 @@
 
+["Dark Coven Spacing"]
+	#spacing between dark covens, lower both spacing and separation to increase spawn rates
+	dark_coven_spacing = 29
+
+["Witch Hut Separation"]
+	#separation of the witch huts, lower both spacing and separation to increase spawn rates
+	witch_hut_separation = 8
+
+["Broom Netherite Tip Durability"]
+	#1 second of active time per 1 durability
+	broom_netherite_tip_durability = 200
+
+["Witch Hut Spacing"]
+	#spacing between witch huts, lower both spacing and separation to increase spawn rates
+	witch_hut_spacing = 20
+
+["Enhanced Broom Brush Durability"]
+	#200 durability will be about 32 minutes of flight time
+	enhanced_broom_brush_durability = 200
+
 ["Sage Bundle Settings"]
 	#Duration of how long each bundle will last while burning
 	sage_bundle_duration_in_seconds = 3600
+
+["Broom Waterproof Tip Durability"]
+	#1 second of active time per 1 durability
+	broom_waterproof_tip_durability = 800
+
+["Dark Coven Separation"]
+	#separation of the dark covens, lower both spacing and separation to increase spawn rates
+	dark_coven_separation = 11
 
 ["Herb Jar Settings"]
 	#Disabling allows jars to hold any item
 	jars_only_hold_herbs = true
 
+["Broom Brush Durability"]
+	#100 durability will be about 16 minutes of flight time
+	broom_brush_durability = 100
+
 ["Sage Burning Plate Settings"]
-	#Range of the Sage Burning Plate
+	#Range of the Sage Burning Plate, setting to 0 will disable completely
 	spawn_disable_range = 48
 

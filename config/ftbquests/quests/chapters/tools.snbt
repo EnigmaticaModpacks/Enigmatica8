@@ -1,0 +1,1192 @@
+{
+	id: "0000000000000093"
+	group: "74B3CF67FCEAB20F"
+	order_index: 0
+	filename: "tools"
+	title: "Tools and Armor"
+	icon: {
+		id: "minecraft:netherite_pickaxe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Tools and Armor"
+			x: -5.5d
+			y: -11.0d
+			shape: "gear"
+			description: [
+				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions."
+				""
+				"Note: Most tools and armor have been Tagged for easier search in JEI. Search for the following categories to discover more:"
+				""
+				"● $armor"
+				"● $armor/helm"
+				"● $armor/chest"
+				"● $armor/leggings"
+				"● $armor/boots"
+				""
+				"● $tools"
+				"● $tools/pickaxe"
+				"● $tools/shovel"
+				"● $tools/axe"
+				"● $tools/hoe"
+				"● $tools/multi-tool"
+			]
+			id: "000000000000045C"
+			tasks: [{
+				id: "000000000000045D"
+				type: "checkmark"
+				icon: {
+					id: "minecraft:netherite_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000CA4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "mininggadgets:mininggadget"
+				Count: 1b
+				tag: { }
+			}
+			x: -10.0d
+			y: -16.0d
+			subtitle: "Frickin' Laser Beams"
+			description: [
+				"A powered tool capable of mining blocks from a distance. "
+				""
+				"Danger: Class 4 Laser Device. Avoid eye or skin exposure."
+				""
+				"Notable Upgrades"
+				""
+				"● Torch Placer"
+				"● Area Mining"
+				"● Silk Touch"
+				"● Fortune"
+				"● Filterable Void Upgrade to delete unwanted trash like excess stone"
+				"● Magnet upgrade that draws mined items into your inventory"
+			]
+			dependencies: ["000000000000046C"]
+			id: "000000000000045F"
+			tasks: [
+				{
+					id: "0000000000000460"
+					type: "item"
+					item: {
+						id: "mininggadgets:mininggadget"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "00000000000006F2"
+					type: "item"
+					item: "mininggadgets:modificationtable"
+				}
+			]
+			rewards: [
+				{
+					id: "000000000000067D"
+					type: "item"
+					title: "Upgrade: Light Placer"
+					item: "mininggadgets:upgrade_light_placer"
+				}
+				{
+					id: "0000000000000A52"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Fortune Laser Upgrade (Tier 3)"
+			x: -10.5d
+			y: -15.0d
+			dependencies: ["000000000000045F"]
+			id: "0000000000000464"
+			tasks: [{
+				id: "0000000000000465"
+				type: "item"
+				item: "mininggadgets:upgrade_fortune_3"
+			}]
+			rewards: [{
+				id: "00000000000006EF"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Silk Touch Laser Upgrade (Tier 1)"
+			x: -11.0d
+			y: -14.0d
+			dependencies: ["000000000000045F"]
+			id: "0000000000000466"
+			tasks: [{
+				id: "000000000000067C"
+				type: "item"
+				item: "mininggadgets:upgrade_silk"
+			}]
+			rewards: [
+				{
+					id: "000000000000067B"
+					type: "item"
+					title: "Upgrade: Magnet"
+					item: "mininggadgets:upgrade_magnet"
+				}
+				{
+					id: "0000000000000A53"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Efficiency Laser Upgrade (Tier 5)"
+			x: -9.5d
+			y: -15.0d
+			dependencies: ["000000000000045F"]
+			id: "0000000000000468"
+			tasks: [{
+				id: "0000000000000469"
+				type: "item"
+				item: "mininggadgets:upgrade_efficiency_5"
+			}]
+			rewards: [{
+				id: "00000000000006EE"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Battery Laser Upgrade (Tier 3)"
+			x: -9.0d
+			y: -14.0d
+			dependencies: ["000000000000045F"]
+			id: "000000000000046A"
+			tasks: [{
+				id: "000000000000046B"
+				type: "item"
+				item: "mininggadgets:upgrade_battery_3"
+			}]
+			rewards: [{
+				id: "0000000000000A54"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Neptunium Armor"
+			icon: {
+				id: "aquaculture:neptunium_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -14.0d
+			subtitle: "And With Strange Aeons, Even Death May Die"
+			description: ["Forged in ages past in the deepest depths. Neptunium armor grants it's wearer a taste of the unimaginable power of the Abyssal Depths."]
+			dependencies: ["00000000000004B3"]
+			id: "000000000000047E"
+			tasks: [
+				{
+					id: "000000000000047F"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000660"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000661"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000662"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "000000000000065F"
+					type: "item"
+					title: "Nether Star Hook"
+					item: "aquaculture:nether_star_hook"
+				}
+				{
+					id: "00000000000006F4"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -14.0d
+			subtitle: "Dig the Water"
+			description: ["Neptunium Tools offer many benefits to those who spend most of their time under water. "]
+			dependencies: ["00000000000004B3"]
+			id: "0000000000000480"
+			tasks: [{
+				id: "0000000000000481"
+				type: "item"
+				item: {
+					id: "aquaculture:neptunium_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "00000000000006F5"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Archmage's Arcana"
+			icon: {
+				id: "ars_nouveau:archmage_hood"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: -16.0d
+			description: ["Ars Nouveau has several tiers of armor to assist the aspiring caster. Each permits the wearer to access more mana and regenerate spent mana faster."]
+			dependencies: ["00000000000003D5"]
+			id: "0000000000000486"
+			tasks: [
+				{
+					id: "0000000000000487"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048A"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000666"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "000000000000066E"
+					type: "item"
+					title: "Mana Boost V, Mana Regen V"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [
+								{
+									lvl: 5s
+									id: "ars_nouveau:mana_regen"
+								}
+								{
+									lvl: 5s
+									id: "ars_nouveau:mana_boost"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Skyseeker's Mantle"
+			icon: {
+				id: "naturesaura:sky_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -15.0d
+			description: ["Skyseeker's Armor imbues the wearer with the affinity of the wind itself, granting speed and a lighter step."]
+			dependencies: ["00000000000002E9"]
+			id: "0000000000000488"
+			tasks: [
+				{
+					id: "0000000000000489"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048D"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048E"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "000000000000048F"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_shoes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0000000000000665"
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -15.0d
+			subtitle: "Dig the Air"
+			description: [
+				"Nature's Aura has a variety of useful mining implements, each with their own special features beyond basic block breaking."
+				""
+				"Read more about them in the Natural Items section of the Book of Natural Aura."
+			]
+			dependencies: ["00000000000002E9"]
+			id: "00000000000004B6"
+			tasks: [{
+				id: "00000000000004B7"
+				type: "item"
+				item: {
+					id: "naturesaura:sky_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000664"
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			subtitle: "Goes Brrr"
+			description: [
+				"A handheld saw perfect for chopping down trees or chopping through zombies. "
+				""
+				"This tool runs on biodiesel, though the internal tank is on the smaller side. Consider carrying a tank with you for refueling in the field. Simply place it in the input slot of the tank to fill it up. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "1487479CFA348530"
+			tasks: [{
+				id: "716019716B2915F9"
+				type: "item"
+				item: {
+					id: "immersiveengineering:buzzsaw"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4AA86E1E20DADE27"
+					type: "item"
+					title: "Advanced Fluid Tank"
+					item: {
+						id: "mekanism:advanced_fluid_tank"
+						Count: 1b
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										FluidName: "immersiveengineering:biodiesel"
+										Amount: 16000
+									}
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "17E85BEC398930AD"
+					type: "item"
+					title: "Sawblade"
+					item: {
+						id: "immersiveengineering:sawblade"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			subtitle: "First comes smiles, then lies. Last is gunfire."
+			description: [
+				"A trusty side-arm suitable for any Gunslinger."
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "52DFEA36FFFBCDD5"
+			tasks: [{
+				id: "54E76BD7C4FB9D97"
+				type: "item"
+				item: {
+					id: "immersiveengineering:revolver"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 21
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "098BE70A0BFCDBDC"
+					type: "command"
+					title: "Rare Immersive Engineering Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+					player_command: false
+				}
+				{
+					id: "02E988D98405DAFB"
+					type: "item"
+					title: "Casull Cartridge"
+					item: "immersiveengineering:casull"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: -2.0d
+			subtitle: "Workin' in a coal mine. Oops, about to slip down."
+			description: [
+				"A handheld tunnel bore capable of quickly digging through the toughest rocks. "
+				""
+				"This tool runs on biodiesel, though the internal tank is on the smaller side. Consider carrying a tank with you for refueling in the field. Simply place it in the input slot of the tank to fill it up. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "0A476C6332EB6477"
+			tasks: [{
+				id: "5B3CC19ED97DFA26"
+				type: "item"
+				item: {
+					id: "immersiveengineering:drill"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5D7232BCA248639D"
+					type: "item"
+					title: "Advanced Fluid Tank"
+					item: {
+						id: "mekanism:advanced_fluid_tank"
+						Count: 1b
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										FluidName: "immersiveengineering:biodiesel"
+										Amount: 16000
+									}
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "7683853C5B00EE25"
+					type: "item"
+					title: "Iron Drill Head"
+					item: "immersiveengineering:drillhead_iron"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			subtitle: "See the TURTLE, ain't he keen?"
+			description: [
+				"Capable of launching projectiles at immense velocities and ripping through targets with impunity, the Railgun is a fierce weapon. "
+				""
+				"Suitable ammunition includes Iron and Steel Rods, as well as Graphite Electrodes and many others. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "69C4E9422B0C695A"
+			tasks: [{
+				id: "404F5C421F8FFFD5"
+				type: "item"
+				item: {
+					id: "immersiveengineering:railgun"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 3
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "57BCCB513CA91D6B"
+					type: "command"
+					title: "Rare Immersive Engineering Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+					player_command: false
+				}
+				{
+					id: "6BCA8B2194807B4D"
+					type: "item"
+					title: "Iron Rod"
+					item: "emendatusenigmatica:iron_rod"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			subtitle: "When the shooting starts, we kill what moves."
+			description: [
+				"The Speedloader will automatically reload the Revolver when it runs out of ammo, making it a great way to continue the fight. "
+				""
+				"To refill it on the go, simply right click and place your cartridges in it. However, it can also be filled in a 3x3 crafting grid by surrounding it with ammo. Combined with some automation and a Player Module, this could mean never running out of ammo again."
+			]
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "3FC9C9BA6C4B9597"
+			tasks: [{
+				id: "46FB2138D39F9238"
+				type: "item"
+				item: {
+					id: "immersiveengineering:speedloader"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 8
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "24A27D154F9FB236"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			subtitle: "The man in black fled across the desert..."
+			description: ["For those times when the beasts get too close, or your ammo runs dry. "]
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "3C6A4FF4F12DCAB2"
+			tasks: [{
+				id: "4E1995B3908BE0A1"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_revolver_bayonet"
+			}]
+			rewards: [{
+				id: "1EE1E0D6A82D9B90"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -9.0d
+			y: -4.0d
+			subtitle: "The wheel turns and the world moves on."
+			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "]
+			dependencies: ["69C4E9422B0C695A"]
+			id: "4AEF4EECF33AAD14"
+			tasks: [{
+				id: "1722BA00297D1CD5"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_railgun_capacitors"
+			}]
+			rewards: [{
+				id: "388801C14A6A9916"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -11.0d
+			y: -4.0d
+			subtitle: "All things serve the beam."
+			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "]
+			dependencies: ["69C4E9422B0C695A"]
+			id: "375C292687CF5637"
+			tasks: [{
+				id: "258019F9C44FA366"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_railgun_scope"
+			}]
+			rewards: [{
+				id: "231932437B4E9839"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.5d
+			subtitle: "Pain is a tool, after all. Sometimes it's the best tool."
+			description: [
+				"The Railgun, mighty as it is, holds relatively little FE. A Capacitor Backpack is an excellent way to extend the battery life."
+				""
+				"While it can go in a Curios slot, the Capacitor Backpack is perhaps better combined with a chest armor in a crafting grid."
+			]
+			dependencies: ["69C4E9422B0C695A"]
+			id: "149EC37E85BC39BB"
+			tasks: [{
+				id: "0946F869835964E3"
+				type: "item"
+				item: {
+					id: "immersiveengineering:powerpack"
+					Count: 1b
+					tag: {
+						energy: 100000
+					}
+				}
+			}]
+		}
+		{
+			title: "Ammo Cartridges"
+			x: -1.0d
+			y: -3.5d
+			subtitle: "...and the gunslinger followed."
+			description: [
+				"Casull Cartridges are the cheapest, most basic ammo; however, they still pack quite a punch. "
+				""
+				"Armor-Piercing Cartridges will quickly dispatch a well armored foe and Silver Cartridges are potent against the Undead. "
+				""
+				"For controlling large crowds, consider something a little more potent, like Buckshot or Dragon’s Breath Cartridges which fire a short-range conical burst. And if your aim is simply terrible, consider the Wolfpack Cartridge, which bursts on impact launching homing shrapnel in all directions, quickly dispatching anything they encounter. "
+				""
+				"Explore your options and read more in the Engineer’s Manual."
+			]
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "7EA4E88D7230D94D"
+			tasks: [{
+				id: "3E8BA9F57E3C4452"
+				type: "item"
+				title: "Ammo Cartridges"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "immersiveengineering:casull"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:armor_piercing"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:buckshot"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:he"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:silver"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:dragons_breath"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:potion"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:flare"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:firework"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:homing"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:wolfpack"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 24L
+			}]
+			rewards: [{
+				id: "673B7ECE0BDE897E"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			subtitle: "A Clean Job"
+			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "]
+			dependencies: ["1487479CFA348530"]
+			id: "650F8ED52289B8AC"
+			tasks: [{
+				id: "07CF70C497212059"
+				type: "item"
+				item: {
+					id: "immersiveengineering:rockcutter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "541EA45AC0E8D7CF"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.0d
+			subtitle: "Don't Burst It"
+			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."]
+			dependencies: ["0A476C6332EB6477"]
+			id: "322F7E60078AC6F6"
+			tasks: [{
+				id: "4D1F4C0716B593B9"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_waterproof"
+			}]
+			rewards: [{
+				id: "5691DD3285ADB605"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.5d
+			subtitle: "Diggy Diggy Hole"
+			description: [
+				"Drill heads do wear out over time, though they can be removed from the drill and repaired in an Anvil. "
+				""
+				"Upgrading to a steel drill head not only increases the durability, but also allows mining Obsidian without wasting your precious shiny blue rocks. "
+			]
+			dependencies: ["0A476C6332EB6477"]
+			id: "13AA0065B8167EF4"
+			tasks: [{
+				id: "6A6D387D221FEC38"
+				type: "item"
+				item: "immersiveengineering:drillhead_steel"
+			}]
+			rewards: [{
+				id: "39097B6C7B38506A"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.5d
+			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
+			dependencies: [
+				"5B3CC19ED97DFA26"
+				"716019716B2915F9"
+			]
+			dependency_requirement: "one_completed"
+			id: "546222019B6470BA"
+			tasks: [{
+				id: "4A295A3D115FE1F2"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_lube"
+			}]
+			rewards: [{
+				id: "713B059CB5DBEBCA"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -0.5d
+			description: ["An extended Fuel tank that works in the Mining Drill, Buzzsaw, and even the Chemical Thrower. Well worth the cost."]
+			dependencies: [
+				"716019716B2915F9"
+				"672C630D81BD8E94"
+				"5B3CC19ED97DFA26"
+			]
+			dependency_requirement: "one_completed"
+			id: "7B384B41FCA9F17A"
+			tasks: [{
+				id: "5761B4339C81361F"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_capacity"
+			}]
+			rewards: [{
+				id: "60482427F2F16E9B"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -8.0d
+			y: -0.5d
+			description: ["Up to three of these Additional Augers may be added to a drill, each one speeding up the mining speed and even improving the damage dealt to anything unlucky enough to be standing in front of it. "]
+			dependencies: ["0A476C6332EB6477"]
+			id: "1A0053922B30B033"
+			tasks: [{
+				id: "762650E500C59FAF"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_damage"
+			}]
+			rewards: [{
+				id: "1D732032B9C86AB5"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			subtitle: "So Wait, Instead of Arrows..."
+			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to spot between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
+			dependencies: ["1487479CFA348530"]
+			id: "283516E560D1D20E"
+			tasks: [{
+				id: "59195DC2ADAA355B"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+			}]
+			rewards: [{
+				id: "36142E0E21AC2474"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.5d
+			subtitle: "So anyway, I started blasting."
+			description: [
+				"Ever wanted a flame thrower? Now’s your chance. Fill this with any flammable fuel, ignite the pilot light with Sneak + Right Click, and start spraying. "
+				""
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			]
+			dependencies: ["0000000000000012"]
+			id: "4498690DCA41A562"
+			tasks: [{
+				id: "672C630D81BD8E94"
+				type: "item"
+				item: {
+					id: "immersiveengineering:chemthrower"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2DBC321E9D2AE461"
+				type: "item"
+				title: "Focused Nozzle"
+				item: "immersiveengineering:toolupgrade_chemthrower_focus"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -12.0d
+			subtitle: "Head in the Clouds"
+			description: [
+				"Ever wish you could start building a platform in the sky without having to nerd-pole your way up there? "
+				""
+				"Well, if you can't fly you may still need that nerd-pole. If you can, however, grab a bottle of cloud to act as a starting point for the platform. "
+				""
+				"Using a glass bottle between y126 and y132 will get you a Bottled Cloud. Right-Clicking the air again will place the cloud, allowing other blocks to be placed against it. It will disappear after a few moments, but will go back into your bottle on it's own if another block is placed against it in time. "
+			]
+			id: "322E9DDDEE1623E3"
+			tasks: [{
+				id: "2AF9B5D1BACA4A59"
+				type: "item"
+				item: "quark:bottled_cloud"
+			}]
+			rewards: [{
+				id: "43188DFF0C8F9DDC"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.5d
+			y: -13.0d
+			subtitle: "Just to Spend it With You..."
+			description: [
+				"Save every day like a treasure and spend them on whatever you like."
+				""
+				"Sneak Right-Click most machines to spend stored time on them, speeding them up briefly. "
+			]
+			dependencies: ["000000000000046D"]
+			id: "7AE1180EFAF22376"
+			tasks: [{
+				id: "4D29649F3F51D7D3"
+				type: "item"
+				item: {
+					id: "tiab:time_in_a_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4FDD99B9F9F65B1D"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Arcane Arsenal"
+			x: -1.0d
+			y: -14.0d
+			description: ["Powerful tools which may be enchanted with spells to cast upon use. A must have for any aspiring magician."]
+			dependencies: ["00000000000003D7"]
+			id: "4A1C227E044B02D6"
+			tasks: [
+				{
+					id: "0733FFA5BAB24544"
+					type: "item"
+					item: "ars_nouveau:spell_bow"
+				}
+				{
+					id: "25A8965A5E3C4458"
+					type: "item"
+					item: {
+						id: "ars_nouveau:enchanters_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4CDEBD46316A28AF"
+					type: "item"
+					item: "ars_nouveau:wand"
+				}
+			]
+		}
+	]
+}

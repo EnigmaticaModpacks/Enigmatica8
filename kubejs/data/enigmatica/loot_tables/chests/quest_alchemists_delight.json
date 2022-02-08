@@ -1,0 +1,102 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:end_city_finder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:fortress_finder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:ender_eye",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Potion:\"minecraft:strong_swiftness\"}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Potion:\"apotheosis:long_haste\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Potion:\"apotheosis:long_resistance\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Potion:\"minecraft:long_fire_resistance\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Potion:\"minecraft:long_regeneration\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

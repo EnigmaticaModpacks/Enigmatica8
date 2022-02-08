@@ -1,0 +1,156 @@
+{
+	id: "0000000000000044"
+	group: ""
+	order_index: 1
+	filename: "getting_started"
+	title: "Getting Started"
+	icon: "minecraft:nether_star"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome"
+			icon: "minecraft:oak_sapling"
+			x: 0.0d
+			y: -6.0d
+			description: [
+				" Welcome to Enigmatica 8, we're glad to have you :D"
+				" "
+				"Quests are divided into 3 types:"
+				""
+				"- Exploring Enigmatica"
+				"- Learning Mods"
+				"- Challenges"
+				""
+				"You can learn more about each type below."
+				""
+				"Note that we're still working on quests and this is a bare bones port of quests from E6, and many more will be added in the future."
+			]
+			size: 1.5d
+			id: "0000000000000045"
+			tasks: [{
+				id: "0000000000000046"
+				type: "checkmark"
+				icon: "minecraft:oak_sapling"
+			}]
+			rewards: [{
+				id: "0000000000000A93"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			description: [
+				"The Exploration questline's purpose is to show what's available in the pack."
+				""
+				"These chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration."
+				""
+				"It currently has the following chapters:"
+				"- Tools"
+				"- Storage"
+				"- Adventure"
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002AC"
+			tasks: [{
+				id: "00000000000002AD"
+				type: "checkmark"
+				title: "Exploring Enigmatica"
+				icon: "minecraft:compass"
+			}]
+			rewards: [{
+				id: "00000000000002B4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: -3.5d
+			description: [
+				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do."
+				""
+				"The chapters do not show everything that every mod has to offer, so make sure to explore if you want to find all the cool features."
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002AE"
+			tasks: [{
+				id: "00000000000002AF"
+				type: "checkmark"
+				title: "Learning Mods"
+			}]
+			rewards: [{
+				id: "00000000000002B2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Challenges"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 1.5d
+			y: -4.0d
+			description: [
+				"Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players."
+				""
+				"They are still work in progress."
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002B0"
+			tasks: [{
+				id: "00000000000002B1"
+				type: "checkmark"
+				title: "Challenges"
+				icon: "minecraft:wither_skeleton_skull"
+			}]
+			rewards: [{
+				id: "00000000000002B3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Modded for Dummies"
+			x: 1.5d
+			y: -7.5d
+			subtitle: "Hey, listen!"
+			description: [
+				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what."
+				""
+				"That's why we made a book, to sum up the basics and give you a solid baseline to begin your modded journey!"
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000006E9"
+			tasks: [{
+				id: "00000000000006EA"
+				type: "checkmark"
+				title: "Hey, listen!"
+				icon: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+			}]
+			rewards: [{
+				id: "00000000000006EB"
+				type: "item"
+				title: "Modded for Dummies"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+			}]
+		}
+	]
+}

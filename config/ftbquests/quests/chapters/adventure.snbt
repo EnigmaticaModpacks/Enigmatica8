@@ -1,0 +1,139 @@
+{
+	id: "0000000000000097"
+	group: ""
+	order_index: 3
+	filename: "adventure"
+	title: "Adventure"
+	icon: {
+		id: "minecraft:filled_map"
+		Count: 2b
+		tag: {
+			map: 1
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "alexsmobs:banana"
+			x: -1.0d
+			y: 0.0d
+			subtitle: "Monkeys and Gorillas and Bears, Oh My!"
+			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "]
+			id: "0000000000000C7F"
+			tasks: [{
+				id: "0000000000000C80"
+				type: "checkmark"
+				title: "Alex's Mobs"
+			}]
+			rewards: [{
+				id: "0000000000000C9D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			subtitle: "Treasure or Trap? "
+			description: [
+				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? "
+				""
+				"Not every site is what it seems. Beware and approach with caution. "
+			]
+			id: "0000000000000C83"
+			tasks: [{
+				id: "0000000000000C84"
+				type: "checkmark"
+				title: "Artifacts"
+				icon: "artifacts:mimic_spawn_egg"
+			}]
+			rewards: [{
+				id: "0000000000000CA0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "meetyourfight:devils_ante"
+			x: 0.0d
+			y: 2.5d
+			subtitle: "Leave Nothing To Chance"
+			description: [
+				"Have you got the Wither Blues? Looking for a bit of a challenge? Then come and meet your fight. "
+				""
+				"These bosses may be summoned with crafted tokens, just look them up in JEI when you’re ready to face off."
+			]
+			id: "0000000000000C95"
+			tasks: [
+				{
+					id: "21AEFA982B148B13"
+					type: "item"
+					item: "meetyourfight:fossil_bait"
+				}
+				{
+					id: "453C91C39D9B851B"
+					type: "item"
+					item: "meetyourfight:devils_ante"
+				}
+				{
+					id: "57A8C245E83C8992"
+					type: "item"
+					item: "meetyourfight:haunted_bell"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C9B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			subtitle: "We're not lost, we're right here on this very spot."
+			description: [
+				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
+				""
+				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
+			]
+			id: "0000000000000C97"
+			tasks: [{
+				id: "0000000000000C98"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C9E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "ars_nouveau:glyph_summon_wolves"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Dangit, Moon Moon"
+			description: [
+				"Adventuring alone can be dangerous, but the fear of losing a beloved canine defender might prompt one to leave them home. "
+				""
+				"Fear no more. With Bandages from Save Your Pets, your fallen floofer may be revived to bite again. "
+			]
+			id: "60FAAD35C8C375BD"
+			tasks: [{
+				id: "0CE70793928F6DE0"
+				type: "checkmark"
+				title: "Save Your Pets"
+			}]
+			rewards: [{
+				id: "218393C856E322C3"
+				type: "item"
+				item: "syp:pet_bandage"
+			}]
+		}
+	]
+}

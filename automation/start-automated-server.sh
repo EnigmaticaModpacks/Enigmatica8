@@ -216,7 +216,6 @@ if [[ "$answer" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
 fi
 
 check_dir
-check_connection
 check_binaries
 eula
 
@@ -254,7 +253,6 @@ while true ; do
 
 	#re-validate stuff each server restart
 	check_dir
-	check_connection
 	check_binaries
 	eula
 	echo "INFO: Server-auto-restart commencing"  >>serverstart.log 2>&1

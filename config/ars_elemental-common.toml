@@ -1,0 +1,47 @@
+#Adjust this value to define how much the matching spell cost gets discounted by the focus
+#Range: 0.0 ~ 0.99
+"Elemental Focus discount" = 0.2
+
+#Adjust these values to balance how much a spell gets amplified by the matching spell focus
+["Elemental Spell Foci - Amplify"]
+	"Fire Focus buff" = 2.0
+	"Water Focus buff" = 2.0
+	"Air Focus buff" = 2.0
+	"Earth Focus buff" = 2.0
+
+#Adjust these values to balance how much an elemental spell gets dampened by a not-matching spell focus
+["Elemental Spell Foci - Dampening"]
+	"Fire Focus debuff" = -1.0
+	"Water Focus debuff" = -1.0
+	"Air Focus debuff" = -1.0
+	"Earth Focus debuff" = -1.0
+
+#Enable or disable the passive bonus of the foci
+["Elemental Spell Foci - Abilities"]
+	"Enable glyph empowering (ignite & freeze)" = true
+	"Enable regen bonus under special conditions" = true
+
+["Mermaid Fishing"]
+	#How much source mermaids consume per generation
+	#Range: 0 ~ 10000
+	mermaidManaCost = 1000
+	#How many channels must occur before a mermaid produces loot
+	#Range: 0 ~ 300
+	mermaidMaxProgress = 20
+	#Bonus number of items a mermaid produces per unique mob
+	#Range: 0 ~ 300
+	mermaidUniqueBonus = 2
+	#Base number of items a mermaid produces per cycle before bonuses.
+	#Range: > -2147483648
+	mermaidBaseItems = 1
+	#Max Bonus number of items a mermaid produces from nearby entities. Each entity equals 1 item.
+	#Range: 0 ~ 300
+	mermaidQuantityCap = 5
+
+["Mob spawns"]
+	#How often mages spawn
+	#Range: 0 ~ 200
+	magesSpawnWeight = 0
+	#If true, the wandering mages will target players too, unless they wear the focus of the same school.
+	magesAggro = true
+

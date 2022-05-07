@@ -15,14 +15,17 @@
 	# When true, removes the size limit from the fill and clone commands.
 	# Default: true
 	exceed_fill_and_clone_limit = true
-	#
-	# Adds more vanilla structures to the list of structures that lakes cannot generate inside of. Only villages when set to false. Requires reload.
-	# Default: true
-	extra_lake_proofing = true
 
-[console_debug]
+[debug]
 	#
 	# When true, allows extra debug logging to be printed to the console.
 	# Default: false
 	console_debug = false
+	#
+	# When true:
+	# - Gel blocks can be clicked through like air when holding items that don't interact with them.
+	# - Gel blocks can be replaced like air when not holding gel or crouching.
+	# - Gel blocks automatically replace destroyed neighboring blocks.
+	# Default: true
+	advanced_gel_behavior = true
 

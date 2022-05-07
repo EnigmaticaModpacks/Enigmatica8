@@ -9,6 +9,8 @@
 	jar_tab = false
 	#Enables custom Configured config screen
 	custom_configured_screen = false
+	#Save generated resources to disk in a 'debug' folder in your game directory. Mainly for debug purposes but can be used to generate assets in all wood types for your mods :0
+	debug_save_dynamic_pack = false
 
 [blocks]
 	planter = true
@@ -19,7 +21,6 @@
 	notice_board = true
 	crank = true
 	jar = true
-	jar_tinted = false
 	faucet = true
 	turn_table = true
 	spring_launcher = true
@@ -87,4 +88,10 @@
 	bubble_blower = true
 	globe_sepia = true
 	present = true
+	stasis = true
+	dispenser_minecart = true
+	silver_trapdoor = true
+	silver_door = true
+	lead_trapdoor = true
+	lead_door = true
 

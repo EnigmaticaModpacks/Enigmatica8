@@ -37,4 +37,7 @@
 		#as the volumetric autoswitch interval.
 		#Range: 1 ~ 50
 		autoswitch_linear_update_interval = 4
+		#Sample interval of the Comparator Switch
+		#Range: 1 ~ 50
+		comparator_switch_update_interval = 4
 

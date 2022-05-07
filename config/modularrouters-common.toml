@@ -60,10 +60,6 @@
 	extruderPushEntities = true
 	#Should Breaker & Extruder Mk1 Modules respect the harvest level of the pickaxe used to craft them? (e.g. craft with an Iron Pickaxe => can't break Obsidian
 	breakerHarvestLevelLimit = true
-	#List of entity types which the Activator Module (in entity use mode) should never attempt to interact with. Any entity which opens a GUI when right-clicked, like Villagers, should be added here, especially if it prevents player interaction.
-	activatorEntityBlacklist = ["minecraft:villager", "minecraft:wandering_trader"]
-	#List of entity types which the Activator Module (in attack mode) should never attempt to attack.
-	activatorEntityAttackBlacklist = []
 
 [Router]
 	#Base tick interval (in server ticks) for a router; router will run this often

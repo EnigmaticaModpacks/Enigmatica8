@@ -229,3 +229,7 @@ config/aiotbotania-client.toml
 config/ars_elemental-client.toml
 config/modularrouters-client.toml
 config/botania-client.toml
+config/cosmeticarmorreworked-client.toml
+config/constructionwand-client.toml
+config/curios-client.toml
+config/blueprint-client.toml

@@ -3,9 +3,6 @@
 [general]
 	#Dimensions where hostile mobs will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
 	dimensionBlacklist = []
-	#Rate of tree spawn per chunk
-	#Range: 0.0 ~ 1.0
-	genTrees = 0.002
 	#Spawn Mana Berry Bushes in the world
 	genBerries = true
 	#Spawn a book in the players inventory on login
@@ -37,6 +34,9 @@
 	stalkerHuntsAnimals = false
 	#Should the Wilden Defender attack animals?
 	defenderHuntsAnimals = false
+	#Rate of tree spawn per chunk
+	#Range: > 0
+	treeWeight = 100
 
 [drygmy_production]
 	#How much source drygmys consume per generation
@@ -84,12 +84,18 @@
 	#Regen bonus per potion level
 	#Range: > 0
 	potionRegen = 10
+
+[Spells]
 	#Enforce augment cap on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
 	enforceCapOnCast = true
+	#Enforce glyph per spell limit on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
+	enforceGlyphLimitOnCast = true
 
-#Items
-[item]
-	#Cost per glyph in a codex
-	#Range: > 0
-	codexCost = 10
+	#Items
+	[Spells.item]
+		#Cost per glyph in a codex
+		#Range: > 0
+		codexCost = 10
+		#Spawn Caster Tomes in Dungeon Loot?
+		spawnTomes = true
 

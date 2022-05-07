@@ -24,9 +24,6 @@
 	#Show colourful debug information while the F3-Menu is open.
 	enableRainbowDebug = true
 	# 
-	#Use modern OpenGL features to drastically increase performance.
-	experimentalRendering = true
-	# 
 	#The maximum amount of blocks for which to try and calculate dynamic contraption lighting. Decrease if large contraption cause too much lag
 	#Range: > 0
 	maximumContraptionLightVolume = 16384

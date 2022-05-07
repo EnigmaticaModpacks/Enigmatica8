@@ -1,5 +1,16 @@
 {
   "attributes": {
+    "forge:step_height_addition": {
+      "enabled": false,
+      "min": {
+        "default": -512,
+        "value": -512
+      },
+      "max": {
+        "default": 512,
+        "value": 10000000
+      }
+    },
     "minecraft:generic.follow_range": {
       "enabled": true,
       "min": {
@@ -66,17 +77,6 @@
         "value": 10000000
       }
     },
-    "caelus:fall_flying": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 10000000
-      }
-    },
     "forge:entity_gravity": {
       "enabled": false,
       "min": {
@@ -88,6 +88,17 @@
         "value": 10000000
       }
     },
+    "caelus:fall_flying": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 10000000
+      }
+    },
     "tetra:ability_damage": {
       "enabled": false,
       "min": {
@@ -96,6 +107,17 @@
       },
       "max": {
         "default": 2048,
+        "value": 10000000
+      }
+    },
+    "botania:pixie_spawn_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
         "value": 10000000
       }
     },

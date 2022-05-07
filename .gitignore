@@ -228,3 +228,4 @@ config/ae2-client.toml
 config/aiotbotania-client.toml
 config/ars_elemental-client.toml
 config/modularrouters-client.toml
+config/botania-client.toml

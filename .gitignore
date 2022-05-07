@@ -236,3 +236,4 @@ config/blueprint-client.toml
 config/reliquary-client.toml
 config/ortus-client.toml
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
+config/lootr-client.toml

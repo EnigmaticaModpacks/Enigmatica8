@@ -1,0 +1,18 @@
+#The max amount of backup files to keep.
+#Range: 1 ~ 32767
+backupsToKeep = 10
+#The time between two backups in minutes
+#5 = each 5 minutes
+#60 = each hour
+#1440 = each day
+#Range: 1 ~ 32767
+timer = 120
+#Should message be sent when backup is in the making?
+sendMessages = true
+#The max size of storage the backup folder. If it takes more storage, old files will be deleted.
+#Needs to be written as <number><space><storage type>
+#Valid storage types: B, KB, MB, GB, TB
+maxDiskSize = "25 GB"
+#Used to define the output path.
+outputPath = "backups"
+

@@ -233,3 +233,6 @@ config/cosmeticarmorreworked-client.toml
 config/constructionwand-client.toml
 config/curios-client.toml
 config/blueprint-client.toml
+config/reliquary-client.toml
+config/ortus-client.toml
+defaultconfigs/ftbultimine/ftbultimine-client.snbt

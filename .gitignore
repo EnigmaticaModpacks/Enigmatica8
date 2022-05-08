@@ -237,3 +237,4 @@ config/reliquary-client.toml
 config/ortus-client.toml
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 config/lootr-client.toml
+config/gamemenumodoption-client.toml

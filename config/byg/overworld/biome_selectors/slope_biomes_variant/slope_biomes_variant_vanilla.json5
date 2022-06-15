@@ -6,7 +6,7 @@ VSCode: https://code.visualstudio.com/
 JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
 
 to make editing this file much easier.
-Appearing on elevated flat terrain ABOVE weirdness 0, here is the "plateau_biomes_variant" layout:
+Appearing on sloped terrain, near mountainous terrain, & ABOVE weirdness 0, here is the "slope_biome_variants" layout:
 
 [ ARID-ICY, DRY-ICY, NEUTRAL-ICY, WET-ICY, HUMID-ICY ],
 [ ARID-COLD, DRY-COLD, NEUTRAL-COLD, WET-COLD, HUMID-COLD ],
@@ -15,13 +15,13 @@ Appearing on elevated flat terrain ABOVE weirdness 0, here is the "plateau_biome
 [ ARID-HOT, DRY-HOT, NEUTRAL-HOT, WET-HOT, HUMID-HOT ]
 
 All keys passed in must be valid in the biome registry!
-In slots containing "minecraft:the_void", biomes at the equivalent temperature/humidity index in "plateau_biomes" will be used instead.
+In slots containing "minecraft:the_void", biomes at the equivalent temperature/humidity index in "slope_biomes" will be used instead.
 */
 {
 	"value": [
-		[ "minecraft:ice_spikes", "minecraft:the_void", "minecraft:the_void", "minecraft:the_void", "minecraft:the_void" ],
-		[ "minecraft:the_void", "minecraft:the_void", "minecraft:meadow", "minecraft:meadow", "minecraft:old_growth_pine_taiga" ],
-		[ "minecraft:the_void", "minecraft:the_void", "minecraft:forest", "minecraft:birch_forest", "minecraft:the_void" ],
+		[ "minecraft:snowy_slopes", "minecraft:snowy_slopes", "minecraft:grove", "minecraft:grove", "minecraft:grove" ],
+		[ "minecraft:snowy_slopes", "minecraft:snowy_slopes", "minecraft:grove", "minecraft:grove", "minecraft:grove" ],
+		[ "minecraft:snowy_slopes", "minecraft:snowy_slopes", "minecraft:grove", "minecraft:grove", "minecraft:grove" ],
 		[ "minecraft:the_void", "minecraft:the_void", "minecraft:the_void", "minecraft:the_void", "minecraft:the_void" ],
 		[ "minecraft:eroded_badlands", "minecraft:eroded_badlands", "minecraft:the_void", "minecraft:the_void", "minecraft:the_void" ]
 	]

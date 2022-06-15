@@ -8,15 +8,6 @@ JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mr
 to make editing this file much easier.
 */
 {
-	// Global toggle to enable or disable BYG's overworld biomes.
-	"overworld_enabled": true,
-	/* A list of weighted regions containing a unique biome layout.
-	   Regions may be inlined or may call a file from "this_file_parent_directory/regions"
-	*/
-	"regions": [
-		"region_1",
-		"region_2",
-		"region_3",
-		"rare_region_1"
-	]
+	// Whether the biomepedia button is enabled or not in the player inventory for all users connected to this host.
+	"inventory_enabled": true
 }

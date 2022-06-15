@@ -1,0 +1,66 @@
+
+[storage]
+	# maximum slots that can be uploaded to a cloud chest. A vanilla chest has 27 slots.
+	#Range: > 27
+	max_cloud_slots = 4096
+	# maximum slots that can be uploaded to a static cloud chest. A vanilla chest has 27 slots.
+	#Range: > 27
+	max_static_cloud_slots = 4096
+	# how far from a player will cloud chests play an opening animation
+	#Range: 1.5 ~ 16.0
+	cloud_chest_open_distance = 6.0
+	# whether the cloud chest needs sky access to function
+	cloud_chest_needs_sky_access = true
+
+[village]
+	# whether the balloon salesman villager is enabled or not
+	balloon_salesman_villager = true
+	# the weight of the balloon stand village structure spawning. set to zero to disable
+	#Range: 0 ~ 100
+	balloon_stand_spawn_weight = 2
+
+# spawning of sky mobs is handled a bit differently than vanilla, since vanilla spawns are based on height map which would not work in this case.
+[spawning]
+	# the y level that is considered 'cloud height' for mob spawns
+	#Range: -64 ~ 320
+	cloud_height = 196
+	# can badloons and bloviators spawn naturally
+	sky_mob_spawning = true
+	# interval, in ticks, of how often a sky mob is attempted to spawn. Default value is 1200 ticks, so every 60 seconds a badloon/bloviator spawn is attempted.
+	#Range: 20 ~ 48000
+	sky_mob_spawn_interval = 1200
+	#  for every interval (see above), the percent chance that a sky mob(s) should actually spawn. Default is 0.2, so only 20% of intervals will successfully spawn a badloon/bloviator.
+	#Range: 0.0 ~ 1.0
+	sky_mob_spawn_chance = 0.2
+	# whether sky mobs should only spawn around players that are above the cloud height, or randomly select any player to spawn around.
+	sky_mob_spawn_around_clouded_players = true
+	# whether sky mobs should only spawn in darkness. If false, sky mobs will spawn irrespective of sky light, but will not spawn near block light sources (like torches)
+	sky_mob_spawn_only_in_darkness = false
+	# minimum distance away from the player sky mobs spawn at, in blocks
+	#Range: 1 ~ 2048
+	sky_mob_min_spawn_distance = 24
+	# maximum distance away from the player sky mobs spawn at, in blocks
+	#Range: 1 ~ 2048
+	sky_mob_max_spawn_distance = 48
+	# the percent chance that a sky mob spawn is a badloon rather than a bloviator
+	#Range: 0.0 ~ 1.0
+	badloon_to_bloviator_ratio = 0.55
+
+[generation]
+	# can sky temples spawn in the world
+	generate_sky_temples = true
+	# can big balloons spawn in the world
+	generate_big_balloons = true
+	# minimum distance, in chunks, that sky temples spawn from eachother.
+	#Range: 1 ~ 4095
+	sky_temple_min_seperation = 15
+	# maximum distance, in chunks, that sky temples spawn from eachother.
+	#Range: 2 ~ 4096
+	sky_temple_max_seperation = 24
+	# minimum distance, in chunks, that big balloons spawn from eachother.
+	#Range: 1 ~ 4095
+	big_balloon_min_seperation = 16
+	# maximum distance, in chunks, that big balloons spawn from eachother.
+	#Range: 2 ~ 4096
+	big_balloon_max_seperation = 21
+

@@ -25,23 +25,41 @@
 	#How much source mermaids consume per generation
 	#Range: 0 ~ 10000
 	mermaidManaCost = 1000
-	#How many channels must occur before a mermaid produces loot
+	#How many channels must occur before a siren produces loot.
 	#Range: 0 ~ 300
 	mermaidMaxProgress = 20
-	#Bonus number of items a mermaid produces per unique mob
+	#Base number of items rolls a shrine produces per cycle.
 	#Range: 0 ~ 300
-	mermaidUniqueBonus = 2
-	#Base number of items a mermaid produces per cycle before bonuses.
-	#Range: > -2147483648
 	mermaidBaseItems = 1
-	#Max Bonus number of items a mermaid produces from nearby entities. Each entity equals 1 item.
+	#Max number of items a siren shrine can produce per cycle.
 	#Range: 0 ~ 300
 	mermaidQuantityCap = 5
+	#Max number of extra item rolls a shrine produces if the mood is high.
+	#Range: 0 ~ 10
+	mermaidScoreBonus = 2
+	#Chance multiplier to produce a treasure relative to the siren shrine score.
+	#Range: 0.0 ~ 1.0
+	mermaidTreasureBonus = 0.002
 
-["Mob spawns"]
+["Spawn and Worldgen"]
+	#How often sirens spawn
+	#Range: 0 ~ 200
+	sirenSpawnWeight = 2
 	#How often mages spawn
 	#Range: 0 ~ 200
 	magesSpawnWeight = 0
 	#If true, the wandering mages will target players too, unless they wear the focus of the same school.
 	magesAggro = true
+	#Rate of flashing archwood trees spawn per chunk. 0 disable, higher value -> more rare
+	#Range: > 0
+	flashingTreesRarity = 200
+
+[Misc]
+	#If enabled, flarecannons will simply die and drop the charm, instead of deactivating, if killed by their owner
+	flarecannon_owner_kill = false
+	#If enabled, homing will be able to target mobs only if they're glowing
+	homing_nerf = false
+	#Define the refresh rate of the Squirrel Ritual buff, in ticks.
+	#Range: > 1
+	squirrelRefreshRate = 600
 

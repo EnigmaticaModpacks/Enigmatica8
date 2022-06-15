@@ -28,9 +28,6 @@
 	resistiveHeaterEfficiency = 0.6
 	#Amount of heat each Boiler heating element produces.
 	superheatingHeatTransfer = 1.6E7
-	#Displayed temperature unit in Mekanism GUIs.
-	#Allowed Values: K, C, R, F, STP
-	temperatureUnit = "K"
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
 	maxSolarNeutronActivatorRate = 64
 
@@ -90,9 +87,6 @@
 		EthyleneBurnTime = 40
 		#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
 		maxEnergyPerSteam = "10"
-		#Displayed energy type in Mekanism GUIs.
-		#Allowed Values: J, FE, EU
-		energyType = "FE"
 
 	#Radiation Settings
 	[general.radiation]

@@ -324,10 +324,9 @@
 		# - <min_price> being the cheapest (in Emeralds) the map can be
 		# - <max_price> being the most expensive (in Emeralds) the map can be
 		# - <color> being a hex color (without the #) for the map to display. You can generate one here - https://htmlcolorcodes.com/
-		# - <name> being the display name of the map
 		#
 		#Here's an example of a map to locate Ice Mountains:
-		#minecraft:ice_mountains,2,8,14,7FE4FF,Ice Mountains Pathfinder Map
+		#minecraft:ice_mountains,2,8,14,7FE4FF
 		Customs = []
 		"Search Radius" = 6400
 		"Search Distance Increment" = 8
@@ -352,25 +351,13 @@
 		"Cloud Level Top" = 196
 
 	[tools.ancient_tomes]
-		#Set to 0 to not generate in Dungeons
-		"Dungeon Weight" = 20
-		#Set to 0 to not generate in Stronghold Libraries
-		"Library Weight" = 30
-		#Set to 0 to not generate in Bastions
-		"Bastion Weight" = 25
-		#Set to 0 to not generate in Woodland Mansions
-		"Woodland Mansion Weight" = 15
-		#Set to 0 to not generate in Nether Fortresses
-		"Nether Fortress Weight" = 0
-		#Set to 0 to not generate in Underwater Ruins
-		"Underwater Ruin Weight" = 0
-		#Set to 0 to not generate in Monster Boxes
-		"Monster Box Weight" = 5
 		"Item Quality" = 2
 		"Normal Upgrade Cost" = 10
 		"Limit Break Upgrade Cost" = 30
 		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
 		"Overleveled Books Glow Rainbow" = true
+		#Format is lootTable,weight. i.e. "minecraft:chests/stronghold_library,30"
+		"Loot Tables" = ["minecraft:chests/stronghold_library,30", "minecraft:chests/simple_dungeon,20", "minecraft:chests/bastion_treasure,25", "minecraft:chests/woodland_mansion,15", "minecraft:chests/nether_bridge,0", "minecraft:chests/underwater_ruin_big,0", "minecraft:chests/underwater_ruin_small,0", "quark:misc/monster_box,5"]
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
@@ -455,6 +442,9 @@
 		#Which crops can be harvested?
 		#Format is: "harvestState[,afterHarvest]", i.e. "minecraft:wheat[age=7]" or "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]"
 		"Harvestable Blocks" = ["minecraft:wheat[age=7]", "minecraft:carrots[age=7]", "minecraft:potatoes[age=7]", "minecraft:beetroots[age=3]", "minecraft:nether_wart[age=3]", "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]", "minecraft:cocoa[age=2,facing=south],minecraft:cocoa[age=0,facing=south]", "minecraft:cocoa[age=2,facing=east],minecraft:cocoa[age=0,facing=east]", "minecraft:cocoa[age=2,facing=west],minecraft:cocoa[age=0,facing=west]"]
+		#Which blocks should right click harvesting simulate a click on instead of breaking?
+		#This is for blocks like sweet berry bushes, which have right click harvesting built in.
+		"Right Clickable Blocks" = ["minecraft:sweet_berry_bush", "minecraft:cave_vines"]
 
 	[tweaks.sign_editing]
 		"Requires Empty Hand" = false
@@ -1269,6 +1259,8 @@
 		"Enable Diamond Heart" = true
 		"Cautious Stonelings" = true
 		"Tamable Stonelings" = true
+		#Disabled if if Pathfinder Maps are disabled.
+		"Weald Pathfinder Maps" = true
 
 		[mobs.stonelings.dimensions]
 			"Is Blacklist" = false
@@ -1522,6 +1514,7 @@
 	"Adjustable Chat" = false
 	"Zombie Villagers On Normal" = false
 	"Spawner Replacer" = false
+	"Enchantments Begone" = false
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
@@ -1550,6 +1543,9 @@
 		#Mobs to be replaced with other mobs.
 		#Format is: "mob1,mob2", i.e. "minecraft:spider,minecraft:skeleton"
 		"Replace Mobs" = []
+
+	[experimental.enchantments_begone]
+		"Enchantments To Begone" = []
 
 [oddities]
 	"Totem Of Holding" = true
@@ -1615,6 +1611,7 @@
 		#A list of enchantment IDs you don't want the enchantment table to be able to create
 		"Disallowed Enchantments" = []
 		#An array of influences each candle should apply. This list must be 16 elements long, and is in order of wool colors.
+		#A minus sign before an enchantment will make the influence decrease the probability of that enchantment.
 		"Influences List" = ["minecraft:unbreaking", "minecraft:fire_protection", "minecraft:knockback,minecraft:punch", "minecraft:feather_falling", "minecraft:looting,minecraft:fortune,minecraft:luck_of_the_sea", "minecraft:blast_protection", "minecraft:silk_touch,minecraft:channeling", "minecraft:bane_of_arthropods", "minecraft:protection", "minecraft:respiration,minecraft:loyalty,minecraft:infinity", "minecraft:sweeping,minecraft:multishot", "minecraft:efficiency,minecraft:sharpness,minecraft:lure,minecraft:power,minecraft:impaling,minecraft:quick_charge", "minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide", "minecraft:thorns,minecraft:piercing", "minecraft:fire_aspect,minecraft:flame", "minecraft:smite,minecraft:projectile_protection"]
 		#Set to false to disable the ability to influence enchantment outcomes with candles
 		"Allow Influencing" = true
@@ -1624,6 +1621,9 @@
 		"Influence Power" = 0.125
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
 		"Automatically Convert" = true
+		#An array of influences that other blocks should apply.
+		#Format is: "blockstate;strength;color;enchantments", i.e. "minecraft:sea_pickle[pickles=1,waterlogged=false];1;#008000;minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide" (etc) or "minecraft:anvil[facing=north];#808080;-minecraft:thorns,minecraft:unbreaking" (etc)
+		"States To Influences" = []
 
 	[oddities.magnets]
 		#Any items you place in this list will be derived so that any block made of it will become magnetizable

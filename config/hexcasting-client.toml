@@ -1,0 +1,6 @@
+#Whether the ctrl key will instead turn *off* the color gradient on patterns
+ctrlTogglesOffStrokeOrder = false
+#How fast the point showing you the stroke order on patterns moves
+#Range: 0.0 ~ Infinity
+manaToHealthRate = 1.0
+

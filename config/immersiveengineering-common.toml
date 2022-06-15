@@ -26,4 +26,5 @@ preferredOres = ["emendatusenigmatica", "minecraft", "thermal", "immersiveengine
 	curios = true
 	computercraft = true
 	oc2 = true
+	crafttweaker = true
 

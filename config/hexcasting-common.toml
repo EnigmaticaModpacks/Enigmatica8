@@ -1,0 +1,15 @@
+
+["Mana Amounts"]
+	#How much mana a single Amethyst Dust item is worth
+	#Range: > 0
+	dustManaAmount = 10000
+	#How much mana a single Amethyst Shard item is worth
+	#Range: > 0
+	shardManaAmount = 50000
+	#How much mana a single Charged Amethyst Crystal item is worth
+	#Range: > 0
+	chargedCrystalManaAmount = 100000
+	#How many points of mana a half-heart is worth when casting from HP
+	#Range: 0.0 ~ Infinity
+	manaToHealthRate = 10000.0
+

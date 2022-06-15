@@ -99,7 +99,7 @@
 	[blocks.sack]
 		#Penalize the player with slowness effect when carrying too many sacks
 		sack_penalty = true
-		#Maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
+		#Maximum number of sacks after which the overencumbered effect will be applied. Each multiple of this number will increase the effect strength by one
 		#Range: 0 ~ 50
 		sack_increment = 2
 		#How many slots should a sack have
@@ -210,14 +210,16 @@
 	[spawns.structures]
 
 		[spawns.structures.way_sign]
-			#Average distance apart in chunks between spawn attempts
-			#Range: 0 ~ 1001
+			#Average distance apart in chunks between spawn attempts. Has to be larger than minimum_distance of course
+			#Range: 0 ~ 1000
 			average_distance = 19
-			#Minimum distance apart in chunks between spawn attempts. 1001 to disable them entirely
-			#Range: 0 ~ 1001
+			#Minimum distance apart in chunks between spawn attempts
+			#Range: 0 ~ 1000
 			minimum_distance = 10
 			#With this option road signs will display the distance to the structure that they are pointing to
 			show_distance_text = true
+			#Entirely disables them from spawning
+			enabled = true
 
 		[spawns.structures.wild_flax]
 			enabled = true
@@ -257,10 +259,6 @@
 
 #Vanilla tweaks
 [tweaks]
-
-	[tweaks.axe_dispenser_behaviors]
-		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
-		enabled = true
 
 	[tweaks.cake_tweaks]
 		#Allows you to place a cake on top of another
@@ -378,6 +376,12 @@
 		#Allowed Values: ON, OFF, NO_FIRE
 		fallin_lanterns = "ON"
 
+	[tweaks.dispenser_tweaks]
+		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
+		axe_strip = true
+		#Enables shooting ender pearls with dispensers
+		shoot_ender_pearls = true
+
 [items]
 
 	[items.wrench]
@@ -409,6 +413,9 @@
 		#Do bombs break blocks like tnt?
 		#Allowed Values: ALL, WEAK, NONE
 		break_blocks = "WEAK"
+		#Put here any number other than 0 to have your bombs explode after a certaom amount of ticks instead than on contact
+		#Range: 0 ~ 100000
+		bomb_fuse = 0
 
 	[items.blue_bomb]
 		#Bomb explosion radius (damage depends on this)

@@ -22,7 +22,7 @@
 			#Maximum number of blocks in a small tin vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 4
-			#Maximum number of blocks in a small tin vein.
+			#Chance that blocks that are directly exposed to air in a small tin vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.0
 			#Distribution shape for placing small tin veins.
@@ -63,7 +63,7 @@
 			#Maximum number of blocks in a large tin vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 9
-			#Maximum number of blocks in a large tin vein.
+			#Chance that blocks that are directly exposed to air in a large tin vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.0
 			#Distribution shape for placing large tin veins.
@@ -109,7 +109,7 @@
 			#Maximum number of blocks in a upper osmium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 7
-			#Maximum number of blocks in a upper osmium vein.
+			#Chance that blocks that are directly exposed to air in a upper osmium vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.0
 			#Distribution shape for placing upper osmium veins.
@@ -150,7 +150,7 @@
 			#Maximum number of blocks in a middle osmium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 9
-			#Maximum number of blocks in a middle osmium vein.
+			#Chance that blocks that are directly exposed to air in a middle osmium vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.0
 			#Distribution shape for placing middle osmium veins.
@@ -191,7 +191,7 @@
 			#Maximum number of blocks in a small osmium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 4
-			#Maximum number of blocks in a small osmium vein.
+			#Chance that blocks that are directly exposed to air in a small osmium vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.0
 			#Distribution shape for placing small osmium veins.
@@ -237,7 +237,7 @@
 			#Maximum number of blocks in a small uranium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 4
-			#Maximum number of blocks in a small uranium vein.
+			#Chance that blocks that are directly exposed to air in a small uranium vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.0
 			#Distribution shape for placing small uranium veins.
@@ -278,7 +278,7 @@
 			#Maximum number of blocks in a buried uranium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 9
-			#Maximum number of blocks in a buried uranium vein.
+			#Chance that blocks that are directly exposed to air in a buried uranium vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.75
 			#Distribution shape for placing buried uranium veins.
@@ -324,7 +324,7 @@
 			#Maximum number of blocks in a normal fluorite vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 5
-			#Maximum number of blocks in a normal fluorite vein.
+			#Chance that blocks that are directly exposed to air in a normal fluorite vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.0
 			#Distribution shape for placing normal fluorite veins.
@@ -365,7 +365,7 @@
 			#Maximum number of blocks in a buried fluorite vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 13
-			#Maximum number of blocks in a buried fluorite vein.
+			#Chance that blocks that are directly exposed to air in a buried fluorite vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 1.0
 			#Distribution shape for placing buried fluorite veins.
@@ -399,19 +399,19 @@
 	#Generation Settings for lead ore.
 	[world_generation.lead]
 		#Determines if lead ore should be added to world generation.
-		shouldGenerate = false
+		shouldGenerate = true
 
 		#normal lead vein Generation Settings.
 		[world_generation.lead.normal]
 			#Determines if normal lead veins should be added to world generation. Note: Requires generating lead ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that normal lead veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 8
 			#Maximum number of blocks in a normal lead vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 9
-			#Maximum number of blocks in a normal lead vein.
+			#Chance that blocks that are directly exposed to air in a normal lead vein are not placed.
 			#Range: 0.0 ~ 1.0
 			discardChanceOnAirExposure = 0.25
 			#Distribution shape for placing normal lead veins.

@@ -1,0 +1,48 @@
+{
+  // Multiplier to calculate the durability
+  // Single tool durability * this value = durability
+  "durabilityModifier": 5,
+  
+  // This is only relevant when MoreVanillaTools is installed
+  "vanillaOnly": false,
+  
+  "ToolValues": {
+  
+    "diamond": {
+      "speed": 8,
+      "attackDamageBonus": 3,
+      "harvestLevel": 3,
+      "enchantmentValue": 10
+    },
+    "gold": {
+      "speed": 12,
+      "attackDamageBonus": 0.0,
+      "harvestLevel": 0,
+      "enchantmentValue": 22
+    },
+    "iron": {
+      "speed": 6,
+      "attackDamageBonus": 2,
+      "harvestLevel": 2,
+      "enchantmentValue": 14
+    },
+    "netherite": {
+      "speed": 9,
+      "attackDamageBonus": 4,
+      "harvestLevel": 4,
+      "enchantmentValue": 15
+    },
+    "stone": {
+      "speed": 4,
+      "attackDamageBonus": 1,
+      "harvestLevel": 1,
+      "enchantmentValue": 5
+    },
+    "wood": {
+      "speed": 2,
+      "attackDamageBonus": 0.0,
+      "harvestLevel": 0,
+      "enchantmentValue": 15
+    }
+  }
+}

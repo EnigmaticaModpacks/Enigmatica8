@@ -160,7 +160,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"sophisticatedbackpacks-client.toml",
 	"sounddeviceoptions-client.toml",
 	"storagedrawers-client.toml",
-	"supplementaries-client.toml",
 	"tconplanner-client.toml",
 	"tconstruct-client.toml",
 	"terraforged/performance_internal.conf",

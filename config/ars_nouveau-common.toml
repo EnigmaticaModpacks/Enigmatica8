@@ -10,13 +10,13 @@
 	#How often Carbuncles spawn
 	#Range: 0 ~ 100
 	carbuncleWeight = 5
-	#How often Sylphs spawn
+	#How often Whirlisprigs spawn
 	#Range: 0 ~ 100
 	sylphWeight = 5
 	#How often Drygmys spawn
 	#Range: 0 ~ 100
 	drygmyWeight = 3
-	#How much mana sylphs consume per generation
+	#How much mana whirlisprigs consume per generation
 	#Range: 0 ~ 10000
 	sylphManaCost = 250
 	#How often Wilden Guardians spawn
@@ -37,6 +37,9 @@
 	#Rate of tree spawn per chunk
 	#Range: > 0
 	treeWeight = 100
+	#How much progress whirlisprigs must accumulate before creating resources
+	#Range: 0 ~ 10000
+	whirlisprigProgress = 250
 
 [drygmy_production]
 	#How much source drygmys consume per generation

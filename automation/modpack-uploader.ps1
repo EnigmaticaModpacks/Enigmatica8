@@ -1,3 +1,7 @@
+param (
+    [switch]$modlistOnly = $false,
+)
+
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $manifest = "manifest.json"
@@ -384,6 +388,12 @@ function Remove-LeadingZero {
 
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
+
+if ($modlistOnly) {
+    New-ManifestJson
+    Update-Modlist
+    Exit
+}
 
 Test-ForDependencies
 Validate-SecretsFile

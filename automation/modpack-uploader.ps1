@@ -1,5 +1,5 @@
 param (
-    [switch]$modlistOnly = $false,
+    [switch]$modlistOnly = $false
 )
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12

@@ -1,0 +1,121 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "farmersdelight:shepherds_pie",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "sushigocrafting:tobiko_crab_cheese_california",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Weights:[I;0,0,0,0,0,0],Spices:{wasabi:1b,soy_sauce:1b}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "sushigocrafting:wakame_gunkan",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Weights:[I;0,0,0],Spices:{wasabi:1b,soy_sauce:1b}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "sushigocrafting:shrimp_nigiri",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Weights:[I;0,0,0],Spices:{wasabi:1b,soy_sauce:1b}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "farmersdelight:pasta_with_mutton_chop",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "farmersdelight:squid_ink_pasta",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "farmersdelight:vegetable_noodles",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "farmersdelight:fish_stew",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "farmersdelight:bacon_sandwich",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

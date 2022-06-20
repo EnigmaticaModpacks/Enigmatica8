@@ -57,13 +57,13 @@
 	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
 	commonOreBlocks = ["minecraft:clay"]
 	#Block tags of blocks considered 'common ores', requiring the common ore scanner module.
-	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/coal", "forge:ores/quartz", "forge:ores/tin", "forge:ores/copper"]
+	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/coal", "forge:ores/quartz", "forge:ores/tin", "forge:ores/copper", "forge:ores/aluminum", "forge:ores/zinc", "forge:ores/lead", "forge:ores/silver", "forge:ores/nickel"]
 	#Registry names of blocks considered 'rare ores', requiring the rare ore scanner module.
-	rareOreBlocks = ["minecraft:glowstone"]
+	rareOreBlocks = ["minecraft:glowstone", "bigreactors:benitoite_ore", "bigreactrors:anglesite_ore", "rftoolsbase:dimensionalshard_overworld", "rftoolsbase:dimensionalshard_nether", "rftoolsbase:dimensionalshard_end"]
 	#Block tags of blocks considered 'rare ores', requiring the common ore scanner module.
 	#Any block with the forge:ores tag is implicitly in this list, unless the block also
 	#matches an ignored or common ore block tag, or is an ignored or common block.
-	rareOreBlockTags = []
+	rareOreBlockTags = ["forge:ores/iesnium", "forge:ores/uranium"]
 
 [fluids]
 	#Fluid tags of fluids that should be ignored.

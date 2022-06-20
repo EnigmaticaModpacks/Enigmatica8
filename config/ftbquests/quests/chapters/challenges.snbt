@@ -1,0 +1,281 @@
+{
+	id: "0000000000000098"
+	group: ""
+	order_index: 4
+	filename: "challenges"
+	title: "Challenges"
+	icon: "minecraft:dragon_head"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Limitless Power"
+			icon: "mininggadgets:upgrade_battery_3"
+			x: 0.5d
+			y: 2.5d
+			subtitle: "Infinite Cosmic Power!"
+			description: [
+				"The Ultimate Induction Cell can store up to 1.600.000.000.000 FE, also known as 1.6TFE"
+				""
+				"To charge an Induction Cell, place it inside an Induction Cell multiblock and charge it."
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "4473CCD6EB0E60E0"
+			tasks: [{
+				id: "43D8479933BD78E5"
+				type: "item"
+				title: "Full Ultimate Induction Cell"
+				icon: {
+					id: "mekanism:ultimate_induction_cell"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "4000000000000"
+							}]
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										mekData: {
+											EnergyContainers: [{
+												Container: 0b
+												stored: "4000000000000"
+											}]
+										}
+									}
+								}
+							}
+							{
+								id: "mekanism:ultimate_induction_cell"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "4000000000000"
+										}]
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "18625435104F6277"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "mininggadgets:upgrade_battery_3"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 128
+									Blue: 31
+									Green: 199
+								}
+							}
+							Name: "Limitless Power Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Challenger"
+			icon: "minecraft:dragon_head"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Slaying the Ender Dragon has given you access to the Challenges chapter!"]
+			size: 1.5d
+			id: "1C6E46EA96373E74"
+			tasks: [{
+				id: "6C159C9408B0C66C"
+				type: "advancement"
+				title: "Kill the Ender Dragon"
+				icon: "minecraft:dragon_head"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7F0FC16030FE7D99"
+				type: "item"
+				item: {
+					id: "trofers:trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:dragon_head"
+								Count: 1b
+							}
+							DisplayScale: 0.75f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 137
+									Blue: 184
+									Green: 50
+								}
+							}
+							Name: "Ender Dragon Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Zoology"
+			x: 3.0d
+			y: 1.0d
+			subtitle: "Pets and kisses"
+			description: [
+				"Tame every animal there is to tame!"
+				""
+				"(You can track the progress you've made by looking at the 'Zoology' advancement in the Husbandry tab)"
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "2AEE1AFA3BC416CE"
+			tasks: [{
+				id: "6550FEDCE5175F8C"
+				type: "advancement"
+				title: "Tame all tameable animals"
+				icon: "farmersdelight:horse_feed"
+				advancement: "enigmatica:husbandry/tame_all_animals"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1101CE8B58FFDB74"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "farmersdelight:horse_feed"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 249
+									Blue: 29
+									Green: 128
+								}
+							}
+							Name: "Zoology Trophy"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Two by Two"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "The bees and the birds..."
+			description: [
+				"Breed every animal there is to breed!"
+				""
+				"(You can track the progress you've made by looking at the 'Two by Two' advancement in the Husbandry tab)"
+			]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "24ED473C9C545C09"
+			tasks: [{
+				id: "76A9D7B6C6D4C04F"
+				type: "advancement"
+				title: "Breed all breedable animals"
+				icon: "minecraft:golden_carrot"
+				advancement: "minecraft:husbandry/bred_all_animals"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2CBDA020ED4C5E9C"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:golden_carrot"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 254
+									Blue: 61
+									Green: 216
+								}
+							}
+							Name: "Breeding Trophy"
+						}
+					}
+				}
+			}]
+		}
+	]
+}

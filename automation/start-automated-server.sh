@@ -23,9 +23,9 @@
 ####
 
 if test -f $PWD/remove-client-mods.ps1; then
-	powershell $PWD/remove-client-mods.ps1 >/dev/null
+	pwsh $PWD/remove-client-mods.ps1 >/dev/null
 elif test -f remove-client-mods.ps1; then
-	powershell remove-client-mods.ps1 >/dev/null
+	pwsh remove-client-mods.ps1 >/dev/null
 fi
 
 unameOut="$(uname -s)"
@@ -216,7 +216,6 @@ if [[ "$answer" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
 fi
 
 check_dir
-check_connection
 check_binaries
 eula
 
@@ -254,7 +253,6 @@ while true ; do
 
 	#re-validate stuff each server restart
 	check_dir
-	check_connection
 	check_binaries
 	eula
 	echo "INFO: Server-auto-restart commencing"  >>serverstart.log 2>&1

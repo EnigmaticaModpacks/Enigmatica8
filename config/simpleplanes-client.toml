@@ -1,0 +1,6 @@
+
+#Planes client settings
+[general_client]
+	#Inverted W-S plane controls (doesn't affect helicopters)
+	inverted_controls = false
+

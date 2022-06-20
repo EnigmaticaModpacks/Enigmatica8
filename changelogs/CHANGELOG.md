@@ -1,3 +1,11 @@
+### Enigmatica 8 v2.0.0
+
+_Using Forge-1.18.2-40.1.41_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.0.0.md)_
+
+**Not compatible with older modpack versions, you will need to start a new world when you update.**
+
+Too many changes to count :smile: A ton of new mods, a ton of mods removed.
+
 ### Enigmatica 8 v1.0.5
 
 _Using Forge-1.18.0-39.0.63_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.5.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.5.md)_

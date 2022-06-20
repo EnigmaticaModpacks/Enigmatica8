@@ -9,6 +9,8 @@
 	jar_tab = false
 	#Enables custom Configured config screen
 	custom_configured_screen = false
+	#Save generated resources to disk in a 'debug' folder in your game directory. Mainly for debug purposes but can be used to generate assets in all wood types for your mods :0
+	debug_save_dynamic_pack = false
 
 [blocks]
 	planter = true
@@ -19,7 +21,6 @@
 	notice_board = true
 	crank = true
 	jar = true
-	jar_tinted = false
 	faucet = true
 	turn_table = true
 	spring_launcher = true
@@ -39,7 +40,6 @@
 	blackboard = true
 	safe = true
 	copper_lantern = true
-	flute = true
 	gold_trapdoor = true
 	gold_door = true
 	bamboo_spikes = true
@@ -51,14 +51,11 @@
 	checker_block = true
 	netherite_door = true
 	netherite_trapdoor = true
-	pancake = true
 	lock_block = true
 	flax = true
 	rope = true
-	rope_arrow = true
 	pulley_block = true
 	fodder = true
-	bomb = true
 	crimson_lantern = true
 	magma_cream_block = true
 	daub = true
@@ -72,19 +69,31 @@
 	iron_gate = true
 	feather_block = true
 	flint_block = true
-	slingshot = true
-	shulker_shell = true
-	candy = true
-	wrench = true
 	urn = true
 	ash = true
 	ash_bricks = true
-	antique_ink = true
 	doormat = true
 	flower_box = true
 	blackstone_tile = true
-	soap = true
-	bubble_blower = true
 	globe_sepia = true
 	present = true
+	silver_trapdoor = true
+	silver_door = true
+	lead_trapdoor = true
+	lead_door = true
+
+[items]
+	flute = true
+	stasis = true
+	dispenser_minecart = true
+	soap = true
+	bubble_blower = true
+	antique_ink = true
+	shulker_shell = true
+	candy = true
+	wrench = true
+	slingshot = true
+	rope_arrow = true
+	bomb = true
+	pancake = true
 

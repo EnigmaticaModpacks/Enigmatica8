@@ -31,12 +31,12 @@
 	# A list of mods that are allowed to generate features in the Everbright and Everdawn.
 	# This does not make them generate, it just allows them to pass the filter. 
 	# Default: []
-	# Example: ["minecraft", "blue_skies", "botania"]
+	# Example: ["minecraft", "farlanders", "botania"]
 	allowed_mods_for_feature_gen = []
 	#
 	# A list of mobs that are allowed to spawn in the Everbright and Everdawn.
 	# This does not make them spawn, it just allows them to pass the filter. 
 	# Default: []
-	# Example: ["minecraft", "blue_skies", "alexs_mobs"]
+	# Example: ["minecraft:bee", "moolands:awful_cow", "alexs_mobs:grizzly_bear"]
 	allowed_mobs_for_spawning = []
 

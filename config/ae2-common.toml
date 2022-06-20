@@ -47,6 +47,7 @@
 	debugLog = false
 	#Enable stack trace logging for the chunk loading debug command
 	chunkLoggerTrace = false
+	gridLog = false
 
 [battery]
 	#The chargers charging rate factor, which is applied to the charged items charge rate. 2 means it charges everything twice as fast. 0.5 half as fast.
@@ -60,8 +61,6 @@
 	matterCannon = 200000
 
 [worldGen]
-	generateMeteorites = true
-	meteoriteBiomeBlacklist = []
 	spawnPressesInMeteorites = true
 	generateQuartzOre = true
 	quartzOresPerCluster = 7

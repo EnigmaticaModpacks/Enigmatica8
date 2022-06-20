@@ -1,0 +1,12 @@
+
+#Lighting
+[lights]
+	#If dynamic lights are enabled
+	lightsEnabled = false
+	#How bright the touch light is
+	#Range: 0 ~ 15
+	touchLightLuminance = 8
+	#How long the touch light lasts in ticks
+	#Range: 0 ~ 40
+	touchLightDuration = 8
+

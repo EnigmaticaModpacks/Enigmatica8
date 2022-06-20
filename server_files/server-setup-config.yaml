@@ -68,6 +68,8 @@ install:
             - 521714 # PonderJS
             - 360673 # Custom Window Title
             - 401648 # BetterF3
+            - 448233 # Entity Culling https://www.curseforge.com/minecraft/mc-mods/entityculling
+            - 525447 # Journeymap Integration https://www.curseforge.com/minecraft/mc-mods/journeymap-integration
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~

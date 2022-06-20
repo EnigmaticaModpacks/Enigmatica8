@@ -2,9 +2,11 @@
 # In the format @("filename", "filename")
 $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"Ding", 
+	"entityculling",
 	"ReAuth", 
 	"moreoverlays",
 	"Neat", 
+	"jmi-forge",
 	"Toast-Control", 
 	"PackMenu",
 	"CustomWindowTitle",

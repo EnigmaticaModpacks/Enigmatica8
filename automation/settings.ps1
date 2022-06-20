@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.0.5"
+$MODPACK_VERSION = "2.0.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.0.4"
+$LAST_MODPACK_VERSION = "1.0.5"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -69,7 +69,7 @@ $CLIENT_RELEASE_TYPE = "alpha"
 $CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-1.2.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-3.0.1.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS

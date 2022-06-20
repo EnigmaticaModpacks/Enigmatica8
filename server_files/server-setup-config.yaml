@@ -12,7 +12,7 @@ modpack:
 # settings regarding the installation of the modpack
 install:
     # version of minecraft, needs the exact version
-    mcVersion: 1.18.1
+    mcVersion: 1.18.2
 
     # exact version of forge or fabric that is supposed to be used
     # if this value is a null value so ( ~, null, or "" ) then the version from the mod pack is going to be used

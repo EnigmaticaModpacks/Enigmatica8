@@ -27,6 +27,10 @@
 	#1 second of active time per 1 durability
 	broom_waterproof_tip_durability = 800
 
+["Crow Pickpocket Cooldown"]
+	#time (in ticks) for crow being able to pickpocket again (base 1 minute 30 seconds)
+	crow_pickpocket_cooldown = 1800
+
 ["Dark Coven Separation"]
 	#separation of the dark covens, lower both spacing and separation to increase spawn rates
 	dark_coven_separation = 11

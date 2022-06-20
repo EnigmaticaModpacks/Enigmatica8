@@ -1,0 +1,5 @@
+
+[Debug]
+	#Allows components to be hidden from a circuit (clientside only) by 
+	allow_hiding_components = false
+

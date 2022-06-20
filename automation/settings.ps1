@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.0.5"
+$MODPACK_VERSION = "2.0.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.0.4"
+$LAST_MODPACK_VERSION = "1.0.5"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -69,7 +69,7 @@ $CLIENT_RELEASE_TYPE = "alpha"
 $CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-2.0.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-3.0.1.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
@@ -87,68 +87,90 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
 	"schematics")
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
-	"betterendforge/client-config.toml",
-	"jei/bookmarks.ini",
-	"pneumaticcraft/ArmorFeatureStatus.cfg",
-	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
-	"artifacts-client.toml",
+	"InventoryHUD/curios.json",
+	"Mekanism/client.toml",
+	"Mekanism/tools-client.toml"
+	"PregenConfig.toml",
 	"abnormals_core-client.toml",
+	"ae2-client.toml",
 	"ambientsounds-client.json",	
+	"artifacts-client.toml",
 	"astralsorcery-client.toml",
 	"betteradvancements-client.toml",
+	"betterendforge/client-config.toml",
+	"betterendforge/client.json",
+	"bloodmagic-client.toml",
+	"blue_skies-client.toml",
 	"cagedmobs-client.toml",
+	"cfm-client.toml",
 	"chiselsandbits-client.toml",
 	"computercraft-client.toml",
+	"configured-client.toml",
+	"constructionwand-client.toml",
+	"contentcreatorintegration/contentcreatorintegration-common.toml",
+	"contentcreatorintegration/contentcreatorintegration.toml",
+	"contentcreatorintegration/default/constants.json",
+	"cosmeticarmorreworked-client.toml",
 	"craftingtweaks-client.toml",
+	"create-client.toml",
 	"cucumber-client.toml",
+	"diet-client.toml",
+	"dummmmmmy-client.toml",
 	"eidolon-client.toml",
 	"emojiful-client.toml",
 	"entity_culling-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
+	"findme-client.toml",
+	"forge-client.toml",
+	"framedblocks-client.toml",
 	"ftbchunks-client.toml",
+	"gravestone-client.toml",
 	"immersivepetroleum-client.toml",
 	"inventory_hud-client.toml",
-	"itemzoom-client.toml",
 	"ironjetpacks-client.toml",
+	"itemzoom-client.toml",
+	"jecalculation/record.json",
+	"jeed-client.toml",
 	"jei-client.toml",
+	"jei/bookmarks.ini",
+	"jmi-client.toml",
 	"mcjtylib-client.toml",
 	"mining_helmet-client.toml",
+	"miniutilities-client.toml",
+	"modularrouters-client.toml",
 	"morered-client.toml",
 	"mythicbotany-client.toml",
 	"neat-client.toml",
+	"oauth-client.toml",
 	"occultism-client.toml",
+	"personality-client.toml",
+	"pipez-client.toml",
+	"pneumaticcraft/ArmorFeatureStatus.cfg",
+	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
-	"rftoolspower-client.toml",
 	"rftoolscontrol-client.toml",
+	"rftoolspower-client.toml",
 	"rftoolsstorage-client.toml",
 	"rftoolsutility-client.toml",
+	"roadrunner/client.toml",
+	"roadrunner/common.toml",
+	"smoothboot.json",
 	"sophisticatedbackpacks-client.toml",
-	"supplementaries-client.toml",
-	"tconstruct-client.toml",
-	"thermal-client.toml",
-	"travel_anchors-client.toml",
-	"upgrade_aquatic-client.toml",
-	"xnet-client.toml",
-	"findme-client.toml",
-	"PregenConfig.toml",
 	"sounddeviceoptions-client.toml",
-	"personality-client.toml",
-	"miniutilities-client.toml",
+	"storagedrawers-client.toml",
+	"tconplanner-client.toml",
+	"tconstruct-client.toml",
+	"terraforged/performance_internal.conf",
+	"thermal-client.toml",
+	"topaddons-client.toml",
+	"travel_anchors-client.toml",
 	"twilightforest-client.toml",
-	"framedblocks-client.toml",
-	"cfm-client.toml",
-	"entity_culling-client.toml",
-	"gravestone-client.toml",
-	"cosmeticarmorreworked-client.toml",
-	"configured-client.toml",
-	"pipez-client.toml",
-	"dummmmmmy-client.toml",
-	"ae2-client.toml",
-	"modularrouters-client.toml",
-	"constructionwand-client.toml",
-	"valhelsia_core-client.toml"
+	"upgrade_aquatic-client.toml",
+	"valhelsia_core-client.toml",
+	"xnet-client.toml",
+	"jei/jei-client.ini"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")

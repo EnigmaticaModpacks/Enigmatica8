@@ -1,0 +1,86 @@
+
+[worldgen]
+
+	[worldgen.brilliance]
+		#Should brilliant stone generate?
+		generateBrilliantStone = true
+		#Size of brilliant stone veins.
+		brilliantStoneSize = 2
+		#Amount of brilliant stone veins.
+		brilliantStoneAmount = 8
+		#Minimum height at which brilliant stone can spawn.
+		brilliantStoneMinY = -64
+		#Maximum height at which brilliant stone can spawn.
+		brilliantStoneMaxY = 40
+
+	[worldgen.runewood]
+		#Should runewood trees naturally generate?
+		generateRunewood = true
+		#Chance for runewood trees to generate in open biomes such as plains.
+		#Range: 0.0 ~ 1.0
+		runewoodCommonChance = 0.02
+		#Chance for runewood trees to generate in forest biomes.
+		#Range: 0.0 ~ 1.0
+		runewoodRareChance = 0.01
+
+	[worldgen.soulstone]
+		#Should soulstone ore generate underground?
+		generateSoulstone = true
+		#Size of soulstone ore veins underground.
+		soulstoneSize = 12
+		#Amount of soulstone ore veins.
+		soulstoneAmount = 8
+		#Minimum height at which soulstone ore can spawn.
+		soulstoneMinY = -64
+		#Maximum height at which soulstone ore can spawn.
+		soulstoneMaxY = 30
+		#Should soulstone ore generate on the surface?
+		generateSurfaceSoulstone = true
+		#Size of soulstone ore veins on the surface.
+		surfaceSoulstoneSize = 6
+		#Amount of soulstone ore veins on the surface.
+		surfaceSoulstoneAmount = 5
+		#Minimum height at which surface soulstone ore can spawn.
+		surfaceSoulstoneMinY = 60
+		#Maximum height at which surface soulstone ore can spawn.
+		surfaceSoulstoneMaxY = 100
+
+	[worldgen.blazing_quartz]
+		#Should blaze quartz ore generate?
+		generateBlazeQuartz = true
+		#Size of blaze quartz ore veins.
+		blazeQuartzSize = 14
+		#Amount of blaze quartz ore veins.
+		blazeQuartzAmount = 16
+
+[spirit]
+
+	[spirit.affinity]
+
+		[spirit.affinity.soul_ward]
+			#Multiplier for physical damage taken while soul ward is active.
+			#Range: 0.0 ~ 1.0
+			soulWardPhysical = 0.699999988079071
+			#Multiplier for magic damage taken while soul ward is active.
+			#Range: 0.0 ~ 1.0
+			soulWardMagic = 0.10000000149011612
+			#Base time in ticks it takes for one point of soul ward to recover.
+			soulWardRate = 60
+
+		[spirit.affinity.heart_of_stone]
+			#Amount of hunger consumed when recovering a point of heart of stone. Do note that this will only matter if the player has the earthen affinity.
+			#Range: 0.0 ~ 1.0
+			heartOfStoneCost = 0.2
+			#Base time in ticks it takes for one point of heart of stone to recover.
+			heartOfStoneRate = 40
+
+	[spirit.spawner]
+		#If set to true, mob spawners will create soulless mobs instead.
+		lameSpawners = false
+
+[item]
+
+	[item.rebound]
+		#If set to true, you may put rebound on any weapon in the game.
+		enableUltimateRebound = false
+

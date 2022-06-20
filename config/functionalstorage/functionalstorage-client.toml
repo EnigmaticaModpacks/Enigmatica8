@@ -1,0 +1,6 @@
+
+[FunctionalStorageClientConfig]
+	#Drawer content render range in blocks
+	#Range: > 1
+	DRAWER_RENDER_RANGE = 16
+

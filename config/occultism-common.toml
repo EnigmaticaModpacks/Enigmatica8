@@ -8,7 +8,7 @@
 		#Ore Settings
 		[worldgen.oregen.silverOre]
 			#True to generate this ore.
-			generateOre = true
+			generateOre = false
 			#The tag for the blocks this ore will spawn in.
 			fillerBlockTag = "minecraft:stone_ore_replaceables"
 			#The size of veins for this ore.
@@ -46,7 +46,7 @@
 		#Ore Settings
 		[worldgen.oregen.silverOreDeepslate]
 			#True to generate this ore.
-			generateOre = true
+			generateOre = false
 			#The tag for the blocks this ore will spawn in.
 			fillerBlockTag = "minecraft:deepslate_ore_replaceables"
 			#The size of veins for this ore.

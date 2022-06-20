@@ -14,6 +14,8 @@ const modPriorities = [
     'create',
     'occultism',
     'industrialforegoing',
+    'tconstruct',
+    'ftbic',
     'botania',
     'quark',
     'pedestals',
@@ -32,7 +34,8 @@ const modPriorities = [
     'chipped',
     'chisel',
     'voluminousenergy',
-    'assemblylinemachines'
+    'assemblylinemachines',
+    'malum'
 ];
 
 const lootChests = ['lootr:lootr_chest', 'lootr:lootr_barrel', 'lootr:lootr_trapped_chest'];

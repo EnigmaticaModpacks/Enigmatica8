@@ -45,4 +45,6 @@
 	logSpawnChecks = false
 	#Configures the spawn check to be more aggressive, effectivly overriding the CheckSpawn results of other mods
 	aggressiveSpawnChecks = false
+	#If this setting is enabled, the mega torch will block village sieges from zombies
+	blockVillageSieges = true
 

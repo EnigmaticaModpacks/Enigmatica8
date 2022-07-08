@@ -10,6 +10,10 @@
 	# Default: 30
 	#
 	"Maximum y-coordinate" = 30
+	# Whether or not vanilla mineshafts should be disabled.
+	# Default: true
+	#
+	"Disable Vanilla Mineshafts" = true
 
 	###########################################################################################################
 	## Ore deposit settings.

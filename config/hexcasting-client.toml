@@ -3,4 +3,7 @@ ctrlTogglesOffStrokeOrder = false
 #How fast the point showing you the stroke order on patterns moves
 #Range: 0.0 ~ Infinity
 manaToHealthRate = 1.0
+#When using a staff, the distance from one dot you have to go to snap to the next dot, where 0.5 means 50% of the way.
+#Range: 0.5 ~ 1.0
+gridSnapThreshold = 0.5
 

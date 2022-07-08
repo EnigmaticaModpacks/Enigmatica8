@@ -220,7 +220,7 @@
         "value": 10000000
       }
     },
-    "malum:soul_ward_recovery_speed": {
+    "tetra:draw_strength": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -231,7 +231,7 @@
         "value": 10000000
       }
     },
-    "tetra:draw_strength": {
+    "malum:soul_ward_recovery_speed": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -418,7 +418,7 @@
         "value": 10000000
       }
     },
-    "ortus:magic_damage": {
+    "tetra:ability_cooldown": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -429,7 +429,7 @@
         "value": 10000000
       }
     },
-    "tetra:ability_cooldown": {
+    "ortus:magic_damage": {
       "enabled": false,
       "min": {
         "default": 0,

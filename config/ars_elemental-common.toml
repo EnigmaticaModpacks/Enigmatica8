@@ -2,14 +2,14 @@
 #Range: 0.0 ~ 0.99
 "Elemental Focus discount" = 0.2
 
-#Adjust these values to balance how much a spell gets amplified by the matching spell focus
+#Adjust these values to balance how much a spell gets amplified by the matching spell focus, halved for lesser focus
 ["Elemental Spell Foci - Amplify"]
 	"Fire Focus buff" = 2.0
 	"Water Focus buff" = 2.0
 	"Air Focus buff" = 2.0
 	"Earth Focus buff" = 2.0
 
-#Adjust these values to balance how much an elemental spell gets dampened by a not-matching spell focus
+#Adjust these values to balance how much an elemental spell gets dampened by a not-matching lesser spell focus
 ["Elemental Spell Foci - Dampening"]
 	"Fire Focus debuff" = -1.0
 	"Water Focus debuff" = -1.0

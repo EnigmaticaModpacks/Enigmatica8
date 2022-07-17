@@ -9,4 +9,16 @@
 	#How long the touch light lasts in ticks
 	#Range: 0 ~ 40
 	touchLightDuration = 8
+	#X offset for the tooltip
+	#Range: > -2147483648
+	xTooltip = 20
+	#Y offset for the tooltip
+	#Range: > -2147483648
+	yTooltip = 0
+	#X offset for the Mana Bar
+	#Range: > -2147483648
+	xManaBar = 0
+	#Y offset for the Mana Bar
+	#Range: > -2147483648
+	yManaBar = 0
 

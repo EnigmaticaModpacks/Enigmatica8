@@ -4,14 +4,11 @@
   "enableAlfheim": true,
   
   // Whether players that manage to get to alfheim via another mod but have not drunk the mead of kvasir
-  // should get a blindness effect..
+  // should get a blindness effect.
   "lockAlfheim": true,
   
   // Whether to replace the recipe for the Gaia Pylon with a recipe that requires Alfsteel.
   "replaceGaiaRecipe": true,
-  
-  // Whether rituals and infusions that are cancelled will drop solidified mana that can be used to get the mana back.
-  "solidified_mana": true,
   
   "alftools": {
   
@@ -29,7 +26,60 @@
     
     // Speed modifier for the alfsteel leggings
     // Minimum: 0.0
-    "speed_modifier": 0.05
+    "speed_modifier": 0.05,
+    
+    // Armor stats for alfsteel armor.
+    "armor_values": {
+    
+      "boots": {
+        "defense": 3,
+        "toughness": 3
+      },
+      "chestplate": {
+        "defense": 8,
+        "toughness": 3
+      },
+      "helmet": {
+        "defense": 3,
+        "toughness": 3
+      },
+      "leggings": {
+        "defense": 6,
+        "toughness": 3
+      }
+    },
+    
+    // Durability stats for alfsteel tools.
+    //   max_durability      is the maximum durability, a tool has
+    //   mana_per_durability is the amount of mana consumed per durability loss
+    "durability": {
+    
+      "armor": {
+        "max_durability": 5200,
+        "mana_per_durability": 100
+      },
+      "axe": {
+        "max_durability": 4600,
+        "mana_per_durability": 200
+      },
+      "pickaxe": {
+        "max_durability": 4600,
+        "mana_per_durability": 200
+      },
+      "sword": {
+        "max_durability": 4600,
+        "mana_per_durability": 200
+      }
+    },
+    
+    "tool_values": {
+    
+      // The attack damage dealt by the alf blade
+      "sword_damage": 12,
+      
+      // The attack speed modifier for the alf blade
+      "sword_speed": 2.4
+    }
   },
   
   "flowers": {
@@ -134,7 +184,7 @@
       "weight": 5
     },
     
-    // Spawn configuration for the withes in alfheim.
+    // Spawn configuration for the witches in alfheim.
     "witch": {
     
       "max": 2,

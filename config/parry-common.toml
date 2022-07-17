@@ -1,0 +1,14 @@
+
+[shield_parry_config]
+	#Measured in Minecraft Ticks. 20 ticks equals 1 second.
+	#Range: 10 ~ 200
+	parry_interval_ticks = 40
+	#Multiplier bonus for Rebound Enchantment, to extend the parry timing
+	#Range: 0.0 ~ 4.0
+	enchantment_parry_multiplier = 0.25
+	#Maximum enchantment level for Rebound Enchantment.
+	#Range: 1 ~ 10
+	max_enchant_level = 5
+	#Makes Rebound enchantment treasure-only, and prevents it from being enchanted onto books in the Enchanting Table.
+	rebound_enchantment_treasure = false
+

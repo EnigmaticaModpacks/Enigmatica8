@@ -1,0 +1,20 @@
+#
+#Whether the Wireless Universal Grid uses energy
+useEnergy = true
+#
+#The energy used by the Wireless Universal Grid to clear the crafting matrix
+#Range: > 0
+clearUsage = 20
+#
+#The energy used by the Wireless Universal Grid to craft an item
+#Range: > 0
+craftUsage = 2
+#
+#The energy used by the Universal Crafting Grid to open
+#Range: > 0
+openUsage = 60
+#
+#The energy capacity of the Universal Crafting Grid
+#Range: > 0
+capacity = 6400
+

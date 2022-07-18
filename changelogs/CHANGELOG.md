@@ -1,3 +1,29 @@
+### Enigmatica 8 v2.1.0
+
+_Using Forge-1.18.2-40.1.68_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.1.0.md)_
+
+**New Mods!**
+
+-   Blood Magic
+-   Connectivity
+-   EnderStorage
+-   Grimoire of Tetra
+-   Parry
+-   Spirit
+-   Tetra
+-   Universal Grid
+-   Yungs Better Desert Temples
+-   Yungs Better Witch Huts
+
+**Bug Fixes**
+
+-   Trees not loading [\#174](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/174)
+-   Missing recipes \(Tinkers, Industrial Foregoing, etc\) [\#170](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/170)
+-   JEI doesn't display hexerei mixing cauldron/dipper recipes [\#168](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/168)
+-   Placeholder textures for quest rewards. [\#165](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/165)
+-   Unsure if bug, oversight, or unavailable: Currently little/no JEI implementation for Tinker's Construct. [\#164](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/164)
+-   Crafting options for Alchemical Impetus \(Malum\) unavailable. [\#163](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/163)
+
 ### Enigmatica 8 v2.0.1
 
 _Using Forge-1.18.2-40.1.41_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.0.1.md)_
@@ -8,7 +34,7 @@ Too many changes to count :smile: A ton of new mods, a ton of mods removed.
 
 **Bug Fixes**
 
-- Fixed servers not working
+-   Fixed servers not working
 
 ### Enigmatica 8 v2.0.0
 
@@ -24,21 +50,21 @@ _Using Forge-1.18.0-39.0.63_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **New Mods**
 
-- Tinkers Construct [\#57](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/57)
-- Trash Cans [\#56](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/56)
-- Dark Mode Everywhere [\#53](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/53)
-- Apotheosis: Spawner Module [\#50](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/50)
-- Sushi Go Crafting [\#42](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/42)
-- Energy Meter mod [\#41](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/41)
-- FTB mods  [\#40](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/40)
-- Convenient curios container [\#37](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/37)
+-   Tinkers Construct [\#57](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/57)
+-   Trash Cans [\#56](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/56)
+-   Dark Mode Everywhere [\#53](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/53)
+-   Apotheosis: Spawner Module [\#50](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/50)
+-   Sushi Go Crafting [\#42](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/42)
+-   Energy Meter mod [\#41](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/41)
+-   FTB mods [\#40](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/40)
+-   Convenient curios container [\#37](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/37)
 
-- And a ton more :smile: the tool we use to generate this part of the modlist is sadly broken, so we recommend checking in-game for new mods.
+-   And a ton more :smile: the tool we use to generate this part of the modlist is sadly broken, so we recommend checking in-game for new mods.
 
 **Bug Fixes**
 
-- \[Applied Energistics 2\] Certus Dust and Fluix Dust recipe missing [\#55](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/55)
-- Netty Handler Exception - Reaching out [\#51](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/51)
+-   \[Applied Energistics 2\] Certus Dust and Fluix Dust recipe missing [\#55](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/55)
+-   Netty Handler Exception - Reaching out [\#51](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/51)
 
 ---
 
@@ -50,22 +76,22 @@ Re-added a bunch of mods that were unintionally not included in the 1.18 -> 1.18
 
 **Re-added mods:**
 
-- [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful)
-- [FlickerFix](https://www.curseforge.com/minecraft/mc-mods/flickerfix)
-- [Guns Without Roses](https://www.curseforge.com/minecraft/mc-mods/guns-without-roses)
-- [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests) 
-- [Lava Clear View (Forge)](https://www.curseforge.com/minecraft/mc-mods/lava-clear-view)
-- [Meet Your Fight](https://www.curseforge.com/minecraft/mc-mods/meet-your-fight)
-- [More Dragon Eggs](https://www.curseforge.com/minecraft/mc-mods/more-dragon-eggs)
-- [Passthrough Signs](https://www.curseforge.com/minecraft/mc-mods/passthrough-signs)
-- [Salem](https://www.curseforge.com/minecraft/mc-mods/salem)
-- [Save Your Pets](https://www.curseforge.com/minecraft/mc-mods/save-your-pets)
-- [The One Probe](https://www.curseforge.com/minecraft/mc-mods/the-one-probe)
-- [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers)
+-   [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful)
+-   [FlickerFix](https://www.curseforge.com/minecraft/mc-mods/flickerfix)
+-   [Guns Without Roses](https://www.curseforge.com/minecraft/mc-mods/guns-without-roses)
+-   [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests)
+-   [Lava Clear View (Forge)](https://www.curseforge.com/minecraft/mc-mods/lava-clear-view)
+-   [Meet Your Fight](https://www.curseforge.com/minecraft/mc-mods/meet-your-fight)
+-   [More Dragon Eggs](https://www.curseforge.com/minecraft/mc-mods/more-dragon-eggs)
+-   [Passthrough Signs](https://www.curseforge.com/minecraft/mc-mods/passthrough-signs)
+-   [Salem](https://www.curseforge.com/minecraft/mc-mods/salem)
+-   [Save Your Pets](https://www.curseforge.com/minecraft/mc-mods/save-your-pets)
+-   [The One Probe](https://www.curseforge.com/minecraft/mc-mods/the-one-probe)
+-   [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers)
 
 **Bug Fixes**
 
-- Temporarily removed FindMe because of a bug
+-   Temporarily removed FindMe because of a bug
 
 ---
 
@@ -75,105 +101,104 @@ _Using Forge-1.18.0-39.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **New Mods**
 
-- [AEInfinityBooster](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster)
-- [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
-- [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)
-- [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts)
-- [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix)
-- [AutoRegLib](https://www.curseforge.com/minecraft/mc-mods/autoreglib)
-- [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
-- [Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)
-- [Caelus API (Forge)](https://www.curseforge.com/minecraft/mc-mods/caelus)
-- [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped)
-- [Chisels & Bits - For Forge](https://www.curseforge.com/minecraft/mc-mods/chisels-bits)
-- [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)
-- [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
-- [ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm)
-- [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
-- [Construction Wand](https://www.curseforge.com/minecraft/mc-mods/construction-wand)
-- [Cooking for Blockheads](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads)
-- [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities)
-- [Create](https://www.curseforge.com/minecraft/mc-mods/create)
-- [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)
-- [Curio of Undying (Forge)](https://www.curseforge.com/minecraft/mc-mods/curio-of-undying)
-- [Curious Armor Stands](https://www.curseforge.com/minecraft/mc-mods/curious-armor-stands)
-- [Curious Elytra (Forge)](https://www.curseforge.com/minecraft/mc-mods/curious-elytra)
-- [Dark Paintings](https://www.curseforge.com/minecraft/mc-mods/dark-paintings)
-- [Decorative Blocks](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks)
-- [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl)
-- [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions)
-- [Engineer's Decor](https://www.curseforge.com/minecraft/mc-mods/engineers-decor)
-- [ExpandAbility](https://www.curseforge.com/minecraft/mc-mods/expandability)
-- [ExtraStorage](https://www.curseforge.com/minecraft/mc-mods/extrastorage)
-- [Extreme Reactors](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors)
-- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
-- [Farming for Blockheads](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads)
-- [Fast Leaf Decay](https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay)
-- [FastFurnace](https://www.curseforge.com/minecraft/mc-mods/fastfurnace)
-- [FastWorkbench](https://www.curseforge.com/minecraft/mc-mods/fastworkbench)
-- [FerriteCore (Forge)](https://www.curseforge.com/minecraft/mc-mods/ferritecore)
-- [FindMe](https://www.curseforge.com/minecraft/mc-mods/findme)
-- [Flywheel](https://www.curseforge.com/minecraft/mc-mods/flywheel)
-- [Functional Storage](https://www.curseforge.com/minecraft/mc-mods/functional-storage)
-- [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)
-- [Goblin Traders](https://www.curseforge.com/minecraft/mc-mods/goblin-traders)
-- [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers)
-- [Hexerei](https://www.curseforge.com/minecraft/mc-mods/hexerei)
-- [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
-- [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
-- [KubeJS Create](https://www.curseforge.com/minecraft/mc-mods/kubejs-create)
-- [KubeJS Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/kubejs-immersive-engineering)
-- [LibX](https://www.curseforge.com/minecraft/mc-mods/libx)
-- [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr)
-- [Macaw's Paintings](https://www.curseforge.com/minecraft/mc-mods/macaws-paintings)
-- [McJtyLib](https://www.curseforge.com/minecraft/mc-mods/mcjtylib)
-- [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)
-- [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
-- [MoreVanillaLib](https://www.curseforge.com/minecraft/mc-mods/morevanillalib)
-- [Nature's Aura](https://www.curseforge.com/minecraft/mc-mods/natures-aura)
-- [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)
-- [Occultism](https://www.curseforge.com/minecraft/mc-mods/occultism)
-- [PackMenu](https://www.curseforge.com/minecraft/mc-mods/packmenu)
-- [Patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli)
-- [Placebo](https://www.curseforge.com/minecraft/mc-mods/placebo)
-- [Polymorph (Forge)](https://www.curseforge.com/minecraft/mc-mods/polymorph)
-- [Quark](https://www.curseforge.com/minecraft/mc-mods/quark)
-- [RFTools Base](https://www.curseforge.com/minecraft/mc-mods/rftools-base)
-- [RFTools Builder](https://www.curseforge.com/minecraft/mc-mods/rftools-builder)
-- [RFTools Power](https://www.curseforge.com/minecraft/mc-mods/rftools-power)
-- [RFTools Storage](https://www.curseforge.com/minecraft/mc-mods/rftools-storage)
-- [RFTools Utility](https://www.curseforge.com/minecraft/mc-mods/rftools-utility)
-- [Redstone Pen](https://www.curseforge.com/minecraft/mc-mods/redstone-pen)
-- [Refined Storage Addons](https://www.curseforge.com/minecraft/mc-mods/refined-storage-addons)
-- [Refined Storage](https://www.curseforge.com/minecraft/mc-mods/refined-storage)
-- [Roots Classic](https://www.curseforge.com/minecraft/mc-mods/roots-classic)
-- [ServerConfig Updater](https://www.curseforge.com/minecraft/mc-mods/serverconfig-updater)
-- [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
-- [Spice of Life: Carrot Edition](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition)
-- [Super Circuit Maker](https://www.curseforge.com/minecraft/mc-mods/super-circuit-maker)
-- [SwingThroughGrass](https://www.curseforge.com/minecraft/mc-mods/swingthroughgrass)
-- [TerraBlender](https://www.curseforge.com/minecraft/mc-mods/terrablender)
-- [Tetra](https://www.curseforge.com/minecraft/mc-mods/tetra)
-- [Time in a bottle standalone](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-standalone)
-- [Titanium](https://www.curseforge.com/minecraft/mc-mods/titanium)
-- [Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control)
-- [Tool Kit](https://www.curseforge.com/minecraft/mc-mods/tool-kit)
-- [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)
-- [TrashSlot](https://www.curseforge.com/minecraft/mc-mods/trashslot)
-- [Travel Anchors](https://www.curseforge.com/minecraft/mc-mods/travel-anchors)
-- [Valhelsia Core](https://www.curseforge.com/minecraft/mc-mods/valhelsia-core)
-- [Valhelsia Structures](https://www.curseforge.com/minecraft/mc-mods/valhelsia-structures)
-- [Vanilla Hammers [Forge]](https://www.curseforge.com/minecraft/mc-mods/vanilla-hammers-forge)
-- [When Dungeons Arise - Forge!](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)
-- [Wither Skeleton Tweaks](https://www.curseforge.com/minecraft/mc-mods/wither-skeleton-tweaks)
-- [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
-- [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
-- [mutil](https://www.curseforge.com/minecraft/mc-mods/mutil)
+-   [AEInfinityBooster](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster)
+-   [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
+-   [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)
+-   [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts)
+-   [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix)
+-   [AutoRegLib](https://www.curseforge.com/minecraft/mc-mods/autoreglib)
+-   [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
+-   [Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)
+-   [Caelus API (Forge)](https://www.curseforge.com/minecraft/mc-mods/caelus)
+-   [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped)
+-   [Chisels & Bits - For Forge](https://www.curseforge.com/minecraft/mc-mods/chisels-bits)
+-   [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)
+-   [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
+-   [ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm)
+-   [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
+-   [Construction Wand](https://www.curseforge.com/minecraft/mc-mods/construction-wand)
+-   [Cooking for Blockheads](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads)
+-   [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities)
+-   [Create](https://www.curseforge.com/minecraft/mc-mods/create)
+-   [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)
+-   [Curio of Undying (Forge)](https://www.curseforge.com/minecraft/mc-mods/curio-of-undying)
+-   [Curious Armor Stands](https://www.curseforge.com/minecraft/mc-mods/curious-armor-stands)
+-   [Curious Elytra (Forge)](https://www.curseforge.com/minecraft/mc-mods/curious-elytra)
+-   [Dark Paintings](https://www.curseforge.com/minecraft/mc-mods/dark-paintings)
+-   [Decorative Blocks](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks)
+-   [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl)
+-   [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions)
+-   [Engineer's Decor](https://www.curseforge.com/minecraft/mc-mods/engineers-decor)
+-   [ExpandAbility](https://www.curseforge.com/minecraft/mc-mods/expandability)
+-   [ExtraStorage](https://www.curseforge.com/minecraft/mc-mods/extrastorage)
+-   [Extreme Reactors](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors)
+-   [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
+-   [Farming for Blockheads](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads)
+-   [Fast Leaf Decay](https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay)
+-   [FastFurnace](https://www.curseforge.com/minecraft/mc-mods/fastfurnace)
+-   [FastWorkbench](https://www.curseforge.com/minecraft/mc-mods/fastworkbench)
+-   [FerriteCore (Forge)](https://www.curseforge.com/minecraft/mc-mods/ferritecore)
+-   [FindMe](https://www.curseforge.com/minecraft/mc-mods/findme)
+-   [Flywheel](https://www.curseforge.com/minecraft/mc-mods/flywheel)
+-   [Functional Storage](https://www.curseforge.com/minecraft/mc-mods/functional-storage)
+-   [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)
+-   [Goblin Traders](https://www.curseforge.com/minecraft/mc-mods/goblin-traders)
+-   [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers)
+-   [Hexerei](https://www.curseforge.com/minecraft/mc-mods/hexerei)
+-   [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+-   [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
+-   [KubeJS Create](https://www.curseforge.com/minecraft/mc-mods/kubejs-create)
+-   [KubeJS Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/kubejs-immersive-engineering)
+-   [LibX](https://www.curseforge.com/minecraft/mc-mods/libx)
+-   [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr)
+-   [Macaw's Paintings](https://www.curseforge.com/minecraft/mc-mods/macaws-paintings)
+-   [McJtyLib](https://www.curseforge.com/minecraft/mc-mods/mcjtylib)
+-   [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)
+-   [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
+-   [MoreVanillaLib](https://www.curseforge.com/minecraft/mc-mods/morevanillalib)
+-   [Nature's Aura](https://www.curseforge.com/minecraft/mc-mods/natures-aura)
+-   [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)
+-   [Occultism](https://www.curseforge.com/minecraft/mc-mods/occultism)
+-   [PackMenu](https://www.curseforge.com/minecraft/mc-mods/packmenu)
+-   [Patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli)
+-   [Placebo](https://www.curseforge.com/minecraft/mc-mods/placebo)
+-   [Polymorph (Forge)](https://www.curseforge.com/minecraft/mc-mods/polymorph)
+-   [Quark](https://www.curseforge.com/minecraft/mc-mods/quark)
+-   [RFTools Base](https://www.curseforge.com/minecraft/mc-mods/rftools-base)
+-   [RFTools Builder](https://www.curseforge.com/minecraft/mc-mods/rftools-builder)
+-   [RFTools Power](https://www.curseforge.com/minecraft/mc-mods/rftools-power)
+-   [RFTools Storage](https://www.curseforge.com/minecraft/mc-mods/rftools-storage)
+-   [RFTools Utility](https://www.curseforge.com/minecraft/mc-mods/rftools-utility)
+-   [Redstone Pen](https://www.curseforge.com/minecraft/mc-mods/redstone-pen)
+-   [Refined Storage Addons](https://www.curseforge.com/minecraft/mc-mods/refined-storage-addons)
+-   [Refined Storage](https://www.curseforge.com/minecraft/mc-mods/refined-storage)
+-   [Roots Classic](https://www.curseforge.com/minecraft/mc-mods/roots-classic)
+-   [ServerConfig Updater](https://www.curseforge.com/minecraft/mc-mods/serverconfig-updater)
+-   [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
+-   [Spice of Life: Carrot Edition](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition)
+-   [Super Circuit Maker](https://www.curseforge.com/minecraft/mc-mods/super-circuit-maker)
+-   [SwingThroughGrass](https://www.curseforge.com/minecraft/mc-mods/swingthroughgrass)
+-   [TerraBlender](https://www.curseforge.com/minecraft/mc-mods/terrablender)
+-   [Tetra](https://www.curseforge.com/minecraft/mc-mods/tetra)
+-   [Time in a bottle standalone](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-standalone)
+-   [Titanium](https://www.curseforge.com/minecraft/mc-mods/titanium)
+-   [Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control)
+-   [Tool Kit](https://www.curseforge.com/minecraft/mc-mods/tool-kit)
+-   [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)
+-   [TrashSlot](https://www.curseforge.com/minecraft/mc-mods/trashslot)
+-   [Travel Anchors](https://www.curseforge.com/minecraft/mc-mods/travel-anchors)
+-   [Valhelsia Core](https://www.curseforge.com/minecraft/mc-mods/valhelsia-core)
+-   [Valhelsia Structures](https://www.curseforge.com/minecraft/mc-mods/valhelsia-structures)
+-   [Vanilla Hammers [Forge]](https://www.curseforge.com/minecraft/mc-mods/vanilla-hammers-forge)
+-   [When Dungeons Arise - Forge!](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)
+-   [Wither Skeleton Tweaks](https://www.curseforge.com/minecraft/mc-mods/wither-skeleton-tweaks)
+-   [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
+-   [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
+-   [mutil](https://www.curseforge.com/minecraft/mc-mods/mutil)
 
 **Fixed Bugs**
 
-- Block Particle Issue [\#5](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/5)
-
+-   Block Particle Issue [\#5](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/5)
 
 ---
 
@@ -181,54 +206,42 @@ _Using Forge-1.18.0-39.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 _Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.2.md)_
 
-
-
 **Note for servers:** Java 17 is required to run Minecraft 1.18 servers.
-
-
 
 **New Mods**
 
-* [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)
-* [Building Gadgets](https://www.curseforge.com/minecraft/mc-mods/building-gadgets)
-* [Comforts (Forge)](https://www.curseforge.com/minecraft/mc-mods/comforts)
-* [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful)
-* [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed)
-* [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer)
-* [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
-* [Puzzles Lib [Forge]](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)
-* [Salem](https://www.curseforge.com/minecraft/mc-mods/salem)
-* [Scannable](https://www.curseforge.com/minecraft/mc-mods/scannable)
-* [Selene Lib](https://www.curseforge.com/minecraft/mc-mods/selene)
-* [Simple Discord Rich Presence](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence)
-* [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
-* [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
-* [Trading Post [Forge]](https://www.curseforge.com/minecraft/mc-mods/trading-post)
+-   [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)
+-   [Building Gadgets](https://www.curseforge.com/minecraft/mc-mods/building-gadgets)
+-   [Comforts (Forge)](https://www.curseforge.com/minecraft/mc-mods/comforts)
+-   [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful)
+-   [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed)
+-   [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer)
+-   [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
+-   [Puzzles Lib [Forge]](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)
+-   [Salem](https://www.curseforge.com/minecraft/mc-mods/salem)
+-   [Scannable](https://www.curseforge.com/minecraft/mc-mods/scannable)
+-   [Selene Lib](https://www.curseforge.com/minecraft/mc-mods/selene)
+-   [Simple Discord Rich Presence](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence)
+-   [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
+-   [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
+-   [Trading Post [Forge]](https://www.curseforge.com/minecraft/mc-mods/trading-post)
 
 **Implemented enhancements:**
 
-- New Crowdin updates [\#7](https://github.com/NillerMedDild/Enigmatica8/pull/7) ([NillerMedDild](https://github.com/NillerMedDild))
-- New Crowdin updates [\#6](https://github.com/NillerMedDild/Enigmatica8/pull/6) ([NillerMedDild](https://github.com/NillerMedDild))
+-   New Crowdin updates [\#7](https://github.com/NillerMedDild/Enigmatica8/pull/7) ([NillerMedDild](https://github.com/NillerMedDild))
+-   New Crowdin updates [\#6](https://github.com/NillerMedDild/Enigmatica8/pull/6) ([NillerMedDild](https://github.com/NillerMedDild))
 
 **Fixed bugs:**
 
-- Server doesn't start due to betterf3 accessing client side classes [\#8](https://github.com/NillerMedDild/Enigmatica8/issues/8)
-
-
+-   Server doesn't start due to betterf3 accessing client side classes [\#8](https://github.com/NillerMedDild/Enigmatica8/issues/8)
 
 ---
-
-
 
 ### Enigmatica 8 v1.0.1
 
 _Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_1.0.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_1.0.1.md)_
 
-
-
 **Note for servers:** Java 17 is required to run Minecraft 1.18 servers.
-
-
 
 **New Mods**
 
@@ -263,11 +276,7 @@ _Using Forge-1.18.0-38.0.14_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   [The One Probe](https://www.curseforge.com/minecraft/mc-mods/the-one-probe)
 -   [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
 
-
-
 ---
-
-
 
 ### Enigmatica 8 v1.0.0
 

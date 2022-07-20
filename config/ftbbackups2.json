@@ -18,5 +18,7 @@
 	// Only run a backup if a player has been online since the last backup
 	"only_if_players_been_online": true,
 	// Additional directories to include in backup
-	"additional_directories": []
+	"additional_directories": [],
+	// Display file size in backup message
+	"display_file_size": false
 }

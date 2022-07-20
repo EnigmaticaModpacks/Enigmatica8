@@ -10,12 +10,12 @@
 	#Generation Settings for tin ore.
 	[world_generation.tin]
 		#Determines if tin ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#small tin vein Generation Settings.
 		[world_generation.tin.small]
 			#Determines if small tin veins should be added to world generation. Note: Requires generating tin ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that small tin veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 14
@@ -56,7 +56,7 @@
 		#large tin vein Generation Settings.
 		[world_generation.tin.large]
 			#Determines if large tin veins should be added to world generation. Note: Requires generating tin ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that large tin veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 12
@@ -399,7 +399,7 @@
 	#Generation Settings for lead ore.
 	[world_generation.lead]
 		#Determines if lead ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#normal lead vein Generation Settings.
 		[world_generation.lead.normal]

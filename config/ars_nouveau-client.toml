@@ -21,4 +21,10 @@
 	#Y offset for the Mana Bar
 	#Range: > -2147483648
 	yManaBar = 0
+	#Light level an entity should emit when dynamic lights are on
+	#Example entry: minecraft:blaze=15
+	entity_lights = ["minecraft:blaze=10", "ars_nouveau:orbit=15", "ars_nouveau:linger=15", "ars_nouveau:spell_proj=15", "minecraft:magma_cube=8", "ars_nouveau:flying_item=10", "minecraft:spectral_arrow=8", "ars_nouveau:follow_proj=10"]
+	#Light level an item should emit when held when dynamic lights are on
+	#Example entry: minecraft:stick=15
+	item_lights = ["minecraft:glowstone_dust=8", "minecraft:redstone_torch=10", "minecraft:glowstone=15", "minecraft:blaze_rod=10", "minecraft:torch=14", "minecraft:soul_torch=10"]
 

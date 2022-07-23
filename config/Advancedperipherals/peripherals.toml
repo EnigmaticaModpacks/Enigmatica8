@@ -130,3 +130,10 @@
 		#Enable the compass turtle or not.
 		enableCompassTurtle = true
 
+	[Peripherals.RS_Bridge]
+		#Enable the Rs Bridge or not.
+		enableRsBridge = true
+		#Power consumption per tick.
+		#Range: > 0
+		rsPowerConsumption = 10
+

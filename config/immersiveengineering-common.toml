@@ -10,8 +10,6 @@ importantInfo = true
 preferredOres = ["emendatusenigmatica", "minecraft", "thermal", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "appliedenergistics2", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
 
 [debug]
-	#A config setting to enable debug features. These features may vary between releases, may cause crashes, and are unsupported. Do not enable unless asked to by a developer of IE.
-	enableDebug = false
 
 	[debug.wires]
 		#Enable detailed logging for the wire network. This can be useful for developers to track down issues related to wires.

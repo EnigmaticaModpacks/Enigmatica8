@@ -360,6 +360,10 @@
 		# Range: 0 ~ 100000
 		"Pump move ticks": 10L
 		
+		# Whether fluid sources are replaced with exfluid on pump
+		# Default: true
+		"Pump replace fluid with exfluid": true
+		
 		# Amount of energy stored in the Pump Tank
 		# Default: 128000
 		# Range: 1 ~ 100000
@@ -384,6 +388,10 @@
 		# Default: 10
 		# Range: 0 ~ 100000
 		"Quarry move ticks": 10L
+		
+		# Whether blocks under fluid sources are replaced with exfluid on dig
+		# Default: true
+		"Quarry replace fluid with exfluid": true
 		
 		# Energy usage of the Quarry
 		# Default: 3.0

@@ -25,12 +25,4 @@ onEvent('recipes', (event) => {
             }
         });
     });
-
-    materialsToUnify.forEach((material) => {
-        let tagString = `forge:raw_materials/${material}`;
-        let ore = getPreferredItemInTag(TagIngredient.createTag(tagString));
-        if (!(ore.getItem() == Items.AIR)) {
-            event.shapeless(ore, `#forge:raw_materials/${material}`);
-        }
-    });
 });

@@ -9,6 +9,8 @@
 	itemFluidHandlerEnabled = true
 	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
 	allowOpeningOtherPlayerBackpacks = true
+	#Allows disabling item display settings. Primarily in cases where custom backpack model doesn't support showing the item. (Requires game restart to take effect)
+	itemDisplayDisabled = false
 
 	#Leather Backpack Settings
 	[common.leatherBackpack]
@@ -404,4 +406,6 @@
 		#Ratio of slowness levels per every backpack above the maximum number allowed. (number of backpacks above the max gets multiplied by this number and ceiled)
 		#Range: 0.1 ~ 5.0
 		slownessLevelsPerAdditionalBackpack = 1.0
+		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
+		onlyWornBackpackTriggersUpgrades = false
 

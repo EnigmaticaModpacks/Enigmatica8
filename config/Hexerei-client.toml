@@ -1,0 +1,5 @@
+
+["Fancy font in book"]
+	#Enabling this allows fancy cursive font for the book (english only not fully implemented)
+	fancy_font_in_book = false
+

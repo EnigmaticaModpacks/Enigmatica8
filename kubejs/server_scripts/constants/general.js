@@ -6,8 +6,9 @@ const air = 'minecraft:air';
 const modPriorities = [
     'emendatusenigmatica',
     'minecraft',
-    'immersiveengineering',
+    'ftbic',
     'thermal',
+    'immersiveengineering',
     'mekanism',
     'kubejs',
     'pneumaticcraft',
@@ -15,7 +16,6 @@ const modPriorities = [
     'occultism',
     'industrialforegoing',
     'tconstruct',
-    'ftbic',
     'botania',
     'quark',
     'pedestals',

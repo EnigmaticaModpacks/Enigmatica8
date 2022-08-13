@@ -240,3 +240,4 @@ config/lootr-client.toml
 config/gamemenumodoption-client.toml
 backups/backups.json
 config/jei/jei-client.ini
+rhino.local.properties

@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
         let nugget = getPreferredItemInTag(Ingredient.of(`#forge:nuggets/${material}`)).id;
 
         let gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
-        let chunk = getPreferredItemInTag(Ingredient.of(`#forge:chunks/${material}`)).id;
+        let chunk = getPreferredItemInTag(Ingredient.of(`#forge:raw_materials/${material}`)).id;
 
         let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
         let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;

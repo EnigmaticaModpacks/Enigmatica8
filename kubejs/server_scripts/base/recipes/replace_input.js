@@ -4,6 +4,11 @@ onEvent('recipes', (event) => {
             replaceTarget: { output: 'create:belt_connector' },
             toReplace: 'minecraft:dried_kelp',
             replaceWith: ['minecraft:dried_kelp', 'sushigocrafting:dried_seaweed']
+        },
+        {
+            replaceTarget: { id: 'immersiveengineering:crafting/concrete2' },
+            toReplace: 'immersiveengineering:slag',
+            replaceWith: '#forge:slag'
         }
     ];
 

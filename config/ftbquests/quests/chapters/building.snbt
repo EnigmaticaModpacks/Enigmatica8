@@ -305,41 +305,6 @@
 			}]
 		}
 		{
-			title: "Simply Light"
-			icon: "simplylight:illuminant_block_on"
-			x: 0.0d
-			y: 2.0d
-			subtitle: "Let there be light"
-			description: [
-				"The mod name really says it all. It's simply that, a lights mod."
-				""
-				"But don't let the name fool you. Simply Light offers a wide range of lights to keep your base lit with style."
-			]
-			dependencies: ["058D3BEB64C74E27"]
-			id: "42FB32CC99E66E3F"
-			tasks: [{
-				id: "1EFA47BC6E4EC782"
-				type: "item"
-				title: "Any 16x Simply Lights"
-				item: {
-					id: "itemfilters:mod"
-					Count: 1b
-					tag: {
-						value: "simplylight"
-					}
-				}
-				count: 16L
-			}]
-			rewards: [{
-				id: "7E2D7FEE20672C9D"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "Framed Blocks"
 			icon: "framedblocks:framed_cube"
 			x: 2.5d
@@ -466,7 +431,7 @@
 		{
 			title: "'Dustrial Decor"
 			icon: "dustrial_decor:sheet_metal_treading"
-			x: -1.0d
+			x: 0.0d
 			y: 1.5d
 			subtitle: "Safty Helmet must be worn at all times!"
 			description: [

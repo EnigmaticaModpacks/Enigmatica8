@@ -16,8 +16,8 @@
 	quests: [
 		{
 			icon: "alexsmobs:banana"
-			x: -1.0d
-			y: 0.0d
+			x: 0.5d
+			y: 0.5d
 			subtitle: "Monkeys and Gorillas and Bears, Oh My!"
 			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "]
 			id: "0000000000000C7F"
@@ -34,7 +34,7 @@
 		}
 		{
 			x: 1.0d
-			y: 3.0d
+			y: 2.5d
 			subtitle: "Treasure or Trap? "
 			description: [
 				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? "
@@ -89,8 +89,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 1.0d
+			x: 1.0d
+			y: 1.5d
 			subtitle: "We're not lost, we're right here on this very spot."
 			description: [
 				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"

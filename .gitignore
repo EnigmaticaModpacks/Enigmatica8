@@ -31,6 +31,7 @@ screenshots/
 **/*.jar.disabled
 **/*.jar.meta
 config/jei/world/**
+/blueprints/
 
 # Utilities
 .ReAuth.cfg

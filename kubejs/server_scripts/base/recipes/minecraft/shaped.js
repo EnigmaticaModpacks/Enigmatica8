@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefex}stick_16`
         },
         {
-            output: '4x chest',
+            output: '4x minecraft:chest',
             pattern: ['SSS',
                       'S S',
                       'SSS'],
@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefex}chest_4`
         },
         {
-            output: '1x chest',
+            output: 'minecraft:chest',
             pattern: ['SSS',
                       'S S',
                       'SSS'],

@@ -1,3 +1,5 @@
+//priority: 1001
+
 const stones = [
     'minecraft:andesite',
     'minecraft:deepslate',

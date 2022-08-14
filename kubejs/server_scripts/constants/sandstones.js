@@ -1,3 +1,5 @@
+//priority: 1001
+
 const sandstones = [
     'blue_skies:midnight_sandstone',
     'blue_skies:crystal_sandstone',

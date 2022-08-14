@@ -1,3 +1,5 @@
+//priority: 1001
+
 const cobblestones = [
     'minecraft:cobbled_deepslate',
     "blue_skies:turquoise_cobblestone",

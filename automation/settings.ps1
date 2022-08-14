@@ -66,10 +66,10 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-3.0.1-fatjar.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
@@ -194,7 +194,7 @@ $CONTENTS_TO_ZIP = @()
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_CURSE_CLIENT_MODULE = $true
+$ENABLE_CLIENT_FILE_MODULE = $true
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.
@@ -209,7 +209,7 @@ $ENABLE_SERVER_FILE_MODULE = $true
 # This module requires an older modpack manifest zip to be present, 
 # $LAST_MODPACK_VERSION must be set, and the manifest naming must be consistent.
 # Default: $false
-$ENABLE_CHANGELOG_GENERATOR_MODULE = $true
+$ENABLE_GITHUB_RELEASE_MODULE = $true
 
 # Toggle creation of a modlist file on/off
 # Default: $true

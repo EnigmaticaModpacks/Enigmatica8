@@ -22,6 +22,7 @@
 				""
 				"~Ridanisaurus Rid \\& MuteTiefling"
 			]
+			optional: true
 			id: "058D3BEB64C74E27"
 			tasks: [{
 				id: "4A2592C4467CEAF6"
@@ -226,6 +227,37 @@
 			}]
 		}
 		{
+			title: "Masonry"
+			icon: "masonry:andesitetiled"
+			x: 1.0d
+			y: 1.5d
+			subtitle: "Channel your inner Dwarf"
+			description: [
+				"Masonry allows you to carve most of the Vanilla stones into different decorative patterns to help bring a bit of an artistic touch to your base."
+				""
+				"To start, place a Vanilla type of stone such as Granite, or Prismarine in a Stonecutter, and carve away."
+			]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "63FE93055CE4162C"
+			tasks: [{
+				id: "4EA5682D198BA2E6"
+				type: "item"
+				title: "Masonry"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "masonry"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4C3D1850DE4CBA18"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
 			title: "MrCrayfish's Furniture Mod"
 			icon: "cfm:oak_chair"
 			x: -1.0d
@@ -305,6 +337,41 @@
 			}]
 		}
 		{
+			title: "Simply Light"
+			icon: "simplylight:illuminant_block_on"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Let there be light"
+			description: [
+				"The mod name really says it all. It's simply that, a lights mod."
+				""
+				"But don't let the name fool you. Simply Light offers a wide range of lights to keep your base lit with style."
+			]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "42FB32CC99E66E3F"
+			tasks: [{
+				id: "1EFA47BC6E4EC782"
+				type: "item"
+				title: "Any 16x Simply Lights"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "simplylight"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [{
+				id: "7E2D7FEE20672C9D"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
 			title: "Framed Blocks"
 			icon: "framedblocks:framed_cube"
 			x: 2.5d
@@ -335,6 +402,46 @@
 					id: "1C5FD3A8CD3424C0"
 					type: "item"
 					item: "framedblocks:framed_wrench"
+				}
+			]
+		}
+		{
+			title: "Framed Drawers"
+			icon: "framedcompactdrawers:framed_full_one"
+			x: -2.5d
+			y: 0.0d
+			subtitle: "Build-a-Bear, but with Drawers"
+			description: [
+				"Are you fed up with that Oak Drawer that is sticking out like a sore thumb in the middle of your build, completely mismatching your building palette?"
+				""
+				"Framed Drawers gives you a blank template which you can combine in a crafting table with different blocks to use their texture instead, whether it's the front, the sides, or the trim, these Framed Drawers are highly customizable visually."
+				""
+				"Needless to say, this mod offers more than just a single drawer style templates, it actually has a template for each type of drawer, whether it is a 2x2, a Compacting Drawer, or even a Drawer Controller."
+			]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "473BE440ECB1CEDF"
+			tasks: [{
+				id: "130291F7FD5C22C4"
+				type: "item"
+				title: "Any Framed Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "framedcompactdrawers:frame_triple"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "799AB9D93C124D6F"
+					type: "item"
+					item: "storagedrawers:emerald_storage_upgrade"
+				}
+				{
+					id: "006783158FEE960D"
+					type: "item"
+					item: "storagedrawers:void_upgrade"
 				}
 			]
 		}
@@ -431,7 +538,7 @@
 		{
 			title: "'Dustrial Decor"
 			icon: "dustrial_decor:sheet_metal_treading"
-			x: 0.0d
+			x: -1.0d
 			y: 1.5d
 			subtitle: "Safty Helmet must be worn at all times!"
 			description: [
@@ -556,7 +663,7 @@
 			y: -1.0d
 			subtitle: "Raid \\& Pillager, or I guess you can just Craft this stuff"
 			description: [
-				"Valhelsia Strucutres generates different types of pre-built strucutres in the world, such as player housing, a blacksmith hut, or even an abandoned fort."
+				"Valhelsia Structures generates different types of pre-built structures in the world, such as player housing, a blacksmith hut, or even an abandoned fort."
 				""
 				"Most of the custom decorative blocks used in these structures can also be crafted for some extra details here or there in your build."
 			]
@@ -590,7 +697,12 @@
 			y: 2.5d
 			shape: "gear"
 			subtitle: "The right tools for the job"
-			description: ["GENERAL_INTRO_DESC"]
+			description: [
+				"Rome wasn’t built in a day, but with tools like these it certainly could have been. "
+				""
+				"Read on to discover some handy tools to vastly reduce the time it takes to make large scale projects come to life.  "
+			]
+			optional: true
 			id: "5411C8D2344CC2F1"
 			tasks: [{
 				id: "48834CDA218F71E0"
@@ -601,6 +713,104 @@
 				id: "215C050F84460976"
 				type: "item"
 				item: "minecraft:scaffolding"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Portable Stonecutter"
+			icon: "portable_stonecutter:portable_stonecutter"
+			x: 5.0d
+			y: 1.5d
+			subtitle: "It's like the Chisel, but fatter"
+			description: [
+				"It cuts, it grinds, it chisels, polishes and even cooks and cleans!"
+				""
+				"All the power of a Stone Cutter, now in a compact portable format that fits in the palm of your hand."
+				""
+				"Disclaimer: Will not actually cook or clean. Not for Commercial Use."
+				""
+				"Warning: Keep away from children, animals, nitwits. Do not place hand on blade while in motion. Extended use may lead to fatigue and loss of vision."
+			]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "085A8424875A2B23"
+			tasks: [{
+				id: "0F45B05043BCCBE6"
+				type: "item"
+				item: "portable_stonecutter:portable_stonecutter"
+			}]
+			rewards: [{
+				id: "31F796972A4B7369"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Chisel"
+			icon: {
+				id: "chisel:iron_chisel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: 1.0d
+			subtitle: "It's like the Portable Stonecutter, but skinnier"
+			description: [
+				"A classic tool for new and seasoned builders alike."
+				""
+				"Right clicking the Chisel opens a GUI where you can place a block and chisel it into a different, more decorative version of itself."
+				""
+				"You can also keep a specific chiseled block in the GUI to be able to chisel blocks in the world by left clicking them."
+				""
+				"Higher tiers of the Chisel adds extra functionalities such as 3x3 in-world chiseling or even a pattern preview."
+			]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "165DFE2F0AF151E7"
+			tasks: [{
+				id: "2A04BA9132C1CB19"
+				type: "item"
+				title: "Any Chisel (from Chisel mod)"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "chisel:iron_chisel"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "chisel:diamond_chisel"
+								Count: 1b
+								tag: {
+									Damage: 0
+									chiseldata: { }
+								}
+							}
+							{
+								id: "chisel:hitech_chisel"
+								Count: 1b
+								tag: {
+									Damage: 0
+									chiseldata: { }
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "77DBBB65B8E37846"
+				type: "item"
+				item: "chisel:factory/dots"
 				count: 16
 				random_bonus: 16
 			}]
@@ -961,6 +1171,244 @@
 			}]
 		}
 		{
+			title: "Botania Building Tools"
+			icon: {
+				id: "botania:lexicon"
+				Count: 1b
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
+			x: 6.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Magical building technologies "
+			description: [
+				"Botania offers a variaty of building and terraforming rods."
+				""
+				"At the cost of some Mana, you can place blocks, exchange blocks, or fully terraform whole sections of your world."
+				""
+				"The connected quests will have a brief description of what each rod does. However, for more detailed information please refer back to your Lexica Botania."
+			]
+			id: "3F1801BBAF8A29FD"
+			tasks: [{
+				id: "363364A832F21FEC"
+				type: "item"
+				item: "botania:livingwood"
+			}]
+			rewards: [{
+				id: "67E31EF8EF9242E8"
+				type: "item"
+				item: "botania:livingwood_twig"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Rod of the Shifting Crust"
+			icon: {
+				id: "botania:exchange_rod"
+				Count: 1b
+				tag: { }
+			}
+			x: 7.0d
+			y: -3.5d
+			subtitle: "Built upon solid foundations"
+			description: [
+				"This rods allows you to swap any block in the world with the selected block at the cost of Mana."
+				""
+				"To start, Shift+Right Click a block to select it, and then right click other blocks to start the exchange."
+			]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "3A0988C3AEFBAAC5"
+			tasks: [{
+				id: "7FA93EE01B45135D"
+				type: "item"
+				item: {
+					id: "botania:exchange_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "41109E78B59EF97B"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rod of the Depths"
+			icon: "botania:cobble_rod"
+			x: 5.0d
+			y: -3.5d
+			subtitle: "Off to a rocky start"
+			description: ["Places Cobblestone Blocks at the cost of some Mana"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "261056A552909227"
+			tasks: [{
+				id: "60487B8DAAABD00A"
+				type: "item"
+				item: "botania:cobble_rod"
+			}]
+			rewards: [{
+				id: "0F739D6D5D514E05"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rod of the Lands"
+			icon: "botania:dirt_rod"
+			x: 7.5d
+			y: -2.5d
+			subtitle: "Quit mucking about"
+			description: ["Places Dirt Blocks at the cost of some Mana"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "75361161CEA1E406"
+			tasks: [{
+				id: "2FE7292AC2F975A8"
+				type: "item"
+				item: "botania:dirt_rod"
+			}]
+			rewards: [{
+				id: "0C25B3F19358451A"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rod of the Terra Firma"
+			icon: "botania:terraform_rod"
+			x: 7.0d
+			y: -1.5d
+			subtitle: "We can move mountains"
+			description: ["With a bit of practice, the Rod of the Terra Firma can help to quickly transform a landscape. When activated, dirt is formed below you to raise the ground up to your feet, while land above you is lowered to your level, making mountains or levelling an area in moments. "]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "1E22D45F4ACB8FE2"
+			tasks: [{
+				id: "3F20DF25B210800F"
+				type: "item"
+				item: "botania:terraform_rod"
+			}]
+			rewards: [{
+				id: "2675982841DE964D"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Astral Sorcery Building Tools"
+			icon: "astralsorcery:tome"
+			x: -6.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "No construction work after hours"
+			description: ["Once you've unlocked access to Starmetal Ore, you should be able to craft these two wonderful wands to help you shape the world to your liking using the power of the stars."]
+			id: "020ECCFFA45CE43D"
+			tasks: [{
+				id: "37EDC6B3AC445773"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+			rewards: [{
+				id: "691CF672BABA1FA8"
+				type: "item"
+				item: "astralsorcery:stardust"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Formation Wand"
+			icon: {
+				id: "astralsorcery:architect_wand"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: -4.5d
+			y: 0.0d
+			subtitle: "Astral Projection is nothing short of sorcery"
+			description: [
+				"The Formation Wand acts like a build tool, where you can select a Block by Sneak Right Clicking it. Once a source block is selected, you can Sneak Right Click in the air to change the formation shape."
+				""
+				"Note: Sizes are fixed, and can't be changed."
+			]
+			dependencies: ["020ECCFFA45CE43D"]
+			id: "4A2306BD24A5D6D2"
+			tasks: [{
+				id: "7D1392DE2FB21B89"
+				type: "item"
+				item: {
+					id: "astralsorcery:architect_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "23FF3AAB4DFEE10C"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Conversion Wand"
+			icon: {
+				id: "astralsorcery:exchange_wand"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: -7.5d
+			y: 0.0d
+			subtitle: "Starlight Metamorphosis"
+			description: [
+				"The Conversion Wand allows you to swap blocks in the world to blocks in your inventory."
+				""
+				"You start by Sneak Right Clicking a block in the world to select it as an exchange option. However, you are not limited to just a single block, you can select multiple blocks to convert to, which randomizes the pattern of the conversion for a more seamless and natural transition between blocks from your palette."
+			]
+			dependencies: ["020ECCFFA45CE43D"]
+			id: "2334B38255294FAE"
+			tasks: [{
+				id: "0BE4A8E8DE0E013F"
+				type: "item"
+				item: {
+					id: "astralsorcery:exchange_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "07A919265475FAEF"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
 			title: "Create Building Tools"
 			icon: "create:mechanical_arm"
 			x: -6.0d
@@ -968,7 +1416,7 @@
 			shape: "gear"
 			subtitle: "Let's get mechanical, mechanical"
 			description: [
-				"Create offers two ultility based building tools, the Extendo Grip and the Wand of Symmatry. "
+				"Create offers two ultility based building tools, the Extendo Grip and the Wand of Symmetry. "
 				""
 				"While these tools are somewhat costly, they are worth the effort as they offer some unique functionalities."
 			]
@@ -1098,6 +1546,132 @@
 					random_bonus: 8
 				}
 			]
+		}
+		{
+			title: "Rod of the Highlands"
+			icon: "botania:skydirt_rod"
+			x: 4.5d
+			y: -2.5d
+			subtitle: "Nerdpole not included"
+			description: ["Places blocks of Dirt in the air, which makes it the perfect tool for floating builds without needing to pillar up from the ground."]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "624AAFDABA481B08"
+			tasks: [{
+				id: "71069CB1BABDA192"
+				type: "item"
+				item: "botania:skydirt_rod"
+			}]
+			rewards: [{
+				id: "2F982B8BD0A5B9DF"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Mana Blaster + Entropic Lens"
+			icon: {
+				id: "botania:mana_gun"
+				Count: 1b
+				tag: { }
+			}
+			x: 5.0d
+			y: -1.5d
+			subtitle: "So anyway, I started blasting"
+			description: [
+				"A versatile tool in its own right, when paired with an Entropic Lens the Mana Blaster becomes something akin to a long-range sculpting tool, blasting away blocks to help form natural looking shapes. "
+				""
+				"Blast away underground to form nice caves for a base or carve away the landscape to beautify the area!"
+			]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "5CCA8708260D389C"
+			tasks: [
+				{
+					id: "64B96C806BE2E4CB"
+					type: "item"
+					item: {
+						id: "botania:mana_gun"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "1F2D3C964900AA44"
+					type: "item"
+					item: {
+						id: "botania:lens_explosive"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "461C49E6DB199C54"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			icon: "botania:sextant"
+			x: 6.0d
+			y: -1.0d
+			subtitle: "What did you call me?!"
+			description: ["Renders a ghostly circle of whatever radius is desired, making it an excellent tool to plot out rounded builds. "]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "179FB20DE78B8851"
+			tasks: [{
+				id: "7CEB81CF604A2837"
+				type: "item"
+				item: "botania:sextant"
+			}]
+			rewards: [{
+				id: "597AE01F4D6E1217"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Worldshaper's Astrolabe"
+			icon: {
+				id: "botania:astrolabe"
+				Count: 1b
+				tag: { }
+			}
+			x: 6.0d
+			y: -4.0d
+			subtitle: "Be there, or be Square"
+			description: [
+				"Excellent for rapid building, the Worldshaper’s Astrolabe can be used to place blocks in a 3x3 up to an 11x11 square, either vertically or horizontally. "
+				""
+				"Sneak right click a block to select it for placement and sneak right click in the air to change the size."
+			]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "37F31E4C7664EF8C"
+			tasks: [{
+				id: "1827D26DAD8075A3"
+				type: "item"
+				item: {
+					id: "botania:astrolabe"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "70F6E60195DD9768"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
 		}
 		{
 			title: "Cosmetic Armor Stand"

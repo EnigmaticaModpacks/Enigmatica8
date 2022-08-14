@@ -1,7 +1,7 @@
 {
 	id: "0000000000000349"
 	group: "72A9465344128AF9"
-	order_index: 2
+	order_index: 5
 	filename: "rftools_wip"
 	title: "RFTools"
 	icon: "rftoolsbase:machine_frame"
@@ -22,12 +22,32 @@
 				""
 				"~Merlo"
 			]
+			optional: true
 			id: "000000000000034A"
 			tasks: [{
-				id: "000000000000034B"
-				type: "checkmark"
-				title: "Intro"
-				icon: "rftoolsbase:smartwrench"
+				id: "0EB362B38C59907A"
+				type: "item"
+				title: "RFTools or XNet intro item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "xnet:controller"
+								Count: 1b
+							}
+							{
+								id: "rftoolsbase:machine_frame"
+								Count: 1b
+							}
+							{
+								id: "rftoolsbase:machine_base"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000C00"
@@ -387,6 +407,54 @@
 			}]
 			rewards: [{
 				id: "0000000000000C7E"
+				type: "command"
+				title: "Rare RFTools Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Crafters"
+			x: 1.5d
+			y: -3.0d
+			subtitle: "Crafts better than you ever could"
+			description: [
+				"Crafters are really nice machines, which should be pretty self explanatory: they craft stuff for you."
+				""
+				"The nice thing about them is that they’re able to chain recipes as well, so if you teach them how to make planks from wood and sticks from planks they’ll be able to make sticks from wood no problem."
+				""
+				"They come in different tiers, and the only real difference between them is the number of recipes they’re able to remember, with 8 being the max amount on the highest tier."
+			]
+			dependencies: ["000000000000034D"]
+			id: "000000000000039F"
+			tasks: [{
+				id: "00000000000003A0"
+				type: "item"
+				title: "Crafter"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "rftoolsutility:crafter1"
+							}
+							{
+								Count: 1b
+								id: "rftoolsutility:crafter2"
+							}
+							{
+								Count: 1b
+								id: "rftoolsutility:crafter3"
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C76"
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"

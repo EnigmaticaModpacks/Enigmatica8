@@ -1,9 +1,9 @@
 {
 	id: "00000000000003AB"
 	group: "5A8B89F87F77CF4C"
-	order_index: 1
+	order_index: 0
 	filename: "ars_nouveau"
-	title: "Ars Nouveau"
+	title: "Ars Nouveau [WIP]"
 	icon: "ars_nouveau:source_gem"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

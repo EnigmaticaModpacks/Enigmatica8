@@ -667,53 +667,6 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 9.5d
-			subtitle: "I am Iron Man!"
-			description: [
-				"Do you keep running out of space in your Crafters? Don't you wish a better option existed, with more pattern slots so that you didn't need to keep crafting more? Well today is your lucky day!"
-				""
-				"Introducing the Iron Crafter! With three times as many slots as a normal Crafter, this machine will help you organize and keep your base tidy. Oh, and it might be upgraded further too..."
-			]
-			dependencies: ["0000000000000272"]
-			id: "0000000000000F42"
-			tasks: [{
-				id: "0000000000000F43"
-				type: "item"
-				item: "extrastorage:iron_crafter"
-			}]
-			rewards: [{
-				id: "0000000000000F4F"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
-			}]
-		}
-		{
-			x: 0.5d
-			y: 9.5d
-			shape: "hexagon"
-			subtitle: "Too bad Netherite Man doesn't exist!"
-			description: ["Absolute overkill? I don't know what that means! With a whopping 81 slots, the Netherite Crafter is the top tier option for all your autocrafting needs. It's never enough!"]
-			dependencies: ["0000000000000F42"]
-			id: "0000000000000F44"
-			tasks: [{
-				id: "0000000000000F45"
-				type: "item"
-				item: "extrastorage:netherite_crafter"
-			}]
-			rewards: [{
-				id: "0000000000000F50"
-				type: "command"
-				title: "Refined Storage Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
-				player_command: false
-			}]
-		}
-		{
 			x: 3.5d
 			y: 8.0d
 			subtitle: "No Karen, not that manager..."

@@ -11,8 +11,8 @@
 		{
 			title: "Limitless Power"
 			icon: "mininggadgets:upgrade_battery_3"
-			x: 0.5d
-			y: 2.5d
+			x: 0.0d
+			y: 2.0d
 			subtitle: "Infinite Cosmic Power!"
 			description: [
 				"The Ultimate Induction Cell can store up to 1.600.000.000.000 FE, also known as 1.6TFE"

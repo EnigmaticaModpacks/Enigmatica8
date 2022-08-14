@@ -9,6 +9,26 @@ onEvent('recipes', (event) => {
                 A: '#minecraft:logs'
             },
             id: `${id_prefex}stick_16`
+        },
+        {
+            output: '4x minecraft:chest',
+            pattern: ['SSS',
+                      'S S',
+                      'SSS'],
+            key: {
+                S: '#minecraft:logs'
+            },
+            id: `${id_prefex}chest_4`
+        },
+        {
+            output: 'minecraft:chest',
+            pattern: ['SSS',
+                      'S S',
+                      'SSS'],
+            key: {
+                S: '#minecraft:planks'
+            },
+            id: `${id_prefex}chest_1`
         }
     ];
 

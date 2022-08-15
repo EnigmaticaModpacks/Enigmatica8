@@ -133,25 +133,20 @@
 			}]
 		}
 		{
-			title: "Salvage"
+			title: "\"Artifacts\""
+			icon: "tetra:planar_stabilizer"
 			x: 0.0d
 			y: -14.5d
 			shape: "diamond"
-			subtitle: "I don't mean to pry, but..."
-			description: [
-				"Crates and Containers can be found in the underground Forges found deep beneath cold biomes."
-				""
-				"Hit the highlighted areas on crates and containers with the correct tools to break them open."
-			]
+			subtitle: "... but you can craft those!"
+			description: ["As Forge Hammer isn't yet implemanted in 1.18, items you normally would found near it can be crafted manually."]
 			dependencies: ["0000000000000783"]
 			optional: true
 			id: "0000000000000777"
 			tasks: [{
-				id: "0000000000000892"
-				type: "advancement"
-				icon: "tetra:forged_container"
-				advancement: "tetra:spelunking/containers"
-				criterion: ""
+				id: "48B732603D4CD0A5"
+				type: "checkmark"
+				title: "Got it."
 			}]
 			rewards: [{
 				id: "0000000000000A49"
@@ -237,64 +232,23 @@
 			]
 		}
 		{
-			title: "The Forge"
-			x: -2.5d
+			title: "What happened to Forge Hammer?"
+			icon: {
+				id: "hexerei:warhammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.0d
 			y: -14.5d
-			description: [
-				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells and 2 Upgrades to activate it."
-				""
-				"Place a Workbench below the powered Forge Hammer, and you'll gain access to its Hammering abilities."
-				""
-				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. You'll be missing out on loot though!"
-			]
-			dependencies: ["0000000000000883"]
-			id: "0000000000000781"
-			tasks: [{
-				id: "7346BE7936AA083F"
-				type: "advancement"
-				icon: "tetra:hammer_base"
-				advancement: "tetra:spelunking/hammer_fix"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "0000000000000A4A"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Forge Upgrades"
-			x: -1.5d
-			y: -14.5d
-			description: [
-				"Upgrade your Forge Hammer!"
-				""
-				"Most Forge Upgrades can only be found in the Ancient Forges found underneath cold Biomes."
-				"You can add up to a maximum of 2 Upgrades to a single Forge Hammer."
-				""
-				"Combustion Chamber: + 1 Hammer Tier"
-				""
-				"Insulated Plate: + Efficiency"
-				""
-				"Planar Stabilizer: + Stats when used for forging purposes"
-			]
+			description: ["Unfortunetaly Tetra on 1.18 isn't finished yet, so some things (like Forge Hammer) are missing. It is possible to craft few things that would be normally found there however!"]
 			dependencies: ["0000000000000883"]
 			id: "0000000000000783"
 			tasks: [{
-				id: "000000000000085D"
-				type: "item"
-				title: "Any tetra:forge_hammer_upgrades"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "tetra:forge_hammer_upgrades"
-					}
-				}
-				count: 2L
+				id: "41312E6FB77E42B6"
+				type: "checkmark"
+				title: "Got it."
 			}]
 			rewards: [{
 				id: "0000000000000A4E"
@@ -309,7 +263,7 @@
 			x: 1.5d
 			y: -14.5d
 			shape: "diamond"
-			description: ["You can find all sorts of junk lying around Ancient Forges, and a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts."]
+			description: ["Normally you can find all sorts of junk lying around Ancient Forges, but this time this \"junk\" can be crafted! Also a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts as well."]
 			dependencies: ["0000000000000777"]
 			optional: true
 			id: "0000000000000785"
@@ -346,64 +300,13 @@
 				}
 			]
 			rewards: [{
-				id: "0000000000000853"
-				type: "item"
-				title: "Thermal Cell"
-				item: {
-					id: "tetra:magmatic_cell"
-					Count: 1b
-					tag: {
-						Damage: 128
-					}
-				}
+				id: "570095D7B3083675"
+				type: "command"
+				title: "Blacksmith's Delight"
+				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
+				player_command: false
 			}]
-		}
-		{
-			title: "Thermal Cells"
-			x: -3.5d
-			y: -14.5d
-			description: [
-				"Thermal Cells are the batteries of the Forge Hammer."
-				""
-				"You can recharge them in a Transfer Unit, when it's configured correctly. "
-				""
-				""
-				"Note: Thermal Cells are also craftable."
-			]
-			dependencies: [
-				"0000000000000781"
-				"0000000000000883"
-			]
-			id: "0000000000000787"
-			tasks: [{
-				id: "0000000000000854"
-				type: "item"
-				item: {
-					id: "tetra:magmatic_cell"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-				count: 2L
-				consume_items: false
-			}]
-			rewards: [
-				{
-					id: "0000000000000A4B"
-					type: "item"
-					title: "Lava Bucket"
-					item: "minecraft:lava_bucket"
-				}
-				{
-					id: "0000000000000AA4"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
-				}
-			]
 		}
 		{
 			title: "Hack N' Slash"
@@ -427,10 +330,9 @@
 				criterion: ""
 			}]
 			rewards: [{
-				id: "000000000000085F"
-				type: "item"
-				title: "Planar Stabilizer"
-				item: "tetra:planar_stabilizer"
+				id: "0E5A545788400D0D"
+				type: "xp"
+				xp: 500
 			}]
 		}
 		{
@@ -451,10 +353,9 @@
 				criterion: ""
 			}]
 			rewards: [{
-				id: "000000000000085E"
-				type: "item"
-				title: "Combustion Chamber"
-				item: "tetra:combustion_chamber"
+				id: "44D28F5A3B4CC894"
+				type: "xp"
+				xp: 500
 			}]
 		}
 		{
@@ -561,7 +462,7 @@
 					id: "0000000000000A42"
 					type: "item"
 					title: "Copper Chunk"
-					item: "emendatusenigmatica:copper_chunk"
+					item: "minecraft:raw_copper"
 					count: 8
 				}
 				{
@@ -611,7 +512,7 @@
 					id: "0000000000000A43"
 					type: "item"
 					title: "Osmium Chunk"
-					item: "emendatusenigmatica:osmium_chunk"
+					item: "mekanism:raw_osmium"
 					count: 8
 				}
 				{
@@ -717,11 +618,7 @@
 				""
 				"Be warned, an End Rod handle may have… unfortunate side effects when near Endermen. Use with caution."
 			]
-			dependencies: [
-				"0000000000000787"
-				"0000000000000781"
-				"0000000000000783"
-			]
+			dependencies: ["0000000000000783"]
 			id: "0000000000000885"
 			tasks: [{
 				id: "0000000000000886"
@@ -1035,7 +932,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:tools/pickaxes"
+						value: "forge:pickaxes"
 					}
 				}
 			}]
@@ -1059,12 +956,12 @@
 			tasks: [{
 				id: "0000000000000937"
 				type: "item"
-				title: "Any forge:tools/shovel"
+				title: "Any Showel"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:tools/shovels"
+						value: "forge:shovels"
 					}
 				}
 			}]
@@ -1652,136 +1549,6 @@
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Tier 7"
-			icon: {
-				id: "tetra:modular_double"
-				Count: 1b
-				tag: {
-					"double/head_left/settle_progress": 708
-					"double/basic_handle_material": "basic_handle/end_rod"
-					"double/handle": "double/basic_handle"
-					honing_progress: 470
-					HideFlags: 1
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					"double/head_right/settle_progress": 708
-					id: "b262f1bb-de92-4835-a8ed-783e131c5dd9"
-					Damage: 0
-					"double/basic_hammer_right_material": "basic_hammer/starmetal"
-					"double/handle/settle_progress": 205
-					"double/basic_hammer_left_material": "basic_hammer/starmetal"
-				}
-			}
-			x: -4.0d
-			y: -11.5d
-			description: ["We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools, bows in particular."]
-			dependencies: ["0000000000000887"]
-			id: "03E874538CC29EAF"
-			tasks: [{
-				id: "019F3FE0B1C8CDEB"
-				type: "item"
-				item: "astralsorcery:starmetal_ingot"
-				count: 2L
-			}]
-			rewards: [{
-				id: "59B2B9FCD1E15324"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Tier 8"
-			icon: {
-				id: "tetra:modular_double"
-				Count: 1b
-				tag: {
-					"double/head_left/settle_progress": 592
-					"double/basic_handle_material": "basic_handle/end_rod"
-					"double/handle": "double/basic_handle"
-					honing_progress: 410
-					HideFlags: 1
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					"double/head_right/settle_progress": 592
-					id: "595b6b9f-c12d-42f7-bb35-e12a0acaaa25"
-					Damage: 0
-					"double/basic_hammer_right_material": "basic_hammer/sky"
-					"double/handle/settle_progress": 175
-					"double/basic_hammer_left_material": "basic_hammer/sky"
-				}
-			}
-			x: -5.0d
-			y: -11.5d
-			description: ["We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools, bows in particular."]
-			dependencies: ["03E874538CC29EAF"]
-			id: "6021E8E72AD98AB6"
-			tasks: [{
-				id: "665CC8BF12C14289"
-				type: "item"
-				item: "naturesaura:sky_ingot"
-				count: 2L
-			}]
-			rewards: [{
-				id: "49D9C81C252CD109"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Tier 9"
-			icon: {
-				id: "tetra:modular_double"
-				Count: 1b
-				tag: {
-					"double/head_left/settle_progress": 1068
-					"double/basic_handle_material": "basic_handle/end_rod"
-					"double/handle": "double/basic_handle"
-					honing_progress: 665
-					HideFlags: 1
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					"double/head_right/settle_progress": 1068
-					id: "e771cd1b-c641-4b37-bbd9-e805f1c75dc2"
-					Damage: 0
-					"double/basic_hammer_right_material": "basic_hammer/alfsteel"
-					"double/handle/settle_progress": 120
-					"double/basic_hammer_left_material": "basic_hammer/alfsteel"
-				}
-			}
-			x: -6.0d
-			y: -12.75d
-			shape: "hexagon"
-			description: [
-				"We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools."
-				""
-				"... an Alfsteel Recurve Bow for example."
-				""
-			]
-			dependencies: ["6021E8E72AD98AB6"]
-			size: 1.5d
-			id: "5DA0E2DDC46C8721"
-			tasks: [{
-				id: "4F7E103E546BD020"
-				type: "item"
-				item: "mythicbotany:alfsteel_ingot"
-				count: 2L
-			}]
-			rewards: [{
-				id: "25764538285A2048"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
 				player_command: false
 			}]
 		}

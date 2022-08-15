@@ -530,10 +530,10 @@
 					id: "4758C6DCFC68EA3B"
 					type: "item"
 					item: {
-						id: "tconstruct:pickaxe_head"
+						id: "tconstruct:pick_head"
 						Count: 1b
 						tag: {
-							Material: "tconstruct:stone"
+							Material: "tconstruct:rock"
 						}
 					}
 				}
@@ -753,23 +753,14 @@
 			dependencies: ["155CE535A506F2D4"]
 			id: "23F5852361B79CC5"
 			tasks: [{
-				id: "3187F82B6F7F3E2A"
+				id: "117C58AD7298D593"
 				type: "item"
-				title: "Tinker's Anvil"
+				title: "Tinkers Anvil"
 				item: {
-					id: "itemfilters:or"
+					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						items: [
-							{
-								id: "tconstruct:scorched_anvil"
-								Count: 1b
-							}
-							{
-								id: "tconstruct:tinkers_anvil"
-								Count: 1b
-							}
-						]
+						value: "tconstruct:tinkers_anvils"
 					}
 				}
 			}]
@@ -1336,10 +1327,10 @@
 					id: "75A011DBB6A692C9"
 					type: "item"
 					item: {
-						id: "tconstruct:pickaxe_head"
+						id: "tconstruct:pick_head"
 						Count: 1b
 						tag: {
-							Material: "tconstruct:tinkers_bronze"
+							Material: "tconstruct:bronze"
 						}
 					}
 				}
@@ -1500,10 +1491,10 @@
 					id: "64A03C1EA5F5C87B"
 					type: "item"
 					item: {
-						id: "tconstruct:pickaxe_head"
+						id: "tconstruct:pick_head"
 						Count: 1b
 						tag: {
-							Material: "tconstruct:tinkers_bronze"
+							Material: "tconstruct:bronze"
 						}
 					}
 				}
@@ -2213,12 +2204,11 @@
 				{
 					id: "322F0607B2C62A66"
 					type: "item"
-					title: "Any #tconstruct:parts"
 					item: {
-						id: "tconstruct:pickaxe_head"
+						id: "tconstruct:pick_head"
 						Count: 1b
 						tag: {
-							Material: "tconstruct:stone"
+							Material: "tconstruct:rock"
 						}
 					}
 				}
@@ -2380,10 +2370,10 @@
 					id: "1A579C8C86013F3B"
 					type: "item"
 					item: {
-						id: "tconstruct:pickaxe_head"
+						id: "tconstruct:round_plate"
 						Count: 1b
 						tag: {
-							Material: "tconstruct:stone"
+							Material: "tconstruct:rock"
 						}
 					}
 				}
@@ -2946,7 +2936,7 @@
 			title: "Tinkers Shoes"
 			x: -5.5d
 			y: -1.5d
-			description: ["These boots will allow the tinkerer to bounce safely from great heights instead of hitting the ground hard. Unlike the slings, the different boots are purely aesthetic. "]
+			description: ["These boots will allow the tinkerer to bounce safely from great heights instead of hitting the ground hard."]
 			dependencies: ["107AE2C18410AAF4"]
 			id: "12B4F7ED5AD83DBC"
 			tasks: [{
@@ -3197,11 +3187,11 @@
 			}]
 		}
 		{
-			title: "Tinkers Flint and Bronze"
+			title: "Tinkers Flint and Brick"
 			x: -1.5d
 			y: 4.5d
 			description: [
-				"The boring, old flint and steel lights single blocks on fire, and once it’s used up, it’s gone. Enter the Flint and Bronze."
+				"The boring, old flint and steel lights single blocks on fire, and once it’s used up, it’s gone. Enter the Flint and Brick."
 				""
 				"This tool has more durability than a typical flint and steel and has the added benefit of accepting abilities and upgrades. Light more than a single tile! Burn parts off of mobs with severing!"
 			]
@@ -3211,7 +3201,7 @@
 				id: "695EB3346312D3B2"
 				type: "item"
 				item: {
-					id: "tconstruct:flint_and_bronze"
+					id: "tconstruct:flint_and_brick"
 					Count: 1b
 					tag: {
 						tic_multipliers: { }
@@ -3219,6 +3209,7 @@
 							"tconstruct:durability": 100.0f
 						}
 						tic_broken: 0b
+						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:fiery"
@@ -3229,10 +3220,8 @@
 								level: 1s
 							}
 						]
-						HideFlags: 3
 						Damage: 0
 						tic_persistent_data: {
-							abilities: 0
 							upgrades: 1
 						}
 					}
@@ -3257,7 +3246,7 @@
 			tasks: [{
 				id: "45D7DCB514F39202"
 				type: "item"
-				title: "Any #tconstruct:anvil_metal"
+				title: "Any TCon Anvil Material"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -3423,33 +3412,6 @@
 				icon: "kubejs:legendary_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_tinkers_legendary"
 				player_command: false
-			}]
-		}
-		{
-			title: "Tinkers Planner"
-			icon: {
-				id: "framedblocks:framed_blueprint"
-				Count: 1b
-				tag: {
-					blueprint_data: { }
-				}
-			}
-			x: 0.0d
-			y: 1.0d
-			description: [
-				"This pack adds in the Tinkers Planner mod. This mod allows the tinkerer to plan out the materials, upgrades and abilities to be added to the tools to be created."
-				""
-				"To access the planner, click the blueprint icon in the GUI of the Tinker Station or Tinker Anvil."
-			]
-			id: "7EE0DA8E57E9F200"
-			tasks: [{
-				id: "2BAF751DE6718A77"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "6E520DA01C89DFE5"
-				type: "xp"
-				xp: 100
 			}]
 		}
 		{

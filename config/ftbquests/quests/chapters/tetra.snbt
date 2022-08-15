@@ -650,8 +650,8 @@
 		}
 		{
 			title: "Tier 6"
-			x: -2.5d
-			y: -11.5d
+			x: -3.75d
+			y: -14.25d
 			shape: "hexagon"
 			description: [
 				"Netherite Ingots will get you to tier 6. "

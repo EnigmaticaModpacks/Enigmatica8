@@ -22,7 +22,7 @@
 				"● $storage"
 				"● $storage/basic"
 				"● $storage/bulk"
-				"● $storage/bags"
+				"● $storage/bag"
 				"● $storage/energy"
 				"● $storage/gas"
 				"● $storage/liquid"
@@ -41,8 +41,8 @@
 		}
 		{
 			title: "Refined Storage"
-			x: 1.0d
-			y: -5.0d
+			x: 0.0d
+			y: -4.5d
 			subtitle: "Energy Mass Conversion in a Square"
 			description: [
 				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. "
@@ -67,14 +67,22 @@
 			}]
 		}
 		{
-			title: "Iron Chests"
-			icon: "ironchest:iron_chest"
+			title: "Sophisticated Storage"
+			icon: {
+				id: "sophisticatedstorage:iron_chest"
+				Count: 1b
+				tag: {
+					mainColor: 1908001
+					accentColor: 1908001
+				}
+			}
 			x: -0.5d
 			y: -10.0d
+			subtitle: "Iron chests, but better!"
 			description: [
-				"Extra large storage for the same space as a chest. Iron Chests come in multiple varieties to suit your budget."
+				"Extra large storage for the same space as a chest. Sophisticated Storage adds iron chests, barrels and shulker boxes in multiple varieties to suit your budget."
 				""
-				"Chests can be upgraded in place by using an upgrade item on the chest!"
+				"Those can be upgraded in place by using an upgrade item on it, but first they need to be changed to Sophisticated Storage version."
 			]
 			dependencies: ["00000000000003FF"]
 			id: "0000000000000405"
@@ -85,23 +93,23 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "enigmatica:quests/storage/wood_to_iron"
+						value: "forge:storage/basic/wooden"
 					}
 				}
 			}]
 			rewards: [{
 				id: "0000000000000A6B"
 				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
 		}
 		{
 			icon: "mekanism:basic_bin"
 			x: 1.0d
-			y: -10.0d
+			y: -9.5d
 			subtitle: "I Like Big Bins and I Cannot Lie"
 			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "]
 			dependencies: ["00000000000003FF"]
@@ -156,8 +164,8 @@
 		}
 		{
 			title: "Black Hole Storage"
-			x: -0.5d
-			y: -5.0d
+			x: -1.0d
+			y: -4.5d
 			subtitle: "Physics Breaking Hoarding"
 			description: [
 				"Industrial Foregoing has massive storage capabilities. "
@@ -191,7 +199,7 @@
 			title: "Find Me"
 			icon: "naturesaura:range_visualizer"
 			x: -2.0d
-			y: -10.0d
+			y: -9.5d
 			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "]
 			dependencies: ["00000000000003FF"]
 			id: "000000000000040B"
@@ -211,7 +219,7 @@
 		{
 			title: "Plonk"
 			icon: "botania:cosmetic_thinking_hand"
-			x: -2.0d
+			x: -2.5d
 			y: -8.5d
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!"
@@ -235,20 +243,19 @@
 		}
 		{
 			title: "Drawer Controller"
-			icon: "storagedrawers:controller"
-			x: -4.5d
-			y: -7.0d
+			x: -7.5d
+			y: -6.5d
 			description: [
-				"The Drawer Controller must be in contact with drawers in order to 'see' them. Of course, drawers may also be chained together into a wall or line, with a single Drawer Controller able to connect to many drawers. "
+				"The Drawer Controller must be in contact with drawers in order to 'see' them. Of course, drawers may also be chained together into a wall or line, with a single Drawer Controller able to connect to many drawers. They all need to be linked with special tool however."
 				""
-				"Trim blocks may also be used to bridge gaps, allowing the controller to see around corners."
+				"Ender Drawers are exception and don't need to be near it however."
 			]
 			dependencies: ["0000000000000966"]
 			id: "000000000000040F"
 			tasks: [{
 				id: "000000000000068C"
 				type: "item"
-				item: "storagedrawers:controller"
+				item: "functionalstorage:storage_controller"
 			}]
 			rewards: [{
 				id: "00000000000009AB"
@@ -260,21 +267,34 @@
 			}]
 		}
 		{
-			title: "Gold Chests"
-			icon: "ironchest:gold_chest"
-			x: -0.5d
-			y: -11.0d
-			description: ["Just a touch of extra bling."]
+			title: "Iron Storage"
+			icon: {
+				id: "sophisticatedstorage:iron_chest"
+				Count: 1b
+				tag: {
+					woodType: "oak"
+				}
+			}
+			x: -2.0d
+			y: -11.5d
+			subtitle: "Definitely harder than wood."
+			description: [
+				"Iron storage is the first upgrade you can get. It doubles space available in your storage."
+				""
+				"To see all iron tier storage avaliable, search this tag in JEI:"
+				"● $storage/basic/iron"
+			]
 			dependencies: ["0000000000000405"]
 			id: "000000000000094F"
 			tasks: [{
 				id: "0000000000000EA6"
 				type: "item"
+				title: "Any Iron Tier Storage"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "enigmatica:quests/storage/iron_to_gold"
+						value: "forge:storage/basic/iron"
 					}
 				}
 			}]
@@ -288,21 +308,34 @@
 			}]
 		}
 		{
-			title: "Diamond Chests"
-			icon: "ironchest:diamond_chest"
+			title: "Gold Storage"
+			icon: {
+				id: "sophisticatedstorage:gold_chest"
+				Count: 1b
+				tag: {
+					woodType: "oak"
+				}
+			}
 			x: -0.5d
-			y: -12.0d
-			description: ["Certainly quite the flex, storing your item in a box of diamond."]
+			y: -11.5d
+			subtitle: "They are made out of gold or just plated?"
+			description: [
+				"Gold is second tier storage in Sophisticated Storage. Gold tier triples your storage avaliable (I'm talking in comparison to basic one) and indeed looks really nice."
+				""
+				"To see all gold tier storage avaliable, search this tag in JEI:"
+				"● $storage/basic/gold"
+			]
 			dependencies: ["000000000000094F"]
 			id: "0000000000000951"
 			tasks: [{
 				id: "0000000000000EA7"
 				type: "item"
+				title: "Any Gold Tier Storage"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "enigmatica:quests/storage/gold_to_diamond"
+						value: "forge:storage/basic/gold"
 					}
 				}
 			}]
@@ -316,14 +349,15 @@
 			}]
 		}
 		{
-			title: "Drawers"
-			icon: "storagedrawers:oak_full_drawers_1"
-			x: -3.0d
+			title: "Functional Storage"
+			icon: "functionalstorage:oak_4"
+			x: -6.0d
 			y: -7.5d
+			subtitle: "Looks really familiar..."
 			description: [
-				"Customizable drawers for all your deep storage needs."
+				"Functional Storage adds well known Drawers, but much more refined!"
 				""
-				"Drawers may be used standalone or placed next to a Controller to link them all together. Each Drawer can accept multiple upgrades to expand their capacity and features."
+				"Functional Storage Drawers have much more functions than old Storage Drawers, are more reliable and less laggy."
 			]
 			dependencies: ["00000000000003FF"]
 			id: "0000000000000966"
@@ -335,7 +369,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "storagedrawers:drawers"
+						value: "functionalstorage:drawer"
 					}
 				}
 			}]
@@ -349,14 +383,23 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -8.0d
+			x: -5.0d
+			y: -9.0d
+			subtitle: "Not enough storage?"
+			description: [
+				"64 stacks aren't enough for you? There is a solution!"
+				""
+				"Each drawer has 4 upgrade slots for storage, allowing you to multiply your storage capabilities to the point you have 2,1 Billions of items in a single drawer!"
+				""
+				"There are also few cheaper upgrades, but take this as a challenge for you to make max capacity drawer!"
+			]
 			dependencies: ["0000000000000966"]
 			id: "0000000000000980"
 			tasks: [{
 				id: "00000000000009A0"
 				type: "item"
-				item: "storagedrawers:emerald_storage_upgrade"
+				item: "functionalstorage:netherite_upgrade"
+				count: 4L
 			}]
 			rewards: [{
 				id: "00000000000009A1"
@@ -368,15 +411,16 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -4.0d
 			y: -8.5d
-			description: ["Bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
+			subtitle: "But bigger is always better right?"
+			description: ["Well no, bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
 			dependencies: ["0000000000000966"]
 			id: "0000000000000982"
 			tasks: [{
 				id: "0000000000000983"
 				type: "item"
-				item: "storagedrawers:one_stack_upgrade"
+				item: "functionalstorage:iron_downgrade"
 			}]
 			rewards: [{
 				id: "00000000000009AA"
@@ -388,15 +432,16 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -6.5d
+			x: -6.0d
+			y: -9.5d
+			subtitle: "Trash can build-in into drawer"
 			description: ["Excess items will be automatically voided."]
 			dependencies: ["0000000000000966"]
 			id: "0000000000000984"
 			tasks: [{
 				id: "0000000000000985"
 				type: "item"
-				item: "storagedrawers:void_upgrade"
+				item: "functionalstorage:void_upgrade"
 			}]
 			rewards: [{
 				id: "695D02E01FA0C0BD"
@@ -596,7 +641,7 @@
 		}
 		{
 			x: -3.5d
-			y: -11.0d
+			y: -5.5d
 			subtitle: "Do not screw with the regulator"
 			description: [
 				"A minor recalibration and the Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
@@ -619,8 +664,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -6.0d
+			x: -2.5d
+			y: -6.5d
 			subtitle: "Pym Powered"
 			description: [
 				"Smaller, but equally strong? Impossible!"
@@ -662,8 +707,8 @@
 		}
 		{
 			icon: "compactmachines:machine_tiny"
-			x: -3.5d
-			y: -10.0d
+			x: -4.5d
+			y: -4.0d
 			subtitle: "One, cut a hole in a box"
 			description: [
 				"Gather the materials for your first Compact Machine!"
@@ -690,8 +735,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -10.0d
+			x: -5.5d
+			y: -3.0d
 			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "]
 			dependencies: ["3787A109AABC8921"]
 			id: "0DAA452348B02827"
@@ -710,15 +755,15 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -4.5d
+			x: -3.5d
+			y: -3.0d
 			subtitle: "Quantum Tunneling"
 			description: [
 				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. "
 				""
 				"For example, place a Tunnel on a wall and right click it until it reports it is configured to the up position, then place a chest against it. Warp back outside and place a Hopper on the top of the machine and feed in a few items. They’ll be whisked away into that chest inside. Use this concept to feed items into or out of the machine, as necessary. "
 				""
-				"Of course, many other options exist for getting stuff in and out. Ender Storage for items and fluids, Ender Gates for power, etc. "
+				"Of course, many other options exist for getting stuff in and out. Ender Storage for items and fluids, Quantum Entagloporter for power, etc. "
 			]
 			dependencies: ["3787A109AABC8921"]
 			id: "5511E0236BA3BDCA"
@@ -767,7 +812,7 @@
 		{
 			title: "Dimensional Storage"
 			x: -2.0d
-			y: -5.0d
+			y: -4.5d
 			subtitle: "Wouldn't you think my collection's complete?"
 			description: [
 				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
@@ -794,7 +839,7 @@
 			title: "Fluids"
 			icon: "minecraft:bucket"
 			x: -0.5d
-			y: -1.5d
+			y: -1.0d
 			shape: "gear"
 			subtitle: "When buckets aren't enough"
 			description: [
@@ -818,7 +863,7 @@
 			title: "Fluid Tank (Mekanism)"
 			icon: "mekanism:basic_fluid_tank"
 			x: 2.5d
-			y: -1.5d
+			y: -1.0d
 			description: [
 				"Mekanism fluid tanks have a bucket mode (default: shift + scroll), which lets them pick up and place fluids. Try it as a gigantic bucket!"
 				""
@@ -857,29 +902,17 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "77079E43823E3AE6"
-					type: "item"
-					item: "prettypipes:pipe"
-					count: 4
-				}
-				{
-					id: "6C334DFD063E8B65"
-					type: "item"
-					item: "prettypipes:low_retrieval_module"
-				}
-				{
-					id: "3C327392E358E068"
-					type: "item"
-					item: "prettypipes:low_extraction_module"
-				}
-			]
+			rewards: [{
+				id: "0CD069989C620730"
+				type: "item"
+				item: "mekanism:elite_mechanical_pipe"
+				count: 8
+			}]
 		}
 		{
 			title: "Fluid Tank (PNC)"
 			x: -0.5d
-			y: 1.5d
+			y: 2.0d
 			description: [
 				"PNC fluid tanks can accept dispenser upgrades to auto-output on the upgrade's configured side (configure the side by right clicking the upgrade on the side of a block in-world). They also accept speed upgrades to boost the dispenser upgrade."
 				""
@@ -922,7 +955,7 @@
 		{
 			title: "Fluid Cell"
 			x: -3.0d
-			y: 0.0d
+			y: 0.5d
 			description: [
 				"Thermal Series' fluid cells are both very configurable, and upgradable. Each of their sides can be configured to be input, output, both in and out, or no connection, with or without auto push/pull, and with adjustable transfer rates."
 				""
@@ -957,7 +990,7 @@
 		{
 			title: "Fluid Tank (Create)"
 			x: 1.0d
-			y: 1.0d
+			y: 1.5d
 			description: ["The Create tank can be make into large multi-block tanks. See the quest in the Create chapter for more info."]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "516772B582C9114A"
@@ -978,7 +1011,7 @@
 		{
 			title: "Ender Tank"
 			x: -2.0d
-			y: -3.5d
+			y: -3.0d
 			description: [
 				"Ender Tanks will share their inventories with other tanks using the same color coded channel. The default color code when you craft the tank will be the color of wool you used in the recipe, but you can customize the code by right-clicking dye onto the three color swatches on the top."
 				""
@@ -992,25 +1025,18 @@
 				item: "enderstorage:ender_tank"
 				count: 2L
 			}]
-			rewards: [
-				{
-					id: "18AC74F0A635EC32"
-					type: "item"
-					item: "resourcefulbees:rgbee_honeycomb"
-					count: 4
-				}
-				{
-					id: "4ED4A6EAF019E0C4"
-					type: "item"
-					item: "resourcefulbees:wax"
-					count: 4
-				}
-			]
+			rewards: [{
+				id: "4461350F650F7B9F"
+				type: "item"
+				item: "minecraft:bone_meal"
+				count: 16
+				random_bonus: 48
+			}]
 		}
 		{
 			title: "Tank (RFTools)"
 			x: 2.0d
-			y: 0.0d
+			y: 0.5d
 			description: ["Tanks in your fluid storage keep filling with the wrong liquids? RFTools tanks can filter what liquid they accept, just place a bucket of the fluid you want to 'whitelist' in the slot in it's UI."]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "484A9BB4A5423AF8"
@@ -1029,101 +1055,10 @@
 			}]
 		}
 		{
-			title: "Tank Null"
-			icon: {
-				id: "tanknull:tank_1"
-				Count: 1b
-				tag: {
-					fluidinv: { }
-				}
-			}
-			x: -0.5d
-			y: -3.5d
-			description: [
-				"The Tank is the ultimate portable fluid storage solution. It can pick up and place fluids, store multiple fluids, and even automatically absorb nearby fluids."
-				""
-				"Use alt + right click to swap between filling/emptying mode, and hold shift + scroll to switch the active tank. Use the keybind (default: o) to set some options like sponge mode."
-				""
-				"You can use the Tank Null Dock to access the Tank as a block, just right click the Tank into the dock. Shift + right click to pop the Tank out of the dock again."
-			]
-			dependencies: ["568DC3ECDB943C47"]
-			id: "5D02087F29AA5454"
-			tasks: [{
-				id: "09AE24315524F720"
-				type: "item"
-				title: "Any Tank"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "tanknull:tank_1"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_2"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_3"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_4"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_5"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_6"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-							{
-								id: "tanknull:tank_7"
-								Count: 1b
-								tag: {
-									fluidinv: { }
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "6B430A2095F38839"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "Fluid Storage Disk"
 			icon: "refinedstorage:64k_fluid_storage_disk"
-			x: 2.5d
-			y: -3.5d
+			x: 0.0d
+			y: -3.0d
 			description: [
 				"Fluids can be stored directly in an RS system too, with fluid disk drives. Just place the disk in a normal disk drive."
 				""
@@ -1256,7 +1191,7 @@
 		{
 			title: "Dynamic Tank"
 			x: 4.0d
-			y: -1.5d
+			y: -1.0d
 			subtitle: "Bigger on the inside"
 			description: [
 				"The Mekanism Dynamic Tank is a multi-block tank that can store a very large amount of fluid, with options for multiple access ports. The smallest one is a hollow 3x3x3 cube, and it can be as big as 18x18x18. Even the smallest one can hold 432,000 full buckets worth of fluid!"
@@ -1288,7 +1223,7 @@
 		}
 		{
 			x: -2.0d
-			y: 1.0d
+			y: 1.5d
 			description: [
 				"The Reservoir works like a bucket, except it can hold multiple buckets worth of a fluid at once, use the Mode key to toggle between filling and emptying mode. It can also auto-fill other fluid accepting items in your inventory; shift-right click to toggle \"charging mode\"."
 				""
@@ -1324,14 +1259,14 @@
 			title: "Tinker's Tanks"
 			icon: "tconstruct:seared_ingot_tank"
 			x: -3.5d
-			y: -1.5d
+			y: -1.0d
 			description: ["Tinkers Fuel tanks are part of the smeltery/foundry multi-block structures, but they also work as small cheap 4 bucket tanks. The Ingot tanks hold slightly more, about 4.6 buckets, so they can accommodate 32 molten ingots."]
 			dependencies: ["568DC3ECDB943C47"]
 			id: "1EFC81649E4D4C50"
 			tasks: [{
 				id: "376F9D335DB66E98"
 				type: "item"
-				title: "Any #tconstruct:tanks"
+				title: "Any Tinkers' Construct Tank"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1354,7 +1289,7 @@
 		}
 		{
 			x: -5.0d
-			y: -1.5d
+			y: -1.0d
 			description: ["While the foundry can be used to melt down items into liquid form, it also makes a great multi-fluid storage tank! Check it's quest in the Tinkers Construct chapter for some more info."]
 			dependencies: [
 				"1EFC81649E4D4C50"
@@ -1374,8 +1309,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -3.5d
+			x: -1.0d
+			y: -3.0d
 			description: [
 				"With its normal settings, External Storage works with items. However, it too can be used to provide RS with access to fluids stored in other tanks. "
 				""
@@ -1403,28 +1338,10 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -5.0d
-			description: ["The Pretty Pipes Item Terminal and Crafting Terminal are a great early game way to access all your items from a single location, use them for crafting, and can even have autocrafting. Check out the Pretty Pipes quests in the Automation chapter for more info!"]
-			dependencies: ["00000000000003FF"]
-			id: "6E3133DD54A6C7E7"
-			tasks: [{
-				id: "43B9523816655544"
-				type: "item"
-				item: "prettypipes:item_terminal"
-			}]
-			rewards: [{
-				id: "68188157B1667326"
-				type: "item"
-				item: "prettypipes:pipe"
-				count: 8
-			}]
-		}
-		{
 			title: "ID Storage Terminal"
 			icon: "integratedterminals:part_terminal_storage"
-			x: 2.5d
-			y: -5.0d
+			x: 1.5d
+			y: -6.0d
 			subtitle: "Data-magic"
 			description: [
 				"The Integrated Dynamics Storage Terminal lets you access and craft with items from all connected inventories, with no wait times or power use!"
@@ -1474,6 +1391,468 @@
 					count: 16
 				}
 			]
+		}
+		{
+			x: -7.0d
+			y: -9.0d
+			subtitle: "Integrated Hopper in a nutshell"
+			description: ["Collector upgrade allows drawer to work like a hopper, getting items from any side choosen in gui!"]
+			dependencies: ["0000000000000966"]
+			id: "4E92570E06A632C1"
+			tasks: [{
+				id: "26B4B487EC799FC4"
+				type: "item"
+				item: {
+					id: "functionalstorage:collector_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "DOWN"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "23A13AB2F98CDF57"
+					type: "item"
+					item: {
+						id: "functionalstorage:collector_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					random_bonus: 3
+				}
+				{
+					id: "433C740CEEB2C72A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -8.5d
+			subtitle: "Hopper-like item transfer?"
+			description: ["Puller and Pusher upgrades allow drawers to pull items from / push items to different inventories."]
+			dependencies: ["0000000000000966"]
+			id: "1E3D0A22137BC69D"
+			tasks: [
+				{
+					id: "0A86B1D1939EE2E6"
+					type: "item"
+					item: {
+						id: "functionalstorage:pusher_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+				}
+				{
+					id: "23FEE61D1BC3AA32"
+					type: "item"
+					item: {
+						id: "functionalstorage:puller_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "65E41DA8B0427C9F"
+					type: "item"
+					item: {
+						id: "functionalstorage:pusher_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					random_bonus: 3
+				}
+				{
+					id: "275EAD67101B76E8"
+					type: "item"
+					item: {
+						id: "functionalstorage:puller_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					random_bonus: 3
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -6.0d
+			subtitle: "Ender chest but... its a drawer?"
+			description: [
+				"Ender drawers are normal drawers, but with one addition. They can be connected to a Drawer Controller wirelessly!"
+				""
+				"Linking tool also allows you to copy frequency of Ender Drawer, and paste in on other ones to use them as Ender Chests. You copy frequency by left clicking Ender Drawer with linking tool."
+			]
+			dependencies: ["0000000000000966"]
+			id: "47EF38C8E41B2DE8"
+			tasks: [{
+				id: "1E8ECE61CC02806E"
+				type: "item"
+				item: "functionalstorage:ender_drawer"
+			}]
+			rewards: [{
+				id: "70E4602ABF82C34E"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -6.0d
+			subtitle: "Lets compact everything"
+			description: [
+				"Compacting drawers automatically change form of item stored."
+				""
+				"From block to ingots, ingots to nuggets. Vice versa and everything at once."
+			]
+			dependencies: ["0000000000000966"]
+			id: "4B15775FF9D71CFE"
+			tasks: [{
+				id: "66F3136BE821E73D"
+				type: "item"
+				item: "functionalstorage:compacting_drawer"
+			}]
+			rewards: [
+				{
+					id: "643CCF8714B8719F"
+					type: "item"
+					item: "minecraft:iron_block"
+				}
+				{
+					id: "1F4645AC8B559D5D"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 9
+				}
+				{
+					id: "085AFBA229687140"
+					type: "item"
+					item: "minecraft:iron_nugget"
+					count: 9
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -6.5d
+			subtitle: "All Armor and Weapon in one place!"
+			description: ["Armory Cabinet accepts only armor and weapons, but can store a lot of them. You can't use it manually however, and only with use of pipes or hoppers you are able to interract with it."]
+			dependencies: ["0000000000000966"]
+			id: "42854348FF66AAC5"
+			tasks: [{
+				id: "6E1A61C9BC490741"
+				type: "item"
+				item: "functionalstorage:armory_cabinet"
+			}]
+			rewards: [{
+				id: "400AF04A55583751"
+				type: "item"
+				item: "minecraft:hopper"
+				count: 2
+			}]
+		}
+		{
+			x: -8.0d
+			y: -5.0d
+			subtitle: "My code will be... 0E8"
+			description: [
+				"Linking tool is used to link Drawers to Drawers controllers."
+				""
+				"It has a few different modes. Right click in mid air to change from addition or removal of binds, or shift while doing so to change from Single to Multiple drawers binding mode!"
+				""
+				"Right click controller to store it in linking tool, then right click any Drawer to bind it! In Multiple mode, you are able to bind all drawers in some area. Right click first Drawer to start, then another one to bind all drawers in that area!"
+				""
+				"Removal of drawers from the controller works in the same way."
+			]
+			dependencies: [
+				"47EF38C8E41B2DE8"
+				"000000000000040F"
+			]
+			min_width: 300
+			id: "2F2D7406DB3F5655"
+			tasks: [{
+				id: "665F31503C9E3963"
+				type: "item"
+				item: {
+					id: "functionalstorage:linking_tool"
+					Count: 1b
+					tag: {
+						Action: "ADD"
+						Mode: "SINGLE"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2100D1AFF2CB8BCD"
+				type: "xp"
+				xp: 300
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.5d
+			description: [
+				"Configuration tool allows you to lock your drawer, turn off / on amount and icon of stored item, and disable rendering of upgrades on drawer."
+				""
+				"Right click a drawer to change settings in choosen mode, Right click + Shift in mid air to change tool mode."
+			]
+			dependencies: ["0000000000000966"]
+			id: "40822141AA12E1AD"
+			tasks: [{
+				id: "63B78F09990F538E"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+			}]
+			rewards: [{
+				id: "656BBA65DCFBE3DC"
+				type: "xp"
+				xp: 300
+			}]
+		}
+		{
+			title: "Diamond Storage"
+			icon: {
+				id: "sophisticatedstorage:diamond_chest"
+				Count: 1b
+				tag: {
+					woodType: "oak"
+				}
+			}
+			x: 1.0d
+			y: -11.5d
+			subtitle: "That is flex storing your diamonds in diamond storage."
+			description: [
+				"Diamond is 3rd tier avaliable. It has 117 slots avaliable (4x of basic storage) and indeed, adds few points to prestige."
+				""
+				"To see all diamond tier storage avaliable, search this tag in JEI:"
+				"● $storage/basic/diamond"
+			]
+			dependencies: ["0000000000000951"]
+			id: "2009BE9AA2C56B0E"
+			tasks: [{
+				id: "41C9118B9FC6B868"
+				type: "item"
+				title: "Any Diamond Tier Storage"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:storage/basic/diamond"
+					}
+				}
+			}]
+			rewards: [{
+				id: "57FE50DF4CAFD112"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Netherite Storage"
+			icon: {
+				id: "sophisticatedstorage:netherite_chest"
+				Count: 1b
+				tag: {
+					mainColor: 16383998
+					accentColor: 16383998
+				}
+			}
+			x: -0.5d
+			y: -13.125d
+			shape: "diamond"
+			subtitle: "This is definitely just too much."
+			description: ["Netherite tier is the best tier avaliable in Sophisticated Storage!"]
+			dependencies: ["2009BE9AA2C56B0E"]
+			size: 1.75d
+			id: "0B959A150446B600"
+			tasks: [{
+				id: "1A3D53E2999FD920"
+				type: "item"
+				title: "Any Netherite Tier Storage"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:storage/basic/netherite"
+					}
+				}
+			}]
+			rewards: [{
+				id: "72554D9733422097"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Applied Energetics 2"
+			x: 1.0d
+			y: -4.5d
+			subtitle: "Digital Age for Experts"
+			description: [
+				"Other end of Digital Age of storage and automation! Applied Energetics 2 is good old classic used in nearly every modpack that exists."
+				""
+				"Applied Energetics 2 allows you to store and transfer items and fluids, even wirelessly to you and other part of your network. Automate everything with use of Pattern providers and use ultra-fast Importers and Exporters built into ME Interface."
+				""
+				"It is, however, a bit more complicated than Refined Storage, and there isn't quest line for it (yet), so you will need to learn it by yourself."
+			]
+			dependencies: ["00000000000003FF"]
+			id: "6C528552302BCEDC"
+			tasks: [{
+				id: "122D1ECB8E615692"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [
+				{
+					id: "0D90890F782B9600"
+					type: "item"
+					item: "ae2:fluix_smart_cable"
+					count: 16
+					random_bonus: 16
+				}
+				{
+					id: "115AF38BB4ED00B6"
+					type: "item"
+					item: "ae2:logic_processor"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "181F3C0D6742E235"
+					type: "item"
+					item: "ae2:calculation_processor"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "5873FC0F1B04508A"
+					type: "item"
+					item: "ae2:engineering_processor"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "ME Fluid Storage Cell"
+			x: 1.0d
+			y: -3.0d
+			subtitle: "Tons of fluid in small hand-size drive."
+			description: [
+				"ME Fluid Storage Cell allows you to store insane amounts of fluids in single storage cell!"
+				""
+				"Their only down side are available types, as those can only hold 5 different fluids."
+			]
+			dependencies: [
+				"6C528552302BCEDC"
+				"568DC3ECDB943C47"
+			]
+			id: "3B710ED76396F5F8"
+			tasks: [{
+				id: "079964510CFC0C63"
+				type: "item"
+				title: "Any ME Fluid Storage Cell"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ae2:fluid_storage_cell_1k"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "ae2:fluid_storage_cell_4k"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "ae2:fluid_storage_cell_16k"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "ae2:fluid_storage_cell_64k"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "ae2:fluid_storage_cell_256k"
+								Count: 1b
+								tag: { }
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7F1DE186EA54D1B5"
+				type: "item"
+				item: "cookingforblockheads:sink"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			subtitle: "Store anything... externaly!"
+			description: [
+				"With ME Storage Bus you can gain access to any external inventory, is it a chest or fluid tank, Storage Bus supports both, even at the same time!"
+				""
+				"It has 63 filter slot (like normal AE2 Storage Cell), but available without upgrades are only 18. It can also set filters automatically, looking at items / fluids that are in connected inventory!"
+				""
+				"Note: Even though it has only 63 filter slots, it support having more than 63 types of items / fluids in connected inventory."
+			]
+			dependencies: [
+				"6C528552302BCEDC"
+				"568DC3ECDB943C47"
+			]
+			id: "0DDDC5009CD8A254"
+			tasks: [{
+				id: "3F7101DA0DD92EE3"
+				type: "item"
+				item: "ae2:storage_bus"
+			}]
+			rewards: [{
+				id: "0A4C139AB6B9FF09"
+				type: "item"
+				item: {
+					id: "sophisticatedstorage:diamond_chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+			}]
 		}
 	]
 }

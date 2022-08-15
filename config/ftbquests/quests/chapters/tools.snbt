@@ -391,7 +391,6 @@
 			title: "Jumping Upgrade"
 			x: -11.0d
 			y: -8.0d
-			description: [""]
 			dependencies: ["00000000000001D3"]
 			id: "00000000000001ED"
 			tasks: [{
@@ -412,7 +411,6 @@
 			title: "Jet Boots Upgrade"
 			x: -9.0d
 			y: -7.0d
-			description: [""]
 			dependencies: ["00000000000001D5"]
 			id: "00000000000001F5"
 			tasks: [{
@@ -2969,6 +2967,14 @@
 		}
 		{
 			title: "Iron Jetpacks"
+			icon: {
+				id: "ironjetpacks:jetpack"
+				Count: 1b
+				tag: {
+					Id: "ironjetpacks:wood"
+					Throttle: 1.0d
+				}
+			}
 			x: -5.5d
 			y: -14.5d
 			subtitle: "Hang On, This Isn't Iron"
@@ -2976,8 +2982,6 @@
 				"These jetpacks are tier-based utility items that allow you to fly, provided they contain enough RF, which can be inserted into them via some sort of charger."
 				""
 				"The mod also offers few additional materials you can do your jetpack from, every with their own stats."
-				""
-				"Known Bug: Any jetpack triggers all of the quests, so those are to just showcase this mod is a thing!"
 			]
 			id: "32543CB763F99E26"
 			tasks: [{
@@ -3003,6 +3007,14 @@
 		}
 		{
 			title: "Still Not Iron"
+			icon: {
+				id: "ironjetpacks:jetpack"
+				Count: 1b
+				tag: {
+					Id: "ironjetpacks:copper"
+					Throttle: 1.0d
+				}
+			}
 			x: -4.5d
 			y: -15.5d
 			subtitle: "Close enough"
@@ -3011,52 +3023,54 @@
 			id: "517AFDCCF9B4F556"
 			tasks: [
 				{
-					id: "1EB18942640472E2"
+					id: "5E9C77D8C239D2E5"
 					type: "item"
-					item: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:wood"
-							Throttle: 1.0d
-						}
-					}
-				}
-				{
-					id: "70062072EE345046"
-					type: "item"
-					title: "Any Upgraded Tier 1 Jetpack"
+					title: "Tier 1 Jetpacks Recipes"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
 						tag: {
 							items: [
 								{
-									Count: 1b
 									id: "ironjetpacks:jetpack"
+									Count: 1b
 									tag: {
 										Id: "ironjetpacks:stone"
+										Throttle: 1.0d
 									}
 								}
 								{
-									Count: 1b
 									id: "ironjetpacks:jetpack"
+									Count: 1b
 									tag: {
 										Id: "ironjetpacks:copper"
+										Throttle: 1.0d
 									}
 								}
 							]
 						}
 					}
 				}
+				{
+					id: "64FEB8043B53CF9B"
+					type: "gamestage"
+					title: "Any Tier 1 Jetpack"
+					icon: {
+						id: "ironjetpacks:jetpack"
+						Count: 1b
+						tag: {
+							Id: "ironjetpacks:copper"
+							Throttle: 1.0d
+						}
+					}
+					disable_toast: true
+					stage: "jetpack_1"
+				}
 			]
 			rewards: [{
-				id: "2A08858F195AB557"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				id: "5426F8ED2E7814CF"
+				type: "xp"
+				xp: 250
 			}]
 		}
 		{
@@ -3071,47 +3085,71 @@
 			]
 			dependencies: ["517AFDCCF9B4F556"]
 			id: "3DE9AC6CE13B591B"
-			tasks: [{
-				id: "55F87954F5A7F169"
-				type: "item"
-				title: "Any Tier 2 Jetpack"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:silver"
+			tasks: [
+				{
+					id: "55F87954F5A7F169"
+					type: "item"
+					title: "Tier 2 Jetpacks Recipes"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:silver"
+									}
 								}
-							}
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:bronze"
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:bronze"
+									}
 								}
-							}
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:iron"
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:iron"
+									}
 								}
-							}
-						]
+							]
+						}
 					}
 				}
-			}]
+				{
+					id: "46AC6080EE334433"
+					type: "gamestage"
+					title: "Any Tier 2 Jetpack"
+					icon: {
+						id: "ironjetpacks:jetpack"
+						Count: 1b
+						tag: {
+							Id: "ironjetpacks:iron"
+							Throttle: 1.0d
+						}
+					}
+					stage: "jetpack_2"
+				}
+			]
 			rewards: [{
-				id: "3CF8EC622824974F"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				id: "3EDE37E4B6FB4210"
+				type: "item"
+				item: {
+					id: "mekanism:energy_tablet"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "1000000"
+							}]
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -3128,54 +3166,79 @@
 			dependencies: ["3DE9AC6CE13B591B"]
 			min_width: 250
 			id: "7A685C5CF8B6792E"
-			tasks: [{
-				id: "3AC7C02A3C65D157"
-				type: "item"
-				title: "Any Tier 3 Jetpack"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:electrum"
+			tasks: [
+				{
+					id: "3AC7C02A3C65D157"
+					type: "item"
+					title: "Tier 3 Jetpacks Recipes"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:electrum"
+									}
 								}
-							}
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:gold"
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:gold"
+									}
 								}
-							}
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:invar"
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:invar"
+									}
 								}
-							}
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:steel"
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:steel"
+									}
 								}
-							}
-						]
+							]
+						}
 					}
 				}
-			}]
+				{
+					id: "545E326E13EAE84F"
+					type: "gamestage"
+					title: "Any Tier 3 Jetpack"
+					icon: {
+						id: "ironjetpacks:jetpack"
+						Count: 1b
+						tag: {
+							Id: "ironjetpacks:steel"
+							Throttle: 1.0d
+						}
+					}
+					disable_toast: true
+					stage: "jetpack_3"
+				}
+			]
 			rewards: [{
-				id: "2F7341AFE1379D57"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
+				id: "04BAE8043B4214B7"
+				type: "item"
+				item: {
+					id: "mekanism:basic_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "4000000"
+							}]
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -3190,72 +3253,113 @@
 			]
 			dependencies: ["7A685C5CF8B6792E"]
 			id: "53232F72A2133D14"
-			tasks: [{
-				id: "377EE5AC5053521D"
-				type: "item"
-				title: "Any Tier 4 Jetpack"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:platinum"
+			tasks: [
+				{
+					id: "377EE5AC5053521D"
+					type: "item"
+					title: "Tier 4 Jetpacks Recipes"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:platinum"
+									}
 								}
-							}
-							{
-								Count: 1b
-								id: "ironjetpacks:jetpack"
-								tag: {
-									Id: "ironjetpacks:diamond"
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:diamond"
+									}
 								}
-							}
-						]
+							]
+						}
 					}
 				}
-			}]
+				{
+					id: "0A8CD331298F76B6"
+					type: "gamestage"
+					title: "Any Tier 4 Jetpack"
+					icon: {
+						id: "ironjetpacks:jetpack"
+						Count: 1b
+						tag: {
+							Id: "ironjetpacks:diamond"
+							Throttle: 1.0d
+						}
+					}
+					disable_toast: true
+					stage: "jetpack_4"
+				}
+			]
 			rewards: [{
-				id: "1C0DB38F8304E24B"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				id: "0CD97881A5F98014"
+				type: "item"
+				item: {
+					id: "mekanism:advanced_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "16000000"
+							}]
+						}
+					}
+				}
 			}]
 		}
 		{
 			title: "Up Goer Five"
 			x: -5.5d
-			y: -20.0d
+			y: -19.5d
 			shape: "gear"
-			subtitle: "How is emeral better than Platinium!?"
+			subtitle: "How is emerald better than Platinium!?"
 			description: ["The final tier of jetpack is created from Emeralds. Seriously who thought this is.. Fine I will stop. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, thanks."]
 			dependencies: ["53232F72A2133D14"]
 			dependency_requirement: "one_completed"
 			size: 2.0d
 			id: "4A1D635E224616E5"
-			tasks: [{
-				id: "1E21A04D7897170A"
-				type: "item"
-				item: {
-					id: "ironjetpacks:jetpack"
-					Count: 1b
-					tag: {
-						Id: "ironjetpacks:emerald"
-						Throttle: 1.0d
+			tasks: [
+				{
+					id: "1E21A04D7897170A"
+					type: "item"
+					title: "Emerald Jetpack Recipe"
+					item: {
+						id: "ironjetpacks:jetpack"
+						Count: 1b
+						tag: {
+							Id: "ironjetpacks:emerald"
+							Throttle: 1.0d
+						}
 					}
 				}
-			}]
+				{
+					id: "1ED59371EA7992E3"
+					type: "gamestage"
+					title: "Tier 5 Jetpack"
+					icon: {
+						id: "ironjetpacks:jetpack"
+						Count: 1b
+						tag: {
+							Id: "ironjetpacks:emerald"
+							Throttle: 1.0d
+						}
+					}
+					disable_toast: true
+					stage: "jetpack_5"
+				}
+			]
 			rewards: [{
-				id: "4C390C7FDB3F39FD"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
+				id: "1AC43D490E084838"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+				random_bonus: 3
 			}]
 		}
 	]

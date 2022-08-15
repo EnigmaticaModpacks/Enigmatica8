@@ -241,7 +241,7 @@
 			x: 0.5d
 			y: -15.5d
 			shape: "diamond"
-			description: ["Back then you could find all sorts of junk lying around Ancient Forges, but this time this \"junk\" can be crafted! They can be used as Tool, Weapon or Belt parts and they're better than most other parts."]
+			description: ["Back then you could find all sorts of junk lying around Ancient Forges, but this time that \"junk\" can be crafted! They can be used as Tool, Weapon or Belt parts and they're better than most other parts."]
 			dependencies: ["0000000000000783"]
 			optional: true
 			id: "0000000000000785"
@@ -410,7 +410,7 @@
 			y: -18.0d
 			subtitle: "Bird-poo Hammer"
 			description: [
-				"Put your Hammer in the Workbench and replace both heads with any kind of Stone, which will upgrade it to a tier 2 Hammer."
+				"Put your Hammer in the Workbench and replace both heads with any kind of Cobblestone, which will upgrade it to a tier 2 Hammer."
 				""
 				"This is where the Wooden Hammer you got as a quest reward comes in handy!"
 			]

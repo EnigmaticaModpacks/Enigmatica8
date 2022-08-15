@@ -2007,7 +2007,7 @@
 			description: [
 				"It cuts, it grinds, it chisels, polishes and and even cooks and cleans!"
 				""
-				"All the power of a Stone Cutter, now in a compact portable format that fits in the palm of your hand."
+				"All the power of a Stone Cutter, now in a compact portable format in your Sophisticated Backpack!"
 				""
 				"Disclaimer: Will not actually cook or clean. Not for Commercial Use"
 				""
@@ -2018,7 +2018,7 @@
 			tasks: [{
 				id: "0000000000000AF8"
 				type: "item"
-				item: "portable_stonecutter:portable_stonecutter"
+				item: "sophisticatedbackpacks:stonecutter_upgrade"
 			}]
 			rewards: [{
 				id: "0000000000000B0B"
@@ -2378,7 +2378,7 @@
 					id: "6BCA8B2194807B4D"
 					type: "item"
 					title: "Iron Rod"
-					item: "emendatusenigmatica:iron_rod"
+					item: "immersiveengineering:stick_iron"
 					count: 16
 				}
 			]
@@ -2822,11 +2822,9 @@
 				id: "4D29649F3F51D7D3"
 				type: "item"
 				item: {
-					id: "tiab:timeinabottle"
+					id: "tiab:time_in_a_bottle"
 					Count: 1b
-					tag: {
-						timeData: { }
-					}
+					tag: { }
 				}
 			}]
 			rewards: [{
@@ -2892,31 +2890,6 @@
 					item: "ars_nouveau:wand"
 				}
 			]
-		}
-		{
-			x: -10.0d
-			y: -14.0d
-			subtitle: "The lights are on, but nobody's home"
-			description: [
-				"Playing on a server? Consider making some Clockout Blocks to disable machines while logged out. "
-				""
-				"The Clockout Block emits a redstone signal when the player who placed it is online. So simply toss one down and set up your automations to run only with redstone. "
-			]
-			dependencies: ["000000000000046F"]
-			id: "03CE9A1AE5E2538D"
-			tasks: [{
-				id: "21050326FB2FBF70"
-				type: "item"
-				item: "clockout:clockout_block"
-			}]
-			rewards: [{
-				id: "1A05BF41EEF353BA"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
 		}
 		{
 			x: -10.5d
@@ -3002,16 +2975,19 @@
 			description: [
 				"These jetpacks are tier-based utility items that allow you to fly, provided they contain enough RF, which can be inserted into them via some sort of charger."
 				""
-				"In Enigmatica 6, the jetpacks are crafted using Thermal Series and Powah items in particular. This first one, the Hardened Jetpack, is made using a Thermal Hazmat Suit and various Hardened-tier Powah machines and materials."
+				"The mod also offers few additional materials you can do your jetpack from, every with their own stats."
+				""
+				"Known Bug: Any jetpack triggers all of the quests, so those are to just showcase this mod is a thing!"
 			]
 			id: "32543CB763F99E26"
 			tasks: [{
 				id: "5E0566EA6AC167A7"
 				type: "item"
 				item: {
-					id: "ironjetpacks:hardened_jetpack"
+					id: "ironjetpacks:jetpack"
 					Count: 1b
 					tag: {
+						Id: "ironjetpacks:wood"
 						Throttle: 1.0d
 					}
 				}
@@ -3019,9 +2995,9 @@
 			rewards: [{
 				id: "1CB81CA01A66EFF3"
 				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				title: "Scavengers Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -3030,20 +3006,50 @@
 			x: -4.5d
 			y: -15.5d
 			subtitle: "Close enough"
-			description: ["The second jetpack is mainly made out of Invar, an alloy created using Nickel and Iron, plus your old Hardened Jetpack."]
+			description: ["First tier of jetpacks are made from wood, stone and copper. Wood is the basic one, needed for anything better, second is stone and the best is copper!"]
 			dependencies: ["32543CB763F99E26"]
 			id: "517AFDCCF9B4F556"
-			tasks: [{
-				id: "6CC77BA53377140C"
-				type: "item"
-				item: {
-					id: "ironjetpacks:invar_jetpack"
-					Count: 1b
-					tag: {
-						Throttle: 1.0d
+			tasks: [
+				{
+					id: "1EB18942640472E2"
+					type: "item"
+					item: {
+						id: "ironjetpacks:jetpack"
+						Count: 1b
+						tag: {
+							Id: "ironjetpacks:wood"
+							Throttle: 1.0d
+						}
 					}
 				}
-			}]
+				{
+					id: "70062072EE345046"
+					type: "item"
+					title: "Any Upgraded Tier 1 Jetpack"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:stone"
+									}
+								}
+								{
+									Count: 1b
+									id: "ironjetpacks:jetpack"
+									tag: {
+										Id: "ironjetpacks:copper"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "2A08858F195AB557"
 				type: "command"
@@ -3056,19 +3062,46 @@
 		{
 			title: "It's Literally On Fire"
 			x: -6.5d
-			y: -15.5d
-			subtitle: "Ironic how none of these are actually iron"
-			description: ["The third tier of jetpacks is made solely using items from Powah's Blazing tier (plus the Invar Jetpack)."]
+			y: -16.0d
+			subtitle: "Iron jetpacks have only 1 iron jetpack?!? Ironic."
+			description: [
+				"Second tier of jetpacks are made of Bronze, Silver and wait for it, Iron! (Finally) Of course you need any jetpack from Tier 1 to craft Tier 2."
+				""
+				"Those are however literally indentical, with only Silver having a bit better RF Capacity and different speed."
+			]
 			dependencies: ["517AFDCCF9B4F556"]
 			id: "3DE9AC6CE13B591B"
 			tasks: [{
 				id: "55F87954F5A7F169"
 				type: "item"
+				title: "Any Tier 2 Jetpack"
 				item: {
-					id: "ironjetpacks:blazing_jetpack"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						Throttle: 1.0d
+						items: [
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:silver"
+								}
+							}
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:bronze"
+								}
+							}
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:iron"
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -3084,19 +3117,55 @@
 		{
 			title: "No Signal"
 			x: -4.5d
-			y: -16.5d
+			y: -17.0d
 			subtitle: "No, wait-it's actually too much signal."
-			description: ["The fourth jetpack is made out of signalum, an alloy of silver and redstone that conducts electricity very well. It also, of course, requires a Blazing Jetpack."]
+			description: [
+				"Third tier jetpacks are made of Electrum, "
+				"Gold, Invar and Steel. All shocking materials (but not exactly). Again Tier 2 is required to make Tier 3 one."
+				""
+				"Gold and Invar are again the same, Steel is a bit better in everything, and Electrum is the best one from tier 3!"
+			]
 			dependencies: ["3DE9AC6CE13B591B"]
+			min_width: 250
 			id: "7A685C5CF8B6792E"
 			tasks: [{
 				id: "3AC7C02A3C65D157"
 				type: "item"
+				title: "Any Tier 3 Jetpack"
 				item: {
-					id: "ironjetpacks:signalum_jetpack"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						Throttle: 1.0d
+						items: [
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:electrum"
+								}
+							}
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:gold"
+								}
+							}
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:invar"
+								}
+							}
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:steel"
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -3110,21 +3179,41 @@
 			}]
 		}
 		{
-			title: "Powered by Energy Drinks"
+			title: "Powered by Mysterious Energy called..."
 			x: -6.5d
-			y: -16.5d
-			subtitle: "...what even is this made of?!"
-			description: ["The fifth jetpack, Niotic, is created using materials from Powah's Niotic tier and the previous jetpack tier."]
+			y: -17.5d
+			subtitle: "RF? This is mysterious? Platinum is mysterious pff"
+			description: [
+				"Fourth tier is made of Diamonds and Platinum. Once again, Tier below is needed to get Tier 4."
+				""
+				"Even tho Platinium is much more expensive than Diamond, it is only a tiny bit better in terms of speeds than it."
+			]
 			dependencies: ["7A685C5CF8B6792E"]
 			id: "53232F72A2133D14"
 			tasks: [{
 				id: "377EE5AC5053521D"
 				type: "item"
+				title: "Any Tier 4 Jetpack"
 				item: {
-					id: "ironjetpacks:niotic_jetpack"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						Throttle: 1.0d
+						items: [
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:platinum"
+								}
+							}
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:diamond"
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -3138,78 +3227,24 @@
 			}]
 		}
 		{
-			title: "You Lumatic"
-			x: -4.5d
-			y: -17.5d
-			subtitle: "This is not even anywhere NEAR iron"
-			description: ["Lumium is an alloy of tin, silver and glowstone."]
-			dependencies: ["53232F72A2133D14"]
-			id: "64D05D57CD3BD048"
-			tasks: [{
-				id: "7632CE1603104C5B"
-				type: "item"
-				item: {
-					id: "ironjetpacks:lumium_jetpack"
-					Count: 1b
-					tag: {
-						Throttle: 1.0d
-					}
-				}
-			}]
-			rewards: [{
-				id: "1A8129ADCF741705"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Rising Spirit"
-			x: -6.5d
-			y: -17.5d
-			subtitle: "Fine, fine, I'll stop"
-			description: ["The Spirited Jetpack is made using Powah's Spirited tier."]
-			dependencies: ["64D05D57CD3BD048"]
-			id: "78FB2B0A5D565203"
-			tasks: [{
-				id: "76E9010CA6A45910"
-				type: "item"
-				item: {
-					id: "ironjetpacks:spirited_jetpack"
-					Count: 1b
-					tag: {
-						Throttle: 1.0d
-					}
-				}
-			}]
-			rewards: [{
-				id: "44AEA9FA58AF9913"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
-			}]
-		}
-		{
 			title: "Up Goer Five"
 			x: -5.5d
-			y: -20.5d
+			y: -20.0d
 			shape: "gear"
-			subtitle: "Crash Bandicoot's Favourite Toy"
-			description: ["The final tier of jetpack is created with Nitro-tier Powah items. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, thanks."]
-			dependencies: ["0430DED82424A380"]
+			subtitle: "How is emeral better than Platinium!?"
+			description: ["The final tier of jetpack is created from Emeralds. Seriously who thought this is.. Fine I will stop. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, thanks."]
+			dependencies: ["53232F72A2133D14"]
+			dependency_requirement: "one_completed"
 			size: 2.0d
 			id: "4A1D635E224616E5"
 			tasks: [{
 				id: "1E21A04D7897170A"
 				type: "item"
 				item: {
-					id: "ironjetpacks:nitro_jetpack"
+					id: "ironjetpacks:jetpack"
 					Count: 1b
 					tag: {
+						Id: "ironjetpacks:emerald"
 						Throttle: 1.0d
 					}
 				}
@@ -3220,34 +3255,6 @@
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
-				player_command: false
-			}]
-		}
-		{
-			title: "Basically Teleportation"
-			x: -5.5d
-			y: -18.5d
-			subtitle: "So this is how the Endermen go long distances"
-			description: ["Don't ask how it works, just trust that it does."]
-			dependencies: ["78FB2B0A5D565203"]
-			id: "0430DED82424A380"
-			tasks: [{
-				id: "3AD4174B377A96BE"
-				type: "item"
-				item: {
-					id: "ironjetpacks:enderium_jetpack"
-					Count: 1b
-					tag: {
-						Throttle: 1.0d
-					}
-				}
-			}]
-			rewards: [{
-				id: "33DDF92F40291EBA"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
 				player_command: false
 			}]
 		}

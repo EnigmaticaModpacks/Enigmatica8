@@ -19,7 +19,7 @@
 				""
 				"In order to function, all blocks other than the Logic Programmer, Squeezers, Drying Basins, and Generators have to be connected to each other via Logic Cables."
 				""
-				"For more complex blocks, like the Readers and Writers, make sure to read the book given in this Quest to fully understand them."
+				"For more complex blocks, like the Readers and Writers, make sure to read the book about ID in Akashic Tome to fully understand them."
 				""
 				"-OneLemonyBoi"
 			]
@@ -342,7 +342,7 @@
 		{
 			x: -1.5d
 			y: -4.5d
-			description: ["This imports items from the ID Network."]
+			description: ["This imports items into the ID Network."]
 			dependencies: ["47BF421FFE9A02B6"]
 			id: "056D516E5F520ECD"
 			tasks: [{
@@ -354,6 +354,7 @@
 		{
 			x: 1.5d
 			y: -4.5d
+			description: ["This exports items from the ID Network."]
 			dependencies: ["47BF421FFE9A02B6"]
 			id: "6B0199533EB50413"
 			tasks: [{

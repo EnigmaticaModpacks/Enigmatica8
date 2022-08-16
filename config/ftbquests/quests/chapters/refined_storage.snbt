@@ -682,7 +682,7 @@
 			description: [
 				"Do you keep running out of space in your Crafters? Don't you wish a way to add more patterns to one machine existed?"
 				""
-				"Introducing Crafter Chaining! Place a crafter facing other crafter, and it will functions as one that it is facing to. This way you can add more patterns to one machine, without using more sides of your machine as an input!"
+				"Introducing Crafter Chaining! Place a crafter facing other crafter, and it will functions as one that it is facing to. This way you can add more patterns to one machine, without using more sides of your machine as an input."
 			]
 			dependencies: ["0000000000000272"]
 			id: "0000000000000F42"

@@ -95,7 +95,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:storage/basic/wooden"
+						value: "sophisticatedstorage:storage_wooden"
 					}
 				}
 			}]
@@ -292,7 +292,7 @@
 				"Iron storage is the first upgrade you can get. It doubles space available in your storage and has 2 upgrade slots."
 				""
 				"To see all iron tier storage available, search this tag in JEI:"
-				"● $storage/basic/iron"
+				"● $storage_iron"
 			]
 			dependencies: ["0000000000000405"]
 			id: "000000000000094F"
@@ -304,7 +304,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:storage/basic/iron"
+						value: "sophisticatedstorage:storage_iron"
 					}
 				}
 			}]
@@ -333,7 +333,7 @@
 				"Gold is second tier storage in Sophisticated Storage. Gold tier triples your storage available (I'm talking in comparison to basic one) and indeed looks really nice. Also adds additional upgrade slot!"
 				""
 				"To see all gold tier storage available, search this tag in JEI:"
-				"● $storage/basic/gold"
+				"● $storage_gold"
 			]
 			dependencies: ["000000000000094F"]
 			id: "0000000000000951"
@@ -345,7 +345,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:storage/basic/gold"
+						value: "sophisticatedstorage:storage_gold"
 					}
 				}
 			}]
@@ -1659,7 +1659,7 @@
 				"Diamond is 3rd tier available. It has 117 slots (4x of basic storage) and indeed, adds few points to prestige and upgrade slot."
 				""
 				"To see all diamond tier storage available, search this tag in JEI:"
-				"● $storage/basic/diamond"
+				"● $storage_diamond"
 			]
 			dependencies: ["0000000000000951"]
 			id: "2009BE9AA2C56B0E"
@@ -1671,7 +1671,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:storage/basic/diamond"
+						value: "sophisticatedstorage:storage_diamond"
 					}
 				}
 			}]
@@ -1702,7 +1702,7 @@
 				"Netherite tier is the best tier available in Sophisticated Storage! It has 132 slots (4.8x of basic storage), and maybe thats not that huge upgrade from diamond storage, but it adds another upgrade slot, so definitely it's worth it."
 				""
 				"To see all netherite tier storage available, search this tag in JEI:"
-				"● $storage/basic/netherite"
+				"● $storage_netherite"
 			]
 			dependencies: ["2009BE9AA2C56B0E"]
 			size: 1.75d
@@ -1715,7 +1715,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:storage/basic/netherite"
+						value: "sophisticatedstorage:storage_netherite"
 					}
 				}
 			}]

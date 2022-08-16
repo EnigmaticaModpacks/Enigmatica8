@@ -35,6 +35,7 @@ onEvent('item.tags', (event) => {
             .get(tag)
             .add(items)
             .add(/chest$/)
+            .add(/sophisticatedstorage:\w+barrel/)
             .add(/cabinet/) 
             .add(/shulker_box/)
             .add(/rftoolsstorage:storage_module/)

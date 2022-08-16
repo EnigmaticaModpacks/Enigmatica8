@@ -2517,7 +2517,7 @@
 			description: [
 				"The ultimate in ore processing efficiency… or is it? "
 				""
-				"Mekanism’s highest form of ore processing ends here, at 5 ingots per ore block, and requires a hefty amount of infrastructure to access. As with last tier, the exact process can be determined from JEI by looking at metal crystals. Try experimenting a bit with raw ores however, as its possible to boost per Ore Block yield way above 5 ingots!"
+				" Mekanism’s highest form of ore processing ends here, at 5 ingots per ore block, and requires a hefty amount of infrastructure to access. As with last tier, the exact process can be determined from JEI by looking at metal crystals. Try experimenting a bit with raw ores however, as it’s possible to boost per Ore Block yield way above 5 ingots!"
 			]
 			dependencies: ["504DD59B5A254183"]
 			min_width: 275

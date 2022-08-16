@@ -176,11 +176,7 @@
 			x: -2.5d
 			y: 4.0d
 			subtitle: "Frightening Efficiency"
-			description: [
-				"The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."
-				""
-				"Warning: Enigmatica 6 has reduced the efficiency of Ethylene. It is slower and more costly to produce, leading to a more balanced total power gain. Ethylene retains it's high energy density and burn rate, however, so it makes an excellent burst source of power."
-			]
+			description: ["The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."]
 			dependencies: [
 				"00000000000006B1"
 				"00000000000006C3"
@@ -213,6 +209,7 @@
 				"It consists of Induction Providers, Induction Cells, Induction Casing, and Induction Ports. The sides may be made of Structural Glass as well, though the edges must be made of Induction Casing. The interior need not be filled either, so a larger casing may be built to accommodate for future expansion. "
 			]
 			dependencies: ["0000000000000709"]
+			min_width: 250
 			id: "00000000000006B5"
 			tasks: [
 				{
@@ -353,7 +350,7 @@
 			description: [
 				"Alloys will be needed commonly for further progression and without a little extra effort, they can become quite costly to make. Enter the Enrichment Chamber. "
 				""
-				"Running Ores through the Enrichment Chamber will double the yield from each ore. "
+				"Running Raw Ores through the Enrichment Chamber will increase the yield from each ore to 1.33. Ore doubling is still a thing here, but you need to process full ore blocks for that."
 				""
 				"Furthermore, running things like Redstone and Coal will produce their Enriched variants which are worth more when using them in the Metallurgic Infuser. "
 				""
@@ -471,8 +468,8 @@
 				{
 					id: "000000000000082C"
 					type: "item"
-					title: "Orange"
-					item: "simplefarming:orange"
+					title: "Melon"
+					item: "minecraft:melon_slice"
 					count: 16
 				}
 			]
@@ -582,9 +579,10 @@
 				""
 				"Water or other fluids may then be piped in to one of the other Valves. As the Water heats, it will be converted to Brine which may then be piped out of the third Valve. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["00000000000006A7"]
+			min_width: 300
 			id: "00000000000006C7"
 			tasks: [
 				{
@@ -676,19 +674,22 @@
 			]
 		}
 		{
-			title: "Ore Tripling"
+			title: "3rd Tier Ore Processing"
 			icon: "mekanism:electrolytic_core"
 			x: 0.0d
 			y: 4.0d
 			subtitle: "Not Enough Minerals"
 			description: [
-				"With enough effort, Mekanism allows for the extraction of up to five ingots per ore, but this is a very involved process and will require serious effort to set up. "
+				"With enough effort, Mekanism allows for the extraction of up to 3 (3.33 exactly) ingots per ore, but this is a very involved process and will require serious effort to set up."
 				""
-				"However, between doubling and quintupling, it can also triple or quadruple yields from ores. Tripling is very attainable early on and well worth setting up."
+				"However, between increasing yield to 1.33 and 3.33, it can also increase it to 2 or 2.66. Doubling with fortune pick is very attainable early on and well worth setting up."
 				""
 				"The machines required by this quest cover this process. Laying it all out will be a task for you to discover, however. The process begins by Purifying the ore pieces with Oxygen before refining the resulting products down into their ingot forms. "
+				""
+				"This tier will increase yield from raw ores to 2, or 3 if block ores were used."
 			]
 			dependencies: ["00000000000006CE"]
+			min_width: 250
 			id: "00000000000006D0"
 			tasks: [
 				{
@@ -831,7 +832,7 @@
 				{
 					id: "220D5440056144D1"
 					type: "item"
-					title: "Ore Tripling"
+					title: "3rd Tier Ore Processing"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -965,14 +966,14 @@
 				{
 					id: "65ABA5E4FB3C53C2"
 					type: "item"
-					item: "emendatusenigmatica:lithium_dust"
+					item: "mekanism:dust_lithium"
 				}
 			]
 			rewards: [{
 				id: "000000000000070C"
 				type: "item"
 				title: "Lithium Dust"
-				item: "emendatusenigmatica:lithium_dust"
+				item: "mekanism:dust_lithium"
 				count: 16
 			}]
 		}
@@ -1393,7 +1394,7 @@
 			icon: "mekanism:ultimate_chemical_tank"
 			x: 7.5d
 			y: 9.0d
-			description: ["Oh! You're still here?"]
+			description: ["Oh! You're still here? Have some cookies for your determination!"]
 			dependencies: ["0000000000000760"]
 			optional: true
 			id: "0000000000000762"
@@ -1409,6 +1410,7 @@
 					title: "Sweet Berry Cookie"
 					item: "farmersdelight:sweet_berry_cookie"
 					count: 3
+					random_bonus: 5
 				}
 				{
 					id: "000000000000082D"
@@ -1416,13 +1418,7 @@
 					title: "Honey Cookie"
 					item: "farmersdelight:honey_cookie"
 					count: 3
-				}
-				{
-					id: "000000000000082E"
-					type: "item"
-					title: "Peanut Butter Cookie"
-					item: "simplefarming:peanut_butter_cookie"
-					count: 3
+					random_bonus: 5
 				}
 				{
 					id: "000000000000082F"
@@ -1430,6 +1426,7 @@
 					title: "Cookie"
 					item: "minecraft:cookie"
 					count: 3
+					random_bonus: 5
 				}
 				{
 					id: "0000000000000A81"
@@ -1486,7 +1483,7 @@
 				"Tip: Place an Input Valve near the top of the structure, in line with the vents for the turbine, to allow for simpler routing of Mechanical Pipes. "
 				"Similarly, the Coolant Output is best placed lower in the structure, again in line with the Turbine's Input Valve, to simplify routing of Pressurized Tubes. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. This will automatically configure the ports when pasted."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock. This will automatically configure the ports when pasted."
 			]
 			dependencies: ["000000000000079A"]
 			min_width: 250
@@ -1530,6 +1527,7 @@
 				"Note: F3 + G will show the chunk boundaries. Try to plan out your reactor accordingly."
 			]
 			dependencies: ["00000000000006A7"]
+			min_width: 250
 			id: "0000000000000795"
 			tasks: [
 				{
@@ -1574,7 +1572,7 @@
 				""
 				"The reactor may go super-critical and explode if it overheats, the leading cause of which is that it has run out of coolant. Therefore, the circuit breaker should trigger on High Temperature. It may also be prudent to build a second circuit breaker for Excess Waste to prevent venting radiation into the surrounding environment."
 				""
-				"Warning: Enigmatica 6 has tweaked Steam Production rates, so do not assume your reactor is safe. Test rigorously!"
+				"Warning: Enigmatica 8 has tweaked Steam Production rates, so do not assume your reactor is safe. Test rigorously!"
 			]
 			dependencies: ["0000000000000795"]
 			min_width: 255
@@ -1800,7 +1798,7 @@
 				""
 				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that sufficient power and waste can be supplied. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: [
 				"00000000000007A7"
@@ -1839,7 +1837,7 @@
 					id: "00000000000007D9"
 					type: "item"
 					title: "Uranium Ore"
-					item: "emendatusenigmatica:uranium_ore"
+					item: "ftbic:uranium_chunk"
 					count: 64
 				}
 				{
@@ -1873,7 +1871,7 @@
 				""
 				"● Connecting the Fusion Reactor to a Thermoelectric Boiler is another great way of boosting the total steam production, and therefore power production."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["00000000000007A9"]
 			min_width: 300
@@ -1934,7 +1932,7 @@
 				""
 				"WARNING: If the Turbine's power buffer fills up it will stop running, steam and water flow will halt, and the attached Reactor's heat will rapidly rise to dangerous levels resulting in a potential meltdown situation. "
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. It will not place the blades for you but does come configured to sit nicely next to the Fission Reactor Schematic."
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock. It will not place the blades for you but does come configured to sit nicely next to the Fission Reactor Schematic."
 				""
 			]
 			dependencies: ["0000000000000793"]
@@ -2283,7 +2281,7 @@
 				""
 				"The Boiler itself may be nearly any size, up to 18x18x18, however a small one is very capable of dissipating a lot of heat. The quest requires materials for a 5x9x5 boiler. When scaling up, it’s more likely that the Turbine will need to be expanded than the Boiler. "
 				""
-				"Note: Building Gadgets and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. This will automatically configure the ports when pasted and comes pre-configured to fit nicely between the Fission Reactor and Turbine Schematics."
+				"Note: Building Gadgets and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock. This will automatically configure the ports when pasted and comes pre-configured to fit nicely between the Fission Reactor and Turbine Schematics."
 				""
 			]
 			dependencies: ["00000000000007B8"]
@@ -2407,18 +2405,20 @@
 			}]
 		}
 		{
+			title: "4th Tier Ore Processing"
 			icon: "mekanism:upgrade_gas"
 			x: -1.0d
 			y: 5.5d
 			subtitle: "You Require More Vespene Gas"
-			description: ["Figuring out the exact process of Ore Quadrupling is a task left to the reader. Work through JEI starting from a given metal Shard to work out the process. Gas upgrades will be of key importance here to keep up with Hydrogen Chloride requirements."]
+			description: ["Figuring out the exact process for this tier of ore processing is a task left to the reader. Work through JEI starting from a given metal Shard to work out the process. Gas upgrades will be of key importance here to keep up with Hydrogen Chloride requirements. This process will increase yields from raw ores to 2.66, or 4 if block ores were used."]
 			dependencies: ["00000000000006D0"]
+			min_width: 250
 			id: "504DD59B5A254183"
 			tasks: [
 				{
 					id: "581F64A5B70FD048"
 					type: "item"
-					title: "Ore Quadrupling"
+					title: "4th Tier Ore Processing"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -2520,6 +2520,7 @@
 			}]
 		}
 		{
+			title: "5th Tier Ore Processing"
 			icon: "mekanism:fluorite_gem"
 			x: -2.5d
 			y: 6.5d
@@ -2527,9 +2528,10 @@
 			description: [
 				"The ultimate in ore processing efficiency… or is it? "
 				""
-				"Mekanism’s highest form of ore processing ends at quintupling and requires a hefty amount of infrastructure to access. As with quadrupling, the exact process can be determined from JEI by looking at metal crystals. "
+				"Mekanism’s highest form of ore processing ends here, at 3.33 ingot per raw ore (or 5 per ore block), and requires a hefty amount of infrastructure to access. As with last tier, the exact process can be determined from JEI by looking at metal crystals. Invest in some sort of auto-breaker of ores with Fortune, as this could boost per ore block yield way above 5 ingots!"
 			]
 			dependencies: ["504DD59B5A254183"]
+			min_width: 275
 			id: "1BA848F73C707DCC"
 			tasks: [{
 				id: "38AF11C23B5E8A03"

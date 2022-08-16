@@ -168,7 +168,6 @@
 		}
 		{
 			title: "Item Router"
-			icon: "modularrouters:item_router"
 			x: -0.5d
 			y: -4.0d
 			subtitle: "Have you tried turning it off and on again?"
@@ -188,7 +187,7 @@
 			tasks: [{
 				id: "366C08F8F32D7E4B"
 				type: "item"
-				item: "modularrouters:item_router"
+				item: "modularrouters:modular_router"
 			}]
 			rewards: [{
 				id: "0000000000000968"
@@ -307,27 +306,6 @@
 				id: "376DCADB491EFE54"
 				type: "item"
 				item: "pneumaticcraft:dispenser_upgrade"
-			}]
-		}
-		{
-			title: "Carbuncle"
-			x: 8.0d
-			y: 1.5d
-			description: ["Magic mods can have their item transportation fun too! Carbuncles will helpfully collect items and store them into inventories for you."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "2831B38150565AEF"
-			tasks: [{
-				id: "6895F42F97F55A26"
-				type: "item"
-				item: "ars_nouveau:carbuncle_charm"
-			}]
-			rewards: [{
-				id: "6328E4D871385365"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
 			}]
 		}
 		{
@@ -992,7 +970,7 @@
 		}
 		{
 			x: -5.5d
-			y: 4.5d
+			y: 3.5d
 			description: [
 				"Cheap wireless redstone, with unlimited channels, and good but not unlimited range."
 				""
@@ -1014,7 +992,7 @@
 		}
 		{
 			x: -5.5d
-			y: 5.5d
+			y: 4.5d
 			description: [
 				"Can remotly activate connected Redstone Links."
 				""
@@ -1052,40 +1030,6 @@
 				id: "3AA02F6637A04AD3"
 				type: "item"
 				item: "minecraft:comparator"
-			}]
-		}
-		{
-			title: "RF Tools Control"
-			icon: "rftoolscontrol:processor"
-			x: -0.5d
-			y: 1.5d
-			description: ["Program complex automations with a visual programing UI. Make your program in the programmer, then transfer it to the processor with the program card. The processor requires a CPU to run, and can be upgraded to run faster or with more memory."]
-			dependencies: [
-				"3468E652B4FE85FA"
-				"30AA6A8DF0B65273"
-			]
-			id: "1C24D2BD564F9E58"
-			tasks: [
-				{
-					id: "3A648B70B73CF497"
-					type: "item"
-					item: "rftoolscontrol:processor"
-				}
-				{
-					id: "53B6687A1024692F"
-					type: "item"
-					item: "rftoolscontrol:programmer"
-				}
-				{
-					id: "6CFA2106351100B2"
-					type: "item"
-					item: "rftoolscontrol:program_card"
-				}
-			]
-			rewards: [{
-				id: "20DF77C0364ADE55"
-				type: "item"
-				item: "rftoolscontrol:cpu_core_500"
 			}]
 		}
 		{
@@ -1211,20 +1155,13 @@
 					item: "enderstorage:ender_pouch"
 				}
 			]
-			rewards: [
-				{
-					id: "40445565E00E3023"
-					type: "item"
-					item: "resourcefulbees:rgbee_honeycomb"
-					count: 4
-				}
-				{
-					id: "2AD840AF4AC90407"
-					type: "item"
-					item: "resourcefulbees:wax"
-					count: 4
-				}
-			]
+			rewards: [{
+				id: "5F097C1BDE9420B8"
+				type: "item"
+				item: "minecraft:bone_meal"
+				count: 16
+				random_bonus: 48
+			}]
 		}
 		{
 			x: 7.0d
@@ -1623,7 +1560,7 @@
 			x: -4.5d
 			y: 3.5d
 			description: [
-				"Sends a pulse a set amount of ticks after receiving a signal"
+				"Sends a pulse a set amount of time after receiving a signal"
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
@@ -1632,23 +1569,23 @@
 			tasks: [{
 				id: "1E9609D8328D536F"
 				type: "item"
-				item: "create:adjustable_pulse_repeater"
+				item: "create:pulse_repeater"
 			}]
 			rewards: [{
 				id: "2E26D4A73E250301"
 				type: "item"
-				item: "create:adjustable_pulse_repeater"
+				item: "create:pulse_repeater"
 			}]
 		}
 		{
-			x: -5.5d
-			y: 3.5d
+			x: -6.5d
+			y: 4.5d
 			description: [
 				"Uses an input pulse to toggle the output. Use a repeater to send a pulse from the output back to the input, with a delay, to make a pulse lengthener."
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
-			dependencies: ["3468E652B4FE85FA"]
+			dependencies: ["1042C49086A29CE2"]
 			id: "2013BF98F905223C"
 			tasks: [{
 				id: "39E71AF33C273C4C"
@@ -1664,7 +1601,7 @@
 				{
 					id: "0EA944B40AA81DC1"
 					type: "item"
-					item: "create:adjustable_repeater"
+					item: "create:pulse_extender"
 				}
 			]
 		}
@@ -1807,361 +1744,13 @@
 			}]
 		}
 		{
-			title: "Pretty Pipes"
-			icon: "prettypipes:item_terminal"
-			x: -0.5d
-			y: 6.0d
-			subtitle: "No Power? No Problem"
-			description: [
-				"Pretty Pipes is a powerful early game logistics system that will help keep you organized. "
-				""
-				"Use pipes to move items from place to place, filters and priorities to ensure items are ending up in the right locations, and access everything centrally from an Item Terminal or Crafting Terminal. Request based auto crafting is possible as well."
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "0000000000000401"
-			tasks: [{
-				id: "0000000000000953"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "0000000000000696"
-				type: "item"
-				title: "Pipe Wrench"
-				item: "prettypipes:wrench"
-			}]
-		}
-		{
-			title: "Pipes"
-			x: -0.5d
-			y: 7.0d
-			subtitle: "I Feel Pretty, Oh So Pretty"
-			description: [
-				"To get things moving, you'll need some pipes. Craft up a bunch!"
-				""
-				"Pretty Pipes' pipes follow a few fairly simple rules that are good to keep in mind when building with them. "
-				""
-				"● First, a section of pipe may only insert or extract. Therefore, to send items from one chest to another requires a minimum of 2 pipes. "
-				""
-				"● Second, an item will never be routed back to the inventory it was extracted from. So it's not possible to simply loop pipe around a furnace, for instance, to feed the output back into it. An intermediate storage inventory is required."
-				""
-				"● Third, pipe sections can be disconnected from an inventory by Right Clicking them with the wrench."
-				""
-				"● Fourth, upgrade modules may be installed in a section of pipe by right clicking the module on the pipe. Alternatively, right clicking with an empty hand allows one to access the pipe to add, remove, or configure modules. "
-				""
-				"Finally, pipes may be covered with most any block, even transparent or partial blocks. Simply hold the desired 'cover' in your off hand and right click a section of pipe with the wrench to apply the block. "
-			]
-			dependencies: ["0000000000000401"]
-			min_width: 250
-			id: "0000000000000954"
-			tasks: [{
-				id: "0000000000000955"
-				type: "item"
-				item: "prettypipes:pipe"
-				count: 12L
-			}]
-			rewards: [{
-				id: "0000000000000A5F"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Item Filtering"
-			x: -2.0d
-			y: 7.5d
-			subtitle: "Gated Community"
-			description: [
-				"Filter Modules are an excellent way to ensure that only certain items end up in a given inventory. Insert them into the pipe section adjacent to the inventory to be filtered on the receiving end. "
-				""
-				"Filters can be upgraded with a number of useful Modifiers, such as NBT, Tag, and Mod filters. Insert these in the same section of pipe as the Filter Module."
-				""
-				"Similarly, the Stack Limiter limits the number of items allowed in an inventory and works alongside the filter. A Stack Limiter set to 1, for instance, will only allow one of each item listed in the Filter module. "
-			]
-			dependencies: ["0000000000000954"]
-			id: "0000000000000958"
-			tasks: [
-				{
-					id: "0000000000000959"
-					type: "item"
-					item: "prettypipes:low_filter_module"
-				}
-				{
-					id: "0000000000000979"
-					type: "item"
-					item: "prettypipes:stack_size_module"
-				}
-			]
-			rewards: [{
-				id: "0000000000000978"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Speed Modules"
-			x: -2.0d
-			y: 8.5d
-			subtitle: "No Time To Wait"
-			description: ["Speed Modules combine with Extraction and Retrieval Modules. They don't effect how fast those Modules work, but rather how quickly the items travel once in the pipe network. "]
-			dependencies: ["0000000000000958"]
-			dependency_requirement: "one_started"
-			id: "000000000000095A"
-			tasks: [{
-				id: "000000000000095B"
-				type: "item"
-				item: "prettypipes:low_speed_module"
-				count: 3L
-			}]
-			rewards: [{
-				id: "0000000000000A61"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -2.0d
-			y: 9.5d
-			subtitle: "They've Gone To Plaid"
-			description: [
-				"Speed Modules are great in a small network, but in a larger network it can be costly to craft and insert them at every extraction point. "
-				""
-				"The Pipe Pressurizer solves this by increasing the speed of every item passing through the connected network at the cost of a little energy. "
-			]
-			dependencies: ["000000000000095A"]
-			dependency_requirement: "one_started"
-			id: "0000000000000964"
-			tasks: [{
-				id: "0000000000000965"
-				type: "item"
-				item: "prettypipes:pressurizer"
-			}]
-			rewards: [{
-				id: "000000000000096A"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Item Routing"
-			x: 1.0d
-			y: 7.5d
-			subtitle: "Coming or Going?"
-			description: [
-				"Retrieval and Extraction modules are required if anything is going to get anywhere."
-				""
-				"Naturally, Extraction Modules pull from the adjacent inventories and send the items out into the network, assuming they have a place to go to. "
-				""
-				"Retrieval Modules, in opposite fashion, pull from far inventories in an attempt to place items into the adjacent chests."
-				""
-				"A simple network might consist of two chests connected by two lengths of pipe and either an Extraction Module or a Retrieval Module in one of the pipes. "
-			]
-			dependencies: ["0000000000000954"]
-			id: "0000000000000956"
-			tasks: [
-				{
-					id: "000000000000096F"
-					type: "item"
-					item: "prettypipes:low_retrieval_module"
-					count: 3L
-				}
-				{
-					id: "0000000000000971"
-					type: "item"
-					item: "prettypipes:low_extraction_module"
-					count: 3L
-				}
-			]
-			rewards: [{
-				id: "0000000000000A68"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Priority Modules"
-			x: 1.0d
-			y: 8.5d
-			subtitle: "Getting Your Priorities Straight"
-			description: [
-				"By default, pipes function in a 'nearest first' fashion. In order to override this and change the priority of a given inventory, place a Priority Module in the pipe adjacent to that inventory."
-				""
-				"A High Priority Module in a chest that's farther away will cause items to attempt to go there first. "
-				""
-				"A Low Priority module is excellent for creating a 'default' path, for instance to send to an overflow chest or a trash can. "
-			]
-			dependencies: ["0000000000000956"]
-			dependency_requirement: "one_started"
-			id: "000000000000095C"
-			tasks: [
-				{
-					id: "000000000000096D"
-					type: "item"
-					item: "prettypipes:low_high_priority_module"
-				}
-				{
-					id: "000000000000096E"
-					type: "item"
-					item: "prettypipes:low_low_priority_module"
-				}
-			]
-			rewards: [{
-				id: "0000000000000A60"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Advanced Routing"
-			x: 1.0d
-			y: 9.5d
-			description: [
-				"Want to spread your ores evenly across some furnaces for faster smelting? The Round Robin Sorting Module has you covered. "
-				""
-				"Looking to make a mini-game with your friends and want a simple randomizer? Then the Random Sorting Module will do exactly that."
-				""
-				"For either of these to work, they ought to be placed in a section of pipe along with an Extraction module. Both will ignore priorities set on destination pipes. "
-			]
-			dependencies: ["000000000000095C"]
-			dependency_requirement: "one_started"
-			id: "0000000000000972"
-			tasks: [
-				{
-					id: "0000000000000973"
-					type: "item"
-					item: "prettypipes:round_robin_sorting_modifier"
-				}
-				{
-					id: "0000000000000975"
-					type: "item"
-					item: "prettypipes:random_sorting_modifier"
-				}
-			]
-			rewards: [{
-				id: "0000000000000977"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -0.5d
-			y: 8.0d
-			description: [
-				"The Item Terminal acts as a central access point for the entire pipe network and shows the contents of every inventory on the network, excluding inventories connected via Extraction or Retrieval Modules. "
-				""
-				"Items may be requested from the network by clicking the item, selecting a quantity, and pressing Request. "
-				""
-				"Shift Clicking the + or - for the quantity will increase or decrease by 64 at a time, while Ctrl Clicking will increase or decrease by 10 at a time. "
-				""
-				"Items may be easily dumped back into the network by placing them in the right hand slots."
-			]
-			dependencies: ["0000000000000954"]
-			id: "0000000000000960"
-			tasks: [{
-				id: "0000000000000961"
-				type: "item"
-				item: "prettypipes:item_terminal"
-			}]
-			rewards: [{
-				id: "266D8479D7BEC164"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -0.5d
-			y: 9.0d
-			description: [
-				"The Crafting Terminal upgrades the Item Terminal with built in crafting. "
-				""
-				"The crafting grid may be filled manually or via JEI. Pressing the Request button will request enough for a single craft. Shift Clicking will request for 64 crafts, and Ctrl Click will request for 10."
-			]
-			dependencies: ["0000000000000960"]
-			id: "0000000000000962"
-			tasks: [{
-				id: "0000000000000963"
-				type: "item"
-				item: "prettypipes:crafting_terminal"
-			}]
-			rewards: [{
-				id: "0000000000000A62"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -0.5d
-			y: 10.0d
-			description: [
-				"Crafting Modules work alongside the Crafting or Item Terminals to allow for on demand crafting via machines. "
-				""
-				"Working with the Crafting Module will require a few pieces, however."
-				""
-				"First, the machine in question must be connected to the pipe network on its Input side. For a Vanilla Furnace, this would be the top side. A Crafting Module is then inserted into this pipe section."
-				""
-				"Next, a recipe needs to be set in the Module. Only one recipe may be set per module, but up to three modules may be inserted into a single pipe. Inputs go in the top half of the module, and the expected outputs go in the bottom."
-				""
-				"With the recipe set, an Extraction Module needs to be installed on the output face of the machine. The Crafting Module does not export the crafted item."
-				""
-				"Finally, ensure the required items are in the network and request the output item. Craftable items always appear with a 0 for their quantity and appear at the end of the list of items."
-				""
-				"Of course, the Crafting Module does not need to go directly on the machine."
-				""
-				"For instance, it could be installed on a pipe connected to a chest and a secondary network could then be connected to that chest which sends them to an array of furnaces."
-				""
-				"Creating Proxies like this is an excellent method for setting up more than 3 recipes per machine, also. "
-			]
-			dependencies: ["0000000000000962"]
-			min_width: 300
-			id: "000000000000096B"
-			tasks: [{
-				id: "000000000000096C"
-				type: "item"
-				item: "prettypipes:low_crafting_module"
-			}]
-			rewards: [{
-				id: "000000000000097B"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
-				player_command: false
-			}]
-		}
-		{
 			icon: {
 				id: "entangled:block"
 				Count: 1b
 				tag: { }
 			}
-			x: 7.0d
-			y: 2.0d
+			x: 8.0d
+			y: 1.5d
 			subtitle: "A Phantom's Face?"
 			description: [
 				"The Entangled Block, when bound to another block using the binding tool, offers remote access to the target block. Pipes attached to the entangled block will instead interact with the target block, from up to 1000 blocks away."
@@ -2532,6 +2121,7 @@
 				"Once you link the card to the NBT tag you wanted, you can remove the NBT Extractor from the network."
 			]
 			dependencies: ["3E2016CF7DEAB4EE"]
+			min_width: 300
 			id: "01DA715D5D271E92"
 			tasks: [
 				{
@@ -2576,10 +2166,10 @@
 			title: "Computer Craft: Tweaked"
 			icon: "computercraft:computer_advanced"
 			x: -0.5d
-			y: 2.5d
+			y: 1.5d
 			subtitle: "A Computer within a Game within a Computer"
 			description: [
-				"Use the LUA programming language to interact with the world."
+				"Use the Lua programming language to interact with the world."
 				""
 				""
 				"When you claim this reward, a link will be posted in chat to a video playlist for a basic tutorial on CC. While for an old version, it should still be relevant."
@@ -2742,7 +2332,7 @@
 			}
 			x: -0.5d
 			y: -3.0d
-			description: ["The Energy Distributor module allows the router to send power up to up to 8 nearby blocks wirelessly. It draws RF from the held item, or the router itself if it's upgraded to have RF capacity."]
+			description: ["The Energy Distributor module allows the router to send power up to 8 nearby blocks wirelessly. It draws RF from the held item, or the router itself if it's upgraded to have RF capacity."]
 			dependencies: ["15E49A6B00BE744C"]
 			id: "2AB330A73BD6447C"
 			tasks: [
@@ -2997,10 +2587,56 @@
 				type: "item"
 				item: "mekanism:logistical_sorter"
 			}]
-			rewards: [{
-				id: "1FBF8F3349ACA9D8"
+			rewards: [
+				{
+					id: "1FBF8F3349ACA9D8"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:iron_chest"
+						Count: 1b
+						tag: {
+							woodType: "oak"
+						}
+					}
+				}
+				{
+					id: "3A59F3E2A7A431A3"
+					type: "item"
+					item: "sophisticatedstorage:void_upgrade"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 4.5d
+			description: [
+				"Holds redstone signal specified amount of time after initial signal was removed."
+				""
+				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
+			]
+			dependencies: ["26365967FDE026B6"]
+			id: "3C349C559F88A363"
+			tasks: [{
+				id: "58CA3C3C515AC16B"
 				type: "item"
-				item: "trashcans:item_trash_can"
+				item: "create:pulse_extender"
+			}]
+			rewards: [{
+				id: "074C3282498DCE8D"
+				type: "item"
+				item: "create:pulse_extender"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			description: ["It is a drawer, but can function as huge 1 item Ender Chest! More info on how to use it is in Storage Chapter."]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "391AC332182404EA"
+			tasks: [{
+				id: "6D42FF853BE39BA0"
+				type: "item"
+				item: "functionalstorage:ender_drawer"
 			}]
 		}
 	]

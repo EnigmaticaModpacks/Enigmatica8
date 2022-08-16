@@ -350,7 +350,7 @@
 			description: [
 				"Alloys will be needed commonly for further progression and without a little extra effort, they can become quite costly to make. Enter the Enrichment Chamber. "
 				""
-				"Running Raw Ores through the Enrichment Chamber will increase the yield from each ore to 1.33. Ore doubling is still a thing here, but you need to process full ore blocks for that."
+				"Running Raw Ores through the Enrichment Chamber will increase the yield by 33 percent, while running Full Ore Blocks will double the output."
 				""
 				"Furthermore, running things like Redstone and Coal will produce their Enriched variants which are worth more when using them in the Metallurgic Infuser. "
 				""
@@ -456,23 +456,14 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "0000000000000810"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-					player_command: false
-				}
-				{
-					id: "000000000000082C"
-					type: "item"
-					title: "Melon"
-					item: "minecraft:melon_slice"
-					count: 16
-				}
-			]
+			rewards: [{
+				id: "0000000000000810"
+				type: "command"
+				title: "Rare Mekanism Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				player_command: false
+			}]
 		}
 		{
 			x: -1.0d
@@ -680,13 +671,11 @@
 			y: 4.0d
 			subtitle: "Not Enough Minerals"
 			description: [
-				"With enough effort, Mekanism allows for the extraction of up to 3 (3.33 exactly) ingots per ore, but this is a very involved process and will require serious effort to set up."
+				"With enough effort, Mekanism allows for the extraction of up to 5 ingots per ore, but this is a very involved process and will require serious effort to set up."
 				""
-				"However, between increasing yield to 1.33 and 3.33, it can also increase it to 2 or 2.66. Doubling with fortune pick is very attainable early on and well worth setting up."
+				"Important note is that Raw Ores and Full Ore Blocks have different yield rates, where one raw ore gives less than block version of it. It's up to you which one you find better."
 				""
 				"The machines required by this quest cover this process. Laying it all out will be a task for you to discover, however. The process begins by Purifying the ore pieces with Oxygen before refining the resulting products down into their ingot forms. "
-				""
-				"This tier will increase yield from raw ores to 2, or 3 if block ores were used."
 			]
 			dependencies: ["00000000000006CE"]
 			min_width: 250
@@ -1394,7 +1383,7 @@
 			icon: "mekanism:ultimate_chemical_tank"
 			x: 7.5d
 			y: 9.0d
-			description: ["Oh! You're still here? Have some cookies for your determination!"]
+			description: ["Oh! You're still here?"]
 			dependencies: ["0000000000000760"]
 			optional: true
 			id: "0000000000000762"
@@ -2410,7 +2399,7 @@
 			x: -1.0d
 			y: 5.5d
 			subtitle: "You Require More Vespene Gas"
-			description: ["Figuring out the exact process for this tier of ore processing is a task left to the reader. Work through JEI starting from a given metal Shard to work out the process. Gas upgrades will be of key importance here to keep up with Hydrogen Chloride requirements. This process will increase yields from raw ores to 2.66, or 4 if block ores were used."]
+			description: ["Figuring out the exact process for this tier of ore processing is a task left to the reader. Work through JEI starting from a given metal Shard to work out the process. Gas upgrades will be of key importance here to keep up with Hydrogen Chloride requirements."]
 			dependencies: ["00000000000006D0"]
 			min_width: 250
 			id: "504DD59B5A254183"
@@ -2528,7 +2517,7 @@
 			description: [
 				"The ultimate in ore processing efficiency… or is it? "
 				""
-				"Mekanism’s highest form of ore processing ends here, at 3.33 ingot per raw ore (or 5 per ore block), and requires a hefty amount of infrastructure to access. As with last tier, the exact process can be determined from JEI by looking at metal crystals. Invest in some sort of auto-breaker of ores with Fortune, as this could boost per ore block yield way above 5 ingots!"
+				"Mekanism’s highest form of ore processing ends here, at 5 ingots per ore block, and requires a hefty amount of infrastructure to access. As with last tier, the exact process can be determined from JEI by looking at metal crystals. Try experimenting a bit with raw ores however, as its possible to boost per Ore Block yield way above 5 ingots!"
 			]
 			dependencies: ["504DD59B5A254183"]
 			min_width: 275
@@ -2536,7 +2525,7 @@
 			tasks: [{
 				id: "38AF11C23B5E8A03"
 				type: "item"
-				title: "Ore Quintupling"
+				title: "5th Tier Ore Processing"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b

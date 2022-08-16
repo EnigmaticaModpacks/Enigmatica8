@@ -760,7 +760,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "tconstruct:tinkers_anvils"
+						value: "enigmatica:tinkers_anvils"
 					}
 				}
 			}]

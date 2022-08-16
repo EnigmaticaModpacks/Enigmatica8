@@ -80,15 +80,17 @@
 			y: -10.0d
 			subtitle: "Iron chests, but better!"
 			description: [
-				"Extra large storage for the same space as a chest. Sophisticated Storage adds iron chests, barrels and shulker boxes in multiple varieties to suit your budget."
+				"Extra-large storage for the same space as a chest. Sophisticated Storage adds iron chests, barrels and shulker boxes in multiple varieties to suit your budget. They can even be upgraded to add additional functionality! (Search for upgrades in JEI)"
 				""
-				"Those can be upgraded in place by using an upgrade item on it, but first they need to be changed to Sophisticated Storage version."
+				"Those can be upgraded in place by using a tier upgrade item on it, but first they need to be changed to Sophisticated Storage version."
 			]
 			dependencies: ["00000000000003FF"]
+			min_width: 250
 			id: "0000000000000405"
 			tasks: [{
 				id: "0000000000000EA5"
 				type: "item"
+				title: "Any Wooden Tier Storage"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -97,14 +99,22 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "0000000000000A6B"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "0000000000000A6B"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					player_command: false
+				}
+				{
+					id: "02608E766DA0DA92"
+					type: "item"
+					item: "sophisticatedstorage:basic_tier_upgrade"
+					count: 4
+				}
+			]
 		}
 		{
 			icon: "mekanism:basic_bin"
@@ -248,7 +258,7 @@
 			description: [
 				"The Drawer Controller must be in contact with drawers in order to 'see' them. Of course, drawers may also be chained together into a wall or line, with a single Drawer Controller able to connect to many drawers. They all need to be linked with special tool however."
 				""
-				"Ender Drawers are exception and don't need to be near it however."
+				"Ender Drawers are exception and don't need to be near it, but linking rules are the same."
 			]
 			dependencies: ["0000000000000966"]
 			id: "000000000000040F"
@@ -279,9 +289,9 @@
 			y: -11.5d
 			subtitle: "Definitely harder than wood."
 			description: [
-				"Iron storage is the first upgrade you can get. It doubles space available in your storage."
+				"Iron storage is the first upgrade you can get. It doubles space available in your storage and has 2 upgrade slots."
 				""
-				"To see all iron tier storage avaliable, search this tag in JEI:"
+				"To see all iron tier storage available, search this tag in JEI:"
 				"● $storage/basic/iron"
 			]
 			dependencies: ["0000000000000405"]
@@ -320,9 +330,9 @@
 			y: -11.5d
 			subtitle: "They are made out of gold or just plated?"
 			description: [
-				"Gold is second tier storage in Sophisticated Storage. Gold tier triples your storage avaliable (I'm talking in comparison to basic one) and indeed looks really nice."
+				"Gold is second tier storage in Sophisticated Storage. Gold tier triples your storage available (I'm talking in comparison to basic one) and indeed looks really nice. Also adds additional upgrade slot!"
 				""
-				"To see all gold tier storage avaliable, search this tag in JEI:"
+				"To see all gold tier storage available, search this tag in JEI:"
 				"● $storage/basic/gold"
 			]
 			dependencies: ["000000000000094F"]
@@ -1351,6 +1361,7 @@
 				"You can then cover your cables with Facades to hide them, just craft the facade with a block to make the facade take on that block's appearance."
 			]
 			dependencies: ["00000000000003FF"]
+			min_width: 250
 			id: "69982730005EDD7D"
 			tasks: [
 				{
@@ -1396,7 +1407,7 @@
 			x: -7.0d
 			y: -9.0d
 			subtitle: "Integrated Hopper in a nutshell"
-			description: ["Collector upgrade allows drawer to work like a hopper, getting items from any side choosen in gui!"]
+			description: ["Collector upgrade allows drawer to work like a hopper, getting items from any side chosen in GUI!"]
 			dependencies: ["0000000000000966"]
 			id: "4E92570E06A632C1"
 			tasks: [{
@@ -1553,7 +1564,7 @@
 			x: -4.5d
 			y: -6.5d
 			subtitle: "All Armor and Weapon in one place!"
-			description: ["Armory Cabinet accepts only armor and weapons, but can store a lot of them. You can't use it manually however, and only with use of pipes or hoppers you are able to interract with it."]
+			description: ["Armory Cabinet accepts only armor and weapons, but can store a lot of them. You can't use it manually however, and only with use of pipes or hoppers you are able to interact with it."]
 			dependencies: ["0000000000000966"]
 			id: "42854348FF66AAC5"
 			tasks: [{
@@ -1573,9 +1584,9 @@
 			y: -5.0d
 			subtitle: "My code will be... 0E8"
 			description: [
-				"Linking tool is used to link Drawers to Drawers controllers."
+				"Linking tool is used to link Drawers to Drawer controller."
 				""
-				"It has a few different modes. Right click in mid air to change from addition or removal of binds, or shift while doing so to change from Single to Multiple drawers binding mode!"
+				"It has a few different modes. Right click in midair to change from addition or removal of binds, or shift while doing so to change from Single to Multiple drawers binding mode!"
 				""
 				"Right click controller to store it in linking tool, then right click any Drawer to bind it! In Multiple mode, you are able to bind all drawers in some area. Right click first Drawer to start, then another one to bind all drawers in that area!"
 				""
@@ -1611,7 +1622,7 @@
 			description: [
 				"Configuration tool allows you to lock your drawer, turn off / on amount and icon of stored item, and disable rendering of upgrades on drawer."
 				""
-				"Right click a drawer to change settings in choosen mode, Right click + Shift in mid air to change tool mode."
+				"Right click a drawer to change settings in chosen mode, Right click + Shift in midair to change tool mode."
 			]
 			dependencies: ["0000000000000966"]
 			id: "40822141AA12E1AD"
@@ -1643,11 +1654,11 @@
 			}
 			x: 1.0d
 			y: -11.5d
-			subtitle: "That is flex storing your diamonds in diamond storage."
+			subtitle: "That is just flex storing your diamonds in diamond storage."
 			description: [
-				"Diamond is 3rd tier avaliable. It has 117 slots avaliable (4x of basic storage) and indeed, adds few points to prestige."
+				"Diamond is 3rd tier available. It has 117 slots (4x of basic storage) and indeed, adds few points to prestige and upgrade slot."
 				""
-				"To see all diamond tier storage avaliable, search this tag in JEI:"
+				"To see all diamond tier storage available, search this tag in JEI:"
 				"● $storage/basic/diamond"
 			]
 			dependencies: ["0000000000000951"]
@@ -1687,7 +1698,12 @@
 			y: -13.125d
 			shape: "diamond"
 			subtitle: "This is definitely just too much."
-			description: ["Netherite tier is the best tier avaliable in Sophisticated Storage!"]
+			description: [
+				"Netherite tier is the best tier available in Sophisticated Storage! It has 132 slots (4.8x of basic storage), and maybe thats not that huge upgrade from diamond storage, but it adds another upgrade slot, so definitely it's worth it."
+				""
+				"To see all netherite tier storage available, search this tag in JEI:"
+				"● $storage/basic/netherite"
+			]
 			dependencies: ["2009BE9AA2C56B0E"]
 			size: 1.75d
 			id: "0B959A150446B600"

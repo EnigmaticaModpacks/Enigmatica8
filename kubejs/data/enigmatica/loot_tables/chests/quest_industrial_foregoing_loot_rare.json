@@ -2,23 +2,12 @@
     "type": "minecraft:chest",
     "pools": [
         {
-            "rolls": 1,
+            "rolls": 2,
             "entries": [
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "ars_nouveau:source_gem",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 16
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name" : "ars_nouveau:source_jar",
+                    "name": "industrialforegoing:machine_frame_pity",
                     "functions": [
                         {
                             "function": "set_count",
@@ -29,48 +18,71 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "minecraft:enchanted_book",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{StoredEnchantments:[{lvl:2,id:\"ars_nouveau:mana_regen\"}]}"
-                        }
-                    ]
+                    "name": "industrialforegoing:machine_frame_simple"
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "minecraft:enchanted_book",
+                    "name": "industrialforegoing:conveyor",
                     "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{StoredEnchantments:[{lvl:2,id:\"ars_nouveau:mana_boost\"}]}"
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:enchanted_book",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{StoredEnchantments:[{lvl:1,id:\"minecraft:mending\"}]}"
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:potion",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{Potion:\"ars_nouveau:mana_regen_potion_long\"}"
-                        },
                         {
                             "function": "set_count",
-                            "count": 3
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:dark_glass",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:dryrubber",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:dryrubber",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:efficiency_addon_1",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{TitaniumAugment:{Efficiency:0.9}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "industrialforegoing:speed_addon_1",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{TitaniumAugment:{Speed:2.0}}"
                         }
                     ]
                 }

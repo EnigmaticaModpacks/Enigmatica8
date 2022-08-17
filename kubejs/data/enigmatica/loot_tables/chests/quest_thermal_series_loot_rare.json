@@ -7,18 +7,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:electron_tube",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:precision_mechanism",
+                    "name": "thermal:machine_frame",
                     "functions": [
                         {
                             "function": "set_count",
@@ -29,24 +18,18 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:chromatic_compound",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:blaze_burner",
+                    "name": "thermal:obsidian_glass",
                     "functions": [
                         {
                             "function": "set_count",
                             "count": 4
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "thermal:upgrade_augment_2"
                 }
             ]
         }

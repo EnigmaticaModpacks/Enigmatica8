@@ -2,12 +2,34 @@
     "type": "minecraft:chest",
     "pools": [
         {
-            "rolls": 1,
+            "rolls": 2,
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:electron_tube",
+                    "weight": 2,
+                    "name": "pneumaticcraft:speed_upgrade",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "pneumaticcraft:module_expansion_card",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "pneumaticcraft:volume_upgrade",
                     "functions": [
                         {
                             "function": "set_count",
@@ -18,29 +40,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:precision_mechanism",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 2
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:chromatic_compound",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:blaze_burner",
+                    "name": "pneumaticcraft:compressed_iron_block",
                     "functions": [
                         {
                             "function": "set_count",

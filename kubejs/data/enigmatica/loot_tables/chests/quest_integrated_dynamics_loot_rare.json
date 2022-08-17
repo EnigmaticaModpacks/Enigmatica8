@@ -7,44 +7,55 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:electron_tube",
+                    "name": "integrateddynamics:crystalized_chorus_chunk",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 4
+                            "count": 8
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:precision_mechanism",
+                    "name": "integrateddynamics:cable",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 2
+                            "count": 8
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:chromatic_compound",
+                    "name": "integrateddynamics:variable",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 1
+                            "count": 16
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:blaze_burner",
+                    "name": "integrateddynamics:facade",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 4
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "integrateddynamics:crystalized_menril_chunk",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
                         }
                     ]
                 }

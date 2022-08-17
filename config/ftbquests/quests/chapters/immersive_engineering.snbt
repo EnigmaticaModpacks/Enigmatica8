@@ -14,17 +14,11 @@
 			y: -6.0d
 			shape: "gear"
 			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."]
+			optional: true
 			id: "0000000000000004"
 			tasks: [{
-				id: "0000000000000005"
-				type: "checkmark"
-				title: "Immersive Engineering"
-				icon: "immersiveengineering:manual"
-			}]
-			rewards: [{
-				id: "3D55700B5A77131D"
+				id: "4C4EC117244A21C7"
 				type: "item"
-				title: "Engineer's Hammer"
 				item: {
 					id: "immersiveengineering:hammer"
 					Count: 1b
@@ -32,6 +26,14 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "7B54B7BEEA99667F"
+				type: "item"
+				title: "Copper Chunk"
+				item: "minecraft:raw_copper"
+				count: 3
+				random_bonus: 5
 			}]
 		}
 		{
@@ -76,7 +78,7 @@
 		}
 		{
 			title: "Coke Oven"
-			icon: "immersiveengineering:cokebrick"
+			icon: "immersiveengineering:coke_oven"
 			x: -3.5d
 			y: -3.0d
 			description: ["The Coke Oven is the first important multiblock in IE, made with a 3x3x3 cube of Coke Bricks. This structure can turn coal into coke and wood into charcoal; either operation produces creosote, an important byproduct used for Treated Wood."]
@@ -92,12 +94,12 @@
 				{
 					id: "000000000000000C"
 					type: "item"
-					title: "Any forge:gems/coal_coke"
+					title: "Any Coal Coke"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
 						tag: {
-							value: "forge:gems/coal_coke"
+							value: "forge:coal_coke"
 						}
 					}
 					count: 8L
@@ -107,7 +109,7 @@
 				id: "000000000000060A"
 				type: "item"
 				title: "Coal Coke"
-				item: "emendatusenigmatica:coke_gem"
+				item: "immersiveengineering:coal_coke"
 				count: 8
 			}]
 		}
@@ -168,8 +170,9 @@
 		}
 		{
 			title: "Blast Furnace"
+			icon: "immersiveengineering:blast_furnace"
 			x: -3.5d
-			y: -1.5d
+			y: -1.0d
 			description: ["The Blast Furnace is used to process iron into steel, using coke or charcoal. This is a critically important structure... unless you get steel another way, anyway."]
 			dependencies: ["0000000000000009"]
 			id: "0000000000000012"
@@ -183,7 +186,7 @@
 				id: "0000000000000613"
 				type: "item"
 				title: "Steel Ingot"
-				item: "emendatusenigmatica:steel_ingot"
+				item: "immersiveengineering:ingot_steel"
 				count: 8
 			}]
 		}
@@ -246,28 +249,35 @@
 			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."]
 			dependencies: ["0000000000000009"]
 			id: "0000000000000019"
-			tasks: [{
-				id: "000000000000001A"
-				type: "item"
-				item: "immersiveengineering:workbench"
-			}]
-			rewards: [{
-				id: "000000000000060F"
-				type: "item"
-				title: "Engineer's Blueprint"
-				item: {
-					id: "immersiveengineering:blueprint"
-					Count: 1b
-					tag: {
-						blueprint: "components"
+			tasks: [
+				{
+					id: "000000000000001A"
+					type: "item"
+					item: "immersiveengineering:workbench"
+				}
+				{
+					id: "16E5DF7E27BAB713"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "components"
+						}
 					}
 				}
+			]
+			rewards: [{
+				id: "0911E6C5BB0AF5E5"
+				type: "item"
+				item: "immersiveengineering:component_iron"
+				count: 8
 			}]
 		}
 		{
 			icon: "immersiveengineering:watermill"
-			x: -1.5d
-			y: -3.0d
+			x: -4.5d
+			y: -2.0d
 			description: ["Water Wheels need to have water flowing over them. Up to three can be placed against a Kinetic Dynamo to produce power."]
 			dependencies: ["0000000000000012"]
 			id: "000000000000001B"
@@ -313,13 +323,13 @@
 		}
 		{
 			title: "Crusher"
-			icon: "immersiveengineering:light_engineering"
+			icon: "immersiveengineering:crusher"
 			x: -5.5d
-			y: -0.5d
+			y: 0.0d
 			description: [
 				"The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000020"
@@ -365,13 +375,13 @@
 		}
 		{
 			title: "Metal Press"
-			icon: "immersiveengineering:mold_plate"
+			icon: "immersiveengineering:metal_press"
 			x: -1.5d
-			y: -0.5d
+			y: -1.0d
 			description: [
 				"The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000022"
@@ -409,27 +419,28 @@
 					id: "000000000000061E"
 					type: "item"
 					title: "Iron Plate"
-					item: "emendatusenigmatica:iron_plate"
+					item: "ftbic:iron_plate"
 					count: 8
 				}
 				{
 					id: "000000000000061F"
 					type: "item"
 					title: "Steel Plate"
-					item: "emendatusenigmatica:steel_plate"
+					auto: "enabled"
+					item: "immersiveengineering:plate_steel"
 					count: 4
 				}
 			]
 		}
 		{
 			title: "Improved Blast Furnace"
-			icon: "immersiveengineering:blastbrick_reinforced"
+			icon: "immersiveengineering:advanced_blast_furnace"
 			x: -5.5d
-			y: -1.5d
+			y: -1.0d
 			description: [
 				"The Improved Blast Furnace makes it easier to automate input/output. You can also make it run much more quickly by attaching one or two powered Blast Furnace Preheaters on either side."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000024"
@@ -457,7 +468,8 @@
 		}
 		{
 			title: "Alloy Kiln"
-			x: 0.0d
+			icon: "immersiveengineering:alloy_smelter"
+			x: 0.5d
 			y: -3.0d
 			description: ["The Alloy Kiln is a simple 2x2x2 structure that can smelt different types of metal together to form alloys."]
 			dependencies: ["0000000000000007"]
@@ -472,21 +484,25 @@
 				id: "0000000000000608"
 				type: "item"
 				title: "Copper Ingot"
-				item: "emendatusenigmatica:copper_ingot"
+				item: "minecraft:copper_ingot"
 				count: 8
 			}]
 		}
 		{
 			title: "Arc Furnace"
-			icon: "immersiveengineering:storage_steel"
-			x: -6.5d
-			y: 0.0d
+			icon: "immersiveengineering:arc_furnace"
+			x: -0.5d
+			y: 0.5d
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
-			dependencies: ["0000000000000020"]
+			dependencies: [
+				"3B3D37BAC8E40971"
+				"0000000000000013"
+			]
+			dependency_requirement: "one_completed"
 			id: "0000000000000032"
 			tasks: [
 				{
@@ -601,8 +617,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -1.5d
+			x: -2.5d
+			y: -2.0d
 			description: ["Thermoelectric Generators are another straightforward power option. When surrounded with hot and cold blocks, this block generates power based on the difference in temperature (see manual)."]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000036"
@@ -611,31 +627,38 @@
 				type: "item"
 				item: "immersiveengineering:thermoelectric_generator"
 			}]
-			rewards: [{
-				id: "0000000000000618"
-				type: "item"
-				title: "Blue Ice"
-				item: "minecraft:blue_ice"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "0000000000000618"
+					type: "item"
+					title: "Blue Ice"
+					item: "minecraft:blue_ice"
+					count: 4
+				}
+				{
+					id: "09E2626C1188341A"
+					type: "item"
+					auto: "enabled"
+					item: "immersiveengineering:storage_uranium"
+					count: 4
+				}
+			]
 		}
 		{
 			title: "Sawmill"
-			icon: {
-				id: "immersiveengineering:sawblade"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -1.5d
+			icon: "immersiveengineering:sawmill"
+			x: -6.5d
 			y: 0.5d
 			description: [
 				"The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
-			dependencies: ["0000000000000012"]
+			dependencies: [
+				"0000000000000020"
+				"0000000000000013"
+			]
+			dependency_requirement: "one_completed"
 			id: "0000000000000038"
 			tasks: [
 				{
@@ -652,7 +675,7 @@
 				{
 					id: "000000000000005B"
 					type: "item"
-					item: "immersiveengineering:steel_scaffolding_grate_top"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 8L
 				}
 				{
@@ -696,13 +719,13 @@
 		}
 		{
 			title: "Industrial Squeezer and Fermenter"
-			icon: "immersiveengineering:plantoil_bucket"
+			icon: "immersiveengineering:fermenter"
 			x: -2.5d
-			y: 0.5d
+			y: 1.0d
 			description: [
 				"The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. The Fermenter produces ethanol, used with plant oil to make biodiesel."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with these multiblocks."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000012"]
 			id: "000000000000003A"
@@ -791,13 +814,14 @@
 		}
 		{
 			title: "Diesel Generator"
-			icon: "immersiveengineering:biodiesel_bucket"
-			x: -3.5d
-			y: 2.5d
+			icon: "immersiveengineering:diesel_generator"
+			x: -4.0d
+			y: 2.0d
+			shape: "circle"
 			description: [
 				"With Biodiesel or Diesel acquired, they can be used as a fuel for the powerful (if noisy) Diesel Generator, producing respectable amounts of FE/t."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["09AEE48CED288DD1"]
 			dependency_requirement: "one_completed"
@@ -850,13 +874,15 @@
 		}
 		{
 			title: "Excavator"
-			icon: "minecraft:gold_ore"
+			icon: "immersiveengineering:bucket_wheel"
 			x: -6.5d
-			y: 1.0d
+			y: 1.5d
 			description: [
 				"Once you've determined an appropriate spot to excavate, you can build this machine there. Be warned that the Excavator requires a rather hefty amount of energy to run."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+				"There is a lot of different types of mineral veins, so be sure to check in the Engineer’s Manual under “Overview and Resources” for a full list of Mineral Deposits and how to find them!"
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000061"]
 			id: "0000000000000040"
@@ -923,12 +949,8 @@
 			title: "Mineral Veins"
 			icon: "immersiveengineering:sample_drill"
 			x: -5.5d
-			y: 0.5d
-			description: [
-				"As described in the \"Minerals\" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk."
-				""
-				"A number of custom mineral nodes have been added for Enigmatica 6. Be sure to check them out as they can be quite lucrative!"
-			]
+			y: 1.0d
+			description: ["As described in the \"Minerals\" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk."]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000061"
 			tasks: [{
@@ -1014,13 +1036,13 @@
 		}
 		{
 			title: "Workbench Automation"
-			icon: "immersiveengineering:electron_tube"
+			icon: "immersiveengineering:auto_workbench"
 			x: -8.5d
 			y: -1.5d
 			description: [
 				"The Automated Workbench is a powered multiblock that can automatically process a given type of Engineer's Workbench recipe, when supplied with a blueprint. Handy!"
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000019"]
 			id: "0000000000000246"
@@ -1071,89 +1093,14 @@
 			}]
 		}
 		{
-			title: "Pumpjack"
-			icon: "immersiveengineering:fluid_pipe"
-			x: -4.5d
-			y: 0.5d
-			description: [
-				"Abundant fuel is just a few steps away, buried beneath your feet. Obtaining it will require a bit of drilling, however. The Pumpjack can mine up huge underground reservoirs of Crude Oil that would otherwise be unobtainable."
-				""
-				"Locating these reservoirs requires the use of the Core Sample Drill or Mineral Survey tools."
-				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
-			]
-			dependencies: [
-				"0000000000000012"
-				"0000000000000061"
-			]
-			id: "16D342C092566FC6"
-			tasks: [
-				{
-					id: "00C3EC1299DC28D3"
-					type: "item"
-					item: "immersiveengineering:fluid_pipe"
-					count: 4L
-				}
-				{
-					id: "0979E7EEF3363277"
-					type: "item"
-					item: "immersiveengineering:heavy_engineering"
-					count: 2L
-				}
-				{
-					id: "4E9E3DB8FE1E9406"
-					type: "item"
-					item: "immersiveengineering:light_engineering"
-					count: 2L
-				}
-				{
-					id: "121E4FCB71513163"
-					type: "item"
-					item: "immersiveengineering:rs_engineering"
-				}
-				{
-					id: "324063E74778D1C4"
-					type: "item"
-					item: "immersiveengineering:sheetmetal_steel"
-					count: 4L
-				}
-				{
-					id: "36B2E60B1BBB4CD2"
-					type: "item"
-					item: "immersiveengineering:steel_scaffolding_standard"
-					count: 11L
-				}
-				{
-					id: "6391CC96CDA5D45C"
-					type: "item"
-					item: "immersiveengineering:storage_steel"
-					count: 2L
-				}
-				{
-					id: "7CB80FBAE32E36B9"
-					type: "item"
-					item: "immersiveengineering:treated_fence"
-					count: 6L
-				}
-			]
-			rewards: [{
-				id: "476B1A4F7D366E7E"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
-			}]
-		}
-		{
 			title: "Refinery"
-			icon: "immersiveengineering:biodiesel_bucket"
-			x: -2.5d
-			y: 1.5d
+			icon: "immersiveengineering:refinery"
+			x: -3.0d
+			y: 2.0d
 			description: [
 				"The final step in producing Biodiesel, the Refinery combines Ethanol and Plant Oil to make this liquid gold. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
 			dependencies: ["000000000000003A"]
 			id: "09AEE48CED288DD1"
@@ -1205,6 +1152,231 @@
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "This section is W.I.P"
+			icon: "laserio:laser_wrench"
+			x: -4.5d
+			y: 1.0d
+			subtitle: "Immersive Petroleum"
+			description: [
+				"Here should be a few quests about Immersive petroleum, however port for 1.18.2 isn't yet published, but it was announced, so when it comes out the quests will comeback!"
+				""
+				"For now take a cat and be happy :D There is a lot of different quests to do, so what are you waiting for?!"
+			]
+			dependencies: [
+				"0000000000000013"
+				"0000000000000012"
+			]
+			id: "710BE1B415841A75"
+			tasks: [{
+				id: "792A69CE3AC430E7"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "4E27E2225BB94FEB"
+					type: "command"
+					title: "Cat!"
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "minecraft:textures/entity_icon/cat/calico.png"
+						}
+					}
+					command: "/execute at @p run summon cat ~ ~ ~"
+					player_command: false
+				}
+				{
+					id: "3C38990F9AB879C5"
+					type: "item"
+					item: "minecraft:cod"
+					count: 16
+					random_bonus: 48
+				}
+			]
+		}
+		{
+			title: "Assembler"
+			icon: "immersiveengineering:assembler"
+			x: -1.5d
+			y: 0.0d
+			description: [
+				"Assembler is used to craft items like a player would in crafting bench. It has 3 slots for recipes you can set, and output of one can be used as input of another recipe set. It also has 3 fluid tanks, which can be used to replace buckets with raw fluid."
+				""
+				"To assemble it, right click one of the belts. This will be your input, and second one will be output."
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
+			]
+			dependencies: ["0000000000000012"]
+			id: "3B3D37BAC8E40971"
+			tasks: [
+				{
+					id: "5C7E4D973B4E6C78"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "6C82DE3CE0391FCA"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+					count: 2L
+				}
+				{
+					id: "07F493E28546E2CF"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "7B47167972CC334F"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 9L
+				}
+				{
+					id: "176E4CA870A5F96C"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_iron"
+					count: 6L
+				}
+				{
+					id: "2DF03D27CB05F19E"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "7C2DDDC233064BCB"
+				type: "command"
+				title: "Epic Immersive Engineering Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Mixer"
+			icon: "immersiveengineering:mixer"
+			x: -1.5d
+			y: 1.0d
+			description: [
+				"The Mixer dissolves solids into fluids, mixing them together. It's mostly used to create Liquid concrete, but it can also do potions."
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
+			]
+			dependencies: ["0000000000000012"]
+			id: "37F3086A687795FB"
+			tasks: [
+				{
+					id: "43E2D1D670D6F36D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "07E11BC0B13A5278"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "63AC96CA8CC15B40"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "175D7EB329BA5EFF"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0BA7DBD1756686F1"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+				}
+				{
+					id: "53DC889733619C39"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "5D70006C425BF1CE"
+				type: "command"
+				title: "Epic Immersive Engineering Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Bottling Machine"
+			icon: "immersiveengineering:bottling_machine"
+			x: -0.5d
+			y: 1.5d
+			description: [
+				"The Bottling Machine fills fluid containers with provided liquid. Anything that can contain liquid will work! Mekanism tank, glass bottle, a bucket."
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
+			]
+			dependencies: [
+				"37F3086A687795FB"
+				"0000000000000013"
+			]
+			dependency_requirement: "one_completed"
+			min_width: 250
+			id: "6AC625E4D6F5AAFB"
+			tasks: [
+				{
+					id: "15443074610B3C89"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 2L
+				}
+				{
+					id: "3D3C09BF70DF2233"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 3L
+				}
+				{
+					id: "50F208ABA1C3C145"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "410EF7D6801D0082"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "2BF1A58F3F702279"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 3L
+				}
+				{
+					id: "4F682B0D30545D87"
+					type: "item"
+					item: "immersiveengineering:fluid_pump"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "19DF31EC00072D95"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
 				player_command: false
 			}]
 		}

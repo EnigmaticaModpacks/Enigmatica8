@@ -16,7 +16,7 @@
 	quests: [
 		{
 			icon: "alexsmobs:banana"
-			x: 0.5d
+			x: -1.0d
 			y: 0.5d
 			subtitle: "Monkeys and Gorillas and Bears, Oh My!"
 			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "]
@@ -33,8 +33,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 2.5d
+			x: -1.5d
+			y: 3.0d
 			subtitle: "Treasure or Trap? "
 			description: [
 				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? "
@@ -50,6 +50,52 @@
 			}]
 			rewards: [{
 				id: "0000000000000CA0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Dungeoneering"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "Hack 'n Slash"
+			description: [
+				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. "
+				""
+				"Treasure awaits the brave; death awaits the weak. "
+			]
+			id: "0000000000000C85"
+			tasks: [{
+				id: "0000000000000C86"
+				type: "checkmark"
+				title: "Dungeoneering"
+				icon: "kubejs:scavengers_delight"
+			}]
+			rewards: [{
+				id: "0000000000000C9C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Oh, The Biomes You'll Go"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "It's opener out there, in the wide open air."
+			description: [
+				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
+				""
+				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
+			]
+			id: "0000000000000C89"
+			tasks: [{
+				id: "0000000000000C8A"
+				type: "checkmark"
+				title: "Oh, The Biomes You'll Go"
+				icon: "byg:pink_cherry_sapling"
+			}]
+			rewards: [{
+				id: "0000000000000C9F"
 				type: "xp"
 				xp: 100
 			}]
@@ -90,7 +136,7 @@
 		}
 		{
 			x: 1.0d
-			y: 1.5d
+			y: 0.5d
 			subtitle: "We're not lost, we're right here on this very spot."
 			description: [
 				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
@@ -114,8 +160,31 @@
 			}]
 		}
 		{
+			title: "The Undergarden"
+			icon: "undergarden:catalyst"
+			x: 1.5d
+			y: 3.0d
+			subtitle: "Down Beneath"
+			description: [
+				"Many believed that the Nether existed beneath the bedrock layer, but with the discovery of the terrifying Undergarden, that theory was scrapped."
+				""
+				"Visualize the portal by pressing your Ponder key on the Catalyst in JEI."
+			]
+			id: "386EC8C30DD8EF00"
+			tasks: [{
+				id: "7ACC9974FA0E7D85"
+				type: "item"
+				item: "undergarden:catalyst"
+			}]
+			rewards: [{
+				id: "50D671240789A59B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
 			icon: "ars_nouveau:glyph_summon_wolves"
-			x: 0.0d
+			x: -2.0d
 			y: 1.5d
 			subtitle: "Dangit, Moon Moon"
 			description: [

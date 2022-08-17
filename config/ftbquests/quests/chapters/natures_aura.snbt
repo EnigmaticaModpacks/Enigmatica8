@@ -1,7 +1,7 @@
 {
 	id: "000000000000009E"
 	group: "5A8B89F87F77CF4C"
-	order_index: 1
+	order_index: 3
 	filename: "natures_aura"
 	title: "Nature's Aura"
 	icon: "naturesaura:gold_leaf"
@@ -61,10 +61,19 @@
 				""
 				"~MuteTiefling"
 			]
+			optional: true
 			id: "000000000000009F"
 			tasks: [{
-				id: "00000000000000A0"
-				type: "checkmark"
+				id: "5DCF7175B494CD02"
+				type: "item"
+				title: "Any Sapling"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
 			}]
 			rewards: [{
 				id: "00000000000000A6"
@@ -99,14 +108,21 @@
 				item: "naturesaura:wood_stand"
 				count: 8L
 			}]
-			rewards: [{
-				id: "000000000000035A"
-				type: "command"
-				title: "Rare Nature's Aura Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "000000000000035A"
+					type: "command"
+					title: "Rare Nature's Aura Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare"
+					player_command: false
+				}
+				{
+					id: "14A7BCABC52C6E6D"
+					type: "item"
+					item: "farmingforblockheads:market"
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -578,6 +594,8 @@
 				"A portable source of Aura that can be be put to good use with a variety of tools. "
 				""
 				"Refer to the Book of Natural Aura's section on Natural Tools for potential uses."
+				""
+				"Note: These may not fill completely when worn. To get a full charge, or to even automate filling them, they may be placed in a Natural Altar to their maximum capacity."
 			]
 			dependencies: ["00000000000002BD"]
 			id: "00000000000002CD"
@@ -659,6 +677,8 @@
 				"Higher capacity than the Aura Cache."
 				""
 				"Refer to the Book of Natural Aura's section on Natural Tools for potential uses."
+				""
+				"Note: These may not fill completely when worn. To get a full charge, or to even automate filling them, they may be placed in a Natural Altar to their maximum capacity."
 			]
 			dependencies: ["00000000000002E9"]
 			id: "00000000000002EE"
@@ -745,10 +765,7 @@
 				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"00000000000002B8"
-				"00000000000002E9"
-			]
+			dependencies: ["000000000000037F"]
 			id: "00000000000002FA"
 			tasks: [
 				{
@@ -1113,14 +1130,14 @@
 				""
 				"● Bountiful Core - Stone and Netherrack are converted to ore with the appropriate Aura type."
 				""
-				"● Steady Growth - Plants growth will no longer be boosted by Aura."
+				"● Steady Growth - The growth of crops, plants, and flowers will no longer be boosted by Aura."
 				""
 				"● Fertility - Passive Animals will breed when able."
 				""
 				"● No Storage - Your Aura Cache or Trove will not charge in the area."
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000002C7"]
+			dependencies: ["00000000000002C2"]
 			id: "0000000000000339"
 			tasks: [
 				{
@@ -1195,6 +1212,27 @@
 					player_command: false
 				}
 			]
+		}
+		{
+			x: -2.0d
+			y: -15.5d
+			subtitle: "To the Stars!"
+			description: ["Growing Crystals under clear view of the sky has been known to bind the great energies of the stars into their lattice, but it seems not all of the energies are bound. The Crystalline Extractor absorbs this lost energy as crystals grow nearby, converting it into a powerful source of Aura."]
+			dependencies: ["00000000000002C1"]
+			id: "212224CE33D89381"
+			tasks: [{
+				id: "280C9FCBE6C8646D"
+				type: "item"
+				item: "naturesstarlight:crystal_generator"
+			}]
+			rewards: [{
+				id: "6C5991B03D429D92"
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
+				player_command: false
+			}]
 		}
 	]
 }

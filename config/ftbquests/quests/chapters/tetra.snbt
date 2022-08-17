@@ -133,33 +133,6 @@
 			}]
 		}
 		{
-			title: "Salvage"
-			x: 0.0d
-			y: -14.5d
-			shape: "diamond"
-			subtitle: "I don't mean to pry, but..."
-			description: [
-				"Crates and Containers can be found in the underground Forges found deep beneath cold biomes."
-				""
-				"Hit the highlighted areas on crates and containers with the correct tools to break them open."
-			]
-			dependencies: ["0000000000000783"]
-			optional: true
-			id: "0000000000000777"
-			tasks: [{
-				id: "0000000000000892"
-				type: "advancement"
-				icon: "tetra:forged_container"
-				advancement: "tetra:spelunking/containers"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "0000000000000A49"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-		}
-		{
 			title: "Bows"
 			icon: {
 				id: "tetra:modular_bow"
@@ -237,64 +210,23 @@
 			]
 		}
 		{
-			title: "The Forge"
-			x: -2.5d
-			y: -14.5d
-			description: [
-				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells and 2 Upgrades to activate it."
-				""
-				"Place a Workbench below the powered Forge Hammer, and you'll gain access to its Hammering abilities."
-				""
-				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. You'll be missing out on loot though!"
-			]
-			dependencies: ["0000000000000883"]
-			id: "0000000000000781"
-			tasks: [{
-				id: "7346BE7936AA083F"
-				type: "advancement"
-				icon: "tetra:hammer_base"
-				advancement: "tetra:spelunking/hammer_fix"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "0000000000000A4A"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Forge Upgrades"
-			x: -1.5d
-			y: -14.5d
-			description: [
-				"Upgrade your Forge Hammer!"
-				""
-				"Most Forge Upgrades can only be found in the Ancient Forges found underneath cold Biomes."
-				"You can add up to a maximum of 2 Upgrades to a single Forge Hammer."
-				""
-				"Combustion Chamber: + 1 Hammer Tier"
-				""
-				"Insulated Plate: + Efficiency"
-				""
-				"Planar Stabilizer: + Stats when used for forging purposes"
-			]
-			dependencies: ["0000000000000883"]
+			title: "What happened to Forge Hammer?"
+			icon: {
+				id: "hexerei:warhammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: -17.0d
+			description: ["Forge Hammer was removed from Tetra in 1.18. It is possible to craft few things that would be normally found there however!"]
+			dependencies: ["0000000000000773"]
 			id: "0000000000000783"
 			tasks: [{
-				id: "000000000000085D"
-				type: "item"
-				title: "Any tetra:forge_hammer_upgrades"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "tetra:forge_hammer_upgrades"
-					}
-				}
-				count: 2L
+				id: "41312E6FB77E42B6"
+				type: "checkmark"
+				title: "Got it."
 			}]
 			rewards: [{
 				id: "0000000000000A4E"
@@ -306,11 +238,11 @@
 		}
 		{
 			title: "Useful Junk"
-			x: 1.5d
-			y: -14.5d
+			x: 0.5d
+			y: -15.5d
 			shape: "diamond"
-			description: ["You can find all sorts of junk lying around Ancient Forges, and a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts."]
-			dependencies: ["0000000000000777"]
+			description: ["Back then you could find all sorts of junk lying around Ancient Forges, but this time that \"junk\" can be crafted! They can be used as Tool, Weapon or Belt parts and they're better than most other parts."]
+			dependencies: ["0000000000000783"]
 			optional: true
 			id: "0000000000000785"
 			tasks: [
@@ -346,77 +278,26 @@
 				}
 			]
 			rewards: [{
-				id: "0000000000000853"
-				type: "item"
-				title: "Thermal Cell"
-				item: {
-					id: "tetra:magmatic_cell"
-					Count: 1b
-					tag: {
-						Damage: 128
-					}
-				}
+				id: "570095D7B3083675"
+				type: "command"
+				title: "Blacksmith's Delight"
+				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
+				player_command: false
 			}]
-		}
-		{
-			title: "Thermal Cells"
-			x: -3.5d
-			y: -14.5d
-			description: [
-				"Thermal Cells are the batteries of the Forge Hammer."
-				""
-				"You can recharge them in a Transfer Unit, when it's configured correctly. "
-				""
-				""
-				"Note: Thermal Cells are also craftable."
-			]
-			dependencies: [
-				"0000000000000781"
-				"0000000000000883"
-			]
-			id: "0000000000000787"
-			tasks: [{
-				id: "0000000000000854"
-				type: "item"
-				item: {
-					id: "tetra:magmatic_cell"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-				count: 2L
-				consume_items: false
-			}]
-			rewards: [
-				{
-					id: "0000000000000A4B"
-					type: "item"
-					title: "Lava Bucket"
-					item: "minecraft:lava_bucket"
-				}
-				{
-					id: "0000000000000AA4"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
-				}
-			]
 		}
 		{
 			title: "Hack N' Slash"
 			icon: "tetra:stonecutter"
-			x: 1.5d
-			y: -15.5d
+			x: 1.0d
+			y: -16.5d
 			shape: "diamond"
 			description: [
 				"The Stonecutter is a special tool that breaks an area in a slashing motion."
 				""
 				"The area mined can be increased through Efficiency."
 			]
-			dependencies: ["0000000000000777"]
+			dependencies: ["0000000000000783"]
 			optional: true
 			id: "000000000000078B"
 			tasks: [{
@@ -427,20 +308,19 @@
 				criterion: ""
 			}]
 			rewards: [{
-				id: "000000000000085F"
-				type: "item"
-				title: "Planar Stabilizer"
-				item: "tetra:planar_stabilizer"
+				id: "0E5A545788400D0D"
+				type: "xp"
+				xp: 500
 			}]
 		}
 		{
 			title: "Earthpiercer"
 			icon: "tetra:earthpiercer"
-			x: 1.5d
-			y: -13.5d
+			x: -0.5d
+			y: -15.0d
 			shape: "diamond"
 			description: ["The Earthpiercer is a multi-purpose tool that acts both as a Pickaxe and Shovel."]
-			dependencies: ["0000000000000777"]
+			dependencies: ["0000000000000783"]
 			optional: true
 			id: "000000000000078D"
 			tasks: [{
@@ -451,10 +331,9 @@
 				criterion: ""
 			}]
 			rewards: [{
-				id: "000000000000085E"
-				type: "item"
-				title: "Combustion Chamber"
-				item: "tetra:combustion_chamber"
+				id: "44D28F5A3B4CC894"
+				type: "xp"
+				xp: 500
 			}]
 		}
 		{
@@ -531,7 +410,7 @@
 			y: -18.0d
 			subtitle: "Bird-poo Hammer"
 			description: [
-				"Put your Hammer in the Workbench and replace both heads with any kind of Stone, which will upgrade it to a tier 2 Hammer."
+				"Put your Hammer in the Workbench and replace both heads with any kind of Cobblestone, which will upgrade it to a tier 2 Hammer."
 				""
 				"This is where the Wooden Hammer you got as a quest reward comes in handy!"
 			]
@@ -561,7 +440,7 @@
 					id: "0000000000000A42"
 					type: "item"
 					title: "Copper Chunk"
-					item: "emendatusenigmatica:copper_chunk"
+					item: "minecraft:raw_copper"
 					count: 8
 				}
 				{
@@ -578,13 +457,7 @@
 			title: "Tier 3"
 			x: -2.5d
 			y: -17.0d
-			description: [
-				"This one is a bit tricky - You need to change every part of the hammer this time, as the tier 3 hammer heads require higher integrity."
-				""
-				"Replace the Handle with Wood or Bones, which will give you the integrity you need to upgrade the hammer heads to Iron."
-				""
-				"Note: If you want to use Wood as the handle, you will need an Axe to perform the upgrade."
-			]
+			description: ["Tier 3 heads are made out of Iron. Replace heads with it and enjoy your 3rd Tier of Hammer!"]
 			dependencies: ["0000000000000876"]
 			id: "0000000000000878"
 			tasks: [{
@@ -611,7 +484,7 @@
 					id: "0000000000000A43"
 					type: "item"
 					title: "Osmium Chunk"
-					item: "emendatusenigmatica:osmium_chunk"
+					item: "mekanism:raw_osmium"
 					count: 8
 				}
 				{
@@ -709,17 +582,13 @@
 		{
 			title: "Tier 5"
 			x: -2.5d
-			y: -13.0d
+			y: -15.0d
 			description: [
-				"Obsidian will get you to Tier 5."
+				"This one is a bit tricky - You need to change Handle and heads of the hammer this time, as the tier 5 hammer heads require higher integrity."
 				""
-				"If you need higher integrity, try out an End Rod as a handle."
+				"Replace the Handle with Bones, which will give you the integrity you need to upgrade the hammer heads to Obsidian!"
 			]
-			dependencies: [
-				"0000000000000787"
-				"0000000000000781"
-				"0000000000000783"
-			]
+			dependencies: ["0000000000000883"]
 			id: "0000000000000885"
 			tasks: [{
 				id: "0000000000000886"
@@ -751,8 +620,8 @@
 		}
 		{
 			title: "Tier 6"
-			x: -2.5d
-			y: -11.5d
+			x: -3.75d
+			y: -14.25d
 			shape: "hexagon"
 			description: [
 				"Netherite Ingots will get you to tier 6. "
@@ -1033,7 +902,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:tools/pickaxes"
+						value: "forge:pickaxes"
 					}
 				}
 			}]
@@ -1057,12 +926,12 @@
 			tasks: [{
 				id: "0000000000000937"
 				type: "item"
-				title: "Any forge:tools/shovel"
+				title: "Any Showel"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:tools/shovels"
+						value: "forge:shovels"
 					}
 				}
 			}]
@@ -1126,7 +995,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:weapons/sword"
+						value: "forge:swords"
 					}
 				}
 			}]
@@ -1631,11 +1500,11 @@
 		}
 		{
 			title: "3x3 Mining!"
-			x: 0.0d
-			y: -16.5d
+			x: 1.0d
+			y: -17.75d
 			shape: "pentagon"
 			description: ["When the Chthonic Extractor is applied as the second head to a tool, the tool will be able to mine in a 3 by 3 area!"]
-			dependencies: ["0000000000000777"]
+			dependencies: ["0000000000000783"]
 			size: 1.5d
 			optional: true
 			id: "0000000000000FB9"
@@ -1650,136 +1519,6 @@
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Tier 7"
-			icon: {
-				id: "tetra:modular_double"
-				Count: 1b
-				tag: {
-					"double/head_left/settle_progress": 708
-					"double/basic_handle_material": "basic_handle/end_rod"
-					"double/handle": "double/basic_handle"
-					honing_progress: 470
-					HideFlags: 1
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					"double/head_right/settle_progress": 708
-					id: "b262f1bb-de92-4835-a8ed-783e131c5dd9"
-					Damage: 0
-					"double/basic_hammer_right_material": "basic_hammer/starmetal"
-					"double/handle/settle_progress": 205
-					"double/basic_hammer_left_material": "basic_hammer/starmetal"
-				}
-			}
-			x: -4.0d
-			y: -11.5d
-			description: ["We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools, bows in particular."]
-			dependencies: ["0000000000000887"]
-			id: "03E874538CC29EAF"
-			tasks: [{
-				id: "019F3FE0B1C8CDEB"
-				type: "item"
-				item: "astralsorcery:starmetal_ingot"
-				count: 2L
-			}]
-			rewards: [{
-				id: "59B2B9FCD1E15324"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Tier 8"
-			icon: {
-				id: "tetra:modular_double"
-				Count: 1b
-				tag: {
-					"double/head_left/settle_progress": 592
-					"double/basic_handle_material": "basic_handle/end_rod"
-					"double/handle": "double/basic_handle"
-					honing_progress: 410
-					HideFlags: 1
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					"double/head_right/settle_progress": 592
-					id: "595b6b9f-c12d-42f7-bb35-e12a0acaaa25"
-					Damage: 0
-					"double/basic_hammer_right_material": "basic_hammer/sky"
-					"double/handle/settle_progress": 175
-					"double/basic_hammer_left_material": "basic_hammer/sky"
-				}
-			}
-			x: -5.0d
-			y: -11.5d
-			description: ["We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools, bows in particular."]
-			dependencies: ["03E874538CC29EAF"]
-			id: "6021E8E72AD98AB6"
-			tasks: [{
-				id: "665CC8BF12C14289"
-				type: "item"
-				item: "naturesaura:sky_ingot"
-				count: 2L
-			}]
-			rewards: [{
-				id: "49D9C81C252CD109"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Tier 9"
-			icon: {
-				id: "tetra:modular_double"
-				Count: 1b
-				tag: {
-					"double/head_left/settle_progress": 1068
-					"double/basic_handle_material": "basic_handle/end_rod"
-					"double/handle": "double/basic_handle"
-					honing_progress: 665
-					HideFlags: 1
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					"double/head_right/settle_progress": 1068
-					id: "e771cd1b-c641-4b37-bbd9-e805f1c75dc2"
-					Damage: 0
-					"double/basic_hammer_right_material": "basic_hammer/alfsteel"
-					"double/handle/settle_progress": 120
-					"double/basic_hammer_left_material": "basic_hammer/alfsteel"
-				}
-			}
-			x: -6.0d
-			y: -12.75d
-			shape: "hexagon"
-			description: [
-				"We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools."
-				""
-				"... an Alfsteel Recurve Bow for example."
-				""
-			]
-			dependencies: ["6021E8E72AD98AB6"]
-			size: 1.5d
-			id: "5DA0E2DDC46C8721"
-			tasks: [{
-				id: "4F7E103E546BD020"
-				type: "item"
-				item: "mythicbotany:alfsteel_ingot"
-				count: 2L
-			}]
-			rewards: [{
-				id: "25764538285A2048"
-				type: "command"
-				title: "Blacksmith's Delight"
-				icon: "kubejs:blacksmiths_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
 				player_command: false
 			}]
 		}

@@ -241,3 +241,4 @@ config/gamemenumodoption-client.toml
 backups/backups.json
 config/jei/jei-client.ini
 rhino.local.properties
+config/tempad_client.json

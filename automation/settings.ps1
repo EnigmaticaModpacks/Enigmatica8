@@ -167,7 +167,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"upgrade_aquatic-client.toml",
 	"valhelsia_core-client.toml",
 	"xnet-client.toml",
-	"jei/jei-client.ini"
+	"jei/jei-client.ini",
+	"tempad_client.json"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")

@@ -7,44 +7,44 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:electron_tube",
+                    "name": "bloodmagic:basiccuttingfluid",
                     "functions": [
                         {
-                            "function": "set_count",
-                            "count": 4
+                            "function": "set_nbt",
+                            "tag": "{Damage: 0,Enchantments: [{lvl: 5,id:\"minecraft:unbreaking\"}]}"
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:precision_mechanism",
+                    "name": "bloodmagic:primitive_explosive_cell",
                     "functions": [
                         {
-                            "function": "set_count",
-                            "count": 2
+                            "function": "set_nbt",
+                            "tag": "{Damage: 0,Enchantments: [{lvl: 5,id:\"minecraft:unbreaking\"}]}"
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:chromatic_compound",
+                    "name": "bloodmagic:primitive_crystalline_resonator",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Damage: 0,Enchantments: [{lvl: 5,id:\"minecraft:unbreaking\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:lavacrystal",
                     "functions": [
                         {
                             "function": "set_count",
                             "count": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:blaze_burner",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 4
                         }
                     ]
                 }

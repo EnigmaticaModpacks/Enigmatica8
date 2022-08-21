@@ -75,7 +75,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -98,7 +98,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -133,7 +133,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -157,7 +157,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -178,7 +178,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -204,7 +204,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -229,7 +229,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -258,7 +258,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -279,7 +279,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -325,7 +325,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -359,7 +359,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -382,7 +382,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -410,7 +410,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -458,7 +458,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -492,7 +492,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -521,7 +521,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -544,7 +544,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -567,7 +567,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -601,7 +601,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
 					player_command: false
 				}
 			]
@@ -626,7 +626,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -690,7 +690,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -715,7 +715,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -741,7 +741,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -790,7 +790,7 @@
 				type: "command"
 				title: "Rare RFTools Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 				player_command: false
 			}]
 		}
@@ -830,7 +830,7 @@
 					type: "command"
 					title: "Rare RFTools Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_rftools_loot_rare"
 					player_command: false
 				}
 			]

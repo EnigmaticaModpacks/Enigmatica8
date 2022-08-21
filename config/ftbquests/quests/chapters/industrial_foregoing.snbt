@@ -103,7 +103,7 @@
 				type: "command"
 				title: "Rare Industrial Foregoing Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_rare"
 				player_command: false
 			}]
 		}
@@ -124,7 +124,7 @@
 				type: "command"
 				title: "Rare Industrial Foregoing Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_rare"
 				player_command: false
 			}]
 		}
@@ -182,7 +182,7 @@
 				type: "command"
 				title: "Rare Industrial Foregoing Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_rare"
 				player_command: false
 			}]
 		}
@@ -219,7 +219,7 @@
 				type: "command"
 				title: "Rare Industrial Foregoing Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_rare"
 				player_command: false
 			}]
 		}
@@ -244,7 +244,7 @@
 				type: "command"
 				title: "Epic Industrial Foregoing Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_epic"
 				player_command: false
 			}]
 		}
@@ -264,7 +264,7 @@
 				type: "command"
 				title: "Epic Industrial Foregoing Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_epic"
 				player_command: false
 			}]
 		}
@@ -297,7 +297,7 @@
 					type: "command"
 					title: "Epic Industrial Foregoing Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_epic"
 					player_command: false
 				}
 				{
@@ -348,7 +348,7 @@
 				type: "command"
 				title: "Epic Industrial Foregoing Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_epic"
 				player_command: false
 			}]
 		}
@@ -480,7 +480,7 @@
 				type: "command"
 				title: "Rare Industrial Foregoing Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_rare"
 				player_command: false
 			}]
 		}
@@ -551,7 +551,7 @@
 				type: "command"
 				title: "Epic Industrial Foregoing Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_epic"
 				player_command: false
 			}]
 		}

@@ -316,11 +316,12 @@
 				type: "item"
 				title: "Heat Sink"
 				item: "pneumaticcraft:heat_sink"
+				random_bonus: 7
 			}]
 		}
 		{
 			title: "Heat Pipe"
-			x: -12.5d
+			x: -13.0d
 			y: -11.0d
 			subtitle: "The Cold Never Bothered Me Anyway"
 			description: [
@@ -337,11 +338,12 @@
 				count: 6L
 			}]
 			rewards: [{
-				id: "00000000000000D4"
-				type: "item"
-				title: "Thermal Lagging"
-				item: "pneumaticcraft:thermal_lagging"
-				count: 12
+				id: "00099FEE4C17C4F0"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
+				player_command: false
 			}]
 		}
 		{
@@ -369,8 +371,8 @@
 			}]
 		}
 		{
-			x: -13.5d
-			y: -10.5d
+			x: -14.0d
+			y: -10.0d
 			subtitle: "Freeze Frame"
 			description: [
 				"The Heat Frame is placed on any inventory and allows the inventory to make use of heat or cold to perform crafting operations. When heated, it smelts items as a furnace would. When cooled, it can make a variety of useful items."
@@ -392,7 +394,7 @@
 			}]
 		}
 		{
-			x: -12.5d
+			x: -13.0d
 			y: -10.0d
 			subtitle: "Under the Radar"
 			description: [
@@ -707,7 +709,7 @@
 			x: -5.0d
 			y: -7.0d
 			subtitle: "What a Corny Joke"
-			description: [""]
+			description: ["Isn't that great of a fuel on its own, but it can be refined!"]
 			dependencies: ["00000000000000FD"]
 			id: "0000000000000100"
 			tasks: [{
@@ -969,7 +971,7 @@
 			description: [
 				"Redstone Modules are used to read and output redstone signals by transmitting them over a pipe network.This does not require air to use."
 				""
-				"Install an Advanced PCB into one to allow it to perform much more complicated operations, such as acting as a clock, a signal counter, or a toggle. "
+				"Install a Module Expansion Card into one to allow it to perform much more complicated operations, such as acting as a clock, a signal counter, or a toggle. "
 			]
 			dependencies: ["000000000000010B"]
 			id: "0000000000000120"
@@ -1300,11 +1302,7 @@
 			title: "Prime Delivery"
 			x: 0.0d
 			y: -13.0d
-			description: [
-				"The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "
-				""
-				"A number of special trades have been added to Enigmatica 6 which allow trading a set of survey tools for different materials from various dimensions. Try them out to obtain rare and unusual items!"
-			]
+			description: ["The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "]
 			dependencies: ["0000000000000145"]
 			id: "0000000000000148"
 			tasks: [{
@@ -1315,7 +1313,9 @@
 			rewards: [{
 				id: "705F9A21C798611B"
 				type: "item"
-				item: "kubejs:amadron_survey_tools"
+				item: "minecraft:emerald"
+				count: 8
+				random_bonus: 8
 			}]
 		}
 		{
@@ -1689,6 +1689,7 @@
 				"Random mobs may be released from a core by Sneak + Right Clicking it on the ground, allowing easier transportation of mobs even before the Pressurized Spawner is available. "
 			]
 			dependencies: ["000000000000041F"]
+			min_width: 250
 			id: "000000000000041B"
 			tasks: [
 				{
@@ -1729,6 +1730,30 @@
 			}]
 			rewards: [{
 				id: "0000000000000432"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Thermal Lagging"
+			x: -12.0d
+			y: -10.0d
+			subtitle: "The Prison for Heat"
+			description: ["Thermal Laggings are insulating covers for machines to help with keeping heat. They greatly reduce a heat loss to the environment, and you can interact with any machine thought them!"]
+			dependencies: ["00000000000000D2"]
+			min_width: 225
+			id: "11D71F1F1AB7FBE2"
+			tasks: [{
+				id: "135A07E2CE99ACF8"
+				type: "item"
+				item: "pneumaticcraft:thermal_lagging"
+				count: 6L
+			}]
+			rewards: [{
+				id: "47D3331CF00A35CB"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"

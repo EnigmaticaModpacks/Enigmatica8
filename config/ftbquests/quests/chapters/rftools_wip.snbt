@@ -294,7 +294,7 @@
 				""
 				"The two main blocks you’ll need are receivers and transmitters: the first ones are where you can teleport to, and the second ones are where you can teleport from."
 				""
-				" First of all, set down some receivers in the places where you want to teleport and make sure they are powered. Then, place down a Transmitter and a Dialing Device somewhere in your base."
+				"First of all, set down some receivers in the places where you want to teleport and make sure they are powered. Then, place down a Transmitter and a Dialing Device somewhere in your base."
 				""
 				"The Dialing Device will be able to see all the public Receivers in the world and the private ones for which you are whitelisted (you can also name Receivers to identify them more easily)."
 				""
@@ -643,7 +643,7 @@
 				""
 				"Since the process is a bit complex and would get too wordy for the quest, I suggest you look at this video to get a better understanding of the controller: https://www.youtube.com/watch?v=ksaJgiipaOg."
 				""
-				" It will take some getting used to, but for the more complex automation setups XNet will always be your best friend."
+				"It will take some getting used to, but for the more complex automation setups XNet will always be your best friend."
 			]
 			dependencies: ["000000000000034A"]
 			size: 1.5d
@@ -772,10 +772,23 @@
 					type: "item"
 					title: "Dimensional Cell"
 					item: {
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							value: "rftools:dimensionalcell"
+							items: [
+								{
+									id: "rftoolspower:dimensionalcell"
+									Count: 1b
+								}
+								{
+									id: "rftoolspower:dimensionalcell_advanced"
+									Count: 1b
+								}
+								{
+									id: "rftoolspower:dimensionalcell_simple"
+									Count: 1b
+								}
+							]
 						}
 					}
 				}

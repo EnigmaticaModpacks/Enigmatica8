@@ -169,8 +169,6 @@
 				"● When transformed, sneak and press your Throw key to remove a given book. "
 				""
 				"●Craft the Tome with a book to merge them once more. "
-				""
-				"Note: Akashic Tome is a bit broken, and book is covering half of the manuals. This is only visual bug, so book is 100% functional!"
 			]
 			dependencies: ["0000000000000045"]
 			min_width: 250

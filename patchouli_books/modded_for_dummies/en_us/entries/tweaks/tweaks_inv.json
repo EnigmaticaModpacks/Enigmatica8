@@ -1,15 +1,15 @@
 {
-    "name": "Inventory Tweaks",
+    "name": "Quark inventory tweaks",
     "icon": "minecraft:chest",
     "category": "patchouli:tweaks",
     "pages": [
         {
             "type": "text",
-            "text": "$(#ffa500)$(l)Inventory Tweaks$(reset)’ main focus is, well, your inventory. Maybe it’s most famous addition is clicking $(k:invtweaks_sort_either.desc) to $(l)sort any inventory$(reset) you’re currently navigating."
+            "text": "$(#ffa500)$(l)Quark$(reset) adds a bit functionality to your inventory. Do you see those little buttons when you open any inventory? Those allow you to sort items, move them from or into your inventory (even filtered to match already stored ones), and search for specific item if inventory is huge!"
         },
         {
             "type": "text",
-            "text": "Other handy features introduced by the mod include auto-refilling items in your hotbar if you have more of them in your inventory and replacing a tool when it breaks, if you have another one ready."
+            "text": "You can also sort any inventory with just one click. Press $(l)$(k:quark.keybind.sort_container)$() to $(l)sort any inventory$(reset) you’re currently navigating, or $(l)$(k:quark.keybind.sort_player)$() to sort your inventory!"
         }
     ]
 }

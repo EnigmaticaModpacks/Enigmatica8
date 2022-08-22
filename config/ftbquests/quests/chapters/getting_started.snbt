@@ -204,6 +204,16 @@
 									}
 								}
 							}
+							tetra: {
+								id: "tetra:holo"
+								Count: 1b
+								tag: {
+									"holo/core_material": "frame/dim"
+									"holo/frame": "holo/frame"
+									"holo/core": "holo/core"
+									"holo/frame_material": "core/ancient"
+								}
+							}
 							theoneprobe: {
 								id: "theoneprobe:probenote"
 								Count: 1b
@@ -256,6 +266,10 @@
 										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.immersiveengineering.manual\"}]}"
 									}
 								}
+							}
+							alexsmobs: {
+								id: "alexsmobs:animal_dictionary"
+								Count: 1b
 							}
 							botania: {
 								id: "botania:lexicon"

@@ -30,7 +30,7 @@
 				id: "4623F41B74F1829E"
 				type: "item"
 				title: "Iron Chunk"
-				item: "emendatusenigmatica:iron_chunk"
+				item: "minecraft:raw_iron"
 				count: 4
 				random_bonus: 8
 			}]
@@ -325,7 +325,7 @@
 			y: 1.0d
 			subtitle: "Capissen 38 Mark II"
 			description: [
-				"A simple furnace, like a standard coal burning furnace except  faster and more efficient."
+				"A simple furnace, like a standard coal burning furnace except faster and more efficient."
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
@@ -728,7 +728,7 @@
 			x: -0.5d
 			y: 4.0d
 			description: [
-				"Found mostly in shallow pools and deep beneath bedrock, Crude Oil may also be extracted from Bitumen Ore if great care is taken in extracting it from the ground. "
+				"Found mostly in shallow pools and deep beneath bedrock."
 				""
 				"Gather some up and begin processing it through a Fractionating Still. With a bit of refining, it can be converted into an excellent fuel source."
 			]
@@ -759,7 +759,7 @@
 			description: [
 				"Based on the ancient art of spinning things until they fly apart, Centrifuges are a vital part of industry, allowing for efficient separation of materials. "
 				""
-				"Useful for a variety of purposes, its also the first step in creating a versatile and energy dense liquid fuel.  "
+				"Useful for a variety of purposes, its also the first step in creating a versatile and energy dense liquid fuel."
 			]
 			hide_dependency_lines: false
 			dependencies: ["00000000000004AF"]

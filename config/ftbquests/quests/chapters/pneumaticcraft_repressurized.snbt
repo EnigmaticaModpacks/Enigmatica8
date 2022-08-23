@@ -80,7 +80,7 @@
 					type: "command"
 					title: "Rare PNC:R Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 					player_command: false
 				}
 				{
@@ -88,7 +88,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
 					player_command: false
 				}
 			]
@@ -176,11 +176,12 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
 		{
+			icon: "pneumaticcraft:liquid_compressor"
 			x: -15.5d
 			y: -12.5d
 			subtitle: "A Cleaner Burn"
@@ -191,17 +192,30 @@
 			]
 			dependencies: ["00000000000000B3"]
 			id: "00000000000000C7"
-			tasks: [{
-				id: "00000000000000C8"
-				type: "item"
-				item: "pneumaticcraft:liquid_compressor"
-			}]
+			tasks: [
+				{
+					id: "07969B05E7B03A24"
+					type: "item"
+					item: "pneumaticcraft:pressure_gauge_module"
+				}
+				{
+					id: "707B2893DDB5687C"
+					type: "item"
+					item: "pneumaticcraft:liquid_compressor"
+				}
+				{
+					id: "0A35E0FC9BF0D4C2"
+					type: "item"
+					item: "pneumaticcraft:pressure_tube"
+					count: 8L
+				}
+			]
 			rewards: [{
 				id: "00000000000000C9"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -270,7 +284,7 @@
 					type: "command"
 					title: "Farmer's Delight"
 					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
 					player_command: false
 				}
 			]
@@ -350,7 +364,7 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
@@ -427,7 +441,7 @@
 					type: "command"
 					title: "Rare PNC:R Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 					player_command: false
 				}
 				{
@@ -435,7 +449,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
 					player_command: false
 				}
 			]
@@ -503,7 +517,7 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
@@ -581,7 +595,7 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
@@ -603,7 +617,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -625,7 +639,7 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
@@ -684,7 +698,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -706,7 +720,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -728,7 +742,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -753,7 +767,7 @@
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -845,7 +859,7 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
@@ -867,7 +881,7 @@
 					type: "command"
 					title: "Epic PNC:R Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 					player_command: false
 				}
 				{
@@ -942,7 +956,7 @@
 					type: "command"
 					title: "Farmer's Delight"
 					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
 					player_command: false
 				}
 			]
@@ -970,7 +984,7 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
@@ -995,7 +1009,7 @@
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1016,7 +1030,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1108,7 +1122,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1129,7 +1143,7 @@
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1251,7 +1265,7 @@
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1321,7 +1335,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1346,7 +1360,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1382,7 +1396,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1441,7 +1455,7 @@
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1462,7 +1476,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1512,7 +1526,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1538,7 +1552,7 @@
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1584,7 +1598,7 @@
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1650,7 +1664,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1693,7 +1707,7 @@
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1718,7 +1732,7 @@
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
 			}]
 		}

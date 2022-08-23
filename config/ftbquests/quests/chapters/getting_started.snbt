@@ -40,7 +40,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -118,7 +118,7 @@
 			}]
 		}
 		{
-			title: "Modded for Dummies [WIP]"
+			title: "Modded for Dummies"
 			x: 1.5d
 			y: -7.5d
 			subtitle: "Hey, listen!"
@@ -155,7 +155,7 @@
 			}]
 		}
 		{
-			title: "Book [WIP]"
+			title: "Book"
 			x: -1.5d
 			y: -7.5d
 			subtitle: "Don't Panic"
@@ -169,9 +169,9 @@
 				"● When transformed, sneak and press your Throw key to remove a given book. "
 				""
 				"●Craft the Tome with a book to merge them once more. "
-				""
 			]
 			dependencies: ["0000000000000045"]
+			min_width: 250
 			id: "1F5D6018C2E35C3D"
 			tasks: [{
 				id: "7781E2B735D79B56"
@@ -179,577 +179,421 @@
 				item: "minecraft:book"
 			}]
 			rewards: [{
-				id: "6E4E5D6908D19095"
+				id: "68C0A864D96B2AC8"
 				type: "item"
 				title: "Full Akashic Tome"
-				icon: {
-					id: "akashictome:tome"
-					Count: 1b
-					tag: {
-						"akashictome:data": {
-							industrialforegoing: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "industrialforegoing:industrial_foregoing"
-								}
-							}
-							tetra: {
-								id: "tetra:holo"
-								Count: 1.0d
-								tag: {
-									"holo/core_material": "frame/dim"
-									"holo/frame": "holo/frame"
-									"holo/core": "holo/core"
-									"holo/frame_material": "core/ancient"
-								}
-							}
-							resourcefulbees: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
-								}
-							}
-							theoneprobe: {
-								id: "theoneprobe:probenote"
-								Count: 1.0d
-							}
-							astralsorcery: {
-								id: "astralsorcery:tome"
-								Count: 1.0d
-							}
-							ftbquests: {
-								id: "ftbquests:book"
-								Count: 1.0d
-							}
-							alexsmobs: {
-								id: "alexsmobs:animal_dictionary"
-								Count: 1.0d
-							}
-							immersiveengineering: {
-								id: "immersiveengineering:manual"
-								Count: 1.0d
-							}
-							eidolon: {
-								id: "eidolon:codex"
-								Count: 1.0d
-							}
-							botania: {
-								id: "botania:lexicon"
-								Count: 1.0d
-								tag: { }
-							}
-							thermal: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "thermal:guidebook"
-								}
-							}
-							patchouli: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "patchouli:modded_for_dummies"
-								}
-							}
-							rftoolsbase: {
-								id: "rftoolsbase:manual"
-								Count: 1.0d
-							}
-							integrateddynamics: {
-								id: "integrateddynamics:on_the_dynamics_of_integration"
-								Count: 1.0d
-							}
-							cookingforblockheads: {
-								id: "cookingforblockheads:crafting_book"
-								Count: 1.0d
-							}
-							powah: {
-								id: "powah:book"
-								Count: 1.0d
-							}
-							pneumaticcraft: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "pneumaticcraft:book"
-								}
-							}
-							naturesaura: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "naturesaura:book"
-								}
-							}
-							apotheosis: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "apotheosis:apoth_chronicle"
-								}
-							}
-							pedestals: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "pedestals:manual"
-								}
-							}
-							transport: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "transport:guide"
-								}
-							}
-							engineersdecor: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "engineersdecor:engineersdecor_manual"
-								}
-							}
-							occultism: {
-								id: "occultism:dictionary_of_spirits"
-								Count: 1.0d
-							}
-							solcarrot: {
-								id: "solcarrot:food_book"
-								Count: 1.0d
-							}
-							modularrouters: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "modularrouters:book"
-								}
-							}
-							ars_nouveau: {
-								id: "ars_nouveau:worn_notebook"
-								Count: 1.0d
-							}
-							bloodmagic: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "bloodmagic:guide"
-								}
-							}
-							betterendforge: {
-								id: "betterendforge:guidebook"
-								Count: 1.0d
-							}
-						}
-					}
-				}
 				item: {
 					id: "akashictome:tome"
 					Count: 1b
 					tag: {
+						"akashictome:is_morphing": 1b
 						"akashictome:data": {
 							industrialforegoing: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Industrial Foregoing's Manual"
+										text: "{\"translate\":\"text.industrialforegoing.book.title\"}"
 									}
 									"patchouli:book": "industrialforegoing:industrial_foregoing"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Industrial Foregoing's Manual\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"text.industrialforegoing.book.title\"}]}"
 									}
 								}
 							}
 							tetra: {
 								id: "tetra:holo"
-								Count: 1
+								Count: 1b
 								tag: {
-									"akashictome:displayName": {
-										text: "Holosphere"
-									}
-									"holo/frame": "holo/frame"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Holosphere\"}]}"
-									}
 									"holo/core_material": "frame/dim"
+									"holo/frame": "holo/frame"
 									"holo/core": "holo/core"
 									"holo/frame_material": "core/ancient"
 								}
 							}
-							tconstruct: {
-								id: "tconstruct:encyclopedia"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Encyclopedia of Tinkering"
-									}
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Encyclopedia of Tinkering\"}]}"
-									}
-								}
-							}
-							resourcefulbees: {
-								id: "patchouli:guide_book"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Fifty Shades of Bees"
-									}
-									"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Fifty Shades of Bees\"}]}"
-									}
-								}
-							}
-							astralsorcery: {
-								id: "astralsorcery:tome"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Astral Tome"
-									}
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Astral Tome\"}]}"
-									}
-								}
-							}
 							theoneprobe: {
 								id: "theoneprobe:probenote"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "The One Probe Read Me"
+										text: "{\"translate\":\"item.theoneprobe.probenote\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"The One Probe Read Me\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.theoneprobe.probenote\"}]}"
 									}
 								}
 							}
 							ftbquests: {
 								id: "ftbquests:book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Quest Book"
+										text: "{\"translate\":\"item.ftbquests.book\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Quest Book\"}]}"
-									}
-								}
-							}
-							alexsmobs: {
-								id: "alexsmobs:animal_dictionary"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Animal Dictionary"
-									}
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Animal Dictionary\"}]}"
-									}
-								}
-							}
-							immersiveengineering: {
-								id: "immersiveengineering:manual"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Engineer's Manual"
-									}
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Engineer's Manual\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.ftbquests.book\"}]}"
 									}
 								}
 							}
 							advancedperipherals: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Advanced Peripherals"
+										text: "{\"translate\":\"Advanced Peripherals\"}"
 									}
 									"patchouli:book": "advancedperipherals:manual"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Advanced Peripherals\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"Advanced Peripherals\"}]}"
 									}
 								}
 							}
-							eidolon: {
-								id: "eidolon:codex"
-								Count: 1
+							immersiveengineering: {
+								id: "immersiveengineering:manual"
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Ars Ecclesia"
+										text: "{\"translate\":\"item.immersiveengineering.manual\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Ars Ecclesia\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.immersiveengineering.manual\"}]}"
 									}
 								}
+							}
+							alexsmobs: {
+								id: "alexsmobs:animal_dictionary"
+								Count: 1b
 							}
 							botania: {
 								id: "botania:lexicon"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Lexica Botania"
+										text: "{\"translate\":\"item.botania.lexicon\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Lexica Botania\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.botania.lexicon\"}]}"
 									}
 								}
 							}
 							sushigocrafting: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Becoming an Itamae (Sushi Go Crafting Manual)"
+										text: "{\"translate\":\"text.sushigocrafting.book.title\"}"
 									}
 									"patchouli:book": "sushigocrafting:sushigocrafting"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Becoming an Itamae (Sushi Go Crafting Manual)\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"text.sushigocrafting.book.title\"}]}"
 									}
 								}
 							}
 							thermal: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Thermalpedia"
+										text: "{\"translate\":\"thermal.book.name\"}"
 									}
 									"patchouli:book": "thermal:guidebook"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Thermalpedia\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"thermal.book.name\"}]}"
 									}
 								}
 							}
 							patchouli: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Modded for Dummies"
+										text: "{\"translate\":\"Modded for Dummies\"}"
 									}
 									"patchouli:book": "patchouli:modded_for_dummies"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Modded for Dummies\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"Modded for Dummies\"}]}"
 									}
 								}
 							}
 							rftoolsbase: {
 								id: "rftoolsbase:manual"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Technology Guide"
+										text: "{\"translate\":\"item.rftoolsbase.manual\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Technology Guide\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.rftoolsbase.manual\"}]}"
 									}
 								}
 							}
-							integrateddynamics: {
-								id: "integrateddynamics:on_the_dynamics_of_integration"
-								Count: 1
+							laserio: {
+								id: "patchouli:guide_book"
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "On the Dynamics of Integration"
+										text: "{\"translate\":\"LaserIO 101\"}"
 									}
+									"patchouli:book": "laserio:laseriobook"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"On the Dynamics of Integration\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"LaserIO 101\"}]}"
 									}
 								}
 							}
 							cookingforblockheads: {
 								id: "cookingforblockheads:crafting_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Cooking for Blockheads II"
+										text: "{\"translate\":\"item.cookingforblockheads.crafting_book\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Cooking for Blockheads II\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.cookingforblockheads.crafting_book\"}]}"
+									}
+								}
+							}
+							timber_frames: {
+								id: "patchouli:guide_book"
+								Count: 1b
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"item.timber_frames.guide\"}"
+									}
+									"patchouli:book": "timber_frames:timberframesguide"
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.timber_frames.guide\"}]}"
+									}
+								}
+							}
+							integratedtunnels: {
+								id: "integrateddynamics:on_the_dynamics_of_integration"
+								Count: 1b
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"item.integrateddynamics.on_the_dynamics_of_integration\"}"
+									}
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.integrateddynamics.on_the_dynamics_of_integration\"}]}"
 									}
 								}
 							}
 							powah: {
 								id: "powah:book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Manual (Powah!)"
+										text: "{\"translate\":\"item.powah.book\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Manual (Powah!)\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.powah.book\"}]}"
 									}
 								}
 							}
 							pneumaticcraft: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "PNC:R Manual"
+										text: "{\"translate\":\"pneumaticcraft.patchouli.book.name\"}"
 									}
 									"patchouli:book": "pneumaticcraft:book"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"PNC:R Manual\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"pneumaticcraft.patchouli.book.name\"}]}"
 									}
 								}
 							}
 							naturesaura: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Book of Natural Aura"
+										text: "{\"translate\":\"item.naturesaura.book.name\"}"
 									}
 									"patchouli:book": "naturesaura:book"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Book of Natural Aura\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.naturesaura.book.name\"}]}"
 									}
 								}
 							}
 							apotheosis: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Chronicle of Shadows"
+										text: "{\"translate\":\"book.apotheosis.name\"}"
 									}
 									"patchouli:book": "apotheosis:apoth_chronicle"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Chronicle of Shadows\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"book.apotheosis.name\"}]}"
 									}
 								}
 							}
-							pedestals: {
+							simpleplanes: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Pedestals"
+										text: "{\"translate\":\"The Guide to Planes & Helicopters\"}"
 									}
-									"patchouli:book": "pedestals:manual"
+									"patchouli:book": "simpleplanes:planes_book"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Pedestals\"}]}"
-									}
-								}
-							}
-							transport: {
-								id: "patchouli:guide_book"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Advanced Transport"
-									}
-									"patchouli:book": "transport:guide"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Advanced Transport\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"The Guide to Planes & Helicopters\"}]}"
 									}
 								}
 							}
 							littlelogistics: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Little Logistics Guide"
+										text: "{\"translate\":\"Little Logistics Guide\"}"
 									}
 									"patchouli:book": "littlelogistics:guide"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Little Logistics Guide\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"Little Logistics Guide\"}]}"
 									}
 								}
 							}
 							engineersdecor: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Engineer's Decor"
+										text: "{\"translate\":\"engineersdecor.book.name\"}"
 									}
 									"patchouli:book": "engineersdecor:engineersdecor_manual"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Engineer's Decor\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"engineersdecor.book.name\"}]}"
 									}
 								}
 							}
 							occultism: {
 								id: "occultism:dictionary_of_spirits"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Dictionary of Spirits"
+										text: "{\"translate\":\"book.occultism.name\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Dictionary of Spirits\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"book.occultism.name\"}]}"
 									}
 								}
 							}
 							solcarrot: {
 								id: "solcarrot:food_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Food Book"
+										text: "{\"translate\":\"item.solcarrot.food_book\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Food Book\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.solcarrot.food_book\"}]}"
 									}
 								}
 							}
 							modularrouters: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Modular Routers Manual"
+										text: "{\"translate\":\"modularrouters.patchouli.book.name\"}"
 									}
 									"patchouli:book": "modularrouters:book"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Modular Routers Manual\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"modularrouters.patchouli.book.name\"}]}"
 									}
 								}
 							}
 							ars_nouveau: {
 								id: "ars_nouveau:worn_notebook"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Worn Notebook"
+										text: "{\"translate\":\"item.ars_nouveau.worn_notebook\"}"
 									}
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Worn Notebook\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.ars_nouveau.worn_notebook\"}]}"
+									}
+								}
+							}
+							hexcasting: {
+								id: "patchouli:guide_book"
+								Count: 1b
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"item.hexcasting.book\"}"
+									}
+									"patchouli:book": "hexcasting:thehexbook"
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.hexcasting.book\"}]}"
 									}
 								}
 							}
 							bloodmagic: {
 								id: "patchouli:guide_book"
-								Count: 1
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "Sanguine Scientiem"
+										text: "{\"translate\":\"guide.bloodmagic.name\"}"
 									}
 									"patchouli:book": "bloodmagic:guide"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Sanguine Scientiem\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"guide.bloodmagic.name\"}]}"
 									}
 								}
 							}
-							betterendforge: {
-								id: "betterendforge:guidebook"
-								Count: 1
+							twilightforest: {
+								id: "patchouli:guide_book"
+								Count: 1b
 								tag: {
 									"akashictome:displayName": {
-										text: "The End for Dummies"
+										text: "{\"translate\":\"item.twilightforest.guide\"}"
 									}
+									"patchouli:book": "twilightforest:guide"
+									"akashictome:is_morphing": 1b
 									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"The End for Dummies\"}]}"
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.twilightforest.guide\"}]}"
+									}
+								}
+							}
+							ftbic: {
+								id: "patchouli:guide_book"
+								Count: 1b
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"Industrious Instructions\"}"
+									}
+									"patchouli:book": "ftbic:ftbic_guide"
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"Industrious Instructions\"}]}"
 									}
 								}
 							}

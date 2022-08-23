@@ -9,11 +9,12 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Now you're playing with Powah!"
 			icon: "powah:book"
 			x: 1.5d
 			y: -1.5d
 			shape: "gear"
-			subtitle: "Now you're playing with Powah!"
+			subtitle: "The Powah is PowahFul!"
 			description: [
 				"Welcome to Powah! In this chapter you will learn all about one of Minecraft’s newest power generation, storage and transportation mods. "
 				"We will cover most of what the mod has to offer: from the very basics of power generation to multiblock reactors and wireless power! "
@@ -83,7 +84,7 @@
 			shape: "hexagon"
 			subtitle: "Dielectric all the things!"
 			description: [
-				"Before we get into the various cool blocks and items Powah offers, let’s familiarize with some of the basic resources the mod will ask you to craft. Dielectric Paste is needed for most basic crafting components, so get used to seeing a lot. "
+				"Before we get into the various cool blocks and items Powah offers, let’s familiarize with some of the basic resources the mod will ask you to craft. Dielectric Paste is needed for most basic crafting components, so get used to seeing it a lot. "
 				""
 				"Automating it, keeping a Lava tank somewhere or a Blaze farm could be very useful! You can immediately see how it’s used to make some of Powah’s most basic components, like dielectric rods, that are themselves used to craft up a dielectric casing. "
 				"This is what you will use to get started making most of the different machines we will see in the chapter, so let’s make a few!"
@@ -169,7 +170,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 					player_command: false
 				}
 			]
@@ -298,7 +299,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -420,7 +421,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 					player_command: false
 				}
 			]
@@ -479,7 +480,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -503,7 +504,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -515,7 +516,7 @@
 			description: [
 				"You’ve seen all the basic means Powah has to generate FE, now it’s time to step it up and get into the big boys: let’s make a reactor! "
 				""
-				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! Usually an ore, you can get it using Powah’s Energizing Orb with regular Uranium. Go get some!"
+				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! Usually from an ore, you can get more of it using Powah’s Energizing Orb. Go get some!"
 			]
 			dependencies: ["000000000000018C"]
 			id: "0000000000000186"
@@ -757,7 +758,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -888,7 +889,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -971,7 +972,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -1108,7 +1109,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 					player_command: false
 				}
 			]
@@ -1138,7 +1139,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -1163,7 +1164,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -1188,7 +1189,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 				player_command: false
 			}]
 		}
@@ -1249,7 +1250,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 					player_command: false
 				}
 			]
@@ -1353,7 +1354,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
 					player_command: false
 				}
 			]

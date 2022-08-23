@@ -516,7 +516,7 @@
 			description: [
 				"You’ve seen all the basic means Powah has to generate FE, now it’s time to step it up and get into the big boys: let’s make a reactor! "
 				""
-				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! Usually from an ore, you can get more of it using Powah’s Energizing Orb. Go get some!"
+				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! It can be found underground as an Ore. Consider using Powah! Energizing Orb to double your Uranite yield. What are you waiting for? Go get some!"
 			]
 			dependencies: ["000000000000018C"]
 			id: "0000000000000186"

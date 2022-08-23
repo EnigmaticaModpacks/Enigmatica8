@@ -262,18 +262,18 @@
 				""
 				"Thankfully, the Blood Altar allows items to be piped in, either via Hopper or most any other item transport method. When piped in, up to a full stack may be transmuted at once. Of course, the LP cost remains the same per item, but the overall time to transmute does drop since there is no pause between each item."
 				""
-				"Early on, it may not be wise to insert a full stack, however. Let me introduce Routing nodes to help with that problem! Use the provided items to set up some simple automation."
+				"Early on, it may not be wise to insert a full stack, however. Consider the following in order to automate the altar in a simple manner with use of Router Nodes."
 				""
-				"● One Master Routing Node is required per network. Every node needs to be connected to it, directly or by another node."
+				"● Place down a pair of chests nearby with an Input and Output node on each. Position hardly matters, as Routing Nodes don't need to see each other. Another Input and Output node must each be placed on the Altar itself."
 				""
-				"● Input and Output Routing Nodes will be useful for transportation of stone from a chest into an altar, and produced Blank Slates from the altar."
+				"● Next place the Master Routing Node anywhere nearby. The nodes may now be linked together by way of the Linking Tool. For this example, the order of linking doesn't matter. When properly linked and with the Linking Tool in hand, the nodes will have a beam of light between them. Ensure there's one beam linking each node either to another node or to the Master Node with at least one connection from the network to the Master Node."
 				""
-				"● Filters are required for any Input / Output node to work. You can set in its settings max item amount in inventory, filter mode and 9 items to filter."
+				"● Filters are required in all Input and Output nodes. To configure them, hold them and right click in the air. An empty deny list will allow an Input Node to pull anything from a chest, whereas an allow list configured to Stone and set to 16 in an Output Node will only allow that node to store 16 Stone in the connected inventory. Perfect for keeping just a few stone in the Altar, or a specific number of Slates in an output chest."
 				""
-				"Use Node Router to bind one node to another. For more information about Routing Nodes, check out Sanguine Scientiem."
+				"Now just supply some blood to the Altar, place some stone into Input chest and everything should work. You can change max amount of items processed at once by changing amount limits in whitelist filters."
 			]
 			dependencies: ["000000000000089F"]
-			min_width: 300
+			min_width: 350
 			id: "00000000000008B6"
 			tasks: [{
 				id: "00000000000008B7"

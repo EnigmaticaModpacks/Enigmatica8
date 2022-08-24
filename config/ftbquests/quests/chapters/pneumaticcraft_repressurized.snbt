@@ -709,7 +709,7 @@
 			x: -5.0d
 			y: -7.0d
 			subtitle: "What a Corny Joke"
-			description: ["Ethanol could be burned on its own, but it could be refined, what is definitely worth doing!"]
+			description: ["Ethanol could be burned on its own, but it could be refined, which is definitely worth doing!"]
 			dependencies: ["00000000000000FD"]
 			id: "0000000000000100"
 			tasks: [{
@@ -1742,7 +1742,7 @@
 			x: -12.0d
 			y: -10.0d
 			subtitle: "The Prison for Heat"
-			description: ["Thermal Laggings are insulating covers for machines to help with keeping heat. They greatly reduce heat loss, and you can interact with machines though them!"]
+			description: ["Thermal Laggings are insulating covers for machines to help with keeping heat. They greatly reduce heat loss, and you can interact with machines through them!"]
 			dependencies: ["00000000000000D2"]
 			min_width: 225
 			id: "11D71F1F1AB7FBE2"

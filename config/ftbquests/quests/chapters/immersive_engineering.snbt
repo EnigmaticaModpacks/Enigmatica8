@@ -13,11 +13,7 @@
 			x: -1.5d
 			y: -6.0d
 			shape: "gear"
-			description: [
-				"Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."
-				""
-				"Edited for E8 purposes by ~~Kanzaji"
-			]
+			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."]
 			size: 1.25d
 			optional: true
 			id: "0000000000000004"
@@ -1390,14 +1386,18 @@
 			x: 0.5d
 			y: -4.5d
 			description: [
-				"Item batcher is advanced filter block made specifically for use with conveyor belts and creating batches of items for machines."
+				"Item batcher is an advanced filter block made specifically for use with conveyor belts and creating batches of items for machines."
 				""
-				"It has a lot of filtering options, few modes of output (Single - Works like normal filter, if item matches it, will be redirected to output / Batch mode - All filters needs to be satisfied for all items to be redirected to the output) and emits Redstone depending on the state of Filters."
+				"It has a lot of filtering options and a few modes of output: "
 				""
-				"Check Engineer's Manual for more information."
+				"●  Single - Works like a normal filter, if an item matches it, it will be redirected to the output "
+				""
+				"●  Batch mode - All filters need to have their criteria met for all items to be redirected to the output"
+				""
+				"It will also emit Redstone signals depending on the state of Filters. Check the Engineer's Manual for more information."
 			]
 			dependencies: ["000000000000001E"]
-			min_width: 300
+			min_width: 325
 			id: "215AD1198A1BF8D0"
 			tasks: [{
 				id: "003B96D16776DCBA"
@@ -1417,13 +1417,14 @@
 			x: 1.5d
 			y: -6.0d
 			description: [
-				"Item Router is advanced item sorter made to work with conveyor belts."
+				"The Item Router is an advanced item sorter made to work with conveyor belts."
 				""
-				"It can output items on any side, as well get items from every side. However item can't be outputted to the side it was inserted from. If item doesn't match any filter, it will be outputted on not filtered side."
+				"It can in- and output items on every side. However items can't be outputted to the same side as they were inserted from. If an item doesn't match any filter, it will be redirected to a non-filtered side."
 				""
-				"There is also fluid alternative that works in similar way! Check out Engineer's Manual for more information about both of them."
+				"There is also a fluid alternative that works similarly! Check out the Engineer's Manual for more information about both of them."
 			]
 			dependencies: ["000000000000001E"]
+			min_width: 250
 			id: "0EBE89982E3C95BB"
 			tasks: [{
 				id: "49A0F91EA799410B"

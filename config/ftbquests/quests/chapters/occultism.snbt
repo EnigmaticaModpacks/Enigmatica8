@@ -1162,7 +1162,7 @@
 			x: 5.0d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["The possessed Enderman is a bit stronger than normal one, but it guarantees Ender Pearl drop!"]
+			description: ["The possessed Enderman is a bit stronger than a normal one, but it is guaranteed to drop Ender Pearl!"]
 			dependencies: ["0000000000000D9E"]
 			id: "0000000000000DC8"
 			tasks: [{

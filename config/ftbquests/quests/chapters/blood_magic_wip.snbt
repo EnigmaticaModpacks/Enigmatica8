@@ -262,18 +262,18 @@
 				""
 				"Thankfully, the Blood Altar allows items to be piped in, either via Hopper or most any other item transport method. When piped in, up to a full stack may be transmuted at once. Of course, the LP cost remains the same per item, but the overall time to transmute does drop since there is no pause between each item."
 				""
-				"Early on, it may not be wise to insert a full stack, however. Pretty Pipes has a few features that will assist here. Use the provided items to set up some simple automation. "
+				"Early on, it may not be wise to insert a full stack, however. Consider the following in order to automate the altar in a simple manner with use of Router Nodes."
 				""
-				"● The Extraction Modules will be useful for pulling Stone from a chest and the resulting Slates from the Altar."
+				"● Place down a pair of chests nearby with an Input and Output node on each. Position hardly matters, as Routing Nodes don't need to see each other. Another Input and Output node must each be placed on the Altar itself."
 				""
-				"● The Stack Limiters will prevent too many items going into the altar at once, and may also be used to permit only a certain number of slates in the output chest."
+				"● Next place the Master Routing Node anywhere nearby. The nodes may now be linked together by way of the Linking Tool. For this example, the order of linking doesn't matter. When properly linked and with the Linking Tool in hand, the nodes will have a beam of light between them. Ensure there's one beam linking each node either to another node or to the Master Node with at least one connection from the network to the Master Node."
 				""
-				"● Finally, the Filter Module will be useful for defining what's allowed to go into the output chest. Between this and the stack limiter, a stock keeping system can be set up to always keep 64 of each slate in the output chest."
+				"● Filters are required in all Input and Output nodes. To configure them, hold them and right click in the air. An empty deny list will allow an Input Node to pull anything from a chest, whereas an allow list configured to Stone and set to 16 in an Output Node will only allow that node to store 16 Stone in the connected inventory. Perfect for keeping just a few stone in the Altar, or a specific number of Slates in an output chest."
 				""
-				"A note on Pretty Pipes: A pipe with an Extraction Module cannot input into another inventory. Two lengths of pipe are required, one to extract, and another to insert."
+				"Now just supply some blood to the Altar, place some stone into Input chest and everything should work. You can change max amount of items processed at once by changing amount limits in whitelist filters."
 			]
 			dependencies: ["000000000000089F"]
-			min_width: 300
+			min_width: 350
 			id: "00000000000008B6"
 			tasks: [{
 				id: "00000000000008B7"
@@ -282,30 +282,31 @@
 			}]
 			rewards: [
 				{
-					id: "00000000000008BB"
+					id: "51A8A78A2BE73908"
 					type: "item"
-					title: "Low Filter Module"
-					item: "prettypipes:low_filter_module"
+					item: "bloodmagic:masterroutingnode"
 				}
 				{
-					id: "00000000000008BC"
+					id: "3D32C91A0FAEB8E5"
 					type: "item"
-					title: "Low Extraction Module"
-					item: "prettypipes:low_extraction_module"
+					item: "bloodmagic:outputroutingnode"
 					count: 2
 				}
 				{
-					id: "00000000000008BD"
+					id: "28535A75A42D5A20"
 					type: "item"
-					title: "Stack Limiter Module"
-					item: "prettypipes:stack_size_module"
+					item: "bloodmagic:inputroutingnode"
 					count: 2
 				}
 				{
-					id: "00000000000008BE"
+					id: "4BD2DF77B6D68E3C"
 					type: "item"
-					title: "Pipe"
-					item: "prettypipes:pipe"
+					item: "bloodmagic:noderouter"
+				}
+				{
+					id: "3D32EEAA59977088"
+					type: "item"
+					item: "bloodmagic:itemrouterfilterexact"
 					count: 4
 				}
 			]
@@ -539,15 +540,18 @@
 		{
 			title: "Blood Altar MK4"
 			icon: "bloodmagic:altar"
-			x: 1.5d
-			y: 6.5d
+			x: 2.5d
+			y: 7.5d
 			subtitle: "Attaining the Summit"
 			description: [
-				"In order to build the fourth and final tier of Blood Altar, a bit of dabbling in Alchemy will be required. "
+				"In order to build the fourth Blood Altar, a bit of dabbling in Alchemy will be required. "
 				""
 				"As with previous tiers, check the Sanguine Scientiem for a guide on how to build the upgraded altar, and be sure to upgrade your Blood Orb."
 			]
-			dependencies: ["00000000000008C7"]
+			dependencies: [
+				"3AAA889EE6E8873A"
+				"00000000000008B5"
+			]
 			id: "00000000000008E7"
 			tasks: [
 				{
@@ -675,8 +679,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 8.5d
+			x: 3.0d
+			y: 9.0d
 			subtitle: "Lost in the Dark"
 			description: [
 				"The Dusk Ritual Diviner allows a Sanguimancer to construct larger, more elaborate Rituals. "
@@ -921,7 +925,10 @@
 				""
 				"Finally, any node may be disabled with a Redstone signal, allowing more intelligent routing. For instance, an entire section of a network could be routed through a single Routing Node, allowing that section to be disabled when that node is powered. "
 			]
-			dependencies: ["00000000000008C7"]
+			dependencies: [
+				"00000000000008C7"
+				"00000000000008B5"
+			]
 			min_width: 300
 			id: "4357BD288BF6B33A"
 			tasks: [
@@ -955,31 +962,6 @@
 					count: 2
 				}
 			]
-		}
-		{
-			x: -3.0d
-			y: 6.5d
-			subtitle: "The Book is Mightier than the Sword"
-			description: [
-				"Multidisciplinary Sorcerers may prefer not to dirty their hands with a sword. If this sounds like you, the \"Sentient Harm\" glyph would make a good addition to your spellbook."
-				""
-				"Just like the Sentient Sword, the Sentient Harm glyph will drop Will from mobs that are killed with it - just swap the \"Harm\" glyph out for it in your attack spells. Just like the normal glyph, things like Amplify will apply when added."
-			]
-			dependencies: ["00000000000008A6"]
-			id: "6257CACC1274C997"
-			tasks: [{
-				id: "043C1AA85668AD68"
-				type: "item"
-				item: "ars_nouveau:glyph_sentientharm"
-			}]
-			rewards: [{
-				id: "0006651ED51BA2A9"
-				type: "command"
-				title: "Rare Blood Magic Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_blood_magic_loot_rare"
-				player_command: false
-			}]
 		}
 		{
 			x: -1.0d
@@ -1040,8 +1022,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 6.5d
+			x: 4.0d
+			y: 8.5d
 			description: [
 				"Simple cross-dimensional transport at a bargain price. With a pair of teleposers, one can transport items, entities, or even solid blocks from place to place. Whatever finds itself above the teleposer when activated by redstone will swap places with the linked teleposer instantly. "
 				""
@@ -1050,6 +1032,7 @@
 				"Be aware, using the teleposer costs LP from the owner’s Soul Network, with greater distances using more per trip. Refer to the Sanguine Scientiem for more details. "
 			]
 			dependencies: ["00000000000008E7"]
+			min_width: 250
 			id: "2563F1FF6E4B3445"
 			tasks: [{
 				id: "5B1A674980456429"
@@ -1120,6 +1103,128 @@
 					}
 				}
 			}]
+		}
+		{
+			title: "Simple Dungeons"
+			icon: "bloodmagic:mineentrancekey"
+			x: 1.5d
+			y: 6.5d
+			subtitle: "Edge of the Hidden Realm is close..."
+			description: [
+				"Demon Realm is waiting for you. Perform \"Edge of the Hidden Realm\" ritual to gain access to mysterious dungeons, Antechamber."
+				""
+				"Upon performing the ritual, you will see an Inversion Pillar. Right click it to be transported to the first foray of Demon Realm."
+				""
+				"In the mysterious rooms of the Demon Realm, you can find a lot of loot, but most important one is Tau Fruit. It is required for progression to MK4 Blood Altar. Don't worry, they can be farmed, but it will require some work. Check Sanguine Scientiem for more information."
+				""
+				"Make sure to take some Iron Keys with you! They will be useful faster than you think."
+				""
+				"Note that on activation of the ritual, it will consume all its ritual stones, unlike most other Blood Magic ritual!"
+			]
+			dependencies: [
+				"00000000000008C7"
+				"00000000000008E5"
+			]
+			min_width: 250
+			id: "3AAA889EE6E8873A"
+			tasks: [{
+				id: "21E7F2C837EBDBB9"
+				type: "item"
+				item: "bloodmagic:strong_tau"
+			}]
+			rewards: [
+				{
+					id: "002AF28892478C81"
+					type: "item"
+					item: "bloodmagic:weak_tau"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "511F7518F3970FB8"
+					type: "item"
+					item: "bloodmagic:simplekey"
+					random_bonus: 3
+				}
+			]
+		}
+		{
+			title: "Not-So-Simple Dungeons"
+			x: 3.0d
+			y: 6.5d
+			subtitle: "Endless Demon Realm is waiting."
+			description: [
+				"Increase of Difficulty and the reward. \"Pathway to Endless Realm\" ritual gains access to full Demon Realm with better loot, more rooms, and more secrets to discover!"
+				""
+				"Once again, you will see Inversion Pillar, which works in the same way as last time."
+				""
+				"Look out for special loot, like the \"Foreman's Key\", which grants access to the Mines, last and most difficult place of Demon Realms."
+				""
+				"Search for Demonite ore, which is needed for progression to MK5 Blood Altar, and only possible to obtain in Mines. Beware of different traps and difficulties on your way!"
+			]
+			dependencies: ["3AAA889EE6E8873A"]
+			min_width: 250
+			id: "07E1E82E74359189"
+			tasks: [{
+				id: "752099D74298C3BE"
+				type: "item"
+				title: "Demonite Ore"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "bloodmagic:dungeon_ore"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:rawdemonite"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5C1E1673E33A2837"
+				type: "item"
+				item: "bloodmagic:rawdemonite"
+				random_bonus: 7
+			}]
+		}
+		{
+			title: "Blood Altar MK5"
+			icon: "bloodmagic:altar"
+			x: 4.0d
+			y: 7.5d
+			subtitle: "The Final Step Up"
+			description: [
+				"The final, fifth Blood Altar requires a lot of effort and fighting in order to gather materials for it."
+				""
+				"As with each tier, check the Sanguine Scientiem for a guide on how to build the upgraded altar, and be sure to upgrade your Blood Orb to final tier as well!"
+				""
+				"Note: A lot of Tier V stuff is Work In Progress!"
+			]
+			dependencies: [
+				"00000000000008E7"
+				"07E1E82E74359189"
+			]
+			id: "4C6B2F630094BDE3"
+			tasks: [
+				{
+					id: "3B94E46A54F02513"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 52L
+				}
+				{
+					id: "08408E4DC6BEFA2F"
+					type: "item"
+					item: "bloodmagic:dungeon_metal"
+					count: 4L
+				}
+			]
 		}
 	]
 }

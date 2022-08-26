@@ -67,89 +67,6 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -5.0d
-			id: "28619E49157C73FE"
-			tasks: [{
-				id: "124102D88E74BB65"
-				type: "item"
-				item: "bloodmagic:masterbloodorb"
-			}]
-			rewards: [{
-				id: "0917A808DE276817"
-				type: "gamestage"
-				title: "Master Blood Orb"
-				auto: "invisible"
-				stage: "master_blood_orb"
-			}]
-		}
-		{
-			x: -7.0d
-			y: -5.0d
-			id: "7F501A95E6E9C7A6"
-			tasks: [{
-				id: "1F386E8BDBE651FF"
-				type: "item"
-				item: {
-					id: "occultism:chalk_red"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "5D12D220379855E1"
-				type: "gamestage"
-				auto: "invisible"
-				stage: "red_chalk"
-			}]
-		}
-		{
-			x: -8.5d
-			y: -5.0d
-			id: "0D3EFC571F771C0B"
-			tasks: [{
-				id: "2CAEC5249040770D"
-				type: "item"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "bloodmagic:soulgemlesser"
-								Count: 1b
-								tag: {
-									souls: 256.0d
-								}
-							}
-							{
-								id: "bloodmagic:soulgemcommon"
-								Count: 1b
-								tag: {
-									souls: 1024.0d
-								}
-							}
-							{
-								id: "bloodmagic:soulgemgreater"
-								Count: 1b
-								tag: {
-									souls: 4096.0d
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "7CBA6F3356BEE33B"
-				type: "gamestage"
-				auto: "invisible"
-				stage: "lesser_tartaric_gem"
-			}]
-		}
-		{
 			title: "Tier 1 Jetpack"
 			icon: {
 				id: "ironjetpacks:jetpack"
@@ -187,8 +104,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -9.5d
+			x: -7.0d
+			y: -6.5d
 			id: "1C3893EE1E5C6AAA"
 			tasks: [{
 				id: "35713147A16CD27C"

@@ -42,10 +42,9 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000504"
-				type: "item"
-				title: "Pestle and Mortar"
-				item: "botania:pestle_and_mortar"
+				id: "0F47CE453081A5B6"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 		{
@@ -420,6 +419,7 @@
 				"000000000000051B"
 				"000000000000051F"
 			]
+			min_width: 250
 			id: "0000000000000521"
 			tasks: [{
 				id: "0000000000000522"
@@ -529,7 +529,7 @@
 		{
 			title: "Dice of Fate"
 			icon: "botania:dice"
-			x: 12.0d
+			x: 12.5d
 			y: 4.5d
 			subtitle: "Twist the Blade"
 			description: [
@@ -1318,8 +1318,8 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 4.0d
+			x: 11.5d
+			y: 4.5d
 			subtitle: "Conway's Game"
 			description: [
 				"A game of simple rules, yet complex outcomes, much like the living systems it mimics. Unlocking its mysteries will provide you with enormous mana for very little input."
@@ -1352,33 +1352,8 @@
 			]
 		}
 		{
-			x: 13.0d
+			x: 13.5d
 			y: 4.0d
-			subtitle: "It Grows On You"
-			description: [
-				"Not every material is as susceptible to mana's ability to spontaneously re-organize it, but by binding it with a still pulsing Spirit of Gaia, that property can be forced on nearly anything. "
-				""
-				"Timeless Ivy can be combined with anything that's normally repairable on an anvil. Place the item, a Timeless Ivy, and three of whatever material is used to repair the item in a crafting grid to bind it. For example, a Diamond Sword would require three diamonds. "
-			]
-			dependencies: ["0000000000000524"]
-			id: "00000000000005A2"
-			tasks: [{
-				id: "00000000000005A3"
-				type: "item"
-				item: "botaniaadditions:regen_ivy"
-			}]
-			rewards: [{
-				id: "00000000000005CD"
-				type: "command"
-				title: "Legendary Botania Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_botania_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: 14.0d
-			y: 3.5d
 			subtitle: "Open Veins"
 			description: ["The final iteration of the Mana Spreader, infused with the very essence of Gaia herself to maximize throughput. "]
 			dependencies: ["0000000000000524"]
@@ -1398,8 +1373,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 3.5d
+			x: 10.5d
+			y: 4.0d
 			subtitle: "Mind the Gap"
 			description: ["With the potent energies of Gaia to stabilize it, a small pocket dimension can be formed to store an unreal number of items. "]
 			dependencies: ["0000000000000524"]

@@ -14,6 +14,7 @@
 			y: -6.0d
 			shape: "gear"
 			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."]
+			size: 1.25d
 			optional: true
 			id: "0000000000000004"
 			tasks: [{
@@ -239,6 +240,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
+				auto: "disabled"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
 				player_command: false
 			}]
@@ -1379,6 +1381,72 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
 				player_command: false
 			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			description: [
+				"Item batcher is an advanced filter block made specifically for use with conveyor belts and creating batches of items for machines."
+				""
+				"It has a lot of filtering options and a few modes of output: "
+				""
+				"●  Single - Works like a normal filter, if an item matches it, it will be redirected to the output "
+				""
+				"●  Batch mode - All filters need to have their criteria met for all items to be redirected to the output"
+				""
+				"It will also emit Redstone signals depending on the state of Filters. Check the Engineer's Manual for more information."
+			]
+			dependencies: ["000000000000001E"]
+			min_width: 325
+			id: "215AD1198A1BF8D0"
+			tasks: [{
+				id: "003B96D16776DCBA"
+				type: "item"
+				item: "immersiveengineering:item_batcher"
+			}]
+			rewards: [{
+				id: "70A61D684AF8B5FF"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.0d
+			description: [
+				"The Item Router is an advanced item sorter made to work with conveyor belts."
+				""
+				"It can in- and output items on every side. However items can't be outputted to the same side as they were inserted from. If an item doesn't match any filter, it will be redirected to a non-filtered side."
+				""
+				"There is also a fluid alternative that works similarly! Check out the Engineer's Manual for more information about both of them."
+			]
+			dependencies: ["000000000000001E"]
+			min_width: 250
+			id: "0EBE89982E3C95BB"
+			tasks: [{
+				id: "49A0F91EA799410B"
+				type: "item"
+				item: "immersiveengineering:sorter"
+			}]
+			rewards: [
+				{
+					id: "68122104D91373C0"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "0638125734E46ED2"
+					type: "item"
+					item: "immersiveengineering:conveyor_vertical"
+					count: 4
+					random_bonus: 4
+				}
+			]
 		}
 	]
 }

@@ -1,3 +1,17 @@
+### Enigmatica 8 v2.2.1
+
+_Using Forge-1.18.2-40.1.73_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.2.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.2.1.md)_
+
+**New Mods!**
+
+-   [Tips](https://www.curseforge.com/minecraft/mc-mods/tips) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
+
+**Improvements/Changes**
+
+**Bug Fixes**
+
+---
+
 ### Enigmatica 8 v2.2.0
 
 _Using Forge-1.18.2-40.1.73_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.2.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.2.0.md)_

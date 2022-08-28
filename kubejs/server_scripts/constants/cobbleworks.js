@@ -9,17 +9,12 @@ const generatableCobblestone = [
     'byg:scoria_cobblestone',
     'byg:soapstone',
     'byg:travertine',
-    'minecraft:cobblestone',
-    'minecraft:cobbled_deepslate',
     'undergarden:depthrock',
     'undergarden:shiverstone',
     'undergarden:tremblecrust'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
-    'minecraft:andesite',
-    'minecraft:diorite',
-    'minecraft:granite',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:dacite',
@@ -34,7 +29,6 @@ const generatableStone = [
     'quark:jasper',
     'quark:limestone',
     'quark:permafrost',
-    'minecraft:deepslate',
     'create:scoria',
     'create:limestone',
     'quark:myalite',

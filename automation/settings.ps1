@@ -168,7 +168,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"valhelsia_core-client.toml",
 	"xnet-client.toml",
 	"jei/jei-client.ini",
-	"tempad_client.json"
+	"tempad_client.json",
+	"defaultoptions/servers.dat",
+	"defaultoptions/extra"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")

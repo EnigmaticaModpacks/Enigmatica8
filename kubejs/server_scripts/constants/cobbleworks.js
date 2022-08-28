@@ -3,7 +3,7 @@
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer cobblegens.
 const generatableCobblestone = [
     // 'byg:dacite_cobblestone',
-    // 'byg:ether_stone',
+    'byg:cobbled_ether_stone',
     // 'byg:purpur_stone',
     // 'byg:red_rock',
     // 'byg:scoria_cobblestone',
@@ -11,7 +11,8 @@ const generatableCobblestone = [
     // 'byg:travertine',
     // 'undergarden:depthrock',
     // 'undergarden:shiverstone',
-    // 'undergarden:tremblecrust'
+    // 'undergarden:tremblecrust',
+    // 'blue_skies:turquoise_cobblestone'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
@@ -32,6 +33,20 @@ const generatableStone = [
     // 'create:scoria',
     // 'create:limestone',
     // 'quark:myalite',
-    // 'quark:dusky_myalite'
+    // 'quark:dusky_myalite',
+    'blue_skies:turquoise_stone',
+    'blue_skies:rimestone',
+    // 'minecraft:dripstone_block',
+    'quark:soul_sandstone',
+    'blue_skies:midnight_sandstone',
+    'blue_skies:lunar_stone',
+    'blue_skies:crystal_sandstone',
+    'blue_skies:blinding_stone',
+    'blue_skies:nature_stone',
+    'blue_skies:poison_stone',
+    'byg:windswept_sandstone',
+    // 'byg:ether_stone',
+    'byg:cryptic_stone',
+    'twilightforest:mazestone'
 ];
 const generatableBasalt = [];

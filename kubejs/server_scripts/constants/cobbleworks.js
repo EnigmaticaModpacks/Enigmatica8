@@ -52,7 +52,13 @@ const generatableStone = [
     'byg:windswept_sandstone',
     'byg:ether_stone',
     'byg:cryptic_stone',
-    'twilightforest:mazestone'
+    'twilightforest:mazestone',
+    'create:asurine',
+    'minecraft:tuff',
+    'create:crimsite',
+    'create:ochrum',
+    'create:scorchia',
+    'create:veridium'
 ];
 const generatableBasalt = [];
 
@@ -82,5 +88,11 @@ const excludeDuplicatesCobbleGen = [
     'minecraft:granite',
     'minecraft:andesite',
     'minecraft:deepslate',
-    'blue_skies:turquoise_cobblestone'
+    'blue_skies:turquoise_cobblestone',
+    'create:asurine',
+    'minecraft:tuff',
+    'create:crimsite',
+    'create:ochrum',
+    'create:scorchia',
+    'create:veridium'
 ];

@@ -19,6 +19,11 @@ onEvent('recipes', (event) => {
 
 //stoneworks functions
 function pedestals_stoneworks(event, material, type) {
+    
+    if (excludeDuplicatesCobbleGen.includes(material)) {
+        return
+    }
+    
     var recipeType = 'pedestals:pedestal_cobblegen';
 
     if (type == 'stone') {
@@ -41,6 +46,11 @@ function pedestals_stoneworks(event, material, type) {
 }
 
 function industrialforegoing_stoneworks(event, material, type) {
+    
+    if (excludeDuplicatesCobbleGen.includes(material)) {
+        return
+    }
+    
     var waterConsume = 0;
     var lavaConsume = 0;
 
@@ -66,6 +76,11 @@ function industrialforegoing_stoneworks(event, material, type) {
 }
 
 function thermal_stoneworks(event, material) {
+    
+    if (excludeDuplicatesCobbleGen.includes(material)) {
+        return
+    }
+    
     fallback_id(
         event.custom({
             type: 'thermal:rock_gen',

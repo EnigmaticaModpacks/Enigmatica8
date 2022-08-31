@@ -29,6 +29,17 @@ onEvent('recipes', (event) => {
                 S: '#minecraft:planks'
             },
             id: `${id_prefex}chest_1`
+        },
+        {
+            output: '10x minecraft:chain',
+            pattern: [' S ',
+                      ' I ',
+                      ' S '],
+            key: {
+                S: 'minecraft:iron_nugget',
+                I: '#forge:ingots/iron'
+            },
+            id: `minecraft:chain`
         }
     ];
 

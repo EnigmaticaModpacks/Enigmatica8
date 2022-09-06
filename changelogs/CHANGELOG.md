@@ -1,3 +1,28 @@
+### Enigmatica 8 v2.2.1
+
+_Using Forge-1.18.2-40.1.73_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.2.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.2.1.md)_
+
+**New Mods!**
+
+-   [Tips](https://www.curseforge.com/minecraft/mc-mods/tips) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
+
+**Improvements/Changes**
+
+-   Tips! from Enigmatica 6 Port. [\#235](https://github.com/EnigmaticaModpacks/Enigmatica8/pull/235) ([Kanzaji](https://github.com/Kanzaji))
+-   add some notable contributors as potential spirit names in occultism [\#232](https://github.com/EnigmaticaModpacks/Enigmatica8/pull/232) ([atlgeek007](https://github.com/atlgeek007))
+-   Quest Rework Part 2 [\#229](https://github.com/EnigmaticaModpacks/Enigmatica8/pull/229) ([Kanzaji](https://github.com/Kanzaji))
+
+**Bug Fixes**
+
+-   IntegratedDynamics \(Mechanical\) Squeezer Recipes not showing in JEI [\#236](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/236)
+-   Killing Shulker while bullet is in midair causing Null Pointer Exception while ticking entity [\#230](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/230)
+-   Crash [\#224](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/224)
+-   Possible race condition? java.lang.NullPointerException: Cannot invoke "net.creeperhost.ftbbackups.org.quartz.Scheduler.clear\(\)" because "net.creeperhost.ftbbackups.FTBBackups.scheduler" is null [\#214](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/214)
+-   Akashic Tome Fix [\#228](https://github.com/EnigmaticaModpacks/Enigmatica8/pull/228) ([Kanzaji](https://github.com/Kanzaji))
+-   Fixed Quest Loot Boxes sometimes containing unintended Apotheosis loot [\#226](https://github.com/EnigmaticaModpacks/Enigmatica8/pull/226) ([Kanzaji](https://github.com/Kanzaji))
+
+---
+
 ### Enigmatica 8 v2.2.0
 
 _Using Forge-1.18.2-40.1.73_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.2.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.2.0.md)_

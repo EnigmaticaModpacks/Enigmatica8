@@ -27,9 +27,9 @@
 	["The Graveyard - Structures Config".medium_graveyard]
 		canGenerate = true
 		#Range: 0 ~ 200
-		spacing = 18
+		spacing = 30
 		#Range: 0 ~ 200
-		separation = 16
+		separation = 28
 		#Range: 0 ~ 10000000000
 		salt = 1690192399
 		whitelist = ["#forest"]
@@ -40,9 +40,9 @@
 	["The Graveyard - Structures Config".small_graveyard]
 		canGenerate = true
 		#Range: 0 ~ 200
-		spacing = 20
+		spacing = 32
 		#Range: 0 ~ 200
-		separation = 18
+		separation = 30
 		#Range: 0 ~ 10000000000
 		salt = 240451934
 		whitelist = ["#plains"]
@@ -53,9 +53,9 @@
 	["The Graveyard - Structures Config".large_graveyard]
 		canGenerate = true
 		#Range: 0 ~ 200
-		spacing = 12
+		spacing = 56
 		#Range: 0 ~ 200
-		separation = 10
+		separation = 54
 		#Range: 0 ~ 10000000000
 		salt = 304812394
 		whitelist = ["#forest", "#taiga"]
@@ -79,9 +79,9 @@
 	["The Graveyard - Structures Config".haunted_house]
 		canGenerate = true
 		#Range: 0 ~ 200
-		spacing = 25
+		spacing = 36
 		#Range: 0 ~ 200
-		separation = 20
+		separation = 34
 		#Range: 0 ~ 10000000000
 		salt = 451235912
 		whitelist = ["#forest", "#swamp"]
@@ -118,9 +118,9 @@
 	["The Graveyard - Structures Config".small_grave]
 		canGenerate = true
 		#Range: 0 ~ 200
-		spacing = 12
+		spacing = 18
 		#Range: 0 ~ 200
-		separation = 8
+		separation = 16
 		#Range: 0 ~ 10000000000
 		salt = 661903018
 		whitelist = ["#taiga", "#forest", "#plains"]
@@ -144,9 +144,9 @@
 	["The Graveyard - Structures Config".small_savanna_grave]
 		canGenerate = true
 		#Range: 0 ~ 200
-		spacing = 12
+		spacing = 18
 		#Range: 0 ~ 200
-		separation = 8
+		separation = 16
 		#Range: 0 ~ 10000000000
 		salt = 709787761
 		whitelist = ["#mesa", "#savanna"]
@@ -196,9 +196,9 @@
 	["The Graveyard - Structures Config".crypt]
 		canGenerate = true
 		#Range: 0 ~ 200
-		spacing = 14
+		spacing = 24
 		#Range: 0 ~ 200
-		separation = 12
+		separation = 22
 		#Range: 0 ~ 10000000000
 		salt = 893183913
 		whitelist = ["#underground"]

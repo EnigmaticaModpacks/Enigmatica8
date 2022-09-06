@@ -9,12 +9,12 @@
 	#Example: ["minecraft:stone|2","minecraft:dirt|1"]
 	#Forge tags are supported
 	[general.lists]
-		#Cobble gen
-		block_list_cobble = ["minecraft:cobblestone|60", "minecraft:coal_ore|25", "minecraft:iron_ore|20", "minecraft:redstone_ore|20", "minecraft:lapis_ore|20", "minecraft:emerald_ore|5", "minecraft:gold_ore|10", "minecraft:diamond_ore|5"]
-		#Stone gen
-		block_list_stone = ["minecraft:stone|30", "minecraft:granite|10", "minecraft:diorite|10", "minecraft:andesite|10"]
 		#Basalt gen
-		block_list_basalt = ["minecraft:basalt|60", "minecraft:blackstone|60", "minecraft:netherrack|60", "minecraft:nether_quartz_ore|30", "minecraft:nether_gold_ore|30", "minecraft:ancient_debris|1"]
+		block_list_basalt = ["minecraft:basalt|1", "minecraft:basalt|1"]
+		#Cobble gen
+		block_list_cobble = ["minecraft:cobblestone|1", "minecraft:cobblestone|1"]
+		#Stone gen
+		block_list_stone = ["minecraft:stone|1", "minecraft:stone|1"]
 
 		#Custom settings
 		[general.lists.custom]
@@ -29,5 +29,5 @@
 			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
 			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
 			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
-			custom_generators = []
+			custom_generators = [["cobblestone", "minecraft:iron_block", ["enigmatica:cobbleworks/cobblestone"]], ["cobblestone", "undergarden:tremblecrust", ["undergarden:tremblecrust"]], ["cobblestone", "byg:dacite_cobblestone", ["byg:dacite_cobblestone"]], ["cobblestone", "byg:ether_stone", ["byg:ether_stone"]], ["cobblestone", "byg:purpur_stone", ["byg:purpur_stone"]], ["cobblestone", "byg:red_rock", ["byg:red_rock"]], ["cobblestone", "byg:scoria_cobblestone", ["byg:scoria_cobblestone"]], ["cobblestone", "byg:soapstone", ["byg:soapstone"]], ["cobblestone", "undergarden:depthrock", ["undergarden:depthrock"]], ["cobblestone", "undergarden:shiverstone", ["undergarden:shiverstone"]], ["cobblestone", "byg:travertine", ["byg:travertine"]], ["cobblestone", "minecraft:blackstone", ["minecraft:blackstone"]], ["stone", "minecraft:diamond_block", ["enigmatica:cobbleworks/stone"]], ["stone", "minecraft:andesite", ["minecraft:andesite"]], ["stone", "minecraft:diorite", ["minecraft:diorite"]], ["stone", "minecraft:granite", ["minecraft:granite"]], ["stone", "byg:black_sandstone", ["byg:black_sandstone"]], ["stone", "byg:blue_sandstone", ["byg:blue_sandstone"]], ["stone", "byg:dacite", ["byg:dacite"]], ["stone", "byg:purple_sandstone", ["byg:purple_sandstone"]], ["stone", "byg:pink_sandstone", ["byg:pink_sandstone"]], ["stone", "byg:scoria_stone", ["byg:scoria_stone"]], ["stone", "byg:white_sandstone", ["byg:white_sandstone"]], ["stone", "minecraft:red_sandstone", ["minecraft:red_sandstone"]], ["stone", "minecraft:sandstone", ["minecraft:sandstone"]], ["stone", "quark:jasper", ["quark:jasper"]], ["stone", "quark:limestone", ["quark:limestone"]], ["stone", "quark:permafrost", ["quark:permafrost"]], ["stone", "create:scoria", ["create:scoria"]], ["stone", "create:limestone", ["create:limestone"]], ["stone", "quark:myalite", ["quark:myalite"]], ["stone", "quark:dusky_myalite", ["quark:dusky_myalite"]], ["stone", "byg:brimstone", ["byg:brimstone"]], ["stone", "blue_skies:rimestone", ["blue_skies:rimestone"]], ["stone", "blue_skies:turquoise_stone", ["blue_skies:turquoise_stone"]], ["cobblestone", "blue_skies:turquoise_cobblestone", ["blue_skies:turquoise_cobblestone"]], ["stone", "minecraft:dripstone_block", ["minecraft:dripstone_block"]], ["stone", "quark:soul_sandstone", ["quark:soul_sandstone"]], ["stone", "blue_skies:midnight_sandstone", ["blue_skies:midnight_sandstone"]], ["stone", "blue_skies:lunar_stone", ["blue_skies:lunar_stone"]], ["stone", "blue_skies:crystal_sandstone", ["blue_skies:crystal_sandstone"]], ["stone", "blue_skies:blinding_stone", ["blue_skies:blinding_stone"]], ["stone", "blue_skies:nature_stone", ["blue_skies:nature_stone"]], ["stone", "byg:windswept_sandstone", ["byg:windswept_sandstone"]], ["stone", "byg:cobbled_ether_stone", ["byg:cobbled_ether_stone"]], ["stone", "byg:cryptic_stone", ["byg:cryptic_stone"]], ["stone", "twilightforest:mazestone", ["twilightforest:mazestone"]], ["stone", "create:asurine", ["create:asurine"]], ["stone", "minecraft:tuff", ["minecraft:tuff"]], ["stone", "create:crimsite", ["create:crimsite"]], ["stone", "create:ochrum", ["create:ochrum"]], ["stone", "create:scorchia", ["create:scorchia"]], ["stone", "create:veridium", ["create:veridium"]]]
 

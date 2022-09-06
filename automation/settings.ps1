@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "2.2.0"
+$MODPACK_VERSION = "2.2.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "2.1.0"
+$LAST_MODPACK_VERSION = "2.2.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -66,10 +66,10 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
@@ -168,7 +168,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"valhelsia_core-client.toml",
 	"xnet-client.toml",
 	"jei/jei-client.ini",
-	"tempad_client.json"
+	"tempad_client.json",
+	"defaultoptions/servers.dat",
+	"defaultoptions/extra"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")

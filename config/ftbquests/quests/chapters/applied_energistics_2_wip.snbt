@@ -1,0 +1,24 @@
+{
+	id: "0B477CDEAABF1801"
+	group: "0856CF7F5CBEB20A"
+	order_index: 2
+	filename: "applied_energistics_2_wip"
+	title: "Applied Energistics 2 [WIP]"
+	icon: "ae2:drive"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		icon: "ae2:network_tool"
+		x: 0.0d
+		y: 0.0d
+		shape: "gear"
+		size: 2.0d
+		optional: true
+		id: "029656A1597547F9"
+		tasks: [{
+			id: "36C5E69A78A3237E"
+			type: "checkmark"
+			title: "Got it!"
+		}]
+	}]
+}

@@ -32,17 +32,7 @@ onEvent('jei.information', (event) => {
             text: ['Obtained by tossing any coral through a Nether Portal from the Overworld']
         },
         {
-            items: [
-                'quark:red_crystal',
-                'quark:orange_crystal',
-                'quark:yellow_crystal',
-                'quark:green_crystal',
-                'quark:blue_crystal',
-                'quark:indigo_crystal',
-                'quark:violet_crystal',
-                'quark:white_crystal',
-                'quark:black_crystal'
-            ],
+            items: [/quark:\w+_corundum$/],
             text: [
                 'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
                 ' ',
@@ -50,7 +40,7 @@ onEvent('jei.information', (event) => {
             ]
         },
         {
-            items: [/quark:\w+_crystal_cluster/],
+            items: [/quark:\w+_corundum_cluster/],
             text: ['Grows occasionally on Corundum Blocks when grown underground.']
         },
         {
@@ -80,18 +70,6 @@ onEvent('jei.information', (event) => {
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
-        },
-        {
-            items: ['quark:root_item'],
-            text: [
-                'Drops occasionally when breaking Cave Roots.',
-                ' ',
-                'Cave Roots may be crafted and grown just like Vines, though they require low light to grow.'
-            ]
-        },
-        {
-            items: ['quark:root'],
-            text: ['May be crafted and grown just like Vines, though they require low light to grow.']
         },
         {
             items: ['minecraft:firework_rocket'],
@@ -129,34 +107,20 @@ onEvent('jei.information', (event) => {
             text: [`Gathered with Shears.`]
         },
         {
-            items: ['atum:anputs_fingers_spores'],
-            text: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
-        },
-        {
             items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
             text: [`May be used to provide Heat for PneumaticCraft machines.`]
-        },
-        {
-            items: ['immersiveengineering:logic_circuit'],
-            text: [
-                `Used in a Logic Unit to create advanced Redstone Logic.`,
-                ` `,
-                `Crafted in an Engineer's Circuit Table. Requires Circuit Backplanes and Lead or Copper Wire. Vacuum Tubes are required for all operators except SET.`
-            ]
         },
         {
             items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
             text: [
                 `Obtained by defeating the Warped Mosco.`,
                 ` `,
-                `Warped Mosco are creatures of nightmare created when a Crimson Mosquito sucks the blood of a Mungus covered in Warped Fungus.`
+                `Warped Moscos are creatures of nightmare created when a Crimson Mosquito sucks the blood of a Mungus covered in Warped Fungus.`
             ]
         },
         {
             items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
-            text: [
-                `Mungus may be summoned through the Altar of Birthing, while Crimson Mosquitos may be created by bringing a Fly into the Nether.`
-            ]
+            text: [`Crimson Mosquitos may be created by bringing a Fly into the Nether.`]
         },
         {
             items: ['bloodmagic:weak_tau'],
@@ -165,19 +129,6 @@ onEvent('jei.information', (event) => {
         {
             items: ['bloodmagic:strong_tau'],
             text: [`Produced by growing Tau near mobs.`]
-        },
-        {
-            items: ['immersiveengineering:cloche'],
-            text: [
-                `Available Fertilizers:`,
-                ` `,
-                `Bone Meal: 1.25x`,
-                `Floral Fertilizer: 1.5x`,
-                `Green Fertilizer: 1.5x`,
-                `Fertilizer: 1.7x`,
-                `Red Fertilizer: 2.0x`,
-                `Phyto-Gro: 3.0x`
-            ]
         },
         {
             items: ['quark:dragon_scale'],
@@ -228,12 +179,6 @@ onEvent('jei.information', (event) => {
             ]
         },
         {
-            items: ['create:chromatic_compound', 'create:shadow_steel'],
-            text: [
-                `Chromatic Compound absorbs darkness when dropped into the void, returning as Shadow Steel, floating back up out of the void shortly after falling into the depths.`
-            ]
-        },
-        {
             items: ['naturesaura:projectile_generator'],
             text: [`Valid Projectiles:`, ``, `● Snowballs`, `● Eggs`, `● Arrows`, `● Fire Charges`, `● Spectral Arrows`]
         },
@@ -264,6 +209,13 @@ onEvent('jei.information', (event) => {
         event.add(
             stone,
             'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
+        );
+    });
+
+    disabledItems.forEach((item) => {
+        event.add(
+            item,
+            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 8's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica8/issues"
         );
     });
 });

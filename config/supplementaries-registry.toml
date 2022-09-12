@@ -81,6 +81,10 @@
 	silver_door = true
 	lead_trapdoor = true
 	lead_door = true
+	sugar_cube = true
+	lapis_bricks = true
+	relayer = true
+	crystal_display = true
 
 [items]
 	flute = true

@@ -1,0 +1,6 @@
+
+[codex]
+	#What theme should the encyclopedia arcana be in?
+	#Allowed Values: DEFAULT, EASY_READING
+	bookTheme = "DEFAULT"
+

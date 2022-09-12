@@ -315,6 +315,11 @@
 		# Range: 1.0 ~ 100000.0
 		"Nuclear reactor capacity": 50000.0d
 		
+		# Energy or Steam multiplier for Nuclear Reactor Output
+		# Default: 1.0
+		# Range: 0.1 ~ 100.0
+		"Nuclear Reactor output multiplier": 1.0d
+		
 		# Energy usage of the Overclocker
 		# Default: 1.6
 		# Range: 0.0 ~ 100000.0

@@ -1,9 +1,13 @@
 #Whether the ctrl key will instead turn *off* the color gradient on patterns
 ctrlTogglesOffStrokeOrder = false
-#How fast the point showing you the stroke order on patterns moves
-#Range: 0.0 ~ Infinity
-manaToHealthRate = 1.0
 #When using a staff, the distance from one dot you have to go to snap to the next dot, where 0.5 means 50% of the way.
 #Range: 0.5 ~ 1.0
 gridSnapThreshold = 0.5
+#How fast the point showing you the stroke order on patterns moves
+#Range: 0.0 ~ Infinity
+patternPointSpeedMultiplier = 1.0
+#Whether scrolling up (as opposed to down) will increase the page index of the spellbook, and vice versa
+invertSpellbookScrollDirection = false
+#Whether scrolling up (as opposed to down) will increase the value of the abacus, and vice versa
+invertAbacusScrollDirection = false
 

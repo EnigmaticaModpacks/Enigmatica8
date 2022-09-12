@@ -53,7 +53,33 @@
 		#Amount of blaze quartz ore veins.
 		blazeQuartzAmount = 16
 
+	[worldgen.natural_quartz_geode]
+		#Should quartz geodes generate?
+		generateQuartzGeodes = true
+		#Which dimensions can quartz geodes generate in?
+		quartzGeodeDimensions = ["minecraft:overworld"]
+
+	[worldgen.rare_earth]
+		#Should rare earth generate?
+		generateRareEarth = true
+		#Which dimensions can rare earths generate in?
+		rareEarthDimensions = ["minecraft:overworld"]
+
+	[worldgen.natural_quartz]
+		#Should natural quartz ore generate?
+		generateBrilliantStone = true
+		#Size of natural quartz ore veins.
+		naturalQuartzSize = 4
+		#Amount of natural quartz ore veins.
+		naturalQuartzAmount = 1
+		#Minimum height at which natural quartz ore can spawn.
+		naturalQuartzMinY = -64
+		#Maximum height at which natural quartz ore can spawn.
+		naturalQuartzMaxY = 10
+
 [spirit]
+	#If set to true, any spirits dropped will simply take the form of an item.
+	noFancySpirits = false
 
 	[spirit.affinity]
 
@@ -77,6 +103,10 @@
 	[spirit.spawner]
 		#If set to true, mob spawners will create soulless mobs instead.
 		lameSpawners = false
+
+	[spirit.defaults]
+		#Whether entities without spirit jsons will use the default spirit data for their category.
+		defaultSpiritValues = true
 
 [item]
 

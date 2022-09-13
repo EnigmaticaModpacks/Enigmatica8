@@ -23,7 +23,7 @@
 				""
 				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. "
 				""
-				"~MuteTiefling"
+				"~MuteTiefling \\& Kanzaji"
 			]
 			optional: true
 			id: "0000000000000C40"
@@ -92,7 +92,7 @@
 				"Note that glue is only needed for connecting blocks that aren't captured by a Chassis, for instance if blocks extend in front of the wind mill. Glue is not needed at all if sails are attached directly to the Chassis, but then, where’s the fun of that? Make it Pretty!"
 			]
 			dependencies: ["0000000000000CBA"]
-			min_width: 250
+			min_width: 300
 			id: "0000000000000CBD"
 			tasks: [
 				{
@@ -174,7 +174,7 @@
 				""
 				"Apply a redstone signal to the fan begin producing power."
 				""
-				"--------------------------------"
+				"-------------------------------------------------"
 				""
 				"To use the fan for crafting, it must be set up to blow through Lava, Water, or Fire. Items dropped in the stream of air on the far side will be Smelted, Washed, or Smoked, respectively."
 				""
@@ -188,6 +188,7 @@
 				"0000000000000CBD"
 				"0000000000000CFC"
 			]
+			min_width: 300
 			id: "0000000000000CC4"
 			tasks: [{
 				id: "0000000000000CC5"
@@ -207,49 +208,6 @@
 					title: "Magma Block"
 					item: "minecraft:magma_block"
 					count: 4
-				}
-			]
-		}
-		{
-			icon: "create:flywheel"
-			x: 4.0d
-			y: 5.0d
-			subtitle: "Held in High Esteem"
-			description: [
-				"The ultimate in compact power generation. The Furnace engine is a three-part multi-block structure that provides the highest possible SU generation. "
-				""
-				"In order to run, the Furnace or Blast Furnace must be activated (lit). This would normally require it to be smelting something, though there are other ways to achieve this state."
-				""
-				"To build it, place the Furnace Engine on top of a Furnace or Blast Furnace. This will cover the furnace and a large section will project out from one side. On that side, leave an air block, then place the Flywheel (third block from the furnace). "
-			]
-			dependencies: ["0000000000000CBD"]
-			id: "0000000000000CC6"
-			tasks: [
-				{
-					id: "0000000000000CC7"
-					type: "item"
-					item: "create:furnace_engine"
-				}
-				{
-					id: "0000000000000CC8"
-					type: "item"
-					item: "create:flywheel"
-				}
-			]
-			rewards: [
-				{
-					id: "0000000000000D76"
-					type: "command"
-					title: "Legendary Create Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
-					player_command: false
-				}
-				{
-					id: "0000000000000D8A"
-					type: "item"
-					title: "Blast Furnace"
-					item: "minecraft:blast_furnace"
 				}
 			]
 		}
@@ -395,6 +353,7 @@
 				"Additionally, two large cogwheels can be interlocked perpendicularly to allow a shaft to change directions. Useful for going around corners or bringing power down from high above."
 			]
 			dependencies: ["0000000000000CCC"]
+			min_width: 250
 			id: "0000000000000CD6"
 			tasks: [
 				{
@@ -999,11 +958,11 @@
 		}
 		{
 			icon: "create:fluid_valve"
-			x: -2.5d
+			x: -1.5d
 			y: 4.0d
 			subtitle: "Shut The Front Door"
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "]
-			dependencies: ["0000000000000D0F"]
+			dependencies: ["0000000000000D11"]
 			id: "0000000000000D13"
 			tasks: [
 				{
@@ -1027,11 +986,11 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.0d
 			y: 5.0d
 			subtitle: "Reverse Osmosis Filter"
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "]
-			dependencies: ["0000000000000D0F"]
+			dependencies: ["0000000000000D11"]
 			id: "0000000000000D15"
 			tasks: [{
 				id: "0000000000000D16"
@@ -1139,11 +1098,11 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -2.5d
 			y: 4.0d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
-			dependencies: ["0000000000000D11"]
+			dependencies: ["0000000000000D0F"]
 			id: "0000000000000D23"
 			tasks: [{
 				id: "0000000000000D24"
@@ -1581,8 +1540,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 5.0d
+			x: -3.5d
+			y: 4.0d
 			subtitle: "Well, There's an Upside and a Downside"
 			description: [
 				"With a Hose Pulley, fluids may be pumped into or out of the world. Create massive lakes or drain them dry to let your factory grow!"
@@ -1591,7 +1550,7 @@
 				""
 				"Note, the Hose Pulley itself does not pump by itself. Lower the hose into the fluid body and use set up a Mechanical Pump to do the work for you. "
 			]
-			dependencies: ["0000000000000D11"]
+			dependencies: ["0000000000000D17"]
 			id: "0000000000000D49"
 			tasks: [{
 				id: "0000000000000D4A"
@@ -1664,7 +1623,7 @@
 			description: [
 				"Stayed out too late par-tea-ing like it's 1773? Need a little more tranquili-tea in your life?"
 				""
-				"Try some Builder's Tea! It doesn't take oolong to prepare."
+				"Try some Builder's Tea! It doesn't take too long to prepare."
 			]
 			dependencies: ["0000000000000D0B"]
 			id: "0000000000000D52"
@@ -1776,6 +1735,131 @@
 				title: "Gunpowder"
 				item: "minecraft:gunpowder"
 				count: 16
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			subtitle: "Draining everything you want... if it's a fluid of course."
+			description: [
+				"The Item drain is useful for draining fluids from any fluid-containing items, like buckets or bottles. It has small internal tank, from which fluids can be accessed by pipes."
+				""
+				"Really useful for storing honey from your bee farm!"
+			]
+			dependencies: ["0000000000000D0F"]
+			min_width: 225
+			id: "28D17B54F4DE4D86"
+			tasks: [{
+				id: "251340C776442923"
+				type: "item"
+				item: "create:item_drain"
+			}]
+			rewards: [{
+				id: "4DF5697B73CC2E0D"
+				type: "command"
+				title: "Rare Create Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			subtitle: "*Phweeeeeeeeee* Train is coming!"
+			description: [
+				"The Steam Whistle uses steam generated by the Boiler to, you guessed it, whistle! Provide a Redstone signal to activate it, at the cost of a bit of steam."
+				""
+				"Additional whistles can be placed on top of the first one to control the octave. Also, the pitch can be controlled by using a wrench on the whistle!"
+			]
+			dependencies: ["0216A883C7992FD4"]
+			id: "1BF01EC920CAFAA9"
+			tasks: [{
+				id: "01A62AEA390FB14D"
+				type: "item"
+				item: "create:steam_whistle"
+			}]
+			rewards: [{
+				id: "2202F48443F8CB93"
+				type: "command"
+				title: "Rare Create Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Boiler and Steam production"
+			icon: "create:blaze_burner"
+			x: -4.0d
+			y: 3.0d
+			subtitle: "Isn't that just water in a tank?"
+			description: [
+				"With specific machines and at least 2x2 base, a Fluid tank can also function as a Boiler for steam production. It does require water and heat to function, and also any machine that uses steam connected."
+				""
+				"A Boiler has 3 different statistics, each of them can go up to level 18."
+				"- Size: Can go up to 3x3 base, 8 blocks high."
+				"- Water: Determines how much water is in the Boiler."
+				"- Heat: Determines how much heat is transmitted into the Boiler."
+				""
+				"Size and Water are fairly simple, but heat requires a bit of explanation."
+				"One Blaze Burner adds an additional heat level, up to level 9 with a 3x3 base. However, later on, you might want to get a bit more out of your boiler."
+				"You can get additional levels by Super-Heating the Boiler with Blaze cakes! Each one of the Super-Heated burners adds an additional level of heat."
+				""
+				"The final Steam generation rate is affected by the boiler level, which is equal to the lowest statistic of it."
+				""
+				"Note that steam can't be pushed into anything other than a machine that requires it, so be careful with placement of the boiler!"
+			]
+			dependencies: [
+				"0000000000000D17"
+				"0000000000000D0C"
+			]
+			min_width: 390
+			id: "0216A883C7992FD4"
+			tasks: [
+				{
+					id: "57475E928AA806B5"
+					type: "item"
+					item: "create:fluid_tank"
+					count: 8L
+				}
+				{
+					id: "363FDD8101225BFC"
+					type: "item"
+					item: "create:blaze_burner"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "150E9A43DF054ECC"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			subtitle: "High Pressure Steam... isn't that dangerous?"
+			description: [
+				"The ultimate SU Generator in existence. The Steam Engine uses the power of high pressure steam to generate insane amounts of SU."
+				""
+				"Just place one or more of them on the boiler, a shaft with 1 block seperation, heat up your boiler and you are good to go!"
+				"The level of the Boiler will affect the final SU generation rate, and it determines how many Steam engines it can power."
+			]
+			dependencies: [
+				"0000000000000CBD"
+				"57475E928AA806B5"
+				"363FDD8101225BFC"
+			]
+			min_width: 300
+			id: "5B54E008C558007F"
+			tasks: [{
+				id: "7D00F9504A3F354F"
+				type: "item"
+				item: "create:steam_engine"
 			}]
 		}
 	]

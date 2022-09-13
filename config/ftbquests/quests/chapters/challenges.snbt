@@ -170,7 +170,7 @@
 			description: [
 				"Fill a Supreme Black Hole Tank with Lava."
 				""
-				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected, as well as Display icon!"
 			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "64A6812D6EFF4308"
@@ -268,34 +268,11 @@
 				id: "2CEB97E39BE8BBE5"
 				type: "item"
 				item: {
-					id: "trofers:large_trophy"
+					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "minecraft:lava_bucket"
-								Count: 1b
-							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Top: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Middle: {
-									Red: 176
-									Blue: 38
-									Green: 46
-								}
-							}
-							Name: "Lava Trophy"
+							Trophy: "enigmatica:trofers/lava"
 						}
 					}
 				}
@@ -333,7 +310,7 @@
 			description: [
 				"Fill a Supreme Black Hole Tank with Water."
 				""
-				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected, as well as Display icon!"
 			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "6D463AE8FE933401"
@@ -496,7 +473,7 @@
 			description: [
 				"Fill a Supreme Black Hole Tank with Oil."
 				""
-				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected, as well as Display icon!"
 			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "378F01CE074D79A0"
@@ -535,13 +512,13 @@
 					tag: {
 						items: [
 							{
-								id: "itemfilters:and"
 								Count: 1b
+								id: "itemfilters:and"
 								tag: {
 									items: [
 										{
-											id: "industrialforegoing:supreme_black_hole_tank"
 											Count: 1b
+											id: "industrialforegoing:supreme_black_hole_tank"
 											tag: {
 												BlockEntityTag: {
 													filter: {
@@ -554,9 +531,9 @@
 														FacingModes: {
 															LEFT: "ENABLED"
 															TOP: "ENABLED"
-															RIGHT: "ENABLED"
 															BACK: "ENABLED"
 															FRONT: "ENABLED"
+															RIGHT: "ENABLED"
 															BOTTOM: "ENABLED"
 														}
 														Amount: 2147483647
@@ -565,8 +542,8 @@
 											}
 										}
 										{
-											id: "itemfilters:strong_nbt"
 											Count: 1b
+											id: "itemfilters:strong_nbt"
 											tag: {
 												value: {
 													BlockEntityTag: {
@@ -580,9 +557,9 @@
 															FacingModes: {
 																LEFT: "ENABLED"
 																TOP: "ENABLED"
-																RIGHT: "ENABLED"
 																BACK: "ENABLED"
 																FRONT: "ENABLED"
+																RIGHT: "ENABLED"
 																BOTTOM: "ENABLED"
 															}
 															Amount: 2147483647
@@ -595,13 +572,13 @@
 								}
 							}
 							{
-								id: "itemfilters:and"
 								Count: 1b
+								id: "itemfilters:and"
 								tag: {
 									items: [
 										{
-											id: "industrialforegoing:supreme_black_hole_tank"
 											Count: 1b
+											id: "industrialforegoing:supreme_black_hole_tank"
 											tag: {
 												BlockEntityTag: {
 													filter: {
@@ -614,9 +591,9 @@
 														FacingModes: {
 															LEFT: "ENABLED"
 															TOP: "ENABLED"
-															RIGHT: "ENABLED"
 															BACK: "ENABLED"
 															FRONT: "ENABLED"
+															RIGHT: "ENABLED"
 															BOTTOM: "ENABLED"
 														}
 														Amount: 2147483647
@@ -625,8 +602,8 @@
 											}
 										}
 										{
-											id: "itemfilters:strong_nbt"
 											Count: 1b
+											id: "itemfilters:strong_nbt"
 											tag: {
 												value: {
 													BlockEntityTag: {
@@ -640,69 +617,9 @@
 															FacingModes: {
 																LEFT: "ENABLED"
 																TOP: "ENABLED"
-																RIGHT: "ENABLED"
 																BACK: "ENABLED"
 																FRONT: "ENABLED"
-																BOTTOM: "ENABLED"
-															}
-															Amount: 2147483647
-														}
-													}
-												}
-											}
-										}
-									]
-								}
-							}
-							{
-								id: "itemfilters:and"
-								Count: 1b
-								tag: {
-									items: [
-										{
-											id: "industrialforegoing:supreme_black_hole_tank"
-											Count: 1b
-											tag: {
-												BlockEntityTag: {
-													filter: {
-														Type: "WHITELIST"
-														Pointer: 0
-														Filter: { }
-													}
-													tank: {
-														FluidName: "immersivepetroleum:oil"
-														FacingModes: {
-															LEFT: "ENABLED"
-															TOP: "ENABLED"
-															RIGHT: "ENABLED"
-															BACK: "ENABLED"
-															FRONT: "ENABLED"
-															BOTTOM: "ENABLED"
-														}
-														Amount: 2147483647
-													}
-												}
-											}
-										}
-										{
-											id: "itemfilters:strong_nbt"
-											Count: 1b
-											tag: {
-												value: {
-													BlockEntityTag: {
-														filter: {
-															Type: "WHITELIST"
-															Pointer: 0
-															Filter: { }
-														}
-														tank: {
-															FluidName: "immersivepetroleum:oil"
-															FacingModes: {
-																LEFT: "ENABLED"
-																TOP: "ENABLED"
 																RIGHT: "ENABLED"
-																BACK: "ENABLED"
-																FRONT: "ENABLED"
 																BOTTOM: "ENABLED"
 															}
 															Amount: 2147483647
@@ -722,34 +639,11 @@
 				id: "2F30217DBD536B5C"
 				type: "item"
 				item: {
-					id: "trofers:large_trophy"
+					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "thermal:crude_oil_bucket"
-								Count: 1b
-							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Top: {
-									Red: 249
-									Blue: 254
-									Green: 255
-								}
-								Middle: {
-									Red: 29
-									Blue: 33
-									Green: 29
-								}
-							}
-							Name: "Oil Trophy"
+							Trophy: "enigmatica:trofers/oil"
 						}
 					}
 				}
@@ -1595,7 +1489,7 @@
 				{
 					id: "469924BD6C490BF2"
 					type: "item"
-					item: "simplefarming:fish_and_chips"
+					item: "pneumaticcraft:chips"
 					count: 2863L
 					consume_items: true
 				}
@@ -1610,13 +1504,6 @@
 					id: "19B011AE9B837D9E"
 					type: "item"
 					item: "farmersdelight:stuffed_potato"
-					count: 2863L
-					consume_items: true
-				}
-				{
-					id: "5BAE86CC78F24DFD"
-					type: "item"
-					item: "simplefarming:potato_knish"
 					count: 2863L
 					consume_items: true
 				}

@@ -8,13 +8,24 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [{
+		title: "FTB: Industrial Contraptions"
+		icon: "ftbic:iron_furnace"
 		x: 0.0d
 		y: 0.0d
+		shape: "rsquare"
+		subtitle: "IndustrialCraft 2 but much, much newer!"
+		description: [
+			"Welcome to Industrial Contraptions!"
+			"This mod adds a lot of heavy-industrial machines for any sort of work."
+			""
+			"~~Kanzaji"
+		]
+		size: 1.25d
 		id: "0EF0D7AB956AEE47"
 		tasks: [{
-			id: "3DF32D38678B34AF"
-			type: "item"
-			item: "ftbic:copper_wire"
+			id: "76E719C3292A1068"
+			type: "checkmark"
+			title: "Got it!"
 		}]
 	}]
 }

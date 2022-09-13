@@ -1,0 +1,777 @@
+{
+	id: "39A5E07598ADAD34"
+	group: "0856CF7F5CBEB20A"
+	order_index: 3
+	filename: "applied_energistics_2"
+	title: "Applied Energistics 2"
+	icon: "ae2:drive"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Applied Energistics 2"
+			icon: "ae2:network_tool"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Advanced, unknown technology about Matter and Energy."
+			description: [
+				"Mysterious meteors are falling into our world, destroying everything near their drop area. Inside could be found mysterious materials with unknown use..."
+				""
+				"Applied Energistics 2 is a mod about Matter and Energy, gathered up for you from unknown location in space. Go find some meteors and lets get started! A Meteor Compass will assist you on your journey."
+				""
+				"~~Kanzaji"
+			]
+			size: 2.0d
+			optional: true
+			min_width: 250
+			id: "029656A1597547F9"
+			tasks: [{
+				id: "36C5E69A78A3237E"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "489D15693FC9DD62"
+				type: "item"
+				item: "ae2:sky_compass"
+			}]
+		}
+		{
+			title: "Inscribers Presses"
+			x: -2.5d
+			y: 1.0d
+			subtitle: "Beware of falling meteors!"
+			description: [
+				"The dark stone that meteors are made of, was called by people `Sky Stone`. It's also known that some researchers found weird, mysterious looking plates inside, what those could be used for?"
+				""
+				"So what, you are just staying still and looking at it? Prepare a decent pick, and take a look inside!"
+			]
+			dependencies: ["029656A1597547F9"]
+			id: "0F2195611D84F112"
+			tasks: [
+				{
+					id: "6919EDCC56B4B66B"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+				{
+					id: "220B18536AF43E16"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "3B5A14BFC89CA251"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+				{
+					id: "7DC733DD28FC398A"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+			]
+			rewards: [{
+				id: "2E982F1051C138FF"
+				type: "custom"
+				title: "[WIP] AE2 Loot box"
+			}]
+		}
+		{
+			title: "ME Controller"
+			x: 0.0d
+			y: 6.0d
+			shape: "diamond"
+			subtitle: "Mystical brain of your network... with flashy lights!"
+			description: [
+				"ME Controller is necessary part of every AE2 network. It acts like a brain of it, handling entire logic required for system to work properly."
+				""
+				"Every AE2 machine requires connection (direct or by other machines) to the controller, using one channel for that. Each side of ME Controller can handle up to 32 channels, but that doesn't mean you are limited by any means."
+				""
+				"Even though you can't have more than one ME Controller in your network, placing second ME Controller next to yours will chain them together, adding additional sides for your connections!"
+			]
+			dependencies: [
+				"6329EECEEC9FF19B"
+				"7E0FBBF1F9978508"
+			]
+			size: 2.5d
+			min_width: 300
+			id: "4D7FF267C7EC2845"
+			tasks: [{
+				id: "5C31D902CE28DDCA"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "18704D22FFA6C1D4"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			subtitle: "Ryzen 9 7900x Production Line"
+			dependencies: ["74E1FEF2E87706BD"]
+			id: "2DD0595900C6DB50"
+			tasks: [{
+				id: "6472158860788570"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["029656A1597547F9"]
+			id: "5E579D8F17574996"
+			tasks: [{
+				id: "162F98B704F506F3"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			subtitle: "Mysterious crystal radiating some kind of energy."
+			dependencies: ["17C83BD54C7C48F7"]
+			id: "7E0FBBF1F9978508"
+			tasks: [{
+				id: "3EEF055623B7452E"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			subtitle: "But, it can charge my Smartphone right?"
+			dependencies: ["74E1FEF2E87706BD"]
+			id: "6FD9F084D7AD482C"
+			tasks: [{
+				id: "32C3B4C9E870A245"
+				type: "item"
+				item: "ae2:charger"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			subtitle: "Shocking."
+			dependencies: [
+				"5E579D8F17574996"
+				"6FD9F084D7AD482C"
+			]
+			id: "17C83BD54C7C48F7"
+			tasks: [{
+				id: "5F9647C3051440DF"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+		}
+		{
+			title: "Computing Processors"
+			x: -2.5d
+			y: 4.0d
+			subtitle: "Are those AMD, Intel or Nvidia?"
+			dependencies: [
+				"2DD0595900C6DB50"
+				"0F2195611D84F112"
+			]
+			id: "6329EECEEC9FF19B"
+			tasks: [
+				{
+					id: "3FA114D411E72C0A"
+					type: "item"
+					item: "ae2:logic_processor"
+				}
+				{
+					id: "309D5ABEC6F96C73"
+					type: "item"
+					item: "ae2:calculation_processor"
+				}
+				{
+					id: "1E9F113D3DA9A188"
+					type: "item"
+					item: "ae2:engineering_processor"
+				}
+				{
+					id: "1032E2CCDB5ACA96"
+					type: "item"
+					item: "ae2:printed_silicon"
+				}
+			]
+		}
+		{
+			title: "Power Generation"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Using vibration to generate energy."
+			dependencies: ["029656A1597547F9"]
+			id: "74E1FEF2E87706BD"
+			tasks: [{
+				id: "26FCB66DD39B762C"
+				type: "item"
+				title: "Any Energy Generator"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ae2:vibration_chamber"
+								Count: 1b
+							}
+							{
+								id: "ae2:energy_acceptor"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1D4F82A74E569910"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+				count: 8
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "Better, faster, stronger. What else could it be?"
+			dependencies: [
+				"74E1FEF2E87706BD"
+				"6472158860788570"
+				"1E9F113D3DA9A188"
+			]
+			id: "1A913231F97ADE45"
+			tasks: [{
+				id: "2A6A5C88C3B03406"
+				type: "item"
+				item: "ae2things:advanced_inscriber"
+			}]
+		}
+		{
+			title: "Storage"
+			icon: "ae2:drive"
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["4D7FF267C7EC2845"]
+			size: 1.25d
+			id: "67C91F3187348C8E"
+			tasks: [{
+				id: "36E9521C381DD207"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Data Access"
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["4D7FF267C7EC2845"]
+			size: 1.25d
+			id: "76F892354A1D506E"
+			tasks: [{
+				id: "4945C5BE4399BBBC"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			dependencies: ["67C91F3187348C8E"]
+			id: "2288AA73FE626BFB"
+			tasks: [{
+				id: "63C8AD58ED1FA4BB"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.5d
+			dependencies: ["2288AA73FE626BFB"]
+			id: "211D0FAA0B023EF0"
+			tasks: [{
+				id: "5A20805886D94C81"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.5d
+			dependencies: ["2288AA73FE626BFB"]
+			id: "6B9F725AE5A94531"
+			tasks: [{
+				id: "003BE39BD863F013"
+				type: "item"
+				item: {
+					id: "ae2:fluid_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 5.5d
+			dependencies: ["2288AA73FE626BFB"]
+			id: "22AB44AE329F9EA8"
+			tasks: [{
+				id: "54EDF279D4FC786D"
+				type: "item"
+				item: {
+					id: "appmek:chemical_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["67C91F3187348C8E"]
+			id: "530BB11487524556"
+			tasks: [{
+				id: "208948F592EBBC4D"
+				type: "item"
+				item: "ae2:storage_bus"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.5d
+			dependencies: [
+				"6B9F725AE5A94531"
+				"211D0FAA0B023EF0"
+				"22AB44AE329F9EA8"
+			]
+			id: "069227FAEB39A704"
+			tasks: [
+				{
+					id: "503FDEBDBF268840"
+					type: "item"
+					item: {
+						id: "ae2:item_storage_cell_256k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "40D88B0A5A13DFCD"
+					type: "item"
+					item: {
+						id: "ae2:fluid_storage_cell_256k"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "16F83D5D2EAC6AB0"
+					type: "item"
+					item: {
+						id: "appmek:chemical_storage_cell_256k"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			dependencies: ["4D7FF267C7EC2845"]
+			size: 1.25d
+			id: "66057A9358B600A9"
+			tasks: [{
+				id: "03067EF23D3A38BA"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 11.5d
+			dependencies: ["66057A9358B600A9"]
+			id: "7CCBE728C0D5090E"
+			tasks: [{
+				id: "0F20551AB190A2C8"
+				type: "item"
+				item: "ae2:fluix_covered_cable"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 13.0d
+			dependencies: ["7CCBE728C0D5090E"]
+			id: "75D5781C38BED7C1"
+			tasks: [{
+				id: "3DE2DF0A2FB2522B"
+				type: "item"
+				item: "ae2:fluix_smart_cable"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 13.0d
+			dependencies: ["7CCBE728C0D5090E"]
+			id: "58A23953FB5FBE57"
+			tasks: [{
+				id: "090BB2AAC68C4B2E"
+				type: "item"
+				item: "ae2:fluix_smart_dense_cable"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 5.0d
+			subtitle: "Basic access to your items."
+			dependencies: ["76F892354A1D506E"]
+			id: "445236A56FB608A0"
+			tasks: [{
+				id: "3D28C64FB246F1D2"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+		}
+		{
+			title: "Autocrafting"
+			icon: "ae2:molecular_assembler"
+			x: -2.5d
+			y: 8.5d
+			dependencies: ["4D7FF267C7EC2845"]
+			size: 1.25d
+			id: "2FC3BF03747E40DB"
+			tasks: [{
+				id: "02E89EA21A09379A"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.5d
+			dependencies: ["67C91F3187348C8E"]
+			id: "1B99592879C57785"
+			tasks: [{
+				id: "45C6F82BF774BEAB"
+				type: "item"
+				item: "ae2:spatial_storage_cell_2"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 6.0d
+			subtitle: "ME Terminal, but better!"
+			dependencies: ["76F892354A1D506E"]
+			id: "6C9905294D4D45A5"
+			tasks: [{
+				id: "6CF5407A092B3E2B"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 7.0d
+			subtitle: "Autocrafting recipe Encoder 2000"
+			dependencies: ["76F892354A1D506E"]
+			id: "7AF744A523A2B515"
+			tasks: [{
+				id: "3B63A2A1BC35B3C2"
+				type: "item"
+				item: "ae2:pattern_encoding_terminal"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 11.5d
+			dependencies: ["66057A9358B600A9"]
+			id: "2A5E79640AB4BDA5"
+			tasks: [{
+				id: "50035793446D9D61"
+				type: "item"
+				item: "ae2:me_p2p_tunnel"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 13.0d
+			dependencies: ["2A5E79640AB4BDA5"]
+			id: "134AAAFB2F6D0BED"
+			tasks: [{
+				id: "63E4100F99784F63"
+				type: "item"
+				item: "ae2:redstone_p2p_tunnel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 13.0d
+			dependencies: ["2A5E79640AB4BDA5"]
+			id: "099A09D29367D7E6"
+			tasks: [{
+				id: "3787855A633EEC70"
+				type: "item"
+				item: "ae2:item_p2p_tunnel"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 13.0d
+			dependencies: ["2A5E79640AB4BDA5"]
+			id: "26F87545CC848BFE"
+			tasks: [{
+				id: "7DF909B91FB6AC63"
+				type: "item"
+				item: "ae2:fluid_p2p_tunnel"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 14.0d
+			dependencies: [
+				"134AAAFB2F6D0BED"
+				"50035793446D9D61"
+			]
+			dependency_requirement: "one_completed"
+			id: "423AC17A44D89338"
+			tasks: [{
+				id: "14B702CEE5EBF73B"
+				type: "item"
+				item: "ae2:fe_p2p_tunnel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 14.0d
+			dependencies: ["2A5E79640AB4BDA5"]
+			id: "1A9226D2D5A6AA54"
+			tasks: [{
+				id: "46E08FEF8AD0DA38"
+				type: "item"
+				item: "ae2:light_p2p_tunnel"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 14.0d
+			dependencies: [
+				"26F87545CC848BFE"
+				"50035793446D9D61"
+			]
+			dependency_requirement: "one_completed"
+			id: "03008FAF72AAB636"
+			tasks: [{
+				id: "30CB5E1FAE7947D1"
+				type: "item"
+				item: "appmek:chemical_p2p_tunnel"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 12.0d
+			dependencies: ["2A5E79640AB4BDA5"]
+			id: "675D023FFB0A8C1A"
+			tasks: [{
+				id: "7F40B3E88D37A108"
+				type: "item"
+				item: {
+					id: "ae2:memory_card_white"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 8.5d
+			dependencies: ["2FC3BF03747E40DB"]
+			id: "22640DCB27BB1DE8"
+			tasks: [{
+				id: "5B4758B4CF231806"
+				type: "item"
+				item: "ae2:pattern_provider"
+			}]
+		}
+		{
+			title: "I/O And others"
+			x: 2.5d
+			y: 8.5d
+			dependencies: ["4D7FF267C7EC2845"]
+			size: 1.25d
+			id: "7D87DA985E8B4EB0"
+			tasks: [{
+				id: "1F13477AE575D37B"
+				type: "item"
+				item: "ae2:interface"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 9.5d
+			dependencies: ["2FC3BF03747E40DB"]
+			id: "3B2DA9A2923AC61E"
+			tasks: [{
+				id: "585C2BFDCD2F3A90"
+				type: "item"
+				item: "ae2:molecular_assembler"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 10.0d
+			dependencies: ["2FC3BF03747E40DB"]
+			id: "0E5806537154F593"
+			tasks: [{
+				id: "4521A27E2919EA8B"
+				type: "item"
+				item: "ae2:annihilation_plane"
+			}]
+		}
+		{
+			title: "ME Import/Export bus"
+			x: 3.0d
+			y: 10.0d
+			dependencies: ["7D87DA985E8B4EB0"]
+			id: "7DBCBBB2A18DDDA0"
+			tasks: [
+				{
+					id: "6F449BA448D51A46"
+					type: "item"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "4BD463C5AA00681E"
+					type: "item"
+					item: "ae2:export_bus"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			dependencies: ["7D87DA985E8B4EB0"]
+			id: "3E08D8EF1B87C547"
+			tasks: [{
+				id: "3A86D6762EA204DB"
+				type: "item"
+				item: "ae2:interface"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 8.5d
+			dependencies: ["7D87DA985E8B4EB0"]
+			id: "444829B39E4D1BAA"
+			tasks: [{
+				id: "4853E968B5FAADDB"
+				type: "item"
+				item: "ae2:quantum_ring"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			dependencies: ["76F892354A1D506E"]
+			id: "4E537D57D8775F31"
+			tasks: [{
+				id: "77AE32CCCFAD95CD"
+				type: "item"
+				item: "ae2:storage_monitor"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.5d
+			dependencies: ["76F892354A1D506E"]
+			id: "158C1E5F495210A8"
+			tasks: [{
+				id: "7DE1A12F377BD86A"
+				type: "item"
+				item: "ae2:pattern_access_terminal"
+			}]
+		}
+		{
+			title: "ME Disk Drives"
+			x: 6.0d
+			y: 2.5d
+			subtitle: "Enough of Type limitation?"
+			dependencies: ["2288AA73FE626BFB"]
+			id: "727D7DBCAF69209F"
+			tasks: [{
+				id: "69601821F62AD38F"
+				type: "item"
+				item: {
+					id: "ae2things:disk_drive_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 12.0d
+			dependencies: ["66057A9358B600A9"]
+			id: "32336FC074AA6DB2"
+			tasks: [{
+				id: "0E0F6B6A325366C8"
+				type: "item"
+				title: "Any Colored Cable"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:tag"
+								Count: 1b
+								tag: {
+									value: "ae2:covered_cable"
+								}
+							}
+							{
+								id: "itemfilters:tag"
+								Count: 1b
+								tag: {
+									value: "ae2:covered_dense_cable"
+								}
+							}
+							{
+								id: "itemfilters:tag"
+								Count: 1b
+								tag: {
+									value: "ae2:glass_cable"
+								}
+							}
+							{
+								id: "itemfilters:tag"
+								Count: 1b
+								tag: {
+									value: "ae2:smart_cable"
+								}
+							}
+							{
+								id: "itemfilters:tag"
+								Count: 1b
+								tag: {
+									value: "ae2:smart_dense_cable"
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+	]
+}

@@ -7,18 +7,262 @@
 	icon: "ae2:drive"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		icon: "ae2:network_tool"
-		x: 0.0d
-		y: 0.0d
-		shape: "gear"
-		size: 2.0d
-		optional: true
-		id: "029656A1597547F9"
-		tasks: [{
-			id: "36C5E69A78A3237E"
-			type: "checkmark"
-			title: "Got it!"
-		}]
-	}]
+	quests: [
+		{
+			title: "Applied Energistics 2"
+			icon: "ae2:network_tool"
+			x: -4.0d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Advanced, unknown technology about Matter and Energy."
+			description: [
+				"Applied Energistics 2 is a mod about Matter and Energy, giving you access to advanced digital technology of storing, transporting and automating all of your resources however you want! Sounds a bit complex and mysterious... like it is from the other world..."
+				""
+				"~~Kanzaji"
+			]
+			size: 2.0d
+			optional: true
+			min_width: 250
+			id: "1577CE8DC23C7D64"
+			tasks: [{
+				id: "4D02850841326C88"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Inscribers Presses"
+			x: -6.5d
+			y: 7.0d
+			subtitle: "Beware of falling meteors!"
+			description: [
+				"The dark stone that meteors are made of, was called by people `Sky Stone`.  Prepare a decent pickaxe, it's known to be really tough to destroy!"
+				""
+				"Researchers found 4 different types of plates, and were able to combine them to create 3 different processor units."
+			]
+			dependencies: ["4A6018251BA55793"]
+			id: "4B90532D7C43EA75"
+			tasks: [
+				{
+					id: "3D71701653361DDB"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+				{
+					id: "2CFFFD0A266AF05A"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "213C339155D95338"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+				{
+					id: "501548E0AE4E16DE"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+			]
+			rewards: [{
+				id: "03EBC284BA4D0CF7"
+				type: "custom"
+				title: "[WIP] AE2 Loot box"
+			}]
+		}
+		{
+			title: "ME Controller"
+			x: -4.0d
+			y: 11.25d
+			shape: "diamond"
+			subtitle: "Mystical brain of your network... with flashy lights!"
+			description: [
+				"ME Controller is necessary part of every AE2 network. It acts like a brain of it, handling entire logic required for system to work properly."
+				""
+				"Every AE2 machine requires connection (direct or by other machines) to the controller, using one channel for that. Each side of ME Controller can handle up to 32 channels, but that doesn't mean you are limited by any means."
+				""
+				"Even though you can't have more than one ME Controller in your network, placing second ME Controller next to yours will chain them together, adding additional sides for your connections!"
+			]
+			dependencies: [
+				"325514FFF8862BE4"
+				"24FC20BFA62704CB"
+				"70F6DBCD4D080628"
+			]
+			size: 2.5d
+			min_width: 300
+			id: "1FE4B0E30C942A78"
+			tasks: [{
+				id: "7D2C20832AD3A1AB"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "2747FF5DB0F501F5"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 8.5d
+			subtitle: "Ryzen 9 7900x Production Line"
+			description: ["Inscriber is advanced press, used to create advanced circuits from press plates"]
+			dependencies: ["24FC20BFA62704CB"]
+			id: "7BDDA15B71F4236C"
+			tasks: [{
+				id: "30F29CB5D53F1ABB"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			dependencies: ["1577CE8DC23C7D64"]
+			id: "443EB49B8097AB6C"
+			tasks: [{
+				id: "7D0B412446C72DDA"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 9.0d
+			subtitle: "Mysterious crystal radiating some kind of energy."
+			dependencies: ["25C486464F067A44"]
+			id: "70F6DBCD4D080628"
+			tasks: [{
+				id: "49A58632613089D8"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.5d
+			subtitle: "But, it can charge my Smartphone right?"
+			description: ["This advanced charger uses special energy to charge most of electrical equipement, works even with our devices!"]
+			dependencies: ["24FC20BFA62704CB"]
+			id: "3A1CF99D54EBF7A9"
+			tasks: [{
+				id: "5ADE6C0DADE242C7"
+				type: "item"
+				item: "ae2:charger"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			subtitle: "Shocking."
+			dependencies: [
+				"3A1CF99D54EBF7A9"
+				"443EB49B8097AB6C"
+			]
+			id: "25C486464F067A44"
+			tasks: [{
+				id: "6DE019FF74BA2230"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+		}
+		{
+			title: "Computing Processors"
+			x: -6.5d
+			y: 9.0d
+			subtitle: "Are those AMD, Intel or Nvidia?"
+			description: ["Computing processors are the basic components of most AE2 devices out there. Prepare yourself to create a lot of these!"]
+			dependencies: [
+				"4B90532D7C43EA75"
+				"7BDDA15B71F4236C"
+			]
+			id: "325514FFF8862BE4"
+			tasks: [
+				{
+					id: "1FE51BC12F9C8738"
+					type: "item"
+					item: "ae2:logic_processor"
+				}
+				{
+					id: "05287DE6970721A8"
+					type: "item"
+					item: "ae2:calculation_processor"
+				}
+				{
+					id: "3197CB4AA536F771"
+					type: "item"
+					item: "ae2:engineering_processor"
+				}
+			]
+		}
+		{
+			title: "Power Generation"
+			x: -4.0d
+			y: 9.5d
+			subtitle: "Using vibration to generate energy."
+			description: [
+				"Advanced technology requires special energy to operate, however some ways to convert our energy to required one were developed."
+				""
+				"With use of vibrations, it is possible to generate energy that's able to run those mysterious circuits."
+			]
+			dependencies: ["1577CE8DC23C7D64"]
+			id: "24FC20BFA62704CB"
+			tasks: [{
+				id: "60E20404D4A9F166"
+				type: "item"
+				title: "Any Energy Generator"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ae2:vibration_chamber"
+								Count: 1b
+							}
+							{
+								id: "ae2:energy_acceptor"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1F2CAF3278A63FD4"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+				count: 8
+			}]
+		}
+		{
+			x: -9.0d
+			y: 9.0d
+			subtitle: "Better, faster, stronger. What else could it be?"
+			id: "44E62D9DD21FF112"
+			tasks: [{
+				id: "32EEC5E7782E4692"
+				type: "item"
+				item: "ae2things:advanced_inscriber"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.0d
+			subtitle: "Beware of falling meteors!"
+			description: [
+				"Mysterious meteors are falling into our world for decades, destroying everything near their drop area. Researchers found some weird mysterious plates inside of them, looking like processors designs, and are experimenting with them."
+				""
+				"With access to those plates, it is possible to manufacture your own circuits! Some of them could be old, hiding underground. Meteor Compass will assist you on your journey."
+			]
+			dependencies: ["1577CE8DC23C7D64"]
+			min_width: 250
+			id: "4A6018251BA55793"
+			tasks: [{
+				id: "719F0DCBAB137BFE"
+				type: "item"
+				item: "ae2:sky_compass"
+			}]
+		}
+	]
 }

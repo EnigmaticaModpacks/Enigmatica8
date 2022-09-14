@@ -1,0 +1,9 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#Should materials be directly added to FTBIC's material list to generate recipes instead of having JAOPCA do so.
+	addToFTBICMaterials = false
+

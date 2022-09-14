@@ -90,7 +90,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
+        var blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron'];
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
@@ -687,7 +687,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['copper', 'gold', 'iron', 'lead', 'osmium', 'tin', 'uranium'];
+        var blacklistedMaterials = ['copper', 'gold', 'iron', 'lead', 'osmium', 'tin', 'uranium'];
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
@@ -776,7 +776,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
+        var blacklistedMaterials = ['ender'];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
@@ -796,7 +796,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['amber', 'ender'];
+        var blacklistedMaterials = ['amber', 'ender'];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
@@ -816,7 +816,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['starmetal'];
+        var blacklistedMaterials = ['starmetal'];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
@@ -892,7 +892,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['silver'];
+        var blacklistedMaterials = ['silver'];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
@@ -1232,7 +1232,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
+        var blacklistedMaterials = ['ender'];
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
@@ -1280,7 +1280,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
+        var blacklistedMaterials = ['ender'];
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;
@@ -1393,7 +1393,7 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['ender'];
+        var blacklistedMaterials = ['ender'];
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
                 return;

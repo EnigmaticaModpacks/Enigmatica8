@@ -32,38 +32,7 @@
 #Configurations related to item selection.
 [itemSelection]
 	#List of mods that are preferred when selecting items in recipes.
-	preferredMods = ["emendatusenigmatica",
-        "minecraft",
-        "ftbic",
-        "thermal",
-        "immersiveengineering",
-        "mekanism",
-        "kubejs",
-        "pneumaticcraft",
-        "create",
-        "occultism",
-        "industrialforegoing",
-        "tconstruct",
-        "botania",
-        "quark",
-        "pedestals",
-        "refinedstorage",
-        "mapperbase",
-        "bloodmagic",
-        "eidolon",
-        "morevanillalib",
-        "titanium",
-        "mythicbotany",
-        "undergarden",
-        "byg",
-        "atum",
-        "betterendforge",
-        "miniutilities",
-        "chipped",
-        "chisel",
-        "voluminousenergy",
-        "assemblylinemachines",
-        "malum"]
+	preferredMods = ["emendatusenigmatica", "minecraft", "ftbic", "thermal", "immersiveengineering", "mekanism", "kubejs", "pneumaticcraft", "create", "occultism", "industrialforegoing", "tconstruct", "botania", "quark", "pedestals", "refinedstorage", "mapperbase", "bloodmagic", "eidolon", "morevanillalib", "titanium", "mythicbotany", "undergarden", "byg", "atum", "betterendforge", "miniutilities", "chipped", "chisel", "voluminousenergy", "assemblylinemachines", "malum"]
 
 #Configurations related to block tags.
 [blockTags]

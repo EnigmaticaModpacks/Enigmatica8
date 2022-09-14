@@ -26,7 +26,6 @@ const generatableStone = [
     'byg:white_sandstone',
     'minecraft:red_sandstone',
     'minecraft:sandstone',
-    'minecraft:basalt',
     'minecraft:diorite',
     'minecraft:granite',
     'minecraft:andesite',
@@ -54,7 +53,7 @@ const generatableStone = [
     'byg:cryptic_stone',
     'twilightforest:mazestone'
 ];
-const generatableBasalt = [];
+const generatableBasalt = ['minecraft:basalt'];
 
 const itemsToHide = [];
 

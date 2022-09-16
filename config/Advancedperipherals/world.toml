@@ -3,9 +3,9 @@
 [World]
 	#Enable the villager structures for the computer scientist.
 	enableVillagerStructures = false
-	#Gives the ap documentation to new players on a world.
+	#Gives the ap documentation to new players.
 	givePlayerBookOnJoin = false
-	#The weight of the villager structures
+	#The weight of the villager structures.
 	#Range: 0 ~ 16000
 	villagerStructureWeight = 10
 

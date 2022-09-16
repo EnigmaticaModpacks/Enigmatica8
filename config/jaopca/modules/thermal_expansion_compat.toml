@@ -1,0 +1,39 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#The materials that should not have pulverizer to dust recipes added.
+	toDustMaterialBlacklist = []
+	#The materials that should not have smelter to ingot recipes added.
+	dustToIngotMaterialBlacklist = []
+	#The materials that should not have press to plate recipes added.
+	toPlateMaterialBlacklist = []
+	#The materials that should not have press to gear recipes added.
+	toGearMaterialBlacklist = []
+	#The materials that should not have press material to coin recipes added.
+	materialToCoinMaterialBlacklist = []
+	#The materials that should not have press nugget to coin recipes added.
+	nuggetToCoinMaterialBlacklist = []
+	#The materials that should not have press material to storage block recipes added.
+	toStorageBlockMaterialBlacklist = []
+	#The materials that should not have press nugget to material recipes added.
+	nuggetToMaterialMaterialBlacklist = []
+	#The materials that should not have press raw material to raw storage block recipes added.
+	toRawStorageBlockMaterialBlacklist = []
+	#The materials that should not have press storage block to material recipes added.
+	storageBlockToMaterialMaterialBlacklist = []
+	#The materials that should not have press material to nugget recipes added.
+	toNuggetMaterialBlacklist = []
+	#The materials that should not have press raw storage block to raw material recipes added.
+	toRawMaterialMaterialBlacklist = []
+	#The materials that should not have chiller to ingot recipes added.
+	moltenToIngotMaterialBlacklist = []
+	#The materials that should not have chiller to rod recipes added.
+	toRodMaterialBlacklist = []
+	#The materials that should not have create centrifuge compat recipes added.
+	createToNuggetMaterialBlacklist = []
+	#The materials that should not have create smelter compat recipes added.
+	createToIngotMaterialBlacklist = []
+

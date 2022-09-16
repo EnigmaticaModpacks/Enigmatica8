@@ -147,6 +147,9 @@
 		#Range: 0.01 ~ 200.0
 		wobbling_period = 12.0
 
+	[blocks.blackboard]
+		allow_gui = true
+
 #Particle parameters
 [particles]
 

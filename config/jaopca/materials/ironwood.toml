@@ -1,0 +1,27 @@
+
+[general]
+	#The alternative names of this material.
+	alternativeNames = []
+	#The byproducts of this material.
+	extras = []
+	#The module blacklist of this material.
+	moduleBlacklist = []
+	#Should items of this material have the enchanted glow.
+	hasEffect = false
+	#The model type of the material.
+	modelType = "metallic"
+	#The color of this material.
+	color = 7565150
+
+[molten]
+	#The temperature of this molten fluid.
+	temperature = 1000
+
+[create]
+	#The default byproduct material to output in Create's crushing.
+	byproduct = "minecraft:cobblestone"
+
+[mekanism]
+	#The default base to use in Mekanism's Combiner to recreate ores.
+	oreBase = "#forge:cobblestone/normal"
+

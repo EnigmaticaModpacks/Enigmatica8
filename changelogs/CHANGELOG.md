@@ -1,3 +1,35 @@
+### Enigmatica 8 v2.3.0
+
+_Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.0.md)_
+
+**New Mods!**
+
+-   [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified) (by [TeamAlmostReliable](https://www.curseforge.com/members/TeamAlmostReliable/projects))
+-   [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo) (by [baileyholl2](https://www.curseforge.com/members/baileyholl2/projects))
+-   [Comforts (Forge)](https://www.curseforge.com/minecraft/mc-mods/comforts) (by [TheIllusiveC4](https://www.curseforge.com/members/TheIllusiveC4/projects))
+-   [Gateways to Eternity](https://www.curseforge.com/minecraft/mc-mods/gateways-to-eterrnity) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
+-   [JAOPCA](https://www.curseforge.com/minecraft/mc-mods/jaopca) (by [TheLMiffy1111](https://www.curseforge.com/members/TheLMiffy1111/projects))
+-   [Refined Cooking](https://www.curseforge.com/minecraft/mc-mods/refined-cooking) (by [ItsSebastrn](https://www.curseforge.com/members/ItsSebastrn/projects))
+-   [XNet Gases](https://www.curseforge.com/minecraft/mc-mods/xnet-gases) (by [Terrails](https://www.curseforge.com/members/Terrails/projects))
+
+**Improvements/Changes**
+
+-   Remove 'Small/Light Modpack' Label [\#245](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/245)
+-   Crushing Osmium in Thermal Pulveriser [\#216](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/216)
+-   Silver is missing processing recipes in mekanism [\#194](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/194)
+-   Hide Twilight Forest Uncrafting clutter. Fix errors in JEI Descriptions. [\#250](https://github.com/EnigmaticaModpacks/Enigmatica8/pull/250) ([MuteTiefling](https://github.com/MuteTiefling))
+-   add some notable contributors as potential spirit names in occultism [\#232](https://github.com/EnigmaticaModpacks/Enigmatica8/pull/232) ([atlgeek007](https://github.com/atlgeek007))
+
+**Bug Fixes**
+
+-   Please ensure Functional Storage 1.0.6+ is in the next update upstream has fixed a major performance issue [\#259](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/259)
+-   "Infinite Iron" Chain Exploit [\#243](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/243)
+-   CF .zip ships additional files, which can change few things. [\#240](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/240)
+-   Cobble Gen Randomizer causes ores to generate from cobblegens [\#238](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/238)
+-   \[bug\]: E8 Ore / Metal Unification issues [\#234](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/234)
+
+---
+
 ### Enigmatica 8 v2.2.1
 
 _Using Forge-1.18.2-40.1.73_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.2.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.2.1.md)_

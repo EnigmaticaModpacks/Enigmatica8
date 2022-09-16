@@ -26,7 +26,6 @@ const generatableStone = [
     'byg:white_sandstone',
     'minecraft:red_sandstone',
     'minecraft:sandstone',
-    'minecraft:basalt',
     'minecraft:diorite',
     'minecraft:granite',
     'minecraft:andesite',
@@ -60,7 +59,7 @@ const generatableStone = [
     'create:scorchia',
     'create:veridium'
 ];
-const generatableBasalt = [];
+const generatableBasalt = [`minecraft:basalt`];
 
 const excludeDuplicatesCobbleGen = [
     'byg:ether_stone',

@@ -77,11 +77,14 @@ $MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
 
 $CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
-$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("config",
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
+	"config",
 	"defaultconfigs",
 	"kubejs",
 	"local",
-	"packmenu")
+	"packmenu",
+	"patchouli_books",
+	"schematics")
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"InventoryHUD/curios.json",

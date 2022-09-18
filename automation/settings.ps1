@@ -100,7 +100,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"betterendforge/client-config.toml",
 	"betterendforge/client.json",
 	"bloodmagic-client.toml",
-	"blue_skies-client.toml",
 	"cagedmobs-client.toml",
 	"cfm-client.toml",
 	"chiselsandbits-client.toml",

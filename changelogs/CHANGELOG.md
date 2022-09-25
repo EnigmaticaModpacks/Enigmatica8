@@ -1,6 +1,6 @@
-### Enigmatica 8 v2.3.0
+### Enigmatica 8 v2.3.1
 
-_Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.0.md)_
+_Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.1.md)_
 
 **New Mods!**
 

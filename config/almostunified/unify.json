@@ -45,8 +45,8 @@
         "forge:plates/{material}",
         "forge:rods/{material}",
         "forge:storage_blocks/{material}",
-		"forge:wires/{material}",
-		"forge:storage_blocks/raw_{material}",
+        "forge:wires/{material}",
+        "forge:storage_blocks/raw_{material}",
         "forge:coal_coke",
         "forge:slag"
     ],
@@ -95,7 +95,7 @@
         "uranium",
         "zinc"
     ],
-    "ignoredTags": [],
+    "ignoredTags": ["forge:storage_blocks/copper"],
     "ignoredRecipeTypes": ["cucumber:shaped_tag"],
     "ignoredRecipes": [],
     "itemsHidingJeiRei": true

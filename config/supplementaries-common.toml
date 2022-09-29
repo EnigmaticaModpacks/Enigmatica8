@@ -443,6 +443,16 @@
 		#Range: 1 ~ 25
 		stasis_cost = 5
 
+	[items.quiver]
+		#Allows using a quiver without being slowed down
+		use_without_slow = true
+		#Arrow stacks that can fit inside a quiver. Requires reboot
+		#Range: 1 ~ 9
+		slots = 6
+		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
+		#Range: 0.0 ~ 1.0
+		quiver_skeleton_chance = 0.2
+
 #General settings
 [general]
 	#Turn this on to disable any interaction on blocks placed by other players. This affects item shelves, signs, flower pots, and boards. Useful for protected servers. Note that it will affect only blocks placed after this is turned on and such blocks will keep being protected after this option is disabled

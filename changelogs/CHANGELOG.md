@@ -1,3 +1,24 @@
+### Enigmatica 8 v2.3.1
+
+_Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.1.md)_
+
+**New Mods!**
+
+-   [Collective (Forge)](https://www.curseforge.com/minecraft/mc-mods/collective) (by [Serilum](https://www.curseforge.com/members/Serilum/projects))
+-   [Creative Wireless Transmitter](https://www.curseforge.com/minecraft/mc-mods/creative-wireless-transmitter) (by [Ultramegaaa](https://www.curseforge.com/members/Ultramegaaa/projects))
+-   [Modonomicon](https://www.curseforge.com/minecraft/mc-mods/modonomicon) (by [kli_kli](https://www.curseforge.com/members/kli_kli/projects))
+-   [Stack Refill (Forge)](https://www.curseforge.com/minecraft/mc-mods/stack-refill) (by [Serilum](https://www.curseforge.com/members/Serilum/projects))
+
+**Bug Fixes**
+
+-   Copper duplication bug [\#283](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/283)
+-   Book of Natural Aura - Empty [\#280](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/280)
+-   Immersive Engineering's Blast Furnace output of Slag broken \("Empty Tag: forge:slag"\) [\#278](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/278)
+-   Guide book broken in new worlds [\#275](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/275)
+-   CurseForge Distrubition has missing files / configs! [\#274](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/274)
+
+---
+
 ### Enigmatica 8 v2.3.0
 
 _Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.0.md)_

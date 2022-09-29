@@ -30,11 +30,6 @@ const generatableStone = [
     'minecraft:granite',
     'minecraft:andesite',
     'minecraft:deepslate',
-    'mekanism:combiner',
-    'mekanism:basic_combining_factory',
-    'mekanism:advanced_combining_factory',
-    'mekanism:elite_combining_factory',
-    'mekanism:ultimate_combining_factory',
     'byg:brimstone',
     'quark:jasper',
     'quark:limestone',
@@ -62,6 +57,13 @@ const generatableBasalt = ['minecraft:basalt'];
 
 const itemsToHide = [];
 
-const disabledItems = ['twilightforest:uncrafting_table'];
+const disabledItems = [
+    'twilightforest:uncrafting_table',
+    'mekanism:combiner',
+    'mekanism:basic_combining_factory',
+    'mekanism:advanced_combining_factory',
+    'mekanism:elite_combining_factory',
+    'mekanism:ultimate_combining_factory'
+];
 
 const categoriesToHide = ['twilightforest:uncrafting'];

@@ -10,8 +10,8 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'minecraft:nether_wart_block',
-            output: Item.of('minecraft:nether_wart', 3),
-            secondary: [Item.of('minecraft:nether_wart').chance(0.5)],
+            output: '4x minecraft:nether_wart',
+            secondary: [],
             id: 'immersiveengineering:crusher/nether_wart'
         }
     ];

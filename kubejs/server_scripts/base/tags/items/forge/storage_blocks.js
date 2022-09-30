@@ -3,5 +3,5 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks, ['minecraft:glowstone']);
     event.add(`${storageBlocks}/glowstone`, 'minecraft:glowstone');
 
-    event.remove(storageBlocks, 'minecraft:cut_copper');
+    event.remove(`${storageBlocks}/copper`, 'minecraft:cut_copper');
 });

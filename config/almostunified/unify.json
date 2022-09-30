@@ -95,7 +95,7 @@
         "uranium",
         "zinc"
     ],
-    "ignoredTags": ["forge:storage_blocks/copper"],
+    "ignoredTags": [],
     "ignoredRecipeTypes": ["cucumber:shaped_tag"],
     "ignoredRecipes": [],
     "itemsHidingJeiRei": true

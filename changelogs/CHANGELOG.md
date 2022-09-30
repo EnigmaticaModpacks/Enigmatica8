@@ -1,3 +1,18 @@
+### Enigmatica 8 v2.3.2
+
+_Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.2.md)_
+
+**Bug Fixes**
+
+-   Arc Furnace Recycling Recipes Broken [\#292](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/292)
+-   Many ore duplication bugs [\#291](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/291)
+-   Nether wart duplication [\#290](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/290)
+-   Blaze rod duplication [\#289](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/289)
+-   Certus Quartz Duplication Bug [\#288](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/288)
+-   Copper duplication bug [\#283](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/283)
+
+---
+
 ### Enigmatica 8 v2.3.1
 
 _Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.1.md)_

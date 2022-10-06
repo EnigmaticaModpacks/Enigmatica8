@@ -2222,6 +2222,7 @@
 			]
 		}
 		{
+			title: "Summon Foliot Janitor"
 			icon: "cfm:oak_kitchen_sink_light"
 			x: 8.0d
 			y: 0.5d
@@ -2234,14 +2235,40 @@
 			]
 			dependencies: ["0000000000000D9A"]
 			id: "55DC3E0B9FA8AA4F"
-			tasks: [{
-				id: "326131CF6E83F4CC"
-				type: "advancement"
-				title: "Summon Foliiot Janitor"
-				icon: "occultism:brush"
-				advancement: "occultism:summon_foliot_cleaner"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "014CDA5CE51699B2"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+				{
+					id: "6380CF3EB13AD8D7"
+					type: "item"
+					item: "minecraft:dispenser"
+				}
+				{
+					id: "794BC3CBABA6CDE4"
+					type: "item"
+					item: "occultism:brush"
+				}
+				{
+					id: "7E198FB27CBF86ED"
+					type: "item"
+					title: "Any Chest"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:chests"
+						}
+					}
+				}
+				{
+					id: "0231F8C815786009"
+					type: "item"
+					item: "occultism:book_of_binding_foliot"
+				}
+			]
 			rewards: [{
 				id: "63C1F20FAAC09395"
 				type: "command"

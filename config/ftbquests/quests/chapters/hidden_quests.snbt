@@ -171,7 +171,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:stone"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -198,7 +197,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:copper"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -225,7 +223,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:silver"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -252,7 +249,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:iron"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -279,7 +275,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:bronze"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -367,7 +362,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:electrum"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -394,7 +388,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:gold"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -421,7 +414,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:invar"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -448,7 +440,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:steel"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -476,7 +467,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:diamond"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -503,7 +493,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:platinum"
-							Throttle: 1.0d
 						}
 					}
 				}
@@ -560,7 +549,6 @@
 					tag: {
 						value: {
 							Id: "ironjetpacks:emerald"
-							Throttle: 1.0d
 						}
 					}
 				}

@@ -155,6 +155,7 @@ config/extremesoundmuffler-client.toml
 config/mininggadgets-client.toml
 config/pneumaticcraft/ArmorFeatureStatus.cfg
 config/pneumaticcraft/PneumaticArmorHUDLayout.cfg
+config/jei-client.toml
 config/refinedstorage-client.toml
 config/mcjtylib-client.toml
 config/rare-ice.properties

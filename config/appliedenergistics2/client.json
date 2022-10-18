@@ -10,14 +10,22 @@
     "showDebugGuiOverlays_comment": "Show debugging GUI overlays",
     "showDebugGuiOverlays": false,
     "showPlacementPreview_comment": "Show a preview of part and facade placement",
-    "showPlacementPreview": true
+    "showPlacementPreview": true,
+    "notifyForFinishedCraftingJobs_comment": "Show toast when long-running crafting jobs finish.",
+    "notifyForFinishedCraftingJobs": true,
+    "clearGridOnClose_comment": "Automatically clear the crafting/encoding grid when closing the terminal",
+    "clearGridOnClose": false
   },
   "terminals": {
-    "terminalStyle": "tall"
+    "terminalStyle": "tall",
+    "pinAutoCraftedItems_comment": "Pin items that the player auto-crafts to the top of the terminal",
+    "pinAutoCraftedItems": true
   },
   "search": {
     "searchTooltips_comment": "Should tooltips be searched. Performance impact",
     "searchTooltips": true,
+    "searchModNameInTooltips_comment": "Should the mod name be included when searching in tooltips.",
+    "searchModNameInTooltips": false,
     "useExternalSearch_comment": "Replaces AEs own search with the search of REI or JEI",
     "useExternalSearch": false,
     "clearExternalSearchOnOpen_comment": "When using useExternalSearch, clears the search when the terminal opens",

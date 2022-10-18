@@ -10,6 +10,28 @@
 		shiftClickCraftingResultLimit = false
 		#If the search box and button states should be synchronized between the item storage and crafting tabs.
 		syncItemStorageAndCraftingTabStates = true
+		#If the crafting grid should always be shown centrally, and not be responsive based on screen size.
+		guiStorageForceCraftingGridCenter = false
+		#The number of rows in the small scale of the storage terminal.
+		guiStorageScaleSmallRows = 5
+		#The number of columns in the height-based scale of the storage terminal.
+		guiStorageScaleHeightColumns = 9
+		#The number of rows in the large scale of the storage terminal.
+		guiStorageScaleLargeRows = 9
+		#The number of rows in the medium scale of the storage terminal.
+		guiStorageScaleMediumRows = 7
+		#The maximum number of columns in when scaling the storage terminal.
+		guiStorageScaleMaxColumns = 32
+		#The number of rows in the width-based scale of the storage terminal.
+		guiStorageScaleWidthRows = 5
+		#The number of columns in the large scale of the storage terminal.
+		guiStorageScaleLargeColumns = 11
+		#The number of columns in the small scale of the storage terminal.
+		guiStorageScaleSmallColumns = 9
+		#The maximum number of rows in when scaling the storage terminal.
+		guiStorageScaleMaxRows = 20
+		#The number of columns in the medium scale of the storage terminal.
+		guiStorageScaleMediumColumns = 10
 
 [core]
 

@@ -15,8 +15,6 @@
 	#Multiplier for magic capacity gains, increasing this may be useful when having a large set enchantments added by other mods
 	#Range: 0.0 ~ 1.7976931348623157E308
 	magic_cap_multiplier = 1.0
-	#Allow the reach attribute to modify the distance at which players can hit entities
-	entity_reach = true
 
 #World generation settings
 [worldgen]

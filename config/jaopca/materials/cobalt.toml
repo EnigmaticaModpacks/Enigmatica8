@@ -12,6 +12,8 @@
 	modelType = "metallic"
 	#The color of this material.
 	color = 2580657
+	#Is the storage block of this material small (2x2).
+	isSmallStorageBlock = false
 
 [create]
 	#The default byproduct material to output in Create's crushing.

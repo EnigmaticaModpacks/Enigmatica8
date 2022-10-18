@@ -19,5 +19,6 @@
 		"minecraft:base_stone_overworld"
 		"ftbultimine:menril_logs"
 		"forge:ores/*"
+		"malum:runewood_logs"
 	]
 }

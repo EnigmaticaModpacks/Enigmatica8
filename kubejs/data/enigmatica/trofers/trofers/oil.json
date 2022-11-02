@@ -1,0 +1,29 @@
+{
+    "name": {
+        "text": "Infinite Oil Trophy",
+        "color": "000000"
+    },
+    "tooltip": {
+        "text": "Fill entire Supreme Black Hole Tank with Crude Oil."
+    },
+    "item": {
+        "item": "thermal:crude_oil_bucket"
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.8
+    },
+    "colors": "0F0F0F",
+    "rewards": {
+        "statusEffect": {
+            "effect": "minecraft:blindness",
+            "duration": 60,
+            "amplifier": 1
+        },
+        "statusEffect": {
+            "effect": "minecraft:slowness",
+            "duration": 60,
+            "amplifier": 3
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Infinite Lava Trophy",
+    "tooltip": {
+        "text": "Fill entire Supreme Black Hole Tank with Lava."
+    },
+    "item": {
+        "item": "minecraft:lava_bucket"
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.8
+    },
+    "colors": "#cf1020",
+    "rewards": {
+        "statusEffect": {
+            "effect": "minecraft:fire_resistance",
+            "duration": 600,
+            "amplifier": 1
+        }
+    }
+}

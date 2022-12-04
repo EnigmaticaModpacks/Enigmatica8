@@ -10,7 +10,7 @@
 	// Maximum number of backups to keep
 	"max_backups": 5,
 	/* This is done with Javas implementation of cron, More info here 
-	    (https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm)
+	    (https://www.cronmaker.com)
 	*/
 	"backup_cron": "0 */30 * * * ?",
 	// Time between manual backups using the command
@@ -20,5 +20,7 @@
 	// Additional directories to include in backup
 	"additional_directories": [],
 	// Display file size in backup message
-	"display_file_size": false
+	"display_file_size": false,
+	// backup location
+	"backup_location": "."
 }

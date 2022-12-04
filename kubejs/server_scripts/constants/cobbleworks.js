@@ -51,7 +51,6 @@ const generatableStone = [
     'byg:windswept_sandstone',
     'byg:ether_stone',
     'byg:cryptic_stone',
-    'twilightforest:mazestone',
     'create:asurine',
     'minecraft:tuff',
     'create:crimsite',

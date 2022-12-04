@@ -50,8 +50,7 @@ const generatableStone = [
     'blue_skies:poison_stone',
     'byg:windswept_sandstone',
     'byg:ether_stone',
-    'byg:cryptic_stone',
-    'twilightforest:mazestone'
+    'byg:cryptic_stone'
 ];
 const generatableBasalt = ['minecraft:basalt'];
 

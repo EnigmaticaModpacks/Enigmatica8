@@ -1,3 +1,13 @@
+### Enigmatica 8 v2.4.1
+
+_Using Forge-1.18.2-40.1.86_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.4.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.4.1.md)_
+
+**Bug Fixes**
+
+-   Fixed Servers crashing when creating new worlds
+
+---
+
 ### Enigmatica 8 v2.4.0
 
 _Using Forge-1.18.2-40.1.86_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.4.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.4.0.md)_

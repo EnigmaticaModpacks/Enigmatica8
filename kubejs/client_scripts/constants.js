@@ -62,7 +62,12 @@ const disabledItems = [
     'mekanism:basic_combining_factory',
     'mekanism:advanced_combining_factory',
     'mekanism:elite_combining_factory',
-    'mekanism:ultimate_combining_factory'
+    'mekanism:ultimate_combining_factory',
+    'aquaculture:wooden_fillet_knife',
+    'aquaculture:stone_fillet_knife',
+    'aquaculture:iron_fillet_knife',
+    'aquaculture:gold_fillet_knife',
+    'aquaculture:diamond_fillet_knife'
 ];
 
 const categoriesToHide = ['twilightforest:uncrafting'];

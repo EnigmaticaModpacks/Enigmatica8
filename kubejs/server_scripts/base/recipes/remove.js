@@ -1,7 +1,7 @@
 onEvent('recipes', (event) => {
     const removals = {
         byType: ['mekanism:combining'],
-        byId: [],
+        byId: [/aquaculture:\w+_fillet_knife$/],
         byOutput: [],
         byMod: [],
         byInput: []

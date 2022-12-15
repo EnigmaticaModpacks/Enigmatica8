@@ -1,3 +1,30 @@
+### Enigmatica 8 v2.4.0
+
+_Using Forge-1.18.2-40.1.86_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.4.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.4.0.md)_
+
+**Added Mods**
+
+-   [Applied Cooking](https://www.curseforge.com/minecraft/mc-mods/applied-cooking) (by [ItsSebastrn](https://www.curseforge.com/members/ItsSebastrn/projects))
+-   [SebastrnLib](https://www.curseforge.com/minecraft/mc-mods/sebastrnlib) (by [ItsSebastrn](https://www.curseforge.com/members/ItsSebastrn/projects))
+
+**Bug Fixes**
+
+-   Mazestone spawns in random stone generators [\#328](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/328)
+-   \[SERVER\] Polymorph NPE Crash [\#327](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/327)
+-   I made a new world and broke a palm log, then [\#324](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/324)
+-   Hard Crash on Advancements Open [\#321](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/321)
+-   \[Aquaculture 2\] Fillet knife isn't used for the fillet recipe [\#314](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/314)
+-   Immersive Engineering issue with Uranium blocks [\#309](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/309)
+-   FTB Ultimine / Integrated Dynamics and Malum compatibility [\#303](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/303)
+-   \[bug\] Quest Book - Occultism - Janitor / Cleaner won't unlock [\#295](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/295)
+-   Mahogany Boat Missing Texture [\#258](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/258)
+
+**Removed Mods**
+
+-   [Ars Arsenal](https://www.curseforge.com/minecraft/mc-mods/ars-arsenal) (by [ToxicMintTea](https://www.curseforge.com/members/ToxicMintTea/projects)) - It didn't work with the current Ars Nouveau version sadly
+
+---
+
 ### Enigmatica 8 v2.3.2
 
 _Using Forge-1.18.2-40.1.80_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.3.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.3.2.md)_

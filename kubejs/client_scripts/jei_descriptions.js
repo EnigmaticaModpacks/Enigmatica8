@@ -45,7 +45,7 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['quark:bottled_cloud'],
-            text: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
+            text: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 192 and 196.']
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],

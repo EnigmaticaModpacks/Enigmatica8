@@ -25,6 +25,7 @@ screenshots/
 *.dll
 **/*.zip
 /docker/**
+
 # Instance Sync
 **/*.jar
 !InstanceSync*.jar
@@ -104,7 +105,6 @@ config.json
 # MacOSX
 .DS_Store
 .DS_Store?
-
 config/rftoolsdim-client.toml
 config/clienttweaks-client.toml
 automation/ModListCreator-1.2.0.jar
@@ -112,10 +112,8 @@ biomeidfixer.temp
 config/findme-client.toml
 config/PregenConfig.toml
 NewWorldBiomeIdFixer.json
-
 automation/ModListCreator-1.2.1.jar
 .github_changelog_generator
-
 
 # Client Configs
 config/InvTweaks.cfg
@@ -185,7 +183,6 @@ config/contentcreatorintegration/contentcreatorintegration-common.toml
 config/contentcreatorintegration/contentcreatorintegration.toml
 config/contentcreatorintegration/default/constants.json
 config/storagedrawers-client.toml
-config/blue_skies-client.toml
 config/dummmmmmy-client.toml
 config/smoothboot.json
 config/InventoryHUD/curios.json
@@ -222,7 +219,6 @@ config/bhmenu-client.toml
 config/configswapper.json
 config/betterendforge/client.json
 config/Mekanism/tiers.toml
-
 client_data/byg/biomepedia.dat
 config/ae2-client.toml
 config/aiotbotania-client.toml

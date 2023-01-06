@@ -1,0 +1,8 @@
+
+#Create compatiblility options
+[create]
+	#Whether refined radiance and shadow steel materials should be enabled
+	chromaticMaterials = true
+	#Whether the recipe for chromatic compound should be added back
+	chromaticRecipe = true
+

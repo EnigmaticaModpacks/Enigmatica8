@@ -92,6 +92,8 @@
 		machineReaderBaseConsumption = 1
 		#The base energy usage for the entity writer.
 		entityWriterBaseConsumption = 1
+		#The default port for running the network diagnostics HTTP server.
+		diagnosticsWebServerPort = 3030
 
 [machine]
 

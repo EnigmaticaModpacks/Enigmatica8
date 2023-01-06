@@ -3,6 +3,8 @@
 [misc]
 	#Should you get a grave finder item after you respawn?
 	spawnGraveFinder = true
+	#Set to false to disable retrieval by sneaking on top of the grave.
+	sneakRetrieval = true
 
 #How the grave data is handled
 [data]

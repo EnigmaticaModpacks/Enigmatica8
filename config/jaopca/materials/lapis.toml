@@ -12,6 +12,8 @@
 	modelType = "crystal"
 	#The color of this material.
 	color = 3430829
+	#Is the storage block of this material small (2x2).
+	isSmallStorageBlock = false
 
 [molten]
 	#The temperature of this molten fluid.

@@ -16,6 +16,8 @@
 	canvasSignDarkBackgroundList = ["gray", "purple", "blue", "brown", "green", "red", "black"]
 	#Should the Wandering Trader sell some of this mod's items? (Currently includes crop seeds and onions)
 	wanderingTraderSellsFDItems = true
+	#Should players be able to reel back rope, bottom to top, when sneak-using with an empty hand on them?
+	enableRopeReeling = true
 
 #Vanilla item overrides
 [overrides]
@@ -23,7 +25,7 @@
 	vanillaSoupExtraEffects = true
 	#Should Rabbit Stew grant users the jumping prowess of a rabbit when eaten?
 	rabbitStewJumpBoost = true
-	#Should most vanilla tools register a dispenser behavior when facing a Cutting Board?
+	#Should the Dispenser be able to operate a Cutting Board in front of it?
 	dispenserUsesToolsOnCuttingBoard = true
 
 	#Stack size overrides
@@ -97,4 +99,33 @@
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 20
+
+	#Brown Mushroom Colony generation
+	[world.brown_mushroom_colonies]
+		#Generate brown mushroom colonies on mushroom fields
+		genBrownMushroomColony = true
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 15
+
+	#Red Mushroom Colony generation
+	[world.red_mushroom_colonies]
+		#Generate red mushroom colonies on mushroom fields
+		genRedMushroomColony = true
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 15
+
+#Farming
+[farming]
+	#Which rope should Tomato Vines leave behind when mined by hand?
+	defaultTomatoVineRope = "farmersdelight:rope"
+	#Should tomato vines be able to climb any rope tagged as farmersdelight:ropes?
+	#Beware: this will convert these blocks into the block specified in defaultTomatoVineRope.
+	enableTomatoVineClimbingTaggedRopes = true
+
+#Recipe book
+[recipe_book]
+	#Should the Cooking Pot have a Recipe Book available on its interface?
+	enableRecipeBookCookingPot = true
 

@@ -1,7 +1,7 @@
-#No comment
+#Base generator volume
 #Range: 0.0 ~ 1.0
 baseGeneratorVolume = 1.0
-#No comment
+#Loop volume factor
 #Range: 0.0 ~ 1.0
 loopVolumeFactor = 1.0
 #The color for the radiation overlay text in case the radiation monitor is in the players hand

@@ -50,13 +50,24 @@ const generatableStone = [
     'blue_skies:poison_stone',
     'byg:windswept_sandstone',
     'byg:ether_stone',
-    'byg:cryptic_stone',
-    'twilightforest:mazestone'
+    'byg:cryptic_stone'
 ];
 const generatableBasalt = ['minecraft:basalt'];
 
 const itemsToHide = [];
 
-const disabledItems = ['twilightforest:uncrafting_table'];
+const disabledItems = [
+    'twilightforest:uncrafting_table',
+    'mekanism:combiner',
+    'mekanism:basic_combining_factory',
+    'mekanism:advanced_combining_factory',
+    'mekanism:elite_combining_factory',
+    'mekanism:ultimate_combining_factory',
+    'aquaculture:wooden_fillet_knife',
+    'aquaculture:stone_fillet_knife',
+    'aquaculture:iron_fillet_knife',
+    'aquaculture:gold_fillet_knife',
+    'aquaculture:diamond_fillet_knife'
+];
 
 const categoriesToHide = ['twilightforest:uncrafting'];

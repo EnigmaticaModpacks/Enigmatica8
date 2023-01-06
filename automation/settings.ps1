@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica8"
 $CLIENT_NAME = "Enigmatica8"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "2.3.0"
+$MODPACK_VERSION = "2.4.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "2.2.1"
+$LAST_MODPACK_VERSION = "2.4.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -77,11 +77,14 @@ $MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
 
 $CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
-$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("config",
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
+	"config",
 	"defaultconfigs",
 	"kubejs",
 	"local",
-	"packmenu")
+	"packmenu",
+	"patchouli_books",
+	"schematics")
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"InventoryHUD/curios.json",
@@ -97,7 +100,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"betterendforge/client-config.toml",
 	"betterendforge/client.json",
 	"bloodmagic-client.toml",
-	"blue_skies-client.toml",
 	"cagedmobs-client.toml",
 	"cfm-client.toml",
 	"chiselsandbits-client.toml",

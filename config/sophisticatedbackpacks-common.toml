@@ -409,3 +409,12 @@
 		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
 		onlyWornBackpackTriggersUpgrades = false
 
+	#Advanced Refill Upgrade Settings
+	[common.advancedRefillUpgrade]
+		#Number of Advanced Refill Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 12
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+

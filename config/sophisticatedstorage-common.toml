@@ -391,3 +391,183 @@
 		#Range: 1 ~ 20
 		maxXpPointsPerMending = 5
 
+	#Limited Barrel I Settings
+	[common.LimitedBarrelI]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 32
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Iron Barrel I Settings
+	[common.LimitedIronBarrelI]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 64
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Gold Barrel I Settings
+	[common.LimitedGoldBarrelI]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 96
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 2
+
+	#Limited Diamond Barrel I Settings
+	[common.LimitedDiamondBarrelI]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 128
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 3
+
+	#Limited Netherite Barrel I Settings
+	[common.LimitedNetheriteBarrelI]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 160
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 4
+
+	#Limited Barrel II Settings
+	[common.LimitedBarrelII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 16
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Iron Barrel II Settings
+	[common.LimitedIronBarrelII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 32
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Gold Barrel II Settings
+	[common.LimitedGoldBarrelII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 48
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 2
+
+	#Limited Diamond Barrel II Settings
+	[common.LimitedDiamondBarrelII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 64
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 3
+
+	#Limited Netherite Barrel II Settings
+	[common.LimitedNetheriteBarrelII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 80
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 4
+
+	#Limited Barrel III Settings
+	[common.LimitedBarrelIII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 10
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Iron Barrel III Settings
+	[common.LimitedIronBarrelIII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 20
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Gold Barrel III Settings
+	[common.LimitedGoldBarrelIII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 30
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 2
+
+	#Limited Diamond Barrel III Settings
+	[common.LimitedDiamondBarrelIII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 40
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 3
+
+	#Limited Netherite Barrel III Settings
+	[common.LimitedNetheriteBarrelIII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 50
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 4
+
+	#Limited Barrel IV Settings
+	[common.LimitedBarrelIV]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 8
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Iron Barrel IV Settings
+	[common.LimitedIronBarrelIV]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 16
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Gold Barrel IV Settings
+	[common.LimitedGoldBarrelIV]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 24
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 2
+
+	#Limited Diamond Barrel IV Settings
+	[common.LimitedDiamondBarrelIV]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 32
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 3
+
+	#Limited Netherite Barrel IV Settings
+	[common.LimitedNetheriteBarrelIV]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 256
+		baseSlotLimitMultiplier = 40
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 4
+

@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Welcome!"
+			title: "&eWelcome!"
 			icon: "minecraft:oak_sapling"
 			x: 0.0d
 			y: -6.0d
@@ -26,10 +26,12 @@
 				""
 				"-------------------------------------------------"
 				""
-				"&oTake a note that &6Enigmatica 8&r&o quests are being ported from &6Enigmatica 6&r&o, so missleading information can be a thing! If you find something missing / not up-to-date, please report it on our &9issue Tracker&r&o!"
+				"&oTake a note that &6Enigmatica 8&r&o quests are being ported from &6Enigmatica 6&r&o, so missleading information can be a thing! If you find something missing / not up-to-date, please report it on our &3Issue Tracker&r&o!"
 				""
 				"Orginal Port done by: &eHalfdeaf"
 				"Reworked Port done by: &eKanzaji"
+				""
+				"{\"text\":\"Click me to open Enigmatica 8 Issue Tracker\", \"color\":\"yellow\", \"underlined\":true, \"clickEvent\":{\"action\":\"open_url\", \"value\":\"https://github.com/EnigmaticaModpacks/Enigmatica8/issues\"}}"
 			]
 			size: 1.5d
 			min_width: 300
@@ -49,6 +51,7 @@
 			}]
 		}
 		{
+			title: "&2Exploring Enigmatica"
 			x: -2.0d
 			y: -5.0d
 			description: [
@@ -76,6 +79,7 @@
 			}]
 		}
 		{
+			title: "&3Learning Mods"
 			icon: "minecraft:writable_book"
 			x: 0.0d
 			y: -3.5d
@@ -98,7 +102,7 @@
 			}]
 		}
 		{
-			title: "Challenges"
+			title: "&5Challenges"
 			icon: "minecraft:wither_skeleton_skull"
 			x: 2.0d
 			y: -5.0d
@@ -159,7 +163,7 @@
 			}]
 		}
 		{
-			title: "Book"
+			title: "Akashic Tome"
 			x: -1.5d
 			y: -7.5d
 			subtitle: "Don't Panic"

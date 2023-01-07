@@ -14,23 +14,25 @@
 			x: 0.0d
 			y: -6.0d
 			description: [
-				"Welcome to Enigmatica 8, we're glad to have you :D"
+				"Welcome to &6Enigmatica 8&r, we're glad to have you :D"
 				" "
 				"Quests are divided into 3 types:"
 				""
-				"- Exploring Enigmatica"
-				"- Learning Mods"
-				"- Challenges"
+				"- &2Exploring Enigmatica&r"
+				"- &3Learning Mods&r"
+				"- &5Challenges&r"
 				""
 				"You can learn more about each type below."
 				""
-				"Note that we're still working on quests, and this is a port of quests from Enigmatica 6, so It is possible that some of the quests will not work, or aren't relevant to the reality, and many more will be added in the future!"
+				"-------------------------------------------------"
 				""
-				"Orginal Port done by: Halfdeaf"
-				"Reworked Port done by: Kanzaji"
+				"&oTake a note that &6Enigmatica 8&r&o quests are being ported from &6Enigmatica 6&r&o, so missleading information can be a thing! If you find something missing / not up-to-date, please report it on our &9issue Tracker&r&o!"
+				"[w]{w}"
+				"Orginal Port done by: &eHalfdeaf"
+				"Reworked Port done by: &eKanzaji"
 			]
 			size: 1.5d
-			min_width: 260
+			min_width: 300
 			id: "0000000000000045"
 			tasks: [{
 				id: "0000000000000046"

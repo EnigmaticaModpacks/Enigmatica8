@@ -215,72 +215,11 @@
 				"3468E652B4FE85FA"
 			]
 			id: "559D7D60CDDE5596"
-			tasks: [
-				{
-					id: "204956F05E407E82"
-					type: "item"
-					item: "xnet:controller"
-				}
-				{
-					id: "79D951766C0A6EF5"
-					type: "item"
-					title: "Any XNet cable"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "xnet:netcable_red"
-									Count: 1b
-								}
-								{
-									id: "xnet:netcable_green"
-									Count: 1b
-								}
-								{
-									id: "xnet:netcable_blue"
-									Count: 1b
-								}
-								{
-									id: "xnet:netcable_yellow"
-									Count: 1b
-								}
-							]
-						}
-					}
-					consume_items: false
-				}
-				{
-					id: "4B2CE60937C00CCE"
-					type: "item"
-					title: "Any XNet Connector"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "xnet:connector_red"
-									Count: 1b
-								}
-								{
-									id: "xnet:connector_green"
-									Count: 1b
-								}
-								{
-									id: "xnet:connector_blue"
-									Count: 1b
-								}
-								{
-									id: "xnet:connector_yellow"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "204956F05E407E82"
+				type: "item"
+				item: "xnet:controller"
+			}]
 			rewards: [{
 				id: "0000000000000A5D"
 				type: "command"
@@ -2171,28 +2110,34 @@
 			description: [
 				"Use the Lua programming language to interact with the world."
 				""
-				""
 				"When you claim this reward, a link will be posted in chat to a video playlist for a basic tutorial on CC. While for an old version, it should still be relevant."
-				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
+				"The link is also accessible here for future refference:"
+				"{\"text\":\"CC Tutorial Link\",\"underlined\":true,\"color\":\"yellow\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
 			]
 			dependencies: [
 				"30AA6A8DF0B65273"
 				"3468E652B4FE85FA"
 			]
-			optional: true
 			id: "77F743435F64DFEC"
 			tasks: [{
 				id: "4B7B9611F1294D2B"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "20E531EBA4E9DA87"
-				type: "command"
-				title: "CC Tutorial Link"
-				icon: "pneumaticcraft:tag_filter"
-				command: "/tellraw @p {\"text\":\"CC Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "5EBE407647562A6F"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "2005ADDEBF13839C"
+					type: "command"
+					title: "CC Tutorial Link"
+					icon: "pneumaticcraft:tag_filter"
+					command: "/tellraw @p {\"text\":\"CC Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: -1.0d

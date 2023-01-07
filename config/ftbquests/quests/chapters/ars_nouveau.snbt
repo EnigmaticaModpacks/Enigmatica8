@@ -843,7 +843,7 @@
 			rewards: [{
 				id: "203CECCC321A0C3D"
 				type: "item"
-				item: "emendatusenigmatica:emerald_block"
+				item: "minecraft:emerald_block"
 			}]
 		}
 		{
@@ -1441,9 +1441,9 @@
 			description: [
 				"Ideal equipment for the dedicated Wizard, these magically enhanced vestments offer more than simple protection. "
 				""
-				"Primarily, they act as a personal battery for Source, giving the caster more to draw on in battle. However, they may also have special Threads woven into them to offer more unique and customized boons. "
+				"Primarily, they act as a personal battery for Source, giving the caster more to draw on in battle."
 				""
-				"Each set of armor may be upgraded in the Enchantment Apparatus through three different tiers. At each tier, they gain more slots for accepting Threads. The recipe for upgrading the tier is shown in the Worn Notebook. "
+				"Each set of armor may be upgraded in the Enchantment Apparatus through three different tiers.  The recipe for upgrading the tier is shown in the Worn Notebook. "
 			]
 			dependencies: ["138A7CF8826F30CD"]
 			id: "2614A201594A632C"

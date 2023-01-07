@@ -173,7 +173,7 @@
 				{
 					id: "000000000000051D"
 					type: "item"
-					item: "botania:livingwood"
+					item: "botania:livingwood_log"
 					count: 16L
 				}
 				{

@@ -1015,299 +1015,92 @@
 			]
 			rewards: [
 				{
-					id: "485894E4EE24E3E1"
+					id: "05EFF76E8329E7BB"
 					type: "item"
 					item: {
-						id: "trofers:small_trophy"
+						id: "trofers:large_pillar"
 						Count: 1b
 						tag: {
 							BlockEntityTag: {
-								Item: {
-									id: "industrialforegoing:infinity_trident"
-									Count: 1b
-									tag: {
-										CanCharge: 1b
-										Riptide: 0
-										Channeling: 0b
-										Energy: 0L
-										Fluid: {
-											FluidName: "biofuel"
-											Amount: 0
-										}
-										Special: 0b
-										Selected: "POOR"
-										Loyalty: 0
-									}
-								}
-								DisplayScale: 0.5f
-								Animation: "fixed"
-								Colors: {
-									Bottom: {
-										Red: 255
-										Blue: 255
-										Green: 255
-									}
-									Top: {
-										Red: 249
-										Blue: 254
-										Green: 255
-									}
-									Middle: {
-										Red: 137
-										Blue: 184
-										Green: 50
-									}
-								}
+								Trophy: "enigmatica:if_drill"
 							}
 						}
 					}
 				}
 				{
-					id: "23558895485FF9E0"
+					id: "55BA652CB7AFE608"
 					type: "item"
 					item: {
-						id: "trofers:small_trophy"
+						id: "trofers:large_pillar"
 						Count: 1b
 						tag: {
 							BlockEntityTag: {
-								Item: {
-									id: "industrialforegoing:infinity_drill"
-									Count: 1b
-									tag: {
-										CanCharge: 1b
-										Special: 0b
-										Selected: "POOR"
-										Energy: 0L
-										Fluid: {
-											FluidName: "biofuel"
-											Amount: 0
-										}
-									}
-								}
-								DisplayScale: 0.5f
-								Animation: "fixed"
-								Colors: {
-									Bottom: {
-										Red: 255
-										Blue: 255
-										Green: 255
-									}
-									Top: {
-										Red: 249
-										Blue: 254
-										Green: 255
-									}
-									Middle: {
-										Red: 137
-										Blue: 184
-										Green: 50
-									}
-								}
+								Trophy: "enigmatica:if_hammer"
 							}
 						}
 					}
 				}
 				{
-					id: "2E4A9E23F542A9BF"
+					id: "42F0AAB9116EA732"
 					type: "item"
 					item: {
-						id: "trofers:small_trophy"
+						id: "trofers:large_pillar"
 						Count: 1b
 						tag: {
 							BlockEntityTag: {
-								Item: {
-									id: "industrialforegoing:infinity_backpack"
-									Count: 1b
-									tag: {
-										CanCharge: 1b
-										Special: 0b
-										Selected: "POOR"
-										Id: "75cd3df4-1573-46e9-a320-cac2879426bf"
-										Energy: 0L
-									}
-								}
-								DisplayScale: 0.5f
-								Animation: "fixed"
-								Colors: {
-									Bottom: {
-										Red: 255
-										Blue: 255
-										Green: 255
-									}
-									Top: {
-										Red: 249
-										Blue: 254
-										Green: 255
-									}
-									Middle: {
-										Red: 137
-										Blue: 184
-										Green: 50
-									}
-								}
+								Trophy: "enigmatica:if_trident"
 							}
 						}
 					}
 				}
 				{
-					id: "0992ACAB5C09DAE0"
+					id: "4E829CD6C4F5730C"
 					type: "item"
 					item: {
-						id: "trofers:small_trophy"
+						id: "trofers:large_pillar"
 						Count: 1b
 						tag: {
 							BlockEntityTag: {
-								Item: {
-									id: "industrialforegoing:infinity_hammer"
-									Count: 1b
-									tag: {
-										CanCharge: 1b
-										Energy: 0L
-										Fluid: {
-											FluidName: "biofuel"
-											Amount: 0
-										}
-										Special: 0b
-										Selected: "POOR"
-										Beheading: 0
-									}
-								}
-								DisplayScale: 0.5f
-								Animation: "fixed"
-								Colors: {
-									Bottom: {
-										Red: 249
-										Blue: 254
-										Green: 255
-									}
-									Top: {
-										Red: 249
-										Blue: 254
-										Green: 255
-									}
-									Middle: {
-										Red: 137
-										Blue: 184
-										Green: 50
-									}
-								}
+								Trophy: "enigmatica:if_saw"
 							}
 						}
 					}
 				}
 				{
-					id: "7EF5A4E188996336"
+					id: "4F734E63CC8A0EAB"
 					type: "item"
 					item: {
-						id: "trofers:small_trophy"
+						id: "trofers:large_pillar"
 						Count: 1b
 						tag: {
 							BlockEntityTag: {
-								Item: {
-									id: "industrialforegoing:infinity_saw"
-									Count: 1b
-									tag: {
-										CanCharge: 1b
-										Special: 0b
-										Selected: "POOR"
-										Energy: 0L
-										Fluid: {
-											FluidName: "biofuel"
-											Amount: 0
-										}
-									}
-								}
-								DisplayScale: 0.5f
-								Animation: "fixed"
-								Colors: {
-									Bottom: {
-										Red: 249
-										Blue: 254
-										Green: 255
-									}
-									Top: {
-										Red: 249
-										Blue: 254
-										Green: 255
-									}
-									Middle: {
-										Red: 137
-										Blue: 184
-										Green: 50
-									}
-								}
+								Trophy: "enigmatica:if_backpack"
 							}
 						}
 					}
 				}
 				{
-					id: "6457AAA4C0F166C9"
+					id: "1763C7FE194A280F"
 					type: "item"
 					item: {
-						id: "trofers:small_trophy"
+						id: "trofers:large_pillar"
 						Count: 1b
 						tag: {
 							BlockEntityTag: {
-								Item: {
-									Colors: {
-										Bottom: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Top: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Middle: {
-											Red: 137
-											Blue: 184
-											Green: 50
-										}
-									}
-									DisplayScale: 0.5d
-									Animation: "fixed"
-									id: "industrialforegoing:infinity_nuke"
-									Count: 1
-									tag: { }
-								}
+								Trophy: "enigmatica:if_nuke"
 							}
 						}
 					}
 				}
 				{
-					id: "42B3BA6BE0A12001"
+					id: "4CF6AA8774E88F64"
 					type: "item"
 					item: {
-						id: "trofers:small_trophy"
+						id: "trofers:large_pillar"
 						Count: 1b
 						tag: {
 							BlockEntityTag: {
-								Item: {
-									Colors: {
-										Bottom: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Top: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Middle: {
-											Red: 137
-											Blue: 184
-											Green: 50
-										}
-									}
-									DisplayScale: 0.5d
-									Animation: "fixed"
-									id: "industrialforegoing:infinity_launcher"
-									Count: 1
-									tag: { }
-								}
+								Trophy: "enigmatica:if_launcher"
 							}
 						}
 					}

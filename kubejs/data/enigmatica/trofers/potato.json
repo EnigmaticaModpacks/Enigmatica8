@@ -1,0 +1,43 @@
+{
+    "name": {
+        "text": "Potato Lover Trophy",
+        "color": "#f0bc1f"
+    },
+    "tooltip": [
+        {"text": "Po-tay-toes! Boil 'em, mash 'em, stick 'em in a stew..."}
+    ],
+    "item": {
+        "item": "create:potato_cannon"
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#f0bc1f"
+    },
+    "display":{
+        "offset": {
+            "x": -2,
+            "y": 3,
+            "z": 1
+        },
+        "rotation": {
+            "z": -40,
+            "y": -3
+        }
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.25
+    },
+    "effects": {
+        "rewards": {
+            "statusEffect": {
+                "effect": "farmersdelight:nourishment",
+                "duration": 1800
+            },
+            "cooldown": 3000
+        },
+        "sound":{
+            "soundEvent": "minecraft:item.crop.plant"
+        }
+    }
+}

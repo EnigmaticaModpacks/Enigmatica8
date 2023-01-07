@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 4
 	filename: "challenges"
-	title: "Challenges [WIP]"
+	title: "Challenges"
 	icon: "minecraft:dragon_head"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -76,34 +76,11 @@
 				id: "18625435104F6277"
 				type: "item"
 				item: {
-					id: "trofers:large_trophy"
+					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "mininggadgets:upgrade_battery_3"
-								Count: 1b
-							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Top: {
-									Red: 249
-									Blue: 254
-									Green: 255
-								}
-								Middle: {
-									Red: 128
-									Blue: 31
-									Green: 199
-								}
-							}
-							Name: "Limitless Power Trophy"
+							Trophy: "enigmatica:creative_energy"
 						}
 					}
 				}
@@ -130,34 +107,11 @@
 				id: "7F0FC16030FE7D99"
 				type: "item"
 				item: {
-					id: "trofers:trophy"
+					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "minecraft:dragon_head"
-								Count: 1b
-							}
-							DisplayScale: 0.75f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 249
-									Blue: 254
-									Green: 255
-								}
-								Top: {
-									Red: 249
-									Blue: 254
-									Green: 255
-								}
-								Middle: {
-									Red: 137
-									Blue: 184
-									Green: 50
-								}
-							}
-							Name: "Ender Dragon Trophy"
+							Trophy: "enigmatica:end"
 						}
 					}
 				}
@@ -265,14 +219,14 @@
 				}
 			}]
 			rewards: [{
-				id: "2CEB97E39BE8BBE5"
+				id: "7BCEC498963121DE"
 				type: "item"
 				item: {
 					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Trophy: "enigmatica:trofers/lava"
+							Trophy: "enigmatica:lava"
 						}
 					}
 				}
@@ -405,37 +359,14 @@
 				}
 			}]
 			rewards: [{
-				id: "2B3C7A66BA863710"
+				id: "7F89863BC653366B"
 				type: "item"
 				item: {
-					id: "trofers:large_trophy"
+					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "minecraft:water_bucket"
-								Count: 1b
-							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Top: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Middle: {
-									Red: 58
-									Blue: 218
-									Green: 179
-								}
-							}
-							Name: "Water Trophy"
+							Trophy: "enigmatica:water"
 						}
 					}
 				}
@@ -643,7 +574,7 @@
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Trophy: "enigmatica:trofers/oil"
+							Trophy: "enigmatica:oil"
 						}
 					}
 				}
@@ -670,37 +601,14 @@
 				criterion: ""
 			}]
 			rewards: [{
-				id: "1101CE8B58FFDB74"
+				id: "6D25E348537A889D"
 				type: "item"
 				item: {
-					id: "trofers:large_trophy"
+					id: "trofers:large_plate"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "farmersdelight:horse_feed"
-								Count: 1b
-							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Top: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Middle: {
-									Red: 249
-									Blue: 29
-									Green: 128
-								}
-							}
-							Name: "Zoology Trophy"
+							Trophy: "enigmatica:tame_all_animals"
 						}
 					}
 				}
@@ -727,37 +635,14 @@
 				criterion: ""
 			}]
 			rewards: [{
-				id: "2CBDA020ED4C5E9C"
+				id: "42468F1FC9CF291F"
 				type: "item"
 				item: {
-					id: "trofers:large_trophy"
+					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "minecraft:golden_carrot"
-								Count: 1b
-							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Top: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Middle: {
-									Red: 254
-									Blue: 61
-									Green: 216
-								}
-							}
-							Name: "Breeding Trophy"
+							Trophy: "enigmatica:two_by_two"
 						}
 					}
 				}
@@ -1527,36 +1412,14 @@
 				}
 			]
 			rewards: [{
-				id: "75E761B2293C1707"
+				id: "22375B2CE8A4DA37"
 				type: "item"
 				item: {
-					id: "trofers:large_trophy"
+					id: "trofers:large_pillar"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							Item: {
-								id: "minecraft:potato"
-								Count: 1b
-							}
-							DisplayScale: 1.0f
-							Animation: "fixed"
-							Colors: {
-								Bottom: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Top: {
-									Red: 255
-									Blue: 255
-									Green: 255
-								}
-								Middle: {
-									Red: 254
-									Blue: 61
-									Green: 216
-								}
-							}
+							Trophy: "enigmatica:potato"
 						}
 					}
 				}

@@ -1,0 +1,32 @@
+{
+    "name": {
+        "text": "Artifact tier of Infinity Saw Trophy",
+        "color": "#9d6cb8"
+    },
+    "tooltip": [
+        {"text": "Obtain Infinity Saw with Artifact tier!"}
+    ],
+    "item": {
+        "item": "industrialforegoing:infinity_saw"
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#9d6cb8"
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.4
+    },
+    "effects": {
+        "rewards": {
+            "statusEffect": {
+                "effect": "minecraft:haste",
+                "duration": 300
+            },
+            "cooldown": 3000
+        },
+        "sound":{
+            "soundEvent": "industrialforegoing:nuke_arming"
+        }
+    }
+}

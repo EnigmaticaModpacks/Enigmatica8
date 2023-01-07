@@ -1,0 +1,39 @@
+{
+    "name": {
+        "text": "Infinite Energy Trophy",
+        "color": "#9336a3"
+    },
+    "tooltip": [
+        {"text": "Charge fully Ultimate Induction Cell."}
+    ],
+    "item": {
+        "item": "mekanism:ultimate_induction_cell"
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.4
+    },
+    "display": {
+        "scale": 0.85,
+        "offset": {
+            "y": 1
+        }
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#9336a3"
+    },
+    "effects": {
+        "rewards": {
+            "statusEffect": {
+                "effect": "minecraft:speed",
+                "duration": 300,
+                "amplifier": 3
+            },
+            "cooldown": 600
+        },
+        "sound":{
+            "soundEvent": "immersiveengineering:tesla"
+        }
+    }
+}

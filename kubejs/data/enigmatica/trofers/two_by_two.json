@@ -1,0 +1,33 @@
+{
+    "name": {
+        "text": "Two by Two Trophy",
+        "color": "#fe3dd8"
+    },
+    "tooltip": [
+        {"text": "Breed Every animal there is to breed!"}
+    ],
+    "item": {
+        "item": "minecraft:golden_carrot"
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#fe3dd8"
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.5
+    },
+    "effects": {
+        "rewards": {
+            "statusEffect": {
+                "effect": "minecraft:regeneration",
+                "duration": 100,
+                "amplifier": 5
+            },
+            "cooldown": 3000
+        },
+        "sound": {
+            "soundEvent": "minecraft:music_disc.cat"
+        }
+    }
+}

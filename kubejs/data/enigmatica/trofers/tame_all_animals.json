@@ -1,0 +1,38 @@
+{
+    "name": {
+        "text": "Zoology Trophy",
+        "color": "#f91d80"
+    },
+    "tooltip": [
+        {"text": "Tame all animals! And here is your special cat for that."}
+    ],
+    "entity": {
+        "type": "minecraft:cat",
+        "nbt": "{CatType:1,Sitting:1b}"
+      },
+    "colors": {
+        "base": "#d60fb2",
+        "accent": "#f91d80"
+    },
+    "display": {
+        "offset": {
+            "x": 2,
+            "z": 2
+        },
+        "rotation": {
+            "y": 40
+        }
+    },
+    "effects": {
+        "rewards": {
+            "statusEffect": {
+                "effect": "cofh_core:love",
+                "duration": 8000
+            },
+            "cooldown": 600
+        },
+        "sound": {
+            "soundEvent": "minecraft:entity.cat.purr"
+        }
+    }
+}

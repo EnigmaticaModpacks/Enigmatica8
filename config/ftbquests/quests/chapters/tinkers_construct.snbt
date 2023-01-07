@@ -3511,11 +3511,6 @@
 					item: "tconstruct:plate_cast"
 				}
 				{
-					id: "0457F7C5B0A64DAB"
-					type: "item"
-					item: "materialis:inlay_cast"
-				}
-				{
 					id: "03BB016BF8408207"
 					type: "item"
 					item: "tconstruct:rod_cast"

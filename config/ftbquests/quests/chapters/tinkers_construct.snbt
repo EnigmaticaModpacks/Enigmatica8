@@ -35,7 +35,6 @@
 					level: 1s
 				}
 			]
-			HideFlags: 3
 			tic_materials: [
 				"tconstruct:hepatizon"
 				"tconstruct:wood"
@@ -85,7 +84,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:hepatizon"
 						"tconstruct:wood"
@@ -813,7 +811,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:wood"
@@ -908,7 +905,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:bronze"
 								"tconstruct:wood"
@@ -966,7 +962,6 @@
 							level: 2s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:wood"
@@ -1054,7 +1049,6 @@
 									level: 2s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:bronze"
 								"tconstruct:wood"
@@ -1116,7 +1110,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:wood"
@@ -1208,7 +1201,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:bronze"
 								"tconstruct:wood"
@@ -1266,7 +1258,6 @@
 							level: 2s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:wood"
@@ -1368,7 +1359,6 @@
 									level: 2s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:bronze"
 								"tconstruct:wood"
@@ -1434,7 +1424,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:wood"
@@ -1540,7 +1529,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:bronze"
 								"tconstruct:wood"
@@ -1602,7 +1590,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:wood"
@@ -1684,7 +1671,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:bronze"
 								"tconstruct:wood"
@@ -1750,7 +1736,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:rock"
 						"tconstruct:wood"
@@ -1835,7 +1820,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:rock"
 								"tconstruct:wood"
@@ -1893,7 +1877,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:rock"
 						"tconstruct:wood"
@@ -1978,7 +1961,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:rock"
 								"tconstruct:wood"
@@ -2039,7 +2021,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:rock"
 						"tconstruct:wood"
@@ -2129,7 +2110,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:rock"
 								"tconstruct:wood"
@@ -2182,7 +2162,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:rock"
 						"tconstruct:wood"
@@ -2264,7 +2243,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:rock"
 								"tconstruct:wood"
@@ -2325,7 +2303,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:rock"
 						"tconstruct:wood"
@@ -2415,7 +2392,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:rock"
 								"tconstruct:wood"
@@ -2474,7 +2450,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:rock"
 						"tconstruct:wood"
@@ -2562,7 +2537,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:rock"
 								"tconstruct:wood"
@@ -2655,7 +2629,6 @@
 							level: 1s
 						}
 					]
-					HideFlags: 3
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:wood"
@@ -2730,7 +2703,6 @@
 									level: 1s
 								}
 							]
-							HideFlags: 3
 							tic_materials: [
 								"tconstruct:bronze"
 								"tconstruct:wood"
@@ -2952,7 +2924,6 @@
 							"tconstruct:armor": 0.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:bouncy"
@@ -2962,8 +2933,15 @@
 								name: "tconstruct:leaping"
 								level: 1s
 							}
+							{
+								name: "tconstruct:overslime_friend"
+								level: 1s
+							}
 						]
 						Damage: 0
+						tic_volatile_data: {
+							"tconstruct:overslime_friend": 1b
+						}
 						tic_persistent_data: {
 							abilities: 1
 							upgrades: 5
@@ -3209,7 +3187,6 @@
 							"tconstruct:durability": 100.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:fiery"

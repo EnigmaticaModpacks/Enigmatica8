@@ -22,9 +22,8 @@
 				"Besides this questline, your best friend when navigating the mod is the Powah Manual. Feel free to consult it every time you find yourself lost or are looking for more information on something."
 				"Now then, let’s get started, shall we?"
 				""
-				"~Merlo"
+				"&e~Merlo"
 			]
-			optional: true
 			id: "000000000000016F"
 			tasks: [{
 				id: "4C763494FAB6F8A2"

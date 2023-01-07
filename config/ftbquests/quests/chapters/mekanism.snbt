@@ -22,9 +22,8 @@
 				""
 				"https://wiki.aidancbrady.com"
 				""
-				"~MuteTiefling"
+				"&e~MuteTiefling"
 			]
-			optional: true
 			id: "00000000000006A1"
 			tasks: [{
 				id: "00000000000006A2"

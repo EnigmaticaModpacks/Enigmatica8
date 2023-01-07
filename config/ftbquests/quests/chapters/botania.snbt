@@ -25,9 +25,8 @@
 				""
 				"Botania is an expansive mod, and so not everything will be covered here. Refer back to the Lexica Botania frequently for in depth information and interesting tips."
 				""
-				"~MuteTiefling"
+				"&e~MuteTiefling"
 			]
-			optional: true
 			id: "0000000000000501"
 			tasks: [{
 				id: "26553788817F4728"

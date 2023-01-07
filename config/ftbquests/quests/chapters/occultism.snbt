@@ -28,9 +28,8 @@
 				""
 				"The Dictionary of Spirits has everything you need to get you started on your journey."
 				""
-				"~The_Boo"
+				"&e~The_Boo"
 			]
-			optional: true
 			id: "0000000000000CB1"
 			tasks: [{
 				id: "379B9C805D818944"

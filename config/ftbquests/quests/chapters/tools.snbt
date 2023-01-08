@@ -3101,9 +3101,7 @@
 			y: -16.0d
 			subtitle: "Iron jetpacks have only 1 iron jetpack?!? Ironic."
 			description: [
-				"Second tier of jetpacks introduce &ofinally&r Iron jetpack!"
-				""
-				"They are made out of a bit harder to get materials, requiring a bit of processing, but they are really nice upgrade from tier 1."
+				"Second tier Jetpacks are made out of a bit harder to get materials, requiring a bit of processing, but they are really good upgrade from tier 1."
 			]
 			dependencies: ["517AFDCCF9B4F556"]
 			id: "3DE9AC6CE13B591B"

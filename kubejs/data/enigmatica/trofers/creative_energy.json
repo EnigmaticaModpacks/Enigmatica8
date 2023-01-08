@@ -4,7 +4,7 @@
         "color": "#9336a3"
     },
     "tooltip": [
-        {"text": "Charge fully Ultimate Induction Cell."}
+        {"text": "Fully charge Ultimate Induction Cell."}
     ],
     "item": {
         "item": "mekanism:ultimate_induction_cell"

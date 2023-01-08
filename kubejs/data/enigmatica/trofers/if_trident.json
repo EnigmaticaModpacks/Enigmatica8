@@ -1,0 +1,38 @@
+{
+    "name": {
+        "text": "Infinity Trident Trophy",
+        "color": "#9d6cb8"
+    },
+    "tooltip": [
+        {"text": "Obtain an Artifact Tier Infinity Trident!"}
+    ],
+    "item": {
+        "item": "industrialforegoing:infinity_trident"
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#9d6cb8"
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.4
+    },
+    "display": {
+        "scale": 0.65,
+        "offset": {
+            "y": 5
+        }
+    },
+    "effects": {
+        "rewards": {
+            "statusEffect": {
+                "effect": "minecraft:haste",
+                "duration": 300
+            },
+            "cooldown": 3000
+        },
+        "sound":{
+            "soundEvent": "minecraft:item.flintandsteel.use"
+        }
+    }
+}

@@ -27,7 +27,7 @@
 				""
 				"Blood Magic is currently in Beta and as such is incomplete at this time. More quests will be added as content is added. Be sure to check the book regularly as it too is a work in progress."
 				""
-				"~MuteTiefling"
+				"&e~MuteTiefling"
 			]
 			id: "0000000000000896"
 			tasks: [{

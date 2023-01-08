@@ -2950,6 +2950,7 @@
 				""
 				"Be sure to check out the special EZ-Charge recipe which, for the minimal cost of a few gears and redstone, pre-charges your wrench with a variety of tools from common mods to help get you started. "
 			]
+			min_width: 300
 			id: "7EDFBD3AEAC8B587"
 			tasks: [{
 				id: "0D382E19423F7F14"
@@ -3018,55 +3019,76 @@
 			x: -4.5d
 			y: -15.5d
 			subtitle: "Close enough"
-			description: ["First tier of jetpacks are made from wood, stone and copper. Wood is the basic one, needed for anything better, second is stone and the best is copper!"]
+			description: [
+				"First tier of jetpacks are made from very common materials, which makes them great for early game flying!"
+				""
+				"Wooden Jetpack (Tier 0) is the starting point of your jetpack upgrade path. There are 5 tiers of jetpacks in total, and each tier requires a jetpack from the previous tier to craft."
+			]
 			dependencies: ["32543CB763F99E26"]
 			id: "517AFDCCF9B4F556"
-			tasks: [
-				{
-					id: "5E9C77D8C239D2E5"
-					type: "item"
-					title: "Tier 1 Jetpacks Recipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "ironjetpacks:jetpack"
-									Count: 1b
-									tag: {
-										Id: "ironjetpacks:stone"
-										Throttle: 1.0d
-									}
+			tasks: [{
+				id: "7B1B7F66C404A94F"
+				type: "item"
+				title: "Tier 1 Jetpacks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:stone"
+												}
+											}
+										}
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:stone"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-								{
-									id: "ironjetpacks:jetpack"
-									Count: 1b
-									tag: {
-										Id: "ironjetpacks:copper"
-										Throttle: 1.0d
-									}
+							}
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:copper"
+												Throttle: 1.0d
+											}
+										}
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:copper"
+												}
+											}
+										}
+									]
 								}
-							]
-						}
+							}
+						]
 					}
 				}
-				{
-					id: "64FEB8043B53CF9B"
-					type: "gamestage"
-					title: "Any Tier 1 Jetpack"
-					icon: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:copper"
-							Throttle: 1.0d
-						}
-					}
-					disable_toast: true
-					stage: "jetpack_1"
-				}
-			]
+			}]
 			rewards: [{
 				id: "5426F8ED2E7814CF"
 				type: "xp"
@@ -3079,62 +3101,98 @@
 			y: -16.0d
 			subtitle: "Iron jetpacks have only 1 iron jetpack?!? Ironic."
 			description: [
-				"Second tier of jetpacks are made of Bronze, Silver and wait for it, Iron! (Finally) Of course you need any jetpack from Tier 1 to craft Tier 2."
-				""
-				"Those are however literally indentical, with only Silver having a bit better RF Capacity and different speed."
+				"Second tier Jetpacks are made out of a bit harder to get materials, requiring a bit of processing, but they are really good upgrades from tier 1."
 			]
 			dependencies: ["517AFDCCF9B4F556"]
 			id: "3DE9AC6CE13B591B"
-			tasks: [
-				{
-					id: "55F87954F5A7F169"
-					type: "item"
-					title: "Tier 2 Jetpacks Recipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:silver"
-									}
+			tasks: [{
+				id: "68C645D96F0FC8A1"
+				type: "item"
+				title: "Tier 2 Jetpacks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:and"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:weak_nbt"
+											tag: {
+												value: {
+													Id: "ironjetpacks:iron"
+												}
+											}
+										}
+										{
+											Count: 1b
+											id: "ironjetpacks:jetpack"
+											tag: {
+												Id: "ironjetpacks:iron"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:bronze"
-									}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:and"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:weak_nbt"
+											tag: {
+												value: {
+													Id: "ironjetpacks:silver"
+												}
+											}
+										}
+										{
+											Count: 1b
+											id: "ironjetpacks:jetpack"
+											tag: {
+												Id: "ironjetpacks:silver"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:iron"
-									}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:and"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:weak_nbt"
+											tag: {
+												value: {
+													Id: "ironjetpacks:gold"
+												}
+											}
+										}
+										{
+											Count: 1b
+											id: "ironjetpacks:jetpack"
+											tag: {
+												Id: "ironjetpacks:gold"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-							]
-						}
+							}
+						]
 					}
 				}
-				{
-					id: "46AC6080EE334433"
-					type: "gamestage"
-					title: "Any Tier 2 Jetpack"
-					icon: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:iron"
-							Throttle: 1.0d
-						}
-					}
-					stage: "jetpack_2"
-				}
-			]
+			}]
 			rewards: [{
 				id: "3EDE37E4B6FB4210"
 				type: "item"
@@ -3158,72 +3216,125 @@
 			y: -17.0d
 			subtitle: "No, wait-it's actually too much signal."
 			description: [
-				"Third tier jetpacks are made of Electrum, "
-				"Gold, Invar and Steel. All shocking materials (but not exactly). Again Tier 2 is required to make Tier 3 one."
+				"Third tier is a bit tricky, as it requires some sort of alloy! It also has the biggest variety of jetpacks to chosoe from."
 				""
-				"Gold and Invar are again the same, Steel is a bit better in everything, and Electrum is the best one from tier 3!"
+				"Alloys can be created in many ways. Thermal Induction Smelter, Tinker's Construct Smeltery or Create Heated Mixing! Check JEI and other quest chapters for specifics."
 			]
 			dependencies: ["3DE9AC6CE13B591B"]
 			min_width: 250
 			id: "7A685C5CF8B6792E"
-			tasks: [
-				{
-					id: "3AC7C02A3C65D157"
-					type: "item"
-					title: "Tier 3 Jetpacks Recipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:electrum"
-									}
+			tasks: [{
+				id: "7D1D7F94AE746CF5"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:steel"
+												}
+											}
+										}
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:steel"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:gold"
-									}
+							}
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:electrum"
+												}
+											}
+										}
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:electrum"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:invar"
-									}
+							}
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:bronze"
+												Throttle: 1.0d
+											}
+										}
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:bronze"
+												}
+											}
+										}
+									]
 								}
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:steel"
-									}
+							}
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:invar"
+												}
+											}
+										}
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:invar"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-							]
-						}
+							}
+						]
 					}
 				}
-				{
-					id: "545E326E13EAE84F"
-					type: "gamestage"
-					title: "Any Tier 3 Jetpack"
-					icon: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:steel"
-							Throttle: 1.0d
-						}
-					}
-					disable_toast: true
-					stage: "jetpack_3"
-				}
-			]
+			}]
 			rewards: [{
 				id: "04BAE8043B4214B7"
 				type: "item"
@@ -3245,58 +3356,72 @@
 			title: "Powered by Mysterious Energy called..."
 			x: -6.5d
 			y: -17.5d
-			subtitle: "RF? This is mysterious? Platinum is mysterious pff"
-			description: [
-				"Fourth tier is made of Diamonds and Platinum. Once again, Tier below is needed to get Tier 4."
-				""
-				"Even tho Platinium is much more expensive than Diamond, it is only a tiny bit better in terms of speeds than it."
-			]
+			subtitle: "RF? This is mysterious? Wasn't RF just FE..."
+			description: ["Fourth tier is the high-end of your upgrade path, giving you a choice of 2 jetpacks from premium materials. Which one will you choose?"]
 			dependencies: ["7A685C5CF8B6792E"]
 			id: "53232F72A2133D14"
-			tasks: [
-				{
-					id: "377EE5AC5053521D"
-					type: "item"
-					title: "Tier 4 Jetpacks Recipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:platinum"
-									}
+			tasks: [{
+				id: "1AE24FF90BEDDABE"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:diamond"
+												Throttle: 1.0d
+											}
+										}
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:diamond"
+												}
+											}
+										}
+									]
 								}
-								{
-									Count: 1b
-									id: "ironjetpacks:jetpack"
-									tag: {
-										Id: "ironjetpacks:diamond"
-									}
+							}
+							{
+								id: "itemfilters:and"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "itemfilters:weak_nbt"
+											Count: 1b
+											tag: {
+												value: {
+													Id: "ironjetpacks:enderium"
+												}
+											}
+										}
+										{
+											id: "ironjetpacks:jetpack"
+											Count: 1b
+											tag: {
+												Id: "ironjetpacks:enderium"
+												Throttle: 1.0d
+											}
+										}
+									]
 								}
-							]
-						}
+							}
+						]
 					}
 				}
-				{
-					id: "0A8CD331298F76B6"
-					type: "gamestage"
-					title: "Any Tier 4 Jetpack"
-					icon: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:diamond"
-							Throttle: 1.0d
-						}
-					}
-					disable_toast: true
-					stage: "jetpack_4"
-				}
-			]
+			}]
 			rewards: [{
 				id: "0CD97881A5F98014"
 				type: "item"
@@ -3319,42 +3444,41 @@
 			x: -5.5d
 			y: -19.5d
 			shape: "gear"
-			subtitle: "How is emerald better than Platinium!?"
+			subtitle: "SuperSonic Boom incoming in 3... 2... 1..."
 			description: ["The final tier of jetpack is created from Emeralds. Seriously who thought this is.. Fine I will stop. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, thanks."]
 			dependencies: ["53232F72A2133D14"]
 			dependency_requirement: "one_completed"
 			size: 2.0d
 			id: "4A1D635E224616E5"
-			tasks: [
-				{
-					id: "1E21A04D7897170A"
-					type: "item"
-					title: "Emerald Jetpack Recipe"
-					item: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:emerald"
-							Throttle: 1.0d
-						}
+			tasks: [{
+				id: "73AECAEDF723930F"
+				type: "item"
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Id: "ironjetpacks:emerald"
+									}
+								}
+							}
+							{
+								id: "ironjetpacks:jetpack"
+								Count: 1b
+								tag: {
+									Id: "ironjetpacks:emerald"
+									Throttle: 1.0d
+								}
+							}
+						]
 					}
 				}
-				{
-					id: "1ED59371EA7992E3"
-					type: "gamestage"
-					title: "Tier 5 Jetpack"
-					icon: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:emerald"
-							Throttle: 1.0d
-						}
-					}
-					disable_toast: true
-					stage: "jetpack_5"
-				}
-			]
+			}]
 			rewards: [{
 				id: "1AC43D490E084838"
 				type: "item"

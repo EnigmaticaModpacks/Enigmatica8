@@ -18,9 +18,8 @@
 				""
 				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information. Chapters will unlock as you complete these quests and their associated achievements. "
 				""
-				"~MuteTiefling"
+				"&e~MuteTiefling"
 			]
-			optional: true
 			id: "00000000000000AF"
 			tasks: [{
 				id: "7B56DD5D9F4BBB68"

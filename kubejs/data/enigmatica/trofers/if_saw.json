@@ -4,7 +4,7 @@
         "color": "#9d6cb8"
     },
     "tooltip": [
-        {"text": "Obtain Artifact Tier Infinity Saw!"}
+        {"text": "Obtain an Artifact Tier Infinity Saw!"}
     ],
     "item": {
         "item": "industrialforegoing:infinity_saw"

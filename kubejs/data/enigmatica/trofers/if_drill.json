@@ -4,7 +4,7 @@
         "color": "#9d6cb8"
     },
     "tooltip": [
-        {"text": "Obtain Artifact Tier Infinity Drill!"}
+        {"text": "Obtain an Artifact Tier Infinity Drill!"}
     ],
     "item": {
         "item": "industrialforegoing:infinity_drill"

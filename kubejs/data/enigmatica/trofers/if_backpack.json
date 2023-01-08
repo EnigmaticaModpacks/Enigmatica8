@@ -4,7 +4,7 @@
         "color": "#9d6cb8"
     },
     "tooltip": [
-        {"text": "Obtain Artifact Tier Infinity Backpack!"}
+        {"text": "Obtain an Artifact Tier Infinity Backpack!"}
     ],
     "item": {
         "item": "industrialforegoing:infinity_backpack"

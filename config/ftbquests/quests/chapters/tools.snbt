@@ -3357,7 +3357,7 @@
 			x: -6.5d
 			y: -17.5d
 			subtitle: "RF? This is mysterious? Wasn't RF just FE..."
-			description: ["Fourth tier is the high-end of your upgrade path, giving you a choice of 2 jetpacks from premium materials. Which one will you choose??"]
+			description: ["Fourth tier is the high-end of your upgrade path, giving you a choice of 2 jetpacks from premium materials. Which one will you choose?"]
 			dependencies: ["7A685C5CF8B6792E"]
 			id: "53232F72A2133D14"
 			tasks: [{

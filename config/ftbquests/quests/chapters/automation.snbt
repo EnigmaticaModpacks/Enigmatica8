@@ -2111,7 +2111,7 @@
 				"Use the Lua programming language to interact with the world."
 				""
 				"When you claim this reward, a link will be posted in chat to a video playlist for a basic tutorial on CC. While for an old version, it should still be relevant."
-				"The link is also accessible here for future refference:"
+				"The link is also accessible here for future reference:"
 				"{\"text\":\"CC Tutorial Link\",\"underlined\":true,\"color\":\"yellow\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
 			]
 			dependencies: [

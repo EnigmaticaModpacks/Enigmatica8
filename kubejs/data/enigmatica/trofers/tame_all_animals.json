@@ -4,7 +4,7 @@
         "color": "#f91d80"
     },
     "tooltip": [
-        {"text": "Tame all animals! And here is your special cat for that."}
+        {"text": "Tame all animals! And here is your own special cat as a reward."}
     ],
     "entity": {
         "type": "minecraft:cat",

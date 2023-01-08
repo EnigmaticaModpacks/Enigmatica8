@@ -4,7 +4,7 @@
         "color": "#3d50fe"
     },
     "tooltip": [
-        {"text": "Fill entire Supreme Black Hole Tank with Water."}
+        {"text": "Fill an entire Supreme Black Hole Tank with Water."}
     ],
     "item": {
         "item": "minecraft:water_bucket"

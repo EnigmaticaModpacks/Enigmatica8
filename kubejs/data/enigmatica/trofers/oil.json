@@ -4,7 +4,7 @@
         "color": "#242424"
     },
     "tooltip": [
-        {"text": "Fill entire Supreme Black Hole Tank with Crude Oil."}
+        {"text": "Fill an entire Supreme Black Hole Tank with Crude Oil."}
     ],
     "item": {
         "item": "thermal:crude_oil_bucket"

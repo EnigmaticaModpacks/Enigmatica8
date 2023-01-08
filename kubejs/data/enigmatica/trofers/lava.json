@@ -4,7 +4,7 @@
         "color": "#ed671a"
     },
     "tooltip": [
-        {"text": "Fill entire Supreme Black Hole Tank with Lava."}
+        {"text": "Fill an entire Supreme Black Hole Tank with Lava."}
     ],
     "item": {
         "item": "minecraft:lava_bucket"

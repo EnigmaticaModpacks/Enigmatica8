@@ -3020,9 +3020,9 @@
 			y: -15.5d
 			subtitle: "Close enough"
 			description: [
-				"First tier of jetpacks are made from very common materials, what makes them great for early game flying!"
+				"First tier of jetpacks are made from very common materials, which makes them great for early game flying!"
 				""
-				"Wooden Jetpack (Tier 0) is the starting point of your jetpack upgrade path. There is 5 tiers of jetpacks in total, and each tier requires a jetpack from the lower tier for crafting."
+				"Wooden Jetpack (Tier 0) is the starting point of your jetpack upgrade path. There are 5 tiers of jetpacks in total, and each tier requires a jetpack from the previous tier to craft."
 			]
 			dependencies: ["32543CB763F99E26"]
 			id: "517AFDCCF9B4F556"
@@ -3101,7 +3101,7 @@
 			y: -16.0d
 			subtitle: "Iron jetpacks have only 1 iron jetpack?!? Ironic."
 			description: [
-				"Second tier Jetpacks are made out of a bit harder to get materials, requiring a bit of processing, but they are really good upgrade from tier 1."
+				"Second tier Jetpacks are made out of a bit harder to get materials, requiring a bit of processing, but they are really good upgrades from tier 1."
 			]
 			dependencies: ["517AFDCCF9B4F556"]
 			id: "3DE9AC6CE13B591B"
@@ -3216,9 +3216,9 @@
 			y: -17.0d
 			subtitle: "No, wait-it's actually too much signal."
 			description: [
-				"Third tier is a bit tricky, as it requires some sort of alloy metal! It also has the biggest variety of jetpacks to chosoe from."
+				"Third tier is a bit tricky, as it requires some sort of alloy! It also has the biggest variety of jetpacks to chosoe from."
 				""
-				"Alloys can be created with use of many things. Thermal Induction Smelter, Tinker's Construct Smeltery or Create Heated Mixing! Check JEI and other quest chapters for specifics."
+				"Alloys can be created in many ways. Thermal Induction Smelter, Tinker's Construct Smeltery or Create Heated Mixing! Check JEI and other quest chapters for specifics."
 			]
 			dependencies: ["3DE9AC6CE13B591B"]
 			min_width: 250
@@ -3357,7 +3357,7 @@
 			x: -6.5d
 			y: -17.5d
 			subtitle: "RF? This is mysterious? Wasn't RF just FE..."
-			description: ["Fourth tier is the high-end of your upgrade path, giving you a choice of 2 jetpacks from premium materials. Which one you should choose?"]
+			description: ["Fourth tier is the high-end of your upgrade path, giving you a choice of 2 jetpacks from premium materials. Which one will you choose??"]
 			dependencies: ["7A685C5CF8B6792E"]
 			id: "53232F72A2133D14"
 			tasks: [{
@@ -3445,7 +3445,7 @@
 			y: -19.5d
 			shape: "gear"
 			subtitle: "SuperSonic Boom incoming in 3... 2... 1..."
-			description: ["The final tier of jetpack is created from Emeralds. Seriously who thought this is.. Fine I will stop. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, Thanks."]
+			description: ["The final tier of jetpack is created from Emeralds. Seriously who thought this is.. Fine I will stop. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, thanks."]
 			dependencies: ["53232F72A2133D14"]
 			dependency_requirement: "one_completed"
 			size: 2.0d

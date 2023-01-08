@@ -55,16 +55,18 @@
 			x: -2.0d
 			y: -5.0d
 			description: [
-				"The Exploration questline's purpose is to show what's available in the pack."
-				""
-				"These chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration."
+				"The &2Exploration questline&r's purpose is to show what's available in the pack."
 				""
 				"It currently has the following chapters:"
-				"- Tools"
-				"- Storage"
-				"- Adventure"
+				""
+				"{\"text\":\"- Tools\",\"color\":\"green\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0000000000000093\"}}"
+				"{\"text\":\"- Storage\",\"color\":\"red\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"583482A1C530FE26\"}}"
+				"{\"text\":\"- Adventure\",\"color\":\"blue\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0000000000000097\"}}"
+				""
+				"Those chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration."
 			]
 			dependencies: ["0000000000000045"]
+			min_width: 250
 			id: "00000000000002AC"
 			tasks: [{
 				id: "00000000000002AD"
@@ -84,11 +86,12 @@
 			x: 0.0d
 			y: -3.5d
 			description: [
-				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do."
+				"The &3Learning Mods&r chapters are designed to &ehelp you get started with a mod&r, explain how to progress, and show off some of the things you can do."
 				""
-				"The chapters do not show everything that every mod has to offer, so make sure to explore if you want to find all the cool features."
+				"The chapters &cdo not show everything&r that every mod has to offer, so make sure to &2explore&r if you want to find all the cool features."
 			]
 			dependencies: ["0000000000000045"]
+			min_width: 250
 			id: "00000000000002AE"
 			tasks: [{
 				id: "00000000000002AF"
@@ -107,9 +110,9 @@
 			x: 2.0d
 			y: -5.0d
 			description: [
-				"Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players."
+				"&5Challenge quests&r are, surprisingly, &echallenges&r for the more seasoned modded Minecraft players."
 				""
-				"They are still work in progress."
+				"&o&eThey are still work in progress."
 			]
 			dependencies: ["0000000000000045"]
 			id: "00000000000002B0"
@@ -126,14 +129,14 @@
 			}]
 		}
 		{
-			title: "Modded for Dummies"
+			title: "&bModded for Dummies"
 			x: 1.5d
 			y: -7.5d
 			subtitle: "Hey, listen!"
 			description: [
-				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what."
+				"If you're &enew&r to &amodded Minecraft&r, it can be a bit daunting to figure out what's what."
 				""
-				"That's why we made a book, to sum up the basics and give you a solid baseline to begin your modded journey!"
+				"That's why we made a &6book&r, to sum up the basics and give you a solid baseline to begin your modded journey!"
 			]
 			dependencies: ["0000000000000045"]
 			id: "00000000000006E9"
@@ -163,23 +166,23 @@
 			}]
 		}
 		{
-			title: "Akashic Tome"
+			title: "&bAkashic Tome"
 			x: -1.5d
 			y: -7.5d
 			subtitle: "Don't Panic"
 			description: [
-				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the manuals for each mod so they’re always at the ready. "
+				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the &3manuals for each mod&r so they’re always at the ready. "
 				""
-				"● Right click to open the menu and choose a book. Once chosen, the Akashic Tome transforms and becomes that book, for all intents and purposes. "
+				"● &eRight click&r to open the menu and choose a book. Once chosen, the &6Akashic Tome&r transforms and becomes that book, for all intents and purposes. "
 				""
-				"● Left click the air to revert it back to the Akashic Tome."
+				"● &eLeft click&r the &bair&r to revert it back to the &6Akashic Tome."
 				""
-				"● When transformed, sneak and press your Throw key to remove a given book. "
+				"● When transformed, &esneak and press your Throw key&r to remove a given book. "
 				""
-				"●Craft the Tome with a book to merge them once more. "
+				"● &eCraft&r the Tome with a book to merge them once more. "
 			]
 			dependencies: ["0000000000000045"]
-			min_width: 250
+			min_width: 300
 			id: "1F5D6018C2E35C3D"
 			tasks: [{
 				id: "7781E2B735D79B56"

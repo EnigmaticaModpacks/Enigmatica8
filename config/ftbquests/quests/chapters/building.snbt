@@ -1446,8 +1446,9 @@
 				"- Pickarang: Breaks blocks at an extreme range, and brings them back to you."
 				""
 				"For more information on what else does Quark has to offer you as a builder, visit their official website."
-				"Link: https://quarkmod.net/#features"
+				"{\"text\":\"Link: https://quarkmod.net/#features\",\"underlined\":true, \"color\":\"yellow\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://quarkmod.net/#features\"}}"
 			]
+			min_width: 300
 			id: "73696B8EC7BB92C7"
 			tasks: [{
 				id: "5B29C3C71D617D0A"

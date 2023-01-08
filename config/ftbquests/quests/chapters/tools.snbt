@@ -2950,6 +2950,7 @@
 				""
 				"Be sure to check out the special EZ-Charge recipe which, for the minimal cost of a few gears and redstone, pre-charges your wrench with a variety of tools from common mods to help get you started. "
 			]
+			min_width: 300
 			id: "7EDFBD3AEAC8B587"
 			tasks: [{
 				id: "0D382E19423F7F14"

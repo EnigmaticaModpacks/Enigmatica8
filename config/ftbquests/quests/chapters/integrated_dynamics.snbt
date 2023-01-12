@@ -1,7 +1,7 @@
 {
 	id: "529A046A403F6A21"
 	group: "0856CF7F5CBEB20A"
-	order_index: 3
+	order_index: 2
 	filename: "integrated_dynamics"
 	title: "Integrated Dynamics"
 	icon: "integrateddynamics:crystalized_menril_chunk"
@@ -21,9 +21,8 @@
 				""
 				"For more complex blocks, like the Readers and Writers, make sure to read the book about ID in the Akashic Tome to fully understand them."
 				""
-				"-OneLemonyBoi"
+				"- &eOneLemonyBoi"
 			]
-			optional: true
 			id: "7E516ACCF6DA5588"
 			tasks: [{
 				id: "581379EDC8E0E1B8"

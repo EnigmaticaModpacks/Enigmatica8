@@ -17,9 +17,8 @@
 				""
 				"The Thermalpedia provided goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. "
 				""
-				"~MuteTiefling"
+				"&e~MuteTiefling"
 			]
-			optional: true
 			id: "00000000000003A2"
 			tasks: [{
 				id: "6F8140DE19FABFDA"

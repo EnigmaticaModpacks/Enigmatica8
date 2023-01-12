@@ -3,7 +3,7 @@
 	group: "72A9465344128AF9"
 	order_index: 0
 	filename: "create"
-	title: "Create [WIP, to REDO]"
+	title: "Create"
 	icon: "create:cogwheel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -23,9 +23,9 @@
 				""
 				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. "
 				""
-				"~MuteTiefling"
+				"&e~MuteTiefling \\& Kanzaji"
 			]
-			optional: true
+			min_width: 250
 			id: "0000000000000C40"
 			tasks: [{
 				id: "0000000000000C41"
@@ -76,7 +76,7 @@
 		{
 			title: "Windmill"
 			icon: "create:white_sail"
-			x: 4.0d
+			x: 3.5d
 			y: 3.5d
 			subtitle: "Batteries Not Included"
 			description: [
@@ -92,7 +92,7 @@
 				"Note that glue is only needed for connecting blocks that aren't captured by a Chassis, for instance if blocks extend in front of the wind mill. Glue is not needed at all if sails are attached directly to the Chassis, but then, where’s the fun of that? Make it Pretty!"
 			]
 			dependencies: ["0000000000000CBA"]
-			min_width: 250
+			min_width: 300
 			id: "0000000000000CBD"
 			tasks: [
 				{
@@ -136,8 +136,8 @@
 			]
 		}
 		{
-			x: 5.5d
-			y: 2.5d
+			x: 5.0d
+			y: 3.0d
 			subtitle: "Like A Record, Baby"
 			description: [
 				"The Water Wheel, while considerably simpler to set up than a Windmill, also produces far fewer SU and operates at a much lower speed. "
@@ -164,18 +164,10 @@
 		}
 		{
 			icon: "create:propeller"
-			x: 5.5d
-			y: 4.0d
-			subtitle: "Renewable Energy? I'm a Big Fan"
+			x: 7.0d
+			y: 3.5d
+			subtitle: "Automatic Washing? I'm a Big Fan"
 			description: [
-				"More compact still than water, an Encased fan can serve to create small amounts of Rotational Force, in addition to its other functions. More on those later."
-				""
-				"To use it to generate Rotational Force, it must be facing down over top of some hot block, like lava or magma blocks. Do be mindful not to burn the place down."
-				""
-				"Apply a redstone signal to the fan begin producing power."
-				""
-				"--------------------------------"
-				""
 				"To use the fan for crafting, it must be set up to blow through Lava, Water, or Fire. Items dropped in the stream of air on the far side will be Smelted, Washed, or Smoked, respectively."
 				""
 				"The air stream can pass through certain blocks like Iron Bars and Trap Doors, allowing safe containment of your Lava and Water. "
@@ -184,10 +176,8 @@
 				""
 				"To make efficient use of a fan and belt setup, make it blow across the length of the belt. Faster spin speeds mean the air stream blows farther. This also allows the fan to process multiple stacks at once. "
 			]
-			dependencies: [
-				"0000000000000CBD"
-				"0000000000000CFC"
-			]
+			dependencies: ["0000000000000CFC"]
+			min_width: 300
 			id: "0000000000000CC4"
 			tasks: [{
 				id: "0000000000000CC5"
@@ -207,49 +197,6 @@
 					title: "Magma Block"
 					item: "minecraft:magma_block"
 					count: 4
-				}
-			]
-		}
-		{
-			icon: "create:flywheel"
-			x: 4.0d
-			y: 5.0d
-			subtitle: "Held in High Esteem"
-			description: [
-				"The ultimate in compact power generation. The Furnace engine is a three-part multi-block structure that provides the highest possible SU generation. "
-				""
-				"In order to run, the Furnace or Blast Furnace must be activated (lit). This would normally require it to be smelting something, though there are other ways to achieve this state."
-				""
-				"To build it, place the Furnace Engine on top of a Furnace or Blast Furnace. This will cover the furnace and a large section will project out from one side. On that side, leave an air block, then place the Flywheel (third block from the furnace). "
-			]
-			dependencies: ["0000000000000CBD"]
-			id: "0000000000000CC6"
-			tasks: [
-				{
-					id: "0000000000000CC7"
-					type: "item"
-					item: "create:furnace_engine"
-				}
-				{
-					id: "0000000000000CC8"
-					type: "item"
-					item: "create:flywheel"
-				}
-			]
-			rewards: [
-				{
-					id: "0000000000000D76"
-					type: "command"
-					title: "Legendary Create Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
-					player_command: false
-				}
-				{
-					id: "0000000000000D8A"
-					type: "item"
-					title: "Blast Furnace"
-					item: "minecraft:blast_furnace"
 				}
 			]
 		}
@@ -395,6 +342,7 @@
 				"Additionally, two large cogwheels can be interlocked perpendicularly to allow a shaft to change directions. Useful for going around corners or bringing power down from high above."
 			]
 			dependencies: ["0000000000000CCC"]
+			min_width: 250
 			id: "0000000000000CD6"
 			tasks: [
 				{
@@ -434,6 +382,7 @@
 				"A single belt can stretch up to 20 blocks and each block space could conceivably attach it to another shaft line if necessary. To attach them, simply place the two shafts and then right click each with the belt in hand."
 			]
 			dependencies: ["0000000000000CCC"]
+			min_width: 250
 			id: "0000000000000CD8"
 			tasks: [{
 				id: "0000000000000CD9"
@@ -547,6 +496,7 @@
 				"Chutes may also be used to convey items upwards. If a chute has an encased fan set up directly on top of it, it can be used to pull items off a Belt. Of course, getting that item out requires some way of extracting from the chute, such as a Funnel."
 			]
 			dependencies: ["0000000000000CD8"]
+			min_width: 250
 			id: "0000000000000CE7"
 			tasks: [{
 				id: "0000000000000CE8"
@@ -671,6 +621,7 @@
 				"Linking occurs prior to placing the Arm, simply right click it onto permitted inventory types to set it. Right click again to toggle between input and output. The arm reaches four blocks in total. "
 			]
 			dependencies: ["0000000000000CD8"]
+			min_width: 250
 			id: "0000000000000CF4"
 			tasks: [{
 				id: "0000000000000CF5"
@@ -687,7 +638,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: 6.0d
 			y: 3.5d
 			subtitle: "You Know What Really Grinds My Gears?"
 			description: [
@@ -725,6 +676,7 @@
 				"Place the wheels with a single block gap between them. Items may be either dropped in the top or inserted in a more controlled manner by funneling them into the ‘block’ space where the two wheels meet. "
 			]
 			dependencies: ["0000000000000D1A"]
+			min_width: 250
 			id: "0000000000000CFE"
 			tasks: [{
 				id: "0000000000000CFF"
@@ -832,7 +784,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: 6.5d
 			y: 4.5d
 			subtitle: "Boil 'em, Mash 'em, Stick 'em in a Stew"
 			description: [
@@ -847,6 +799,7 @@
 				"While over any other block, however, a redstone signal is required to make it start. "
 			]
 			dependencies: ["0000000000000CFC"]
+			min_width: 250
 			id: "0000000000000D06"
 			tasks: [{
 				id: "0000000000000D07"
@@ -864,7 +817,7 @@
 		}
 		{
 			icon: "create:mechanical_mixer"
-			x: 7.0d
+			x: 6.5d
 			y: 5.5d
 			subtitle: "There's Been a Mix-Up, Officer"
 			description: [
@@ -999,11 +952,11 @@
 		}
 		{
 			icon: "create:fluid_valve"
-			x: -2.5d
+			x: -1.5d
 			y: 4.0d
 			subtitle: "Shut The Front Door"
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "]
-			dependencies: ["0000000000000D0F"]
+			dependencies: ["0000000000000D11"]
 			id: "0000000000000D13"
 			tasks: [
 				{
@@ -1027,11 +980,11 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.0d
 			y: 5.0d
 			subtitle: "Reverse Osmosis Filter"
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "]
-			dependencies: ["0000000000000D0F"]
+			dependencies: ["0000000000000D11"]
 			id: "0000000000000D15"
 			tasks: [{
 				id: "0000000000000D16"
@@ -1137,13 +1090,22 @@
 				type: "checkmark"
 				title: "Challenge: Rose Quartz Automation"
 			}]
+			rewards: [{
+				id: "2CFF642623A3D651"
+				type: "item"
+				item: "thermal:carrot_cake"
+			}]
 		}
 		{
-			x: -1.5d
+			x: -2.5d
 			y: 4.0d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
-			dependencies: ["0000000000000D11"]
+			dependencies: [
+				"0000000000000D0F"
+				"0000000000000D12"
+			]
+			dependency_requirement: "one_completed"
 			id: "0000000000000D23"
 			tasks: [{
 				id: "0000000000000D24"
@@ -1305,6 +1267,7 @@
 				"A great example of a mine cart-based contraption would be a tunnel bore mining machine. It could be set up to lay down its own track in front of it and pull up track behind it. It could even build its own bridges to avoid ravines!"
 			]
 			dependencies: ["0000000000000D2B"]
+			min_width: 250
 			id: "0000000000000D2F"
 			tasks: [{
 				id: "0000000000000D30"
@@ -1581,8 +1544,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 5.0d
+			x: -3.5d
+			y: 4.0d
 			subtitle: "Well, There's an Upside and a Downside"
 			description: [
 				"With a Hose Pulley, fluids may be pumped into or out of the world. Create massive lakes or drain them dry to let your factory grow!"
@@ -1591,7 +1554,12 @@
 				""
 				"Note, the Hose Pulley itself does not pump by itself. Lower the hose into the fluid body and use set up a Mechanical Pump to do the work for you. "
 			]
-			dependencies: ["0000000000000D11"]
+			dependencies: [
+				"0000000000000D17"
+				"0000000000000D12"
+			]
+			dependency_requirement: "one_completed"
+			min_width: 250
 			id: "0000000000000D49"
 			tasks: [{
 				id: "0000000000000D4A"
@@ -1664,7 +1632,7 @@
 			description: [
 				"Stayed out too late par-tea-ing like it's 1773? Need a little more tranquili-tea in your life?"
 				""
-				"Try some Builder's Tea! It doesn't take oolong to prepare."
+				"Try some Builder's Tea! It doesn't take too long to prepare."
 			]
 			dependencies: ["0000000000000D0B"]
 			id: "0000000000000D52"
@@ -1696,7 +1664,8 @@
 				"2) Point at a face of the selected area and ctrl-scroll to adjust that side."
 				"3) Right-click to name and save the schematic."
 				""
-				"The Create GitHub has a wiki page with examples of saving schematics: https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic"
+				"The Create GitHub has a wiki page with examples of saving schematics:"
+				"{\"text\":\"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\", \"color\":\"yellow\", \"underlined\":true, \"clickEvent\":{\"action\":\"open_url\", \"value\": \"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\"}}"
 			]
 			dependencies: ["0000000000000C40"]
 			min_width: 250
@@ -1729,7 +1698,8 @@
 				""
 				"Note: Schematics for common multiblocks are included by default. You can use the \"Open Folder\" button to relocate any schematics you aren’t using and then refresh the list."
 				""
-				"The Create GitHub has a wiki with examples of loading schematics: https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic"
+				"The Create GitHub has a wiki with examples of loading schematics:"
+				"{\"text\":\"https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic\", \"underlined\":true, \"color\":\"yellow\", \"clickEvent\":{\"action\":\"open_url\", \"value\": \"https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic\"}}"
 			]
 			dependencies: ["5A581A8DF6CCC352"]
 			min_width: 300
@@ -1760,7 +1730,8 @@
 				""
 				"Note: The cannon isn't very fast, but it's possible to split the workload between multiple cannons, and Time in a Bottle works wonders on it!"
 				""
-				"The Create GitHub has a wiki with examples of printing schematics: https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic"
+				"The Create GitHub has a wiki with examples of printing schematics: "
+				"{\"text\":\"https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic\", \"underlined\":true, \"color\":\"yellow\", \"clickEvent\":{\"action\":\"open_url\", \"value\": \"https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic\"}}"
 			]
 			dependencies: ["3542632905883686"]
 			min_width: 300
@@ -1776,6 +1747,217 @@
 				title: "Gunpowder"
 				item: "minecraft:gunpowder"
 				count: 16
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			subtitle: "Draining everything you want... if it's a fluid of course."
+			description: [
+				"The Item drain is useful for draining fluids from any fluid-containing items, like buckets or bottles. It has small internal tank, from which fluids can be accessed by pipes."
+				""
+				"Really useful for storing honey from your bee farm!"
+			]
+			dependencies: [
+				"0000000000000D0F"
+				"0000000000000D12"
+			]
+			dependency_requirement: "one_completed"
+			min_width: 225
+			id: "28D17B54F4DE4D86"
+			tasks: [{
+				id: "251340C776442923"
+				type: "item"
+				item: "create:item_drain"
+			}]
+			rewards: [{
+				id: "4DF5697B73CC2E0D"
+				type: "command"
+				title: "Rare Create Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			subtitle: "*Phweeeeeeeeee* Train is coming!"
+			description: [
+				"The Steam Whistle uses steam generated by the Boiler to, you guessed it, whistle! Provide a Redstone signal to activate it, at the cost of a bit of steam."
+				""
+				"Additional whistles can be placed on top of the first one to control the octave. Also, the pitch can be controlled by using a wrench on the whistle!"
+			]
+			dependencies: ["0216A883C7992FD4"]
+			id: "1BF01EC920CAFAA9"
+			tasks: [{
+				id: "01A62AEA390FB14D"
+				type: "item"
+				item: "create:steam_whistle"
+			}]
+			rewards: [{
+				id: "2202F48443F8CB93"
+				type: "command"
+				title: "Rare Create Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Boiler and Steam production"
+			icon: "create:blaze_burner"
+			x: -4.0d
+			y: 3.0d
+			subtitle: "Oh boy it's getting hot in here!"
+			description: [
+				"Did you ever thought it would be cool to generate some steam? Uh... no?"
+				""
+				"It is possible and useful though! Just heat up a tank full of water with, for example, Campfires, and it could be used to generate insane amounts of SU or... to drive a Whistle!"
+				""
+				"------------------------------------------"
+				""
+				"Boiler requires constant supply of Water to operate, and that amount changes with size and amount of Heat it is being provided with."
+				""
+				"Except Campfires, a lot of other things can be used to heat up a Boiler passively, but active heating with use of Blaze Burners is much more effective, allowing you to reach much higher Steam production rates."
+			]
+			dependencies: [
+				"0000000000000D17"
+				"0000000000000D0C"
+			]
+			min_width: 260
+			id: "0216A883C7992FD4"
+			tasks: [
+				{
+					id: "57475E928AA806B5"
+					type: "item"
+					item: "create:fluid_tank"
+					count: 4L
+				}
+				{
+					id: "363FDD8101225BFC"
+					type: "item"
+					item: "minecraft:campfire"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "150E9A43DF054ECC"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			subtitle: "High Pressure Steam... isn't that dangerous?"
+			description: [
+				"The ultimate SU Generation in existence. The Steam Engine uses the power of high pressure steam to generate insane amounts of SU."
+				""
+				"Just place one or more of them on the boiler and a shaft one block in front of it, heat up your boiler and you are good to go!"
+				"The level of the Boiler will affect the final SU generation rate and how many Steam engines it can power."
+				""
+				"For more detail, check out ponder for Steam Engine."
+			]
+			dependencies: [
+				"0000000000000CBD"
+				"57475E928AA806B5"
+				"363FDD8101225BFC"
+			]
+			min_width: 300
+			id: "5B54E008C558007F"
+			tasks: [{
+				id: "7D00F9504A3F354F"
+				type: "item"
+				item: "create:steam_engine"
+			}]
+			rewards: [{
+				id: "1B26E3707C1728A2"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			icon: "create:fluid_tank"
+			x: 4.0d
+			y: 6.0d
+			shape: "octagon"
+			description: [
+				"I know that setting up few of the boilers is much easier than just upgrading one to its maximum, but where is the fun with that!"
+				""
+				"Try to automate everything required with just Create and Vanilla. Build farms that are required for automation of Blaze Cakes, create massive lava lake for infinite lava, and use that to achieve the highest-possible heat for your boiler."
+				""
+				"This will combine nearly all mechanics available in Create, making it a great way to test your Innovation skills!"
+				""
+				"I will leave you with one additional challenge and wish you good luck on your journey: Try to make it look good!"
+			]
+			dependencies: ["5B54E008C558007F"]
+			min_width: 300
+			id: "6FD9E1729C555465"
+			tasks: [{
+				id: "0CB0F80910911E18"
+				type: "checkmark"
+				title: "Challenge: Max level Steam Engine"
+			}]
+			rewards: [{
+				id: "41A8BF7F95A9A4B3"
+				type: "item"
+				item: "minecraft:cake"
+			}]
+		}
+		{
+			title: "Trains"
+			icon: "create:track"
+			x: 12.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "Watch Your Step"
+			description: [
+				"Be it simple Transportation of goods or people, or powering a moving quarry, Trains offer an elegant solution. "
+				""
+				"Trains are large mobile contraptions that may be automated by way of Train Stations, Train Schedules, and Train Signals. They’ll move through un-loaded chunks, making long-distance transport of materials feasible; only the Station needs to be loaded. Drills and other machines will not function in un-loaded chunks, however."
+				""
+				"Building trains begins with the Train Station. Due to the complexity of this feature, watching the Ponder for each of the various pieces of Train equipment is highly recommended."
+			]
+			dependencies: ["0000000000000D2B"]
+			min_width: 250
+			id: "62D9A1A16024C3CD"
+			tasks: [
+				{
+					id: "6EB910AAB970DD49"
+					type: "item"
+					item: "create:track"
+					count: 16L
+				}
+				{
+					id: "46ED06FFF6481B08"
+					type: "item"
+					item: "create:track_station"
+				}
+				{
+					id: "51F37EEA49A25A12"
+					type: "item"
+					item: "create:controls"
+				}
+				{
+					id: "5B5472A962BB6A24"
+					type: "item"
+					item: "create:railway_casing"
+				}
+			]
+			rewards: [{
+				id: "50DD42ECCFA5F58A"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				player_command: false
 			}]
 		}
 	]

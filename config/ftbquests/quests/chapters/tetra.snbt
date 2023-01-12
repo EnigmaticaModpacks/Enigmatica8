@@ -35,7 +35,6 @@
 				""
 				"The higher tier hammer you have, the more materials you can make your tools out of."
 				""
-				""
 				"Note: Non-vanilla Crafting Tables can be converted to vanilla through crafting."
 			]
 			dependencies: ["0000000000000843"]

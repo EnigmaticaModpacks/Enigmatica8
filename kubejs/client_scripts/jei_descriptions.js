@@ -1,5 +1,5 @@
 onEvent('jei.information', (event) => {
-    const recipes = [
+    const data = [
         {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
@@ -192,8 +192,8 @@ onEvent('jei.information', (event) => {
         }
     ];
 
-    recipes.forEach((recipe) => {
-        recipe.items.forEach((item) => {
+    data.forEach((entry) => {
+        entry.items.forEach((item) => {
             event.add(item, recipe.text);
         });
     });

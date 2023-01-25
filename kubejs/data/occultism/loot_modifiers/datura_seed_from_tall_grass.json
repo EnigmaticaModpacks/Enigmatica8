@@ -1,9 +1,13 @@
 {
-    "type": "immersiveengineering:hemp_seed_drops",
+    "type": "occultism:add_item",
     "conditions": [
       {
         "condition": "minecraft:random_chance",
-        "chance": 0.025
+        "chance": 0.02
+      },
+      {
+        "condition": "block_state_property",
+        "block": "minecraft:tall_grass"
       },
       {
         "condition": "minecraft:inverted",
@@ -13,10 +17,8 @@
             "tag": "forge:shears"
           }
         }
-      },
-      {
-        "condition": "block_state_property",
-        "block": "minecraft:grass"
       }
-    ]
+    ],
+    "item": "occultism:datura_seeds",
+    "count": 1
   }

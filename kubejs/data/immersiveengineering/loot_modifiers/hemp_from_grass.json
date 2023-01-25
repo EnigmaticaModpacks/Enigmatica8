@@ -1,22 +1,22 @@
 {
-    "type": "immersiveengineering:hemp_seed_drops",
-    "conditions": [
-      {
-        "condition": "minecraft:random_chance",
-        "chance": 0.025
-      },
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "tag": "forge:shears"
-          }
+  "type": "immersiveengineering:hemp_seed_drops",
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.025
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "tag": "forge:shears"
         }
-      },
-      {
-        "condition": "block_state_property",
-        "block": "minecraft:grass"
       }
-    ]
-  }
+    },
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:grass"
+    }
+  ]
+}

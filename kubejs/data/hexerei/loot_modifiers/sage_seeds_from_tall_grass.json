@@ -1,22 +1,23 @@
 {
-  "type": "immersiveengineering:hemp_seed_drops",
+  "type": "hexerei:sage_seeds_from_grass",
   "conditions": [
     {
       "condition": "minecraft:random_chance",
       "chance": 0.025
     },
     {
+      "condition": "minecraft:block_state_property",
+      "block": "minecraft:tall_grass"
+    },
+    {
       "condition": "minecraft:inverted",
-      "term": {
+      "term":  {
         "condition": "minecraft:match_tool",
         "predicate": {
           "tag": "forge:shears"
         }
       }
-    },
-    {
-      "condition": "block_state_property",
-      "block": "minecraft:grass"
     }
-  ]
+  ],
+  "addition": "hexerei:sage_seed"
 }

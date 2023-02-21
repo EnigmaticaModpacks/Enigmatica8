@@ -93,3 +93,8 @@
 	#The update interval of localization files in days.
 	updateInterval = 3.0
 
+#Configurations related to data modules.
+[data]
+	#List of data modules that should not be registered.
+	moduleBlacklist = []
+

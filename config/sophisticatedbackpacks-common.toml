@@ -11,6 +11,8 @@
 	allowOpeningOtherPlayerBackpacks = true
 	#Allows disabling item display settings. Primarily in cases where custom backpack model doesn't support showing the item. (Requires game restart to take effect)
 	itemDisplayDisabled = false
+	#List of blocks that inventory interaction upgrades can't interact with - e.g. "minecraft:shulker_box"
+	noInteractionBlocks = []
 
 	#Leather Backpack Settings
 	[common.leatherBackpack]

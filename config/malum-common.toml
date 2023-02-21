@@ -59,15 +59,7 @@
 		#Which dimensions can quartz geodes generate in?
 		quartzGeodeDimensions = ["minecraft:overworld"]
 
-	[worldgen.rare_earth]
-		#Should rare earth generate?
-		generateRareEarth = true
-		#Which dimensions can rare earths generate in?
-		rareEarthDimensions = ["minecraft:overworld"]
-
 	[worldgen.natural_quartz]
-		#Should natural quartz ore generate?
-		generateBrilliantStone = true
 		#Size of natural quartz ore veins.
 		naturalQuartzSize = 4
 		#Amount of natural quartz ore veins.
@@ -76,6 +68,20 @@
 		naturalQuartzMinY = -64
 		#Maximum height at which natural quartz ore can spawn.
 		naturalQuartzMaxY = 10
+		#Should natural quartz ore generate?
+		generateNaturalQuartz = true
+
+	[worldgen.weeping_well]
+		#Should the void be curious?
+		generateTheUnknown = true
+		#Which dimensions is the void interested in?
+		markedDimensions = ["minecraft:overworld"]
+
+	[worldgen.cthonic_gold]
+		#Should cthonic gold generate?
+		generateCthonicGold = true
+		#Which dimensions can cthonic gold generate in?
+		cthonicGoldDimensions = ["minecraft:overworld"]
 
 [spirit]
 	#If set to true, any spirits dropped will simply take the form of an item.

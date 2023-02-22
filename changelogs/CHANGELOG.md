@@ -1,3 +1,35 @@
+### Enigmatica 8 v2.5.0
+
+_Using Forge-1.18.2-40.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.5.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.5.0.md)_
+
+**Added Mods**
+
+-   [ForgeBrainLib](https://www.curseforge.com/minecraft/mc-mods/forgebrainlib) (by [kli_kli](https://www.curseforge.com/members/kli_kli/projects))
+-   [JAMD](https://www.curseforge.com/minecraft/mc-mods/jamd) (by [UnRealDinnerbone](https://www.curseforge.com/members/UnRealDinnerbone/projects))
+-   [SmartBrainLib (Forge/Fabric/Quilt)](https://www.curseforge.com/minecraft/mc-mods/smartbrainlib) (by [Scimiguy](https://www.curseforge.com/members/Scimiguy/projects))
+-   [Theurgy](https://www.curseforge.com/minecraft/mc-mods/theurgy) (by [kli_kli](https://www.curseforge.com/members/kli_kli/projects))
+
+**Improvements/Changes**
+
+-   Hemp Seeds from Immersive Engineering don't drop from grass [\#339](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/339)
+-   Add the antimatter recipe for artifact infinity tools [\#331](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/331)
+
+**Bug Fixes**
+
+-   Updating Flywheel to fix a crash on AMD GPUs [\#350](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/350)
+-   Tinkers Repair Kit Quest Reward Broken [\#346](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/346)
+-   End Pyramids explode upon loading, destroying all loot [\#341](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/341)
+-   Missing Quest items [\#334](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/334)
+-   Platinum Jetpack uncraftable [\#332](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/332)
+-   Inlay cast [\#330](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/330)
+-   \[Exploit\] Certus crystal conversion and duplication [\#329](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/329)
+-   Uncrafting Table in Twilight Forest chest [\#322](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/322)
+-   Create quests are inaccurate for 1.18 [\#267](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/267)
+-   Botania quests are incorrect [\#265](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/265)
+-   Backup fails when there are special characters in world names [\#195](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/195)
+
+---
+
 ### Enigmatica 8 v2.4.1
 
 _Using Forge-1.18.2-40.1.86_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.4.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.4.1.md)_

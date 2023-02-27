@@ -401,7 +401,7 @@
 	"Compasses Work Everywhere" = true
 	"Campfires Boost Elytra" = true
 	"Better Elytra Rocket" = true
-	"Automatic Recipe Unlock" = true
+	"Automatic Recipe Unlock" = false
 	"Armed Armor Stands" = true
 	"Skull Pikes" = true
 	"Vexes Die With Their Masters" = true

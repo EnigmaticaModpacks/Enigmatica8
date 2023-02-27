@@ -1,3 +1,17 @@
+### Enigmatica 8 v2.5.1
+
+_Using Forge-1.18.2-40.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.5.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.5.1.md)_
+
+**New Mods**
+
+-   [Mob Despawn Timers](https://www.curseforge.com/minecraft/mc-mods/mob-despawn-timers) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
+
+**Bug Fixes**
+
+-   JAMD Mining dimension not generating ores [\#351](https://github.com/EnigmaticaModpacks/Enigmatica8/issues/351)
+
+---
+
 ### Enigmatica 8 v2.5.0
 
 _Using Forge-1.18.2-40.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.5.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.5.0.md)_

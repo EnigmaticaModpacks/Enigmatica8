@@ -12,4 +12,6 @@
 	modelType = "dust"
 	#Is the storage block of this material small (2x2).
 	isSmallStorageBlock = false
+	#The color of this material.
+	color = 2991282
 

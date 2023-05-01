@@ -1,3 +1,17 @@
+### Enigmatica 8 v2.6.0
+
+_Using Forge-1.18.2-40.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.6.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.6.0.md)_
+
+**New Mods**
+
+**Improvements**
+
+-   [Refined Storage] Increased range of the Wireless Transmitter to 64 blocks, with each range upgrade adding an additional 64 blocks.
+
+**Bug Fixes**
+
+---
+
 ### Enigmatica 8 v2.5.1
 
 _Using Forge-1.18.2-40.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/changelog_mods_2.5.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica8/blob/master/changelogs/modlist_2.5.1.md)_
